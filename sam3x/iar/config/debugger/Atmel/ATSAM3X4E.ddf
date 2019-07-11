@@ -1,0 +1,24 @@
+[Memory]
+;;       = Name        AdrSpace StartAdr   EndAdr     AccType
+Memory0  = IFLASH0     Memory   0x00080000 0x000A0000 R
+Memory1  = IFLASH1     Memory   0x00090000 0x000B0000 R
+Memory2  = IROM        Memory   0x00100000 0x00200000 R
+Memory3  = IRAM0       Memory   0x20000000 0x20008000 RW
+Memory4  = IRAM1       Memory   0x20080000 0x20088000 RW
+Memory5  = NFC_RAM     Memory   0x20100000 0x20200000 R
+Memory6  = UOTGHS_RAM  Memory   0x20180000 0x20280000 R
+Memory7  = Peripherals Memory   0x40000000 0x60000000 RW
+Memory8  = EBI_CS0     Memory   0x60000000 0x61000000 RW
+Memory9  = EBI_CS1     Memory   0x61000000 0x62000000 RW
+Memory10 = EBI_CS2     Memory   0x62000000 0x63000000 RW
+Memory11 = EBI_CS3     Memory   0x63000000 0x64000000 RW
+Memory12 = EBI_CS4     Memory   0x64000000 0x65000000 RW
+Memory13 = EBI_CS5     Memory   0x65000000 0x66000000 RW
+Memory14 = EBI_CS6     Memory   0x66000000 0x67000000 RW
+Memory15 = EBI_CS7     Memory   0x67000000 0x68000000 RW
+
+TrustedRanges = true
+UseSfrFilter  = true
+
+[SfrInclude]
+File = ATSAM3X4E.svd

@@ -1,0 +1,367 @@
+<?xml version='1.0' encoding='ASCII'?>
+<package schemaVersion="1.0">
+  <content>
+    <resources target="ATSAMR35J16B">
+      <resource type="atdf" subdir="atdf">
+        <includes pattern="ATSAMR35J16B.atdf"/>
+      </resource>
+      <resource type="svd" subdir="svd">
+        <includes pattern="ATSAMR35J16B.svd"/>
+      </resource>
+      <resource type="c.header" subdir="include">
+        <includes pattern="sam.h"/>
+        <includes pattern="samr35.h"/>
+        <includes pattern="samr35j16b.h"/>
+        <includes pattern="system_samr35.h"/>
+        <includes pattern="pio\samr35j16b.h"/>
+        <includes pattern="component\ac.h"/>
+        <includes pattern="component\adc.h"/>
+        <includes pattern="component\aes.h"/>
+        <includes pattern="component\ccl.h"/>
+        <includes pattern="component\dac.h"/>
+        <includes pattern="component\dmac.h"/>
+        <includes pattern="component\dsu.h"/>
+        <includes pattern="component\eic.h"/>
+        <includes pattern="component\evsys.h"/>
+        <includes pattern="component\gclk.h"/>
+        <includes pattern="component\mclk.h"/>
+        <includes pattern="component\mtb.h"/>
+        <includes pattern="component\nvmctrl.h"/>
+        <includes pattern="component\osc32kctrl.h"/>
+        <includes pattern="component\oscctrl.h"/>
+        <includes pattern="component\pac.h"/>
+        <includes pattern="component\pm.h"/>
+        <includes pattern="component\port.h"/>
+        <includes pattern="component\rstc.h"/>
+        <includes pattern="component\rtc.h"/>
+        <includes pattern="component\sercom.h"/>
+        <includes pattern="component\supc.h"/>
+        <includes pattern="component\tc.h"/>
+        <includes pattern="component\tcc.h"/>
+        <includes pattern="component\trng.h"/>
+        <includes pattern="component\wdt.h"/>
+        <includes pattern="instance\ac.h"/>
+        <includes pattern="instance\adc.h"/>
+        <includes pattern="instance\aes.h"/>
+        <includes pattern="instance\ccl.h"/>
+        <includes pattern="instance\dac.h"/>
+        <includes pattern="instance\dmac.h"/>
+        <includes pattern="instance\dsu.h"/>
+        <includes pattern="instance\eic.h"/>
+        <includes pattern="instance\evsys.h"/>
+        <includes pattern="instance\gclk.h"/>
+        <includes pattern="instance\mclk.h"/>
+        <includes pattern="instance\mtb.h"/>
+        <includes pattern="instance\nvmctrl.h"/>
+        <includes pattern="instance\osc32kctrl.h"/>
+        <includes pattern="instance\oscctrl.h"/>
+        <includes pattern="instance\pac.h"/>
+        <includes pattern="instance\pm.h"/>
+        <includes pattern="instance\port.h"/>
+        <includes pattern="instance\ptc.h"/>
+        <includes pattern="instance\rstc.h"/>
+        <includes pattern="instance\rtc.h"/>
+        <includes pattern="instance\sercom0.h"/>
+        <includes pattern="instance\sercom1.h"/>
+        <includes pattern="instance\sercom2.h"/>
+        <includes pattern="instance\sercom3.h"/>
+        <includes pattern="instance\sercom4.h"/>
+        <includes pattern="instance\sercom5.h"/>
+        <includes pattern="instance\supc.h"/>
+        <includes pattern="instance\tc0.h"/>
+        <includes pattern="instance\tc1.h"/>
+        <includes pattern="instance\tc2.h"/>
+        <includes pattern="instance\tc3.h"/>
+        <includes pattern="instance\tc4.h"/>
+        <includes pattern="instance\tcc0.h"/>
+        <includes pattern="instance\tcc1.h"/>
+        <includes pattern="instance\tcc2.h"/>
+        <includes pattern="instance\trng.h"/>
+        <includes pattern="instance\wdt.h"/>
+        <includes pattern="component-version.h"/>
+        <meta key="define" value="__SAMR35J16B__"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="gcc.source.startup" subdir="gcc">
+        <includes pattern="system_samr35.c"/>
+        <includes pattern="gcc\startup_samr35.c"/>
+      </resource>
+      <resource type="gcc.linker" subdir="gcc">
+        <includes pattern="gcc\samr35j16b_flash.ld"/>
+        <includes pattern="gcc\samr35j16b_sram.ld"/>
+      </resource>
+      <resource type="iar.source.startup" subdir="iar">
+        <includes pattern="system_samr35.c"/>
+        <includes pattern="iar\startup_samr35.c"/>
+      </resource>
+      <resource type="iar.linker" subdir="iar">
+        <includes pattern="iar\samr35j16b_flash.icf"/>
+        <includes pattern="iar\samr35j16b_sram.icf"/>
+      </resource>
+      <resource type="iar.config" subdir="iar">
+        <includes pattern="config\devices\Atmel\SAMR\ATSAMR35\ATSAMR35J16B.i79"/>
+        <includes pattern="config\devices\Atmel\SAMR\ATSAMR35\ATSAMR35J16B.menu"/>
+        <includes optional="true" pattern="config\debugger\Atmel\ATSAMR35J16B.ddf"/>
+      </resource>
+      <resource type="iar.flashloader" subdir="iar">
+        <includes pattern="config\flashloader\Atmel\samr35j16b\samr35j16b-flash.board"/>
+        <includes pattern="config\flashloader\Atmel\samr35j16b\samr35j16b-flash.flash"/>
+        <includes pattern="config\flashloader\Atmel\samr35j16b\samr35j16b-flash.out"/>
+      </resource>
+    </resources>
+    <resources target="ATSAMR35J17B">
+      <resource type="atdf" subdir="atdf">
+        <includes pattern="ATSAMR35J17B.atdf"/>
+      </resource>
+      <resource type="svd" subdir="svd">
+        <includes pattern="ATSAMR35J17B.svd"/>
+      </resource>
+      <resource type="c.header" subdir="include">
+        <includes pattern="sam.h"/>
+        <includes pattern="samr35.h"/>
+        <includes pattern="samr35j17b.h"/>
+        <includes pattern="system_samr35.h"/>
+        <includes pattern="pio\samr35j17b.h"/>
+        <includes pattern="component\ac.h"/>
+        <includes pattern="component\adc.h"/>
+        <includes pattern="component\aes.h"/>
+        <includes pattern="component\ccl.h"/>
+        <includes pattern="component\dac.h"/>
+        <includes pattern="component\dmac.h"/>
+        <includes pattern="component\dsu.h"/>
+        <includes pattern="component\eic.h"/>
+        <includes pattern="component\evsys.h"/>
+        <includes pattern="component\gclk.h"/>
+        <includes pattern="component\mclk.h"/>
+        <includes pattern="component\mtb.h"/>
+        <includes pattern="component\nvmctrl.h"/>
+        <includes pattern="component\osc32kctrl.h"/>
+        <includes pattern="component\oscctrl.h"/>
+        <includes pattern="component\pac.h"/>
+        <includes pattern="component\pm.h"/>
+        <includes pattern="component\port.h"/>
+        <includes pattern="component\rstc.h"/>
+        <includes pattern="component\rtc.h"/>
+        <includes pattern="component\sercom.h"/>
+        <includes pattern="component\supc.h"/>
+        <includes pattern="component\tc.h"/>
+        <includes pattern="component\tcc.h"/>
+        <includes pattern="component\trng.h"/>
+        <includes pattern="component\wdt.h"/>
+        <includes pattern="instance\ac.h"/>
+        <includes pattern="instance\adc.h"/>
+        <includes pattern="instance\aes.h"/>
+        <includes pattern="instance\ccl.h"/>
+        <includes pattern="instance\dac.h"/>
+        <includes pattern="instance\dmac.h"/>
+        <includes pattern="instance\dsu.h"/>
+        <includes pattern="instance\eic.h"/>
+        <includes pattern="instance\evsys.h"/>
+        <includes pattern="instance\gclk.h"/>
+        <includes pattern="instance\mclk.h"/>
+        <includes pattern="instance\mtb.h"/>
+        <includes pattern="instance\nvmctrl.h"/>
+        <includes pattern="instance\osc32kctrl.h"/>
+        <includes pattern="instance\oscctrl.h"/>
+        <includes pattern="instance\pac.h"/>
+        <includes pattern="instance\pm.h"/>
+        <includes pattern="instance\port.h"/>
+        <includes pattern="instance\ptc.h"/>
+        <includes pattern="instance\rstc.h"/>
+        <includes pattern="instance\rtc.h"/>
+        <includes pattern="instance\sercom0.h"/>
+        <includes pattern="instance\sercom1.h"/>
+        <includes pattern="instance\sercom2.h"/>
+        <includes pattern="instance\sercom3.h"/>
+        <includes pattern="instance\sercom4.h"/>
+        <includes pattern="instance\sercom5.h"/>
+        <includes pattern="instance\supc.h"/>
+        <includes pattern="instance\tc0.h"/>
+        <includes pattern="instance\tc1.h"/>
+        <includes pattern="instance\tc2.h"/>
+        <includes pattern="instance\tc3.h"/>
+        <includes pattern="instance\tc4.h"/>
+        <includes pattern="instance\tcc0.h"/>
+        <includes pattern="instance\tcc1.h"/>
+        <includes pattern="instance\tcc2.h"/>
+        <includes pattern="instance\trng.h"/>
+        <includes pattern="instance\wdt.h"/>
+        <includes pattern="component-version.h"/>
+        <meta key="define" value="__SAMR35J17B__"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="gcc.source.startup" subdir="gcc">
+        <includes pattern="system_samr35.c"/>
+        <includes pattern="gcc\startup_samr35.c"/>
+      </resource>
+      <resource type="gcc.linker" subdir="gcc">
+        <includes pattern="gcc\samr35j17b_flash.ld"/>
+        <includes pattern="gcc\samr35j17b_sram.ld"/>
+      </resource>
+      <resource type="iar.source.startup" subdir="iar">
+        <includes pattern="system_samr35.c"/>
+        <includes pattern="iar\startup_samr35.c"/>
+      </resource>
+      <resource type="iar.linker" subdir="iar">
+        <includes pattern="iar\samr35j17b_flash.icf"/>
+        <includes pattern="iar\samr35j17b_sram.icf"/>
+      </resource>
+      <resource type="iar.config" subdir="iar">
+        <includes pattern="config\devices\Atmel\SAMR\ATSAMR35\ATSAMR35J17B.i79"/>
+        <includes pattern="config\devices\Atmel\SAMR\ATSAMR35\ATSAMR35J17B.menu"/>
+        <includes optional="true" pattern="config\debugger\Atmel\ATSAMR35J17B.ddf"/>
+      </resource>
+      <resource type="iar.flashloader" subdir="iar">
+        <includes pattern="config\flashloader\Atmel\samr35j17b\samr35j17b-flash.board"/>
+        <includes pattern="config\flashloader\Atmel\samr35j17b\samr35j17b-flash.flash"/>
+        <includes pattern="config\flashloader\Atmel\samr35j17b\samr35j17b-flash.out"/>
+      </resource>
+    </resources>
+    <resources target="ATSAMR35J18B">
+      <resource type="atdf" subdir="atdf">
+        <includes pattern="ATSAMR35J18B.atdf"/>
+      </resource>
+      <resource type="svd" subdir="svd">
+        <includes pattern="ATSAMR35J18B.svd"/>
+      </resource>
+      <resource type="c.header" subdir="include">
+        <includes pattern="sam.h"/>
+        <includes pattern="samr35.h"/>
+        <includes pattern="samr35j18b.h"/>
+        <includes pattern="system_samr35.h"/>
+        <includes pattern="pio\samr35j18b.h"/>
+        <includes pattern="component\ac.h"/>
+        <includes pattern="component\adc.h"/>
+        <includes pattern="component\aes.h"/>
+        <includes pattern="component\ccl.h"/>
+        <includes pattern="component\dac.h"/>
+        <includes pattern="component\dmac.h"/>
+        <includes pattern="component\dsu.h"/>
+        <includes pattern="component\eic.h"/>
+        <includes pattern="component\evsys.h"/>
+        <includes pattern="component\gclk.h"/>
+        <includes pattern="component\mclk.h"/>
+        <includes pattern="component\mtb.h"/>
+        <includes pattern="component\nvmctrl.h"/>
+        <includes pattern="component\osc32kctrl.h"/>
+        <includes pattern="component\oscctrl.h"/>
+        <includes pattern="component\pac.h"/>
+        <includes pattern="component\pm.h"/>
+        <includes pattern="component\port.h"/>
+        <includes pattern="component\rstc.h"/>
+        <includes pattern="component\rtc.h"/>
+        <includes pattern="component\sercom.h"/>
+        <includes pattern="component\supc.h"/>
+        <includes pattern="component\tc.h"/>
+        <includes pattern="component\tcc.h"/>
+        <includes pattern="component\trng.h"/>
+        <includes pattern="component\wdt.h"/>
+        <includes pattern="instance\ac.h"/>
+        <includes pattern="instance\adc.h"/>
+        <includes pattern="instance\aes.h"/>
+        <includes pattern="instance\ccl.h"/>
+        <includes pattern="instance\dac.h"/>
+        <includes pattern="instance\dmac.h"/>
+        <includes pattern="instance\dsu.h"/>
+        <includes pattern="instance\eic.h"/>
+        <includes pattern="instance\evsys.h"/>
+        <includes pattern="instance\gclk.h"/>
+        <includes pattern="instance\mclk.h"/>
+        <includes pattern="instance\mtb.h"/>
+        <includes pattern="instance\nvmctrl.h"/>
+        <includes pattern="instance\osc32kctrl.h"/>
+        <includes pattern="instance\oscctrl.h"/>
+        <includes pattern="instance\pac.h"/>
+        <includes pattern="instance\pm.h"/>
+        <includes pattern="instance\port.h"/>
+        <includes pattern="instance\ptc.h"/>
+        <includes pattern="instance\rstc.h"/>
+        <includes pattern="instance\rtc.h"/>
+        <includes pattern="instance\sercom0.h"/>
+        <includes pattern="instance\sercom1.h"/>
+        <includes pattern="instance\sercom2.h"/>
+        <includes pattern="instance\sercom3.h"/>
+        <includes pattern="instance\sercom4.h"/>
+        <includes pattern="instance\sercom5.h"/>
+        <includes pattern="instance\supc.h"/>
+        <includes pattern="instance\tc0.h"/>
+        <includes pattern="instance\tc1.h"/>
+        <includes pattern="instance\tc2.h"/>
+        <includes pattern="instance\tc3.h"/>
+        <includes pattern="instance\tc4.h"/>
+        <includes pattern="instance\tcc0.h"/>
+        <includes pattern="instance\tcc1.h"/>
+        <includes pattern="instance\tcc2.h"/>
+        <includes pattern="instance\trng.h"/>
+        <includes pattern="instance\wdt.h"/>
+        <includes pattern="component-version.h"/>
+        <meta key="define" value="__SAMR35J18B__"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="gcc.source.startup" subdir="gcc">
+        <includes pattern="system_samr35.c"/>
+        <includes pattern="gcc\startup_samr35.c"/>
+      </resource>
+      <resource type="gcc.linker" subdir="gcc">
+        <includes pattern="gcc\samr35j18b_flash.ld"/>
+        <includes pattern="gcc\samr35j18b_sram.ld"/>
+      </resource>
+      <resource type="iar.source.startup" subdir="iar">
+        <includes pattern="system_samr35.c"/>
+        <includes pattern="iar\startup_samr35.c"/>
+      </resource>
+      <resource type="iar.linker" subdir="iar">
+        <includes pattern="iar\samr35j18b_flash.icf"/>
+        <includes pattern="iar\samr35j18b_sram.icf"/>
+      </resource>
+      <resource type="iar.config" subdir="iar">
+        <includes pattern="config\devices\Atmel\SAMR\ATSAMR35\ATSAMR35J18B.i79"/>
+        <includes pattern="config\devices\Atmel\SAMR\ATSAMR35\ATSAMR35J18B.menu"/>
+        <includes optional="true" pattern="config\debugger\Atmel\ATSAMR35J18B.ddf"/>
+      </resource>
+      <resource type="iar.flashloader" subdir="iar">
+        <includes pattern="config\flashloader\Atmel\samr35j18b\samr35j18b-flash.board"/>
+        <includes pattern="config\flashloader\Atmel\samr35j18b\samr35j18b-flash.flash"/>
+        <includes pattern="config\flashloader\Atmel\samr35j18b\samr35j18b-flash.out"/>
+      </resource>
+    </resources>
+  </content>
+  <pdsc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+		<releases>
+			<release version="1.0.BUILDNUMBER">Initial release.</release>
+		</releases>
+	</pdsc>
+</package>

@@ -1,0 +1,576 @@
+<?xml version='1.0' encoding='ASCII'?>
+<package schemaVersion="1.0">
+  <content>
+    <resources target="ATUC128L3U">
+      <resource type="atdf" subdir="atdf">
+        <includes pattern="ATUC128L3U.atdf"/>
+      </resource>
+      <resource type="c.header" subdir="include/ATUC128L3U" action="extractincludes">
+        <includes pattern="avr32/io.h"/>
+        <includes pattern="avr32/uc128l3u.h"/>
+        <includes pattern="avr32/abi.h"/>
+        <includes pattern="avr32/core_sc0_212.h"/>
+        <includes pattern="avr32/ocd_s0_212.h"/>
+        <includes pattern="avr32/intc_300.h"/>
+        <includes pattern="avr32/abdacb_100.h"/>
+        <includes pattern="avr32/acifb_202.h"/>
+        <includes pattern="avr32/adcifb_110.h"/>
+        <includes pattern="avr32/ast_310.h"/>
+        <includes pattern="avr32/aw_230.h"/>
+        <includes pattern="avr32/cat_400.h"/>
+        <includes pattern="avr32/eic_302.h"/>
+        <includes pattern="avr32/flashcdw_120.h"/>
+        <includes pattern="avr32/freqm_310.h"/>
+        <includes pattern="avr32/gloc_100.h"/>
+        <includes pattern="avr32/gpio_213.h"/>
+        <includes pattern="avr32/hmatrixb_130.h"/>
+        <includes pattern="avr32/iisc_100.h"/>
+        <includes pattern="avr32/pdca_123.h"/>
+        <includes pattern="avr32/pm_420.h"/>
+        <includes pattern="avr32/pwma_201.h"/>
+        <includes pattern="avr32/sau_111.h"/>
+        <includes pattern="avr32/scif_110.h"/>
+        <includes pattern="avr32/spi_211.h"/>
+        <includes pattern="avr32/tc_2231.h"/>
+        <includes pattern="avr32/twim_110.h"/>
+        <includes pattern="avr32/twis_120.h"/>
+        <includes pattern="avr32/usart_440.h"/>
+        <includes pattern="avr32/usbc_200.h"/>
+        <includes pattern="avr32/wdt_410.h"/>
+        <includes pattern="avr32/gpio_local_100.h"/>
+        <includes pattern="component-version.h"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+    </resources>
+    <resources target="AT32UC3L016">
+      <resource type="atdf" subdir="atdf">
+        <includes pattern="AT32UC3L016.atdf"/>
+      </resource>
+      <resource type="c.header" subdir="include/AT32UC3L016" action="extractincludes">
+        <includes pattern="avr32/io.h"/>
+        <includes pattern="avr32/uc3l016.h"/>
+        <includes pattern="avr32/abi.h"/>
+        <includes pattern="avr32/core_sc0_2101.h"/>
+        <includes pattern="avr32/ocd_s0_210.h"/>
+        <includes pattern="avr32/intc_102.h"/>
+        <includes pattern="avr32/acifb_202.h"/>
+        <includes pattern="avr32/adcifb_101.h"/>
+        <includes pattern="avr32/ast_300.h"/>
+        <includes pattern="avr32/aw_210.h"/>
+        <includes pattern="avr32/cat_200.h"/>
+        <includes pattern="avr32/eic_301.h"/>
+        <includes pattern="avr32/flashcdw_102.h"/>
+        <includes pattern="avr32/freqm_301.h"/>
+        <includes pattern="avr32/gloc_100.h"/>
+        <includes pattern="avr32/gpio_211.h"/>
+        <includes pattern="avr32/hmatrixb_130.h"/>
+        <includes pattern="avr32/pdca_122.h"/>
+        <includes pattern="avr32/pm_411.h"/>
+        <includes pattern="avr32/pwma_101.h"/>
+        <includes pattern="avr32/sau_110.h"/>
+        <includes pattern="avr32/scif_102.h"/>
+        <includes pattern="avr32/spi_211.h"/>
+        <includes pattern="avr32/tc_2231.h"/>
+        <includes pattern="avr32/twim_101.h"/>
+        <includes pattern="avr32/twis_112.h"/>
+        <includes pattern="avr32/usart_440.h"/>
+        <includes pattern="avr32/wdt_402.h"/>
+        <includes pattern="avr32/gpio_local_100.h"/>
+        <includes pattern="component-version.h"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="simulator.win32" subdir="simulator/win32">
+        <includes pattern="libat32uc3l064.dll"/>
+        <meta key="device" value="AT32UC3L016"/>
+      </resource>
+    </resources>
+    <resources target="ATUC64L3U">
+      <resource type="atdf" subdir="atdf">
+        <includes pattern="ATUC64L3U.atdf"/>
+      </resource>
+      <resource type="c.header" subdir="include/ATUC64L3U" action="extractincludes">
+        <includes pattern="avr32/io.h"/>
+        <includes pattern="avr32/uc64l3u.h"/>
+        <includes pattern="avr32/abi.h"/>
+        <includes pattern="avr32/core_sc0_212.h"/>
+        <includes pattern="avr32/ocd_s0_212.h"/>
+        <includes pattern="avr32/intc_300.h"/>
+        <includes pattern="avr32/abdacb_100.h"/>
+        <includes pattern="avr32/acifb_202.h"/>
+        <includes pattern="avr32/adcifb_110.h"/>
+        <includes pattern="avr32/ast_310.h"/>
+        <includes pattern="avr32/aw_230.h"/>
+        <includes pattern="avr32/cat_400.h"/>
+        <includes pattern="avr32/eic_302.h"/>
+        <includes pattern="avr32/flashcdw_120.h"/>
+        <includes pattern="avr32/freqm_310.h"/>
+        <includes pattern="avr32/gloc_100.h"/>
+        <includes pattern="avr32/gpio_213.h"/>
+        <includes pattern="avr32/hmatrixb_130.h"/>
+        <includes pattern="avr32/iisc_100.h"/>
+        <includes pattern="avr32/pdca_123.h"/>
+        <includes pattern="avr32/pm_420.h"/>
+        <includes pattern="avr32/pwma_201.h"/>
+        <includes pattern="avr32/sau_111.h"/>
+        <includes pattern="avr32/scif_110.h"/>
+        <includes pattern="avr32/spi_211.h"/>
+        <includes pattern="avr32/tc_2231.h"/>
+        <includes pattern="avr32/twim_110.h"/>
+        <includes pattern="avr32/twis_120.h"/>
+        <includes pattern="avr32/usart_440.h"/>
+        <includes pattern="avr32/usbc_200.h"/>
+        <includes pattern="avr32/wdt_410.h"/>
+        <includes pattern="avr32/gpio_local_100.h"/>
+        <includes pattern="component-version.h"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+    </resources>
+    <resources target="AT32UC3L032">
+      <resource type="atdf" subdir="atdf">
+        <includes pattern="AT32UC3L032.atdf"/>
+      </resource>
+      <resource type="c.header" subdir="include/AT32UC3L032" action="extractincludes">
+        <includes pattern="avr32/io.h"/>
+        <includes pattern="avr32/uc3l032.h"/>
+        <includes pattern="avr32/abi.h"/>
+        <includes pattern="avr32/core_sc0_2101.h"/>
+        <includes pattern="avr32/ocd_s0_210.h"/>
+        <includes pattern="avr32/intc_102.h"/>
+        <includes pattern="avr32/acifb_202.h"/>
+        <includes pattern="avr32/adcifb_101.h"/>
+        <includes pattern="avr32/ast_300.h"/>
+        <includes pattern="avr32/aw_210.h"/>
+        <includes pattern="avr32/cat_200.h"/>
+        <includes pattern="avr32/eic_301.h"/>
+        <includes pattern="avr32/flashcdw_102.h"/>
+        <includes pattern="avr32/freqm_301.h"/>
+        <includes pattern="avr32/gloc_100.h"/>
+        <includes pattern="avr32/gpio_211.h"/>
+        <includes pattern="avr32/hmatrixb_130.h"/>
+        <includes pattern="avr32/pdca_122.h"/>
+        <includes pattern="avr32/pm_411.h"/>
+        <includes pattern="avr32/pwma_101.h"/>
+        <includes pattern="avr32/sau_110.h"/>
+        <includes pattern="avr32/scif_102.h"/>
+        <includes pattern="avr32/spi_211.h"/>
+        <includes pattern="avr32/tc_2231.h"/>
+        <includes pattern="avr32/twim_101.h"/>
+        <includes pattern="avr32/twis_112.h"/>
+        <includes pattern="avr32/usart_440.h"/>
+        <includes pattern="avr32/wdt_402.h"/>
+        <includes pattern="avr32/gpio_local_100.h"/>
+        <includes pattern="component-version.h"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="simulator.win32" subdir="simulator/win32">
+        <includes pattern="libat32uc3l064.dll"/>
+        <meta key="device" value="AT32UC3L032"/>
+      </resource>
+    </resources>
+    <resources target="ATUC256L3U">
+      <resource type="atdf" subdir="atdf">
+        <includes pattern="ATUC256L3U.atdf"/>
+      </resource>
+      <resource type="c.header" subdir="include/ATUC256L3U" action="extractincludes">
+        <includes pattern="avr32/io.h"/>
+        <includes pattern="avr32/uc256l3u.h"/>
+        <includes pattern="avr32/abi.h"/>
+        <includes pattern="avr32/core_sc0_212.h"/>
+        <includes pattern="avr32/ocd_s0_212.h"/>
+        <includes pattern="avr32/intc_300.h"/>
+        <includes pattern="avr32/abdacb_100.h"/>
+        <includes pattern="avr32/acifb_202.h"/>
+        <includes pattern="avr32/adcifb_110.h"/>
+        <includes pattern="avr32/ast_310.h"/>
+        <includes pattern="avr32/aw_230.h"/>
+        <includes pattern="avr32/cat_400.h"/>
+        <includes pattern="avr32/eic_302.h"/>
+        <includes pattern="avr32/flashcdw_120.h"/>
+        <includes pattern="avr32/freqm_310.h"/>
+        <includes pattern="avr32/gloc_100.h"/>
+        <includes pattern="avr32/gpio_213.h"/>
+        <includes pattern="avr32/hmatrixb_130.h"/>
+        <includes pattern="avr32/iisc_100.h"/>
+        <includes pattern="avr32/pdca_123.h"/>
+        <includes pattern="avr32/pm_420.h"/>
+        <includes pattern="avr32/pwma_201.h"/>
+        <includes pattern="avr32/sau_111.h"/>
+        <includes pattern="avr32/scif_110.h"/>
+        <includes pattern="avr32/spi_211.h"/>
+        <includes pattern="avr32/tc_2231.h"/>
+        <includes pattern="avr32/twim_110.h"/>
+        <includes pattern="avr32/twis_120.h"/>
+        <includes pattern="avr32/usart_440.h"/>
+        <includes pattern="avr32/usbc_200.h"/>
+        <includes pattern="avr32/wdt_410.h"/>
+        <includes pattern="avr32/gpio_local_100.h"/>
+        <includes pattern="component-version.h"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+    </resources>
+    <resources target="AT32UC3L0128">
+      <resource type="atdf" subdir="atdf">
+        <includes pattern="AT32UC3L0128.atdf"/>
+      </resource>
+      <resource type="c.header" subdir="include/AT32UC3L0128" action="extractincludes">
+        <includes pattern="avr32/io.h"/>
+        <includes pattern="avr32/uc3l0128.h"/>
+        <includes pattern="avr32/abi.h"/>
+        <includes pattern="avr32/core_sc0_211.h"/>
+        <includes pattern="avr32/ocd_s0_211.h"/>
+        <includes pattern="avr32/intc_102.h"/>
+        <includes pattern="avr32/acifb_202.h"/>
+        <includes pattern="avr32/adcifb_110.h"/>
+        <includes pattern="avr32/ast_310.h"/>
+        <includes pattern="avr32/aw_230.h"/>
+        <includes pattern="avr32/cat_400.h"/>
+        <includes pattern="avr32/eic_302.h"/>
+        <includes pattern="avr32/flashcdw_120.h"/>
+        <includes pattern="avr32/freqm_310.h"/>
+        <includes pattern="avr32/gloc_100.h"/>
+        <includes pattern="avr32/gpio_213.h"/>
+        <includes pattern="avr32/hmatrixb_130.h"/>
+        <includes pattern="avr32/pdca_123.h"/>
+        <includes pattern="avr32/pm_411.h"/>
+        <includes pattern="avr32/pwma_200.h"/>
+        <includes pattern="avr32/sau_111.h"/>
+        <includes pattern="avr32/scif_110.h"/>
+        <includes pattern="avr32/spi_211.h"/>
+        <includes pattern="avr32/tc_2231.h"/>
+        <includes pattern="avr32/twim_110.h"/>
+        <includes pattern="avr32/twis_120.h"/>
+        <includes pattern="avr32/usart_440.h"/>
+        <includes pattern="avr32/wdt_410.h"/>
+        <includes pattern="avr32/gpio_local_100.h"/>
+        <includes pattern="component-version.h"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+    </resources>
+    <resources target="ATUC128L4U">
+      <resource type="atdf" subdir="atdf">
+        <includes pattern="ATUC128L4U.atdf"/>
+      </resource>
+      <resource type="c.header" subdir="include/ATUC128L4U" action="extractincludes">
+        <includes pattern="avr32/io.h"/>
+        <includes pattern="avr32/uc128l4u.h"/>
+        <includes pattern="avr32/abi.h"/>
+        <includes pattern="avr32/core_sc0_212.h"/>
+        <includes pattern="avr32/ocd_s0_212.h"/>
+        <includes pattern="avr32/intc_300.h"/>
+        <includes pattern="avr32/acifb_202.h"/>
+        <includes pattern="avr32/adcifb_110.h"/>
+        <includes pattern="avr32/ast_310.h"/>
+        <includes pattern="avr32/aw_230.h"/>
+        <includes pattern="avr32/cat_400.h"/>
+        <includes pattern="avr32/eic_302.h"/>
+        <includes pattern="avr32/flashcdw_120.h"/>
+        <includes pattern="avr32/freqm_310.h"/>
+        <includes pattern="avr32/gloc_100.h"/>
+        <includes pattern="avr32/gpio_213.h"/>
+        <includes pattern="avr32/hmatrixb_130.h"/>
+        <includes pattern="avr32/pdca_123.h"/>
+        <includes pattern="avr32/pm_420.h"/>
+        <includes pattern="avr32/pwma_201.h"/>
+        <includes pattern="avr32/sau_111.h"/>
+        <includes pattern="avr32/scif_110.h"/>
+        <includes pattern="avr32/spi_211.h"/>
+        <includes pattern="avr32/tc_2231.h"/>
+        <includes pattern="avr32/twim_110.h"/>
+        <includes pattern="avr32/twis_120.h"/>
+        <includes pattern="avr32/usart_440.h"/>
+        <includes pattern="avr32/usbc_200.h"/>
+        <includes pattern="avr32/wdt_410.h"/>
+        <includes pattern="avr32/gpio_local_100.h"/>
+        <includes pattern="component-version.h"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+    </resources>
+    <resources target="ATUC256L4U">
+      <resource type="atdf" subdir="atdf">
+        <includes pattern="ATUC256L4U.atdf"/>
+      </resource>
+      <resource type="c.header" subdir="include/ATUC256L4U" action="extractincludes">
+        <includes pattern="avr32/io.h"/>
+        <includes pattern="avr32/uc256l4u.h"/>
+        <includes pattern="avr32/abi.h"/>
+        <includes pattern="avr32/core_sc0_212.h"/>
+        <includes pattern="avr32/ocd_s0_212.h"/>
+        <includes pattern="avr32/intc_300.h"/>
+        <includes pattern="avr32/acifb_202.h"/>
+        <includes pattern="avr32/adcifb_110.h"/>
+        <includes pattern="avr32/ast_310.h"/>
+        <includes pattern="avr32/aw_230.h"/>
+        <includes pattern="avr32/cat_400.h"/>
+        <includes pattern="avr32/eic_302.h"/>
+        <includes pattern="avr32/flashcdw_120.h"/>
+        <includes pattern="avr32/freqm_310.h"/>
+        <includes pattern="avr32/gloc_100.h"/>
+        <includes pattern="avr32/gpio_213.h"/>
+        <includes pattern="avr32/hmatrixb_130.h"/>
+        <includes pattern="avr32/pdca_123.h"/>
+        <includes pattern="avr32/pm_420.h"/>
+        <includes pattern="avr32/pwma_201.h"/>
+        <includes pattern="avr32/sau_111.h"/>
+        <includes pattern="avr32/scif_110.h"/>
+        <includes pattern="avr32/spi_211.h"/>
+        <includes pattern="avr32/tc_2231.h"/>
+        <includes pattern="avr32/twim_110.h"/>
+        <includes pattern="avr32/twis_120.h"/>
+        <includes pattern="avr32/usart_440.h"/>
+        <includes pattern="avr32/usbc_200.h"/>
+        <includes pattern="avr32/wdt_410.h"/>
+        <includes pattern="avr32/gpio_local_100.h"/>
+        <includes pattern="component-version.h"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+    </resources>
+    <resources target="AT32UC3L064">
+      <resource type="atdf" subdir="atdf">
+        <includes pattern="AT32UC3L064.atdf"/>
+      </resource>
+      <resource type="c.header" subdir="include/AT32UC3L064" action="extractincludes">
+        <includes pattern="avr32/io.h"/>
+        <includes pattern="avr32/uc3l064.h"/>
+        <includes pattern="avr32/abi.h"/>
+        <includes pattern="avr32/core_sc0_2101.h"/>
+        <includes pattern="avr32/ocd_s0_210.h"/>
+        <includes pattern="avr32/intc_102.h"/>
+        <includes pattern="avr32/acifb_202.h"/>
+        <includes pattern="avr32/adcifb_101.h"/>
+        <includes pattern="avr32/ast_300.h"/>
+        <includes pattern="avr32/aw_210.h"/>
+        <includes pattern="avr32/cat_200.h"/>
+        <includes pattern="avr32/eic_301.h"/>
+        <includes pattern="avr32/flashcdw_102.h"/>
+        <includes pattern="avr32/freqm_301.h"/>
+        <includes pattern="avr32/gloc_100.h"/>
+        <includes pattern="avr32/gpio_211.h"/>
+        <includes pattern="avr32/hmatrixb_130.h"/>
+        <includes pattern="avr32/pdca_122.h"/>
+        <includes pattern="avr32/pm_411.h"/>
+        <includes pattern="avr32/pwma_101.h"/>
+        <includes pattern="avr32/sau_110.h"/>
+        <includes pattern="avr32/scif_102.h"/>
+        <includes pattern="avr32/spi_211.h"/>
+        <includes pattern="avr32/tc_2231.h"/>
+        <includes pattern="avr32/twim_101.h"/>
+        <includes pattern="avr32/twis_112.h"/>
+        <includes pattern="avr32/usart_440.h"/>
+        <includes pattern="avr32/wdt_402.h"/>
+        <includes pattern="avr32/gpio_local_100.h"/>
+        <includes pattern="component-version.h"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="simulator.win32" subdir="simulator/win32">
+        <includes pattern="libat32uc3l064.dll"/>
+        <meta key="device" value="AT32UC3L064"/>
+      </resource>
+    </resources>
+    <resources target="AT32UC3L0256">
+      <resource type="atdf" subdir="atdf">
+        <includes pattern="AT32UC3L0256.atdf"/>
+      </resource>
+      <resource type="c.header" subdir="include/AT32UC3L0256" action="extractincludes">
+        <includes pattern="avr32/io.h"/>
+        <includes pattern="avr32/uc3l0256.h"/>
+        <includes pattern="avr32/abi.h"/>
+        <includes pattern="avr32/core_sc0_211.h"/>
+        <includes pattern="avr32/ocd_s0_211.h"/>
+        <includes pattern="avr32/intc_102.h"/>
+        <includes pattern="avr32/acifb_202.h"/>
+        <includes pattern="avr32/adcifb_110.h"/>
+        <includes pattern="avr32/ast_310.h"/>
+        <includes pattern="avr32/aw_230.h"/>
+        <includes pattern="avr32/cat_400.h"/>
+        <includes pattern="avr32/eic_302.h"/>
+        <includes pattern="avr32/flashcdw_120.h"/>
+        <includes pattern="avr32/freqm_310.h"/>
+        <includes pattern="avr32/gloc_100.h"/>
+        <includes pattern="avr32/gpio_213.h"/>
+        <includes pattern="avr32/hmatrixb_130.h"/>
+        <includes pattern="avr32/pdca_123.h"/>
+        <includes pattern="avr32/pm_411.h"/>
+        <includes pattern="avr32/pwma_201.h"/>
+        <includes pattern="avr32/sau_111.h"/>
+        <includes pattern="avr32/scif_110.h"/>
+        <includes pattern="avr32/spi_211.h"/>
+        <includes pattern="avr32/tc_2231.h"/>
+        <includes pattern="avr32/twim_110.h"/>
+        <includes pattern="avr32/twis_120.h"/>
+        <includes pattern="avr32/usart_440.h"/>
+        <includes pattern="avr32/wdt_410.h"/>
+        <includes pattern="avr32/gpio_local_100.h"/>
+        <includes pattern="component-version.h"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+    </resources>
+    <resources target="ATUC64L4U">
+      <resource type="atdf" subdir="atdf">
+        <includes pattern="ATUC64L4U.atdf"/>
+      </resource>
+      <resource type="c.header" subdir="include/ATUC64L4U" action="extractincludes">
+        <includes pattern="avr32/io.h"/>
+        <includes pattern="avr32/uc64l4u.h"/>
+        <includes pattern="avr32/abi.h"/>
+        <includes pattern="avr32/core_sc0_212.h"/>
+        <includes pattern="avr32/ocd_s0_212.h"/>
+        <includes pattern="avr32/intc_300.h"/>
+        <includes pattern="avr32/acifb_202.h"/>
+        <includes pattern="avr32/adcifb_110.h"/>
+        <includes pattern="avr32/ast_310.h"/>
+        <includes pattern="avr32/aw_230.h"/>
+        <includes pattern="avr32/cat_400.h"/>
+        <includes pattern="avr32/eic_302.h"/>
+        <includes pattern="avr32/flashcdw_120.h"/>
+        <includes pattern="avr32/freqm_310.h"/>
+        <includes pattern="avr32/gloc_100.h"/>
+        <includes pattern="avr32/gpio_213.h"/>
+        <includes pattern="avr32/hmatrixb_130.h"/>
+        <includes pattern="avr32/pdca_123.h"/>
+        <includes pattern="avr32/pm_420.h"/>
+        <includes pattern="avr32/pwma_201.h"/>
+        <includes pattern="avr32/sau_111.h"/>
+        <includes pattern="avr32/scif_110.h"/>
+        <includes pattern="avr32/spi_211.h"/>
+        <includes pattern="avr32/tc_2231.h"/>
+        <includes pattern="avr32/twim_110.h"/>
+        <includes pattern="avr32/twis_120.h"/>
+        <includes pattern="avr32/usart_440.h"/>
+        <includes pattern="avr32/usbc_200.h"/>
+        <includes pattern="avr32/wdt_410.h"/>
+        <includes pattern="avr32/gpio_local_100.h"/>
+        <includes pattern="component-version.h"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+    </resources>
+  </content>
+  <pdsc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" compliant="false">
+		<releases>
+			<release version="1.0.BUILDNUMBER">Add SSDE, SSE and UPROT bits to FGFRLO register.</release>
+			<release version="1.0.45">Revert broken headers for UC3L3 and UC3L4 devices introduced in 1.0.44.</release>
+			<release version="1.0.44">Updated documentation links.</release>
+			<release version="1.0.39">Initial release.</release>
+		</releases>
+	</pdsc>
+</package>

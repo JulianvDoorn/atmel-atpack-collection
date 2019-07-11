@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<optionMenuItem>
+  <tag>ATSAM4CP16C_0</tag>
+  <display>Atmel ATSAM4CP16C Core 0</display>
+  <data>$CUR_DIR$\ATSAM4CP16C_0.i79</data>
+</optionMenuItem>

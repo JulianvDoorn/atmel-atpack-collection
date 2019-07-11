@@ -1,0 +1,459 @@
+<?xml version='1.0' encoding='ASCII'?>
+<package schemaVersion="1.0">
+  <content>
+    <fileset id="moduleheaders">
+      <includes pattern="component/*"/>
+      <includes pattern="instance/*"/>
+    </fileset>
+    <resources target="ATSAMR21G17A">
+      <resource type="atdf" subdir="atdf">
+        <includes pattern="ATSAMR21G17A.atdf"/>
+      </resource>
+      <resource type="svd" subdir="svd">
+        <includes pattern="ATSAMR21G17A.svd"/>
+      </resource>
+      <resource type="c.header" subdir="include">
+        <includes pattern="sam.h"/>
+        <includes pattern="samr21.h"/>
+        <includes pattern="samr21g17a.h"/>
+        <includes pattern="system_samr21.h"/>
+        <includes pattern="pio/*samr21g17a.h"/>
+        <includes pattern="component-version.h"/>
+        <includes fileset="moduleheaders"/>
+        <meta key="define" value="__SAMR21G17A__"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="armcc.source.startup" subdir="armcc">
+        <includes pattern="Device/SAMR21/Source/ARM/startup_SAMR21.s"/>
+        <includes pattern="Device/SAMR21/Source/system_samr21.c"/>
+      </resource>
+      <resource type="keil.flashloader" subdir="keil">
+        <includes pattern="Flash/ATSAMR21_128.FLM"/>
+        <meta key="Flash/ATSAMR21_128.FLM" value="start=0x00000000|size=0x00020000|default=1"/>
+      </resource>
+      <resource type="gcc.source.startup" subdir="gcc">
+        <includes pattern="system_samr21.c"/>
+        <includes pattern="gcc/startup_samr21.c"/>
+      </resource>
+      <resource type="gcc.linker" subdir="gcc">
+        <includes pattern="gcc/samr21g17a_flash.ld"/>
+        <includes pattern="gcc/samr21g17a_sram.ld"/>
+      </resource>
+      <resource type="iar.source.startup" subdir="iar">
+        <includes pattern="system_samr21.c"/>
+        <includes pattern="iar/startup_samr21.c"/>
+      </resource>
+      <resource type="iar.linker" subdir="iar">
+        <includes pattern="iar/samr21g17a_flash.icf"/>
+        <includes pattern="iar/samr21g17a_sram.icf"/>
+      </resource>
+      <resource type="iar.config" subdir="iar">
+        <includes pattern="config/devices/Atmel/**/ATSAMR21G17A.i79"/>
+        <includes pattern="config/devices/Atmel/**/ATSAMR21G17A.menu"/>
+        <includes pattern="config/flashloader/Atmel/samr21g17a/samr21g17a-flash.board"/>
+        <includes pattern="config/flashloader/Atmel/samr21g17a/samr21g17a-flash.flash"/>
+        <includes pattern="config/flashloader/Atmel/samr21g17a/samr21g17a-flash.out"/>
+        <includes optional="true" pattern="config/debugger/Atmel/Trace_SAMR21.dmac"/>
+        <includes optional="true" pattern="config/debugger/Atmel/ATSAMR21G17A.ddf"/>
+      </resource>
+    </resources>
+    <resources target="ATSAMR21G16A">
+      <resource type="atdf" subdir="atdf">
+        <includes pattern="ATSAMR21G16A.atdf"/>
+      </resource>
+      <resource type="svd" subdir="svd">
+        <includes pattern="ATSAMR21G16A.svd"/>
+      </resource>
+      <resource type="c.header" subdir="include">
+        <includes pattern="sam.h"/>
+        <includes pattern="samr21.h"/>
+        <includes pattern="samr21g16a.h"/>
+        <includes pattern="system_samr21.h"/>
+        <includes pattern="pio/*samr21g16a.h"/>
+        <includes pattern="component-version.h"/>
+        <includes fileset="moduleheaders"/>
+        <meta key="define" value="__SAMR21G16A__"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="armcc.source.startup" subdir="armcc">
+        <includes pattern="Device/SAMR21/Source/ARM/startup_SAMR21.s"/>
+        <includes pattern="Device/SAMR21/Source/system_samr21.c"/>
+      </resource>
+      <resource type="keil.flashloader" subdir="keil">
+        <includes pattern="Flash/ATSAMR21_64.FLM"/>
+        <meta key="Flash/ATSAMR21_64.FLM" value="start=0x00000000|size=0x00010000|default=1"/>
+      </resource>
+      <resource type="gcc.source.startup" subdir="gcc">
+        <includes pattern="system_samr21.c"/>
+        <includes pattern="gcc/startup_samr21.c"/>
+      </resource>
+      <resource type="gcc.linker" subdir="gcc">
+        <includes pattern="gcc/samr21g16a_flash.ld"/>
+        <includes pattern="gcc/samr21g16a_sram.ld"/>
+      </resource>
+      <resource type="iar.source.startup" subdir="iar">
+        <includes pattern="system_samr21.c"/>
+        <includes pattern="iar/startup_samr21.c"/>
+      </resource>
+      <resource type="iar.linker" subdir="iar">
+        <includes pattern="iar/samr21g16a_flash.icf"/>
+        <includes pattern="iar/samr21g16a_sram.icf"/>
+      </resource>
+      <resource type="iar.config" subdir="iar">
+        <includes pattern="config/devices/Atmel/**/ATSAMR21G16A.i79"/>
+        <includes pattern="config/devices/Atmel/**/ATSAMR21G16A.menu"/>
+        <includes pattern="config/flashloader/Atmel/samr21g16a/samr21g16a-flash.board"/>
+        <includes pattern="config/flashloader/Atmel/samr21g16a/samr21g16a-flash.flash"/>
+        <includes pattern="config/flashloader/Atmel/samr21g16a/samr21g16a-flash.out"/>
+        <includes optional="true" pattern="config/debugger/Atmel/Trace_SAMR21.dmac"/>
+        <includes optional="true" pattern="config/debugger/Atmel/ATSAMR21G16A.ddf"/>
+      </resource>
+    </resources>
+    <resources target="ATSAMR21E16A">
+      <resource type="atdf" subdir="atdf">
+        <includes pattern="ATSAMR21E16A.atdf"/>
+      </resource>
+      <resource type="svd" subdir="svd">
+        <includes pattern="ATSAMR21E16A.svd"/>
+      </resource>
+      <resource type="c.header" subdir="include">
+        <includes pattern="sam.h"/>
+        <includes pattern="samr21.h"/>
+        <includes pattern="samr21e16a.h"/>
+        <includes pattern="system_samr21.h"/>
+        <includes pattern="pio/*samr21e16a.h"/>
+        <includes pattern="component-version.h"/>
+        <includes fileset="moduleheaders"/>
+        <meta key="define" value="__SAMR21E16A__"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="armcc.source.startup" subdir="armcc">
+        <includes pattern="Device/SAMR21/Source/ARM/startup_SAMR21.s"/>
+        <includes pattern="Device/SAMR21/Source/system_samr21.c"/>
+      </resource>
+      <resource type="keil.flashloader" subdir="keil">
+        <includes pattern="Flash/ATSAMR21_64.FLM"/>
+        <meta key="Flash/ATSAMR21_64.FLM" value="start=0x00000000|size=0x00010000|default=1"/>
+      </resource>
+      <resource type="gcc.source.startup" subdir="gcc">
+        <includes pattern="system_samr21.c"/>
+        <includes pattern="gcc/startup_samr21.c"/>
+      </resource>
+      <resource type="gcc.linker" subdir="gcc">
+        <includes pattern="gcc/samr21e16a_flash.ld"/>
+        <includes pattern="gcc/samr21e16a_sram.ld"/>
+      </resource>
+      <resource type="iar.source.startup" subdir="iar">
+        <includes pattern="system_samr21.c"/>
+        <includes pattern="iar/startup_samr21.c"/>
+      </resource>
+      <resource type="iar.linker" subdir="iar">
+        <includes pattern="iar/samr21e16a_flash.icf"/>
+        <includes pattern="iar/samr21e16a_sram.icf"/>
+      </resource>
+      <resource type="iar.config" subdir="iar">
+        <includes pattern="config/devices/Atmel/**/ATSAMR21E16A.i79"/>
+        <includes pattern="config/devices/Atmel/**/ATSAMR21E16A.menu"/>
+        <includes pattern="config/flashloader/Atmel/samr21e16a/samr21e16a-flash.board"/>
+        <includes pattern="config/flashloader/Atmel/samr21e16a/samr21e16a-flash.flash"/>
+        <includes pattern="config/flashloader/Atmel/samr21e16a/samr21e16a-flash.out"/>
+        <includes optional="true" pattern="config/debugger/Atmel/Trace_SAMR21.dmac"/>
+        <includes optional="true" pattern="config/debugger/Atmel/ATSAMR21E16A.ddf"/>
+      </resource>
+    </resources>
+    <resources target="ATSAMR21E17A">
+      <resource type="atdf" subdir="atdf">
+        <includes pattern="ATSAMR21E17A.atdf"/>
+      </resource>
+      <resource type="svd" subdir="svd">
+        <includes pattern="ATSAMR21E17A.svd"/>
+      </resource>
+      <resource type="c.header" subdir="include">
+        <includes pattern="sam.h"/>
+        <includes pattern="samr21.h"/>
+        <includes pattern="samr21e17a.h"/>
+        <includes pattern="system_samr21.h"/>
+        <includes pattern="pio/*samr21e17a.h"/>
+        <includes pattern="component-version.h"/>
+        <includes fileset="moduleheaders"/>
+        <meta key="define" value="__SAMR21E17A__"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="armcc.source.startup" subdir="armcc">
+        <includes pattern="Device/SAMR21/Source/ARM/startup_SAMR21.s"/>
+        <includes pattern="Device/SAMR21/Source/system_samr21.c"/>
+      </resource>
+      <resource type="keil.flashloader" subdir="keil">
+        <includes pattern="Flash/ATSAMR21_128.FLM"/>
+        <meta key="Flash/ATSAMR21_128.FLM" value="start=0x00000000|size=0x00020000|default=1"/>
+      </resource>
+      <resource type="gcc.source.startup" subdir="gcc">
+        <includes pattern="system_samr21.c"/>
+        <includes pattern="gcc/startup_samr21.c"/>
+      </resource>
+      <resource type="gcc.linker" subdir="gcc">
+        <includes pattern="gcc/samr21e17a_flash.ld"/>
+        <includes pattern="gcc/samr21e17a_sram.ld"/>
+      </resource>
+      <resource type="iar.source.startup" subdir="iar">
+        <includes pattern="system_samr21.c"/>
+        <includes pattern="iar/startup_samr21.c"/>
+      </resource>
+      <resource type="iar.linker" subdir="iar">
+        <includes pattern="iar/samr21e17a_flash.icf"/>
+        <includes pattern="iar/samr21e17a_sram.icf"/>
+      </resource>
+      <resource type="iar.config" subdir="iar">
+        <includes pattern="config/devices/Atmel/**/ATSAMR21E17A.i79"/>
+        <includes pattern="config/devices/Atmel/**/ATSAMR21E17A.menu"/>
+        <includes pattern="config/flashloader/Atmel/samr21e17a/samr21e17a-flash.board"/>
+        <includes pattern="config/flashloader/Atmel/samr21e17a/samr21e17a-flash.flash"/>
+        <includes pattern="config/flashloader/Atmel/samr21e17a/samr21e17a-flash.out"/>
+        <includes optional="true" pattern="config/debugger/Atmel/Trace_SAMR21.dmac"/>
+        <includes optional="true" pattern="config/debugger/Atmel/ATSAMR21E17A.ddf"/>
+      </resource>
+    </resources>
+    <resources target="ATSAMR21E18A">
+      <resource type="atdf" subdir="atdf">
+        <includes pattern="ATSAMR21E18A.atdf"/>
+      </resource>
+      <resource type="svd" subdir="svd">
+        <includes pattern="ATSAMR21E18A.svd"/>
+      </resource>
+      <resource type="c.header" subdir="include">
+        <includes pattern="sam.h"/>
+        <includes pattern="samr21.h"/>
+        <includes pattern="samr21e18a.h"/>
+        <includes pattern="system_samr21.h"/>
+        <includes pattern="pio/*samr21e18a.h"/>
+        <includes pattern="component-version.h"/>
+        <includes fileset="moduleheaders"/>
+        <meta key="define" value="__SAMR21E18A__"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="armcc.source.startup" subdir="armcc">
+        <includes pattern="Device/SAMR21/Source/ARM/startup_SAMR21.s"/>
+        <includes pattern="Device/SAMR21/Source/system_samr21.c"/>
+      </resource>
+      <resource type="keil.flashloader" subdir="keil">
+        <includes pattern="Flash/ATSAMR21_256.FLM"/>
+        <meta key="Flash/ATSAMR21_256.FLM" value="start=0x00000000|size=0x00040000|default=1"/>
+      </resource>
+      <resource type="gcc.source.startup" subdir="gcc">
+        <includes pattern="system_samr21.c"/>
+        <includes pattern="gcc/startup_samr21.c"/>
+      </resource>
+      <resource type="gcc.linker" subdir="gcc">
+        <includes pattern="gcc/samr21e18a_flash.ld"/>
+        <includes pattern="gcc/samr21e18a_sram.ld"/>
+      </resource>
+      <resource type="iar.source.startup" subdir="iar">
+        <includes pattern="system_samr21.c"/>
+        <includes pattern="iar/startup_samr21.c"/>
+      </resource>
+      <resource type="iar.linker" subdir="iar">
+        <includes pattern="iar/samr21e18a_flash.icf"/>
+        <includes pattern="iar/samr21e18a_sram.icf"/>
+      </resource>
+      <resource type="iar.config" subdir="iar">
+        <includes pattern="config/devices/Atmel/**/ATSAMR21E18A.i79"/>
+        <includes pattern="config/devices/Atmel/**/ATSAMR21E18A.menu"/>
+        <includes pattern="config/flashloader/Atmel/samr21e18a/samr21e18a-flash.board"/>
+        <includes pattern="config/flashloader/Atmel/samr21e18a/samr21e18a-flash.flash"/>
+        <includes pattern="config/flashloader/Atmel/samr21e18a/samr21e18a-flash.out"/>
+        <includes optional="true" pattern="config/debugger/Atmel/Trace_SAMR21.dmac"/>
+        <includes optional="true" pattern="config/debugger/Atmel/ATSAMR21E18A.ddf"/>
+      </resource>
+    </resources>
+    <resources target="ATSAMR21G18A">
+      <resource type="atdf" subdir="atdf">
+        <includes pattern="ATSAMR21G18A.atdf"/>
+      </resource>
+      <resource type="svd" subdir="svd">
+        <includes pattern="ATSAMR21G18A.svd"/>
+      </resource>
+      <resource type="c.header" subdir="include">
+        <includes pattern="sam.h"/>
+        <includes pattern="samr21.h"/>
+        <includes pattern="samr21g18a.h"/>
+        <includes pattern="system_samr21.h"/>
+        <includes pattern="pio/*samr21g18a.h"/>
+        <includes pattern="component-version.h"/>
+        <includes fileset="moduleheaders"/>
+        <meta key="define" value="__SAMR21G18A__"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="armcc.source.startup" subdir="armcc">
+        <includes pattern="Device/SAMR21/Source/ARM/startup_SAMR21.s"/>
+        <includes pattern="Device/SAMR21/Source/system_samr21.c"/>
+      </resource>
+      <resource type="keil.flashloader" subdir="keil">
+        <includes pattern="Flash/ATSAMR21_256.FLM"/>
+        <meta key="Flash/ATSAMR21_256.FLM" value="start=0x00000000|size=0x00040000|default=1"/>
+      </resource>
+      <resource type="gcc.source.startup" subdir="gcc">
+        <includes pattern="system_samr21.c"/>
+        <includes pattern="gcc/startup_samr21.c"/>
+      </resource>
+      <resource type="gcc.linker" subdir="gcc">
+        <includes pattern="gcc/samr21g18a_flash.ld"/>
+        <includes pattern="gcc/samr21g18a_sram.ld"/>
+      </resource>
+      <resource type="iar.source.startup" subdir="iar">
+        <includes pattern="system_samr21.c"/>
+        <includes pattern="iar/startup_samr21.c"/>
+      </resource>
+      <resource type="iar.linker" subdir="iar">
+        <includes pattern="iar/samr21g18a_flash.icf"/>
+        <includes pattern="iar/samr21g18a_sram.icf"/>
+      </resource>
+      <resource type="iar.config" subdir="iar">
+        <includes pattern="config/devices/Atmel/**/ATSAMR21G18A.i79"/>
+        <includes pattern="config/devices/Atmel/**/ATSAMR21G18A.menu"/>
+        <includes pattern="config/flashloader/Atmel/samr21g18a/samr21g18a-flash.board"/>
+        <includes pattern="config/flashloader/Atmel/samr21g18a/samr21g18a-flash.flash"/>
+        <includes pattern="config/flashloader/Atmel/samr21g18a/samr21g18a-flash.out"/>
+        <includes optional="true" pattern="config/debugger/Atmel/Trace_SAMR21.dmac"/>
+        <includes optional="true" pattern="config/debugger/Atmel/ATSAMR21G18A.ddf"/>
+      </resource>
+    </resources>
+    <resources target="ATSAMR21E19A">
+      <resource type="atdf" subdir="atdf">
+        <includes pattern="ATSAMR21E19A.atdf"/>
+      </resource>
+      <resource type="svd" subdir="svd">
+        <includes pattern="ATSAMR21E19A.svd"/>
+      </resource>
+      <resource type="c.header" subdir="include">
+        <includes pattern="sam.h"/>
+        <includes pattern="samr21.h"/>
+        <includes pattern="samr21e19a.h"/>
+        <includes pattern="system_samr21.h"/>
+        <includes pattern="pio/*samr21e19a.h"/>
+        <includes pattern="component-version.h"/>
+        <includes fileset="moduleheaders"/>
+        <meta key="define" value="__SAMR21E19A__"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="armcc.source.startup" subdir="armcc">
+        <includes pattern="Device/SAMR21/Source/ARM/startup_SAMR21.s"/>
+        <includes pattern="Device/SAMR21/Source/system_samr21.c"/>
+      </resource>
+      <resource type="keil.flashloader" subdir="keil">
+        <includes pattern="Flash/ATSAMR21_256.FLM"/>
+        <meta key="Flash/ATSAMR21_256.FLM" value="start=0x00000000|size=0x00040000|default=1"/>
+      </resource>
+      <resource type="gcc.source.startup" subdir="gcc">
+        <includes pattern="system_samr21.c"/>
+        <includes pattern="gcc/startup_samr21.c"/>
+      </resource>
+      <resource type="gcc.linker" subdir="gcc">
+        <includes pattern="gcc/samr21e19a_flash.ld"/>
+        <includes pattern="gcc/samr21e19a_sram.ld"/>
+      </resource>
+      <resource type="iar.source.startup" subdir="iar">
+        <includes pattern="system_samr21.c"/>
+        <includes pattern="iar/startup_samr21.c"/>
+      </resource>
+      <resource type="iar.linker" subdir="iar">
+        <includes pattern="iar/samr21e19a_flash.icf"/>
+        <includes pattern="iar/samr21e19a_sram.icf"/>
+      </resource>
+      <resource type="iar.config" subdir="iar">
+        <includes pattern="config/devices/Atmel/**/ATSAMR21E19A.i79"/>
+        <includes pattern="config/devices/Atmel/**/ATSAMR21E19A.menu"/>
+        <includes pattern="config/flashloader/Atmel/samr21e19a/samr21e19a-flash.board"/>
+        <includes pattern="config/flashloader/Atmel/samr21e19a/samr21e19a-flash.flash"/>
+        <includes pattern="config/flashloader/Atmel/samr21e19a/samr21e19a-flash.out"/>
+        <includes optional="true" pattern="config/debugger/Atmel/Trace_SAMR21.dmac"/>
+        <includes optional="true" pattern="config/debugger/Atmel/ATSAMR21E19A.ddf"/>
+      </resource>
+    </resources>
+  </content>
+  <pdsc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+		<releases>
+			<release version="1.1.BUILDNUMBER">Removed warnings for some component headers.</release>
+			<release version="1.1.65">Fixed GNU/IAR assembler issues. Files now under Apache license.</release>
+			<release version="1.0.34">Updated documentation links.</release>
+			<release version="1.0.32">Added TC6, TC7, DAC, Cortex peripherals.</release>
+			<release version="1.0.28">Initial release.</release>
+		</releases>
+	</pdsc>
+</package>

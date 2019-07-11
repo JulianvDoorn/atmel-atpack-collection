@@ -1,0 +1,674 @@
+<?xml version='1.0' encoding='ASCII'?>
+<package schemaVersion="1.0">
+  <content>
+    <fileset id="moduleheaders">
+      <includes pattern="component/*"/>
+      <includes pattern="instance/*"/>
+    </fileset>
+    <resources target="ATSAML22J16A">
+      <resource type="atdf" subdir="atdf">
+        <includes pattern="ATSAML22J16A.atdf"/>
+      </resource>
+      <resource type="svd" subdir="svd">
+        <includes pattern="ATSAML22J16A.svd"/>
+      </resource>
+      <resource type="c.header" subdir="include">
+        <includes pattern="sam.h"/>
+        <includes pattern="saml22.h"/>
+        <includes pattern="saml22j16a.h"/>
+        <includes pattern="system_saml22.h"/>
+        <includes pattern="pio/*saml22j16a.h"/>
+        <includes pattern="component-version.h"/>
+        <includes fileset="moduleheaders"/>
+        <meta key="define" value="__SAML22J16A__"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="armcc.source.startup" subdir="armcc">
+        <includes pattern="Device/SAML22/Source/system_saml22.c"/>
+        <includes pattern="Device/SAML22/Source/ARM/startup_SAML22.s"/>
+      </resource>
+      <resource type="keil.flashloader" subdir="keil">
+        <includes pattern="flashloader/Flash/ATSAML22_64.FLM"/>
+        <includes pattern="flashloader/Flash/ATSAML22_64_EEPROM.FLM"/>
+        <includes pattern="flashloader/Flash/FlashOS.h"/>
+        <includes pattern="flashloader/Flash/ATSAML22/ATSAML22.uvgui"/>
+        <includes pattern="flashloader/Flash/ATSAML22/ATSAML22.uvopt"/>
+        <includes pattern="flashloader/Flash/ATSAML22/ATSAML22.uvproj"/>
+        <includes pattern="flashloader/Flash/ATSAML22/FlashDev.c"/>
+        <includes pattern="flashloader/Flash/ATSAML22/FlashPrg.c"/>
+        <includes pattern="flashloader/Flash/ATSAML22/Target.lin"/>
+        <meta key="flashloader/Flash/ATSAML22_64.FLM" value="start=0x00000000|size=0x10000|default=1"/>
+        <meta key="flashloader/Flash/ATSAML22_64_EEPROM.FLM" value="start=0x00400000|size=0x00800|default=1"/>
+      </resource>
+      <resource type="gcc.source.startup" subdir="gcc">
+        <includes pattern="system_saml22.c"/>
+        <includes pattern="gcc/startup_saml22.c"/>
+      </resource>
+      <resource type="gcc.linker" subdir="gcc">
+        <includes pattern="gcc/saml22j16a_flash.ld"/>
+        <includes pattern="gcc/saml22j16a_sram.ld"/>
+      </resource>
+      <resource type="iar.source.startup" subdir="iar">
+        <includes pattern="system_saml22.c"/>
+        <includes pattern="iar/startup_saml22.c"/>
+      </resource>
+      <resource type="iar.linker" subdir="iar">
+        <includes pattern="iar/saml22j16a_flash.icf"/>
+        <includes pattern="iar/saml22j16a_sram.icf"/>
+      </resource>
+      <resource type="iar.config" subdir="iar">
+        <includes pattern="config/devices/Atmel/**/ATSAML22J16A.i79"/>
+        <includes pattern="config/devices/Atmel/**/ATSAML22J16A.menu"/>
+        <includes optional="true" pattern="config/debugger/Atmel/ATSAML22J16A.ddf"/>
+      </resource>
+      <resource type="iar.flashloader" subdir="iar">
+        <includes pattern="config/flashloader/Atmel/saml22j16a/saml22j16a-*.board"/>
+        <includes pattern="config/flashloader/Atmel/saml22j16a/saml22j16a-*.flash"/>
+        <includes pattern="config/flashloader/Atmel/saml22j16a/saml22j16a-*.out"/>
+      </resource>
+    </resources>
+    <resources target="ATSAML22N16A">
+      <resource type="atdf" subdir="atdf">
+        <includes pattern="ATSAML22N16A.atdf"/>
+      </resource>
+      <resource type="svd" subdir="svd">
+        <includes pattern="ATSAML22N16A.svd"/>
+      </resource>
+      <resource type="c.header" subdir="include">
+        <includes pattern="sam.h"/>
+        <includes pattern="saml22.h"/>
+        <includes pattern="saml22n16a.h"/>
+        <includes pattern="system_saml22.h"/>
+        <includes pattern="pio/*saml22n16a.h"/>
+        <includes pattern="component-version.h"/>
+        <includes fileset="moduleheaders"/>
+        <meta key="define" value="__SAML22N16A__"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="armcc.source.startup" subdir="armcc">
+        <includes pattern="Device/SAML22/Source/system_saml22.c"/>
+        <includes pattern="Device/SAML22/Source/ARM/startup_SAML22.s"/>
+      </resource>
+      <resource type="keil.flashloader" subdir="keil">
+        <includes pattern="flashloader/Flash/ATSAML22_64.FLM"/>
+        <includes pattern="flashloader/Flash/ATSAML22_64_EEPROM.FLM"/>
+        <includes pattern="flashloader/Flash/FlashOS.h"/>
+        <includes pattern="flashloader/Flash/ATSAML22/ATSAML22.uvgui"/>
+        <includes pattern="flashloader/Flash/ATSAML22/ATSAML22.uvopt"/>
+        <includes pattern="flashloader/Flash/ATSAML22/ATSAML22.uvproj"/>
+        <includes pattern="flashloader/Flash/ATSAML22/FlashDev.c"/>
+        <includes pattern="flashloader/Flash/ATSAML22/FlashPrg.c"/>
+        <includes pattern="flashloader/Flash/ATSAML22/Target.lin"/>
+        <meta key="flashloader/Flash/ATSAML22_64.FLM" value="start=0x00000000|size=0x10000|default=1"/>
+        <meta key="flashloader/Flash/ATSAML22_64_EEPROM.FLM" value="start=0x00400000|size=0x00800|default=1"/>
+      </resource>
+      <resource type="gcc.source.startup" subdir="gcc">
+        <includes pattern="system_saml22.c"/>
+        <includes pattern="gcc/startup_saml22.c"/>
+      </resource>
+      <resource type="gcc.linker" subdir="gcc">
+        <includes pattern="gcc/saml22n16a_flash.ld"/>
+        <includes pattern="gcc/saml22n16a_sram.ld"/>
+      </resource>
+      <resource type="iar.source.startup" subdir="iar">
+        <includes pattern="system_saml22.c"/>
+        <includes pattern="iar/startup_saml22.c"/>
+      </resource>
+      <resource type="iar.linker" subdir="iar">
+        <includes pattern="iar/saml22n16a_flash.icf"/>
+        <includes pattern="iar/saml22n16a_sram.icf"/>
+      </resource>
+      <resource type="iar.config" subdir="iar">
+        <includes pattern="config/devices/Atmel/**/ATSAML22N16A.i79"/>
+        <includes pattern="config/devices/Atmel/**/ATSAML22N16A.menu"/>
+        <includes optional="true" pattern="config/debugger/Atmel/ATSAML22N16A.ddf"/>
+      </resource>
+      <resource type="iar.flashloader" subdir="iar">
+        <includes pattern="config/flashloader/Atmel/saml22n16a/saml22n16a-*.board"/>
+        <includes pattern="config/flashloader/Atmel/saml22n16a/saml22n16a-*.flash"/>
+        <includes pattern="config/flashloader/Atmel/saml22n16a/saml22n16a-*.out"/>
+      </resource>
+    </resources>
+    <resources target="ATSAML22G18A">
+      <resource type="atdf" subdir="atdf">
+        <includes pattern="ATSAML22G18A.atdf"/>
+      </resource>
+      <resource type="svd" subdir="svd">
+        <includes pattern="ATSAML22G18A.svd"/>
+      </resource>
+      <resource type="c.header" subdir="include">
+        <includes pattern="sam.h"/>
+        <includes pattern="saml22.h"/>
+        <includes pattern="saml22g18a.h"/>
+        <includes pattern="system_saml22.h"/>
+        <includes pattern="pio/*saml22g18a.h"/>
+        <includes pattern="component-version.h"/>
+        <includes fileset="moduleheaders"/>
+        <meta key="define" value="__SAML22G18A__"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="armcc.source.startup" subdir="armcc">
+        <includes pattern="Device/SAML22/Source/system_saml22.c"/>
+        <includes pattern="Device/SAML22/Source/ARM/startup_SAML22.s"/>
+      </resource>
+      <resource type="keil.flashloader" subdir="keil">
+        <includes pattern="flashloader/Flash/ATSAML22_256.FLM"/>
+        <includes pattern="flashloader/Flash/ATSAML22_256_EEPROM.FLM"/>
+        <includes pattern="flashloader/Flash/FlashOS.h"/>
+        <includes pattern="flashloader/Flash/ATSAML22/ATSAML22.uvgui"/>
+        <includes pattern="flashloader/Flash/ATSAML22/ATSAML22.uvopt"/>
+        <includes pattern="flashloader/Flash/ATSAML22/ATSAML22.uvproj"/>
+        <includes pattern="flashloader/Flash/ATSAML22/FlashDev.c"/>
+        <includes pattern="flashloader/Flash/ATSAML22/FlashPrg.c"/>
+        <includes pattern="flashloader/Flash/ATSAML22/Target.lin"/>
+        <meta key="flashloader/Flash/ATSAML22_256_EEPROM.FLM" value="start=0x00400000|size=0x02000|default=1"/>
+        <meta key="flashloader/Flash/ATSAML22_256.FLM" value="start=0x00000000|size=0x40000|default=1"/>
+      </resource>
+      <resource type="gcc.source.startup" subdir="gcc">
+        <includes pattern="system_saml22.c"/>
+        <includes pattern="gcc/startup_saml22.c"/>
+      </resource>
+      <resource type="gcc.linker" subdir="gcc">
+        <includes pattern="gcc/saml22g18a_flash.ld"/>
+        <includes pattern="gcc/saml22g18a_sram.ld"/>
+      </resource>
+      <resource type="iar.source.startup" subdir="iar">
+        <includes pattern="system_saml22.c"/>
+        <includes pattern="iar/startup_saml22.c"/>
+      </resource>
+      <resource type="iar.linker" subdir="iar">
+        <includes pattern="iar/saml22g18a_flash.icf"/>
+        <includes pattern="iar/saml22g18a_sram.icf"/>
+      </resource>
+      <resource type="iar.config" subdir="iar">
+        <includes pattern="config/devices/Atmel/**/ATSAML22G18A.i79"/>
+        <includes pattern="config/devices/Atmel/**/ATSAML22G18A.menu"/>
+        <includes optional="true" pattern="config/debugger/Atmel/ATSAML22G18A.ddf"/>
+      </resource>
+      <resource type="iar.flashloader" subdir="iar">
+        <includes pattern="config/flashloader/Atmel/saml22g18a/saml22g18a-*.board"/>
+        <includes pattern="config/flashloader/Atmel/saml22g18a/saml22g18a-*.flash"/>
+        <includes pattern="config/flashloader/Atmel/saml22g18a/saml22g18a-*.out"/>
+      </resource>
+    </resources>
+    <resources target="ATSAML22J17A">
+      <resource type="atdf" subdir="atdf">
+        <includes pattern="ATSAML22J17A.atdf"/>
+      </resource>
+      <resource type="svd" subdir="svd">
+        <includes pattern="ATSAML22J17A.svd"/>
+      </resource>
+      <resource type="c.header" subdir="include">
+        <includes pattern="sam.h"/>
+        <includes pattern="saml22.h"/>
+        <includes pattern="saml22j17a.h"/>
+        <includes pattern="system_saml22.h"/>
+        <includes pattern="pio/*saml22j17a.h"/>
+        <includes pattern="component-version.h"/>
+        <includes fileset="moduleheaders"/>
+        <meta key="define" value="__SAML22J17A__"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="armcc.source.startup" subdir="armcc">
+        <includes pattern="Device/SAML22/Source/system_saml22.c"/>
+        <includes pattern="Device/SAML22/Source/ARM/startup_SAML22.s"/>
+      </resource>
+      <resource type="keil.flashloader" subdir="keil">
+        <includes pattern="flashloader/Flash/ATSAML22_128.FLM"/>
+        <includes pattern="flashloader/Flash/ATSAML22_128_EEPROM.FLM"/>
+        <includes pattern="flashloader/Flash/FlashOS.h"/>
+        <includes pattern="flashloader/Flash/ATSAML22/ATSAML22.uvgui"/>
+        <includes pattern="flashloader/Flash/ATSAML22/ATSAML22.uvopt"/>
+        <includes pattern="flashloader/Flash/ATSAML22/ATSAML22.uvproj"/>
+        <includes pattern="flashloader/Flash/ATSAML22/FlashDev.c"/>
+        <includes pattern="flashloader/Flash/ATSAML22/FlashPrg.c"/>
+        <includes pattern="flashloader/Flash/ATSAML22/Target.lin"/>
+        <meta key="flashloader/Flash/ATSAML22_128_EEPROM.FLM" value="start=0x00400000|size=0x01000|default=1"/>
+        <meta key="flashloader/Flash/ATSAML22_128.FLM" value="start=0x00000000|size=0x20000|default=1"/>
+      </resource>
+      <resource type="gcc.source.startup" subdir="gcc">
+        <includes pattern="system_saml22.c"/>
+        <includes pattern="gcc/startup_saml22.c"/>
+      </resource>
+      <resource type="gcc.linker" subdir="gcc">
+        <includes pattern="gcc/saml22j17a_flash.ld"/>
+        <includes pattern="gcc/saml22j17a_sram.ld"/>
+      </resource>
+      <resource type="iar.source.startup" subdir="iar">
+        <includes pattern="system_saml22.c"/>
+        <includes pattern="iar/startup_saml22.c"/>
+      </resource>
+      <resource type="iar.linker" subdir="iar">
+        <includes pattern="iar/saml22j17a_flash.icf"/>
+        <includes pattern="iar/saml22j17a_sram.icf"/>
+      </resource>
+      <resource type="iar.config" subdir="iar">
+        <includes pattern="config/devices/Atmel/**/ATSAML22J17A.i79"/>
+        <includes pattern="config/devices/Atmel/**/ATSAML22J17A.menu"/>
+        <includes optional="true" pattern="config/debugger/Atmel/ATSAML22J17A.ddf"/>
+      </resource>
+      <resource type="iar.flashloader" subdir="iar">
+        <includes pattern="config/flashloader/Atmel/saml22j17a/saml22j17a-*.board"/>
+        <includes pattern="config/flashloader/Atmel/saml22j17a/saml22j17a-*.flash"/>
+        <includes pattern="config/flashloader/Atmel/saml22j17a/saml22j17a-*.out"/>
+      </resource>
+    </resources>
+    <resources target="ATSAML22G17A">
+      <resource type="atdf" subdir="atdf">
+        <includes pattern="ATSAML22G17A.atdf"/>
+      </resource>
+      <resource type="svd" subdir="svd">
+        <includes pattern="ATSAML22G17A.svd"/>
+      </resource>
+      <resource type="c.header" subdir="include">
+        <includes pattern="sam.h"/>
+        <includes pattern="saml22.h"/>
+        <includes pattern="saml22g17a.h"/>
+        <includes pattern="system_saml22.h"/>
+        <includes pattern="pio/*saml22g17a.h"/>
+        <includes pattern="component-version.h"/>
+        <includes fileset="moduleheaders"/>
+        <meta key="define" value="__SAML22G17A__"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="armcc.source.startup" subdir="armcc">
+        <includes pattern="Device/SAML22/Source/system_saml22.c"/>
+        <includes pattern="Device/SAML22/Source/ARM/startup_SAML22.s"/>
+      </resource>
+      <resource type="keil.flashloader" subdir="keil">
+        <includes pattern="flashloader/Flash/ATSAML22_128.FLM"/>
+        <includes pattern="flashloader/Flash/ATSAML22_128_EEPROM.FLM"/>
+        <includes pattern="flashloader/Flash/FlashOS.h"/>
+        <includes pattern="flashloader/Flash/ATSAML22/ATSAML22.uvgui"/>
+        <includes pattern="flashloader/Flash/ATSAML22/ATSAML22.uvopt"/>
+        <includes pattern="flashloader/Flash/ATSAML22/ATSAML22.uvproj"/>
+        <includes pattern="flashloader/Flash/ATSAML22/FlashDev.c"/>
+        <includes pattern="flashloader/Flash/ATSAML22/FlashPrg.c"/>
+        <includes pattern="flashloader/Flash/ATSAML22/Target.lin"/>
+        <meta key="flashloader/Flash/ATSAML22_128_EEPROM.FLM" value="start=0x00400000|size=0x01000|default=1"/>
+        <meta key="flashloader/Flash/ATSAML22_128.FLM" value="start=0x00000000|size=0x20000|default=1"/>
+      </resource>
+      <resource type="gcc.source.startup" subdir="gcc">
+        <includes pattern="system_saml22.c"/>
+        <includes pattern="gcc/startup_saml22.c"/>
+      </resource>
+      <resource type="gcc.linker" subdir="gcc">
+        <includes pattern="gcc/saml22g17a_flash.ld"/>
+        <includes pattern="gcc/saml22g17a_sram.ld"/>
+      </resource>
+      <resource type="iar.source.startup" subdir="iar">
+        <includes pattern="system_saml22.c"/>
+        <includes pattern="iar/startup_saml22.c"/>
+      </resource>
+      <resource type="iar.linker" subdir="iar">
+        <includes pattern="iar/saml22g17a_flash.icf"/>
+        <includes pattern="iar/saml22g17a_sram.icf"/>
+      </resource>
+      <resource type="iar.config" subdir="iar">
+        <includes pattern="config/devices/Atmel/**/ATSAML22G17A.i79"/>
+        <includes pattern="config/devices/Atmel/**/ATSAML22G17A.menu"/>
+        <includes optional="true" pattern="config/debugger/Atmel/ATSAML22G17A.ddf"/>
+      </resource>
+      <resource type="iar.flashloader" subdir="iar">
+        <includes pattern="config/flashloader/Atmel/saml22g17a/saml22g17a-*.board"/>
+        <includes pattern="config/flashloader/Atmel/saml22g17a/saml22g17a-*.flash"/>
+        <includes pattern="config/flashloader/Atmel/saml22g17a/saml22g17a-*.out"/>
+      </resource>
+    </resources>
+    <resources target="ATSAML22N18A">
+      <resource type="atdf" subdir="atdf">
+        <includes pattern="ATSAML22N18A.atdf"/>
+      </resource>
+      <resource type="svd" subdir="svd">
+        <includes pattern="ATSAML22N18A.svd"/>
+      </resource>
+      <resource type="c.header" subdir="include">
+        <includes pattern="sam.h"/>
+        <includes pattern="saml22.h"/>
+        <includes pattern="saml22n18a.h"/>
+        <includes pattern="system_saml22.h"/>
+        <includes pattern="pio/*saml22n18a.h"/>
+        <includes pattern="component-version.h"/>
+        <includes fileset="moduleheaders"/>
+        <meta key="define" value="__SAML22N18A__"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="armcc.source.startup" subdir="armcc">
+        <includes pattern="Device/SAML22/Source/system_saml22.c"/>
+        <includes pattern="Device/SAML22/Source/ARM/startup_SAML22.s"/>
+      </resource>
+      <resource type="keil.flashloader" subdir="keil">
+        <includes pattern="flashloader/Flash/ATSAML22_256.FLM"/>
+        <includes pattern="flashloader/Flash/ATSAML22_256_EEPROM.FLM"/>
+        <includes pattern="flashloader/Flash/FlashOS.h"/>
+        <includes pattern="flashloader/Flash/ATSAML22/ATSAML22.uvgui"/>
+        <includes pattern="flashloader/Flash/ATSAML22/ATSAML22.uvopt"/>
+        <includes pattern="flashloader/Flash/ATSAML22/ATSAML22.uvproj"/>
+        <includes pattern="flashloader/Flash/ATSAML22/FlashDev.c"/>
+        <includes pattern="flashloader/Flash/ATSAML22/FlashPrg.c"/>
+        <includes pattern="flashloader/Flash/ATSAML22/Target.lin"/>
+        <meta key="flashloader/Flash/ATSAML22_256_EEPROM.FLM" value="start=0x00400000|size=0x02000|default=1"/>
+        <meta key="flashloader/Flash/ATSAML22_256.FLM" value="start=0x00000000|size=0x40000|default=1"/>
+      </resource>
+      <resource type="gcc.source.startup" subdir="gcc">
+        <includes pattern="system_saml22.c"/>
+        <includes pattern="gcc/startup_saml22.c"/>
+      </resource>
+      <resource type="gcc.linker" subdir="gcc">
+        <includes pattern="gcc/saml22n18a_flash.ld"/>
+        <includes pattern="gcc/saml22n18a_sram.ld"/>
+      </resource>
+      <resource type="iar.source.startup" subdir="iar">
+        <includes pattern="system_saml22.c"/>
+        <includes pattern="iar/startup_saml22.c"/>
+      </resource>
+      <resource type="iar.linker" subdir="iar">
+        <includes pattern="iar/saml22n18a_flash.icf"/>
+        <includes pattern="iar/saml22n18a_sram.icf"/>
+      </resource>
+      <resource type="iar.config" subdir="iar">
+        <includes pattern="config/devices/Atmel/**/ATSAML22N18A.i79"/>
+        <includes pattern="config/devices/Atmel/**/ATSAML22N18A.menu"/>
+        <includes optional="true" pattern="config/debugger/Atmel/ATSAML22N18A.ddf"/>
+      </resource>
+      <resource type="iar.flashloader" subdir="iar">
+        <includes pattern="config/flashloader/Atmel/saml22n18a/saml22n18a-*.board"/>
+        <includes pattern="config/flashloader/Atmel/saml22n18a/saml22n18a-*.flash"/>
+        <includes pattern="config/flashloader/Atmel/saml22n18a/saml22n18a-*.out"/>
+      </resource>
+    </resources>
+    <resources target="ATSAML22N17A">
+      <resource type="atdf" subdir="atdf">
+        <includes pattern="ATSAML22N17A.atdf"/>
+      </resource>
+      <resource type="svd" subdir="svd">
+        <includes pattern="ATSAML22N17A.svd"/>
+      </resource>
+      <resource type="c.header" subdir="include">
+        <includes pattern="sam.h"/>
+        <includes pattern="saml22.h"/>
+        <includes pattern="saml22n17a.h"/>
+        <includes pattern="system_saml22.h"/>
+        <includes pattern="pio/*saml22n17a.h"/>
+        <includes pattern="component-version.h"/>
+        <includes fileset="moduleheaders"/>
+        <meta key="define" value="__SAML22N17A__"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="armcc.source.startup" subdir="armcc">
+        <includes pattern="Device/SAML22/Source/system_saml22.c"/>
+        <includes pattern="Device/SAML22/Source/ARM/startup_SAML22.s"/>
+      </resource>
+      <resource type="keil.flashloader" subdir="keil">
+        <includes pattern="flashloader/Flash/ATSAML22_128.FLM"/>
+        <includes pattern="flashloader/Flash/ATSAML22_128_EEPROM.FLM"/>
+        <includes pattern="flashloader/Flash/FlashOS.h"/>
+        <includes pattern="flashloader/Flash/ATSAML22/ATSAML22.uvgui"/>
+        <includes pattern="flashloader/Flash/ATSAML22/ATSAML22.uvopt"/>
+        <includes pattern="flashloader/Flash/ATSAML22/ATSAML22.uvproj"/>
+        <includes pattern="flashloader/Flash/ATSAML22/FlashDev.c"/>
+        <includes pattern="flashloader/Flash/ATSAML22/FlashPrg.c"/>
+        <includes pattern="flashloader/Flash/ATSAML22/Target.lin"/>
+        <meta key="flashloader/Flash/ATSAML22_128_EEPROM.FLM" value="start=0x00400000|size=0x01000|default=1"/>
+        <meta key="flashloader/Flash/ATSAML22_128.FLM" value="start=0x00000000|size=0x20000|default=1"/>
+      </resource>
+      <resource type="gcc.source.startup" subdir="gcc">
+        <includes pattern="system_saml22.c"/>
+        <includes pattern="gcc/startup_saml22.c"/>
+      </resource>
+      <resource type="gcc.linker" subdir="gcc">
+        <includes pattern="gcc/saml22n17a_flash.ld"/>
+        <includes pattern="gcc/saml22n17a_sram.ld"/>
+      </resource>
+      <resource type="iar.source.startup" subdir="iar">
+        <includes pattern="system_saml22.c"/>
+        <includes pattern="iar/startup_saml22.c"/>
+      </resource>
+      <resource type="iar.linker" subdir="iar">
+        <includes pattern="iar/saml22n17a_flash.icf"/>
+        <includes pattern="iar/saml22n17a_sram.icf"/>
+      </resource>
+      <resource type="iar.config" subdir="iar">
+        <includes pattern="config/devices/Atmel/**/ATSAML22N17A.i79"/>
+        <includes pattern="config/devices/Atmel/**/ATSAML22N17A.menu"/>
+        <includes optional="true" pattern="config/debugger/Atmel/ATSAML22N17A.ddf"/>
+      </resource>
+      <resource type="iar.flashloader" subdir="iar">
+        <includes pattern="config/flashloader/Atmel/saml22n17a/saml22n17a-*.board"/>
+        <includes pattern="config/flashloader/Atmel/saml22n17a/saml22n17a-*.flash"/>
+        <includes pattern="config/flashloader/Atmel/saml22n17a/saml22n17a-*.out"/>
+      </resource>
+    </resources>
+    <resources target="ATSAML22J18A">
+      <resource type="atdf" subdir="atdf">
+        <includes pattern="ATSAML22J18A.atdf"/>
+      </resource>
+      <resource type="svd" subdir="svd">
+        <includes pattern="ATSAML22J18A.svd"/>
+      </resource>
+      <resource type="c.header" subdir="include">
+        <includes pattern="sam.h"/>
+        <includes pattern="saml22.h"/>
+        <includes pattern="saml22j18a.h"/>
+        <includes pattern="system_saml22.h"/>
+        <includes pattern="pio/*saml22j18a.h"/>
+        <includes pattern="component-version.h"/>
+        <includes fileset="moduleheaders"/>
+        <meta key="define" value="__SAML22J18A__"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="armcc.source.startup" subdir="armcc">
+        <includes pattern="Device/SAML22/Source/system_saml22.c"/>
+        <includes pattern="Device/SAML22/Source/ARM/startup_SAML22.s"/>
+      </resource>
+      <resource type="keil.flashloader" subdir="keil">
+        <includes pattern="flashloader/Flash/ATSAML22_256.FLM"/>
+        <includes pattern="flashloader/Flash/ATSAML22_256_EEPROM.FLM"/>
+        <includes pattern="flashloader/Flash/FlashOS.h"/>
+        <includes pattern="flashloader/Flash/ATSAML22/ATSAML22.uvgui"/>
+        <includes pattern="flashloader/Flash/ATSAML22/ATSAML22.uvopt"/>
+        <includes pattern="flashloader/Flash/ATSAML22/ATSAML22.uvproj"/>
+        <includes pattern="flashloader/Flash/ATSAML22/FlashDev.c"/>
+        <includes pattern="flashloader/Flash/ATSAML22/FlashPrg.c"/>
+        <includes pattern="flashloader/Flash/ATSAML22/Target.lin"/>
+        <meta key="flashloader/Flash/ATSAML22_256_EEPROM.FLM" value="start=0x00400000|size=0x02000|default=1"/>
+        <meta key="flashloader/Flash/ATSAML22_256.FLM" value="start=0x00000000|size=0x40000|default=1"/>
+      </resource>
+      <resource type="gcc.source.startup" subdir="gcc">
+        <includes pattern="system_saml22.c"/>
+        <includes pattern="gcc/startup_saml22.c"/>
+      </resource>
+      <resource type="gcc.linker" subdir="gcc">
+        <includes pattern="gcc/saml22j18a_flash.ld"/>
+        <includes pattern="gcc/saml22j18a_sram.ld"/>
+      </resource>
+      <resource type="iar.source.startup" subdir="iar">
+        <includes pattern="system_saml22.c"/>
+        <includes pattern="iar/startup_saml22.c"/>
+      </resource>
+      <resource type="iar.linker" subdir="iar">
+        <includes pattern="iar/saml22j18a_flash.icf"/>
+        <includes pattern="iar/saml22j18a_sram.icf"/>
+      </resource>
+      <resource type="iar.config" subdir="iar">
+        <includes pattern="config/devices/Atmel/**/ATSAML22J18A.i79"/>
+        <includes pattern="config/devices/Atmel/**/ATSAML22J18A.menu"/>
+        <includes optional="true" pattern="config/debugger/Atmel/ATSAML22J18A.ddf"/>
+      </resource>
+      <resource type="iar.flashloader" subdir="iar">
+        <includes pattern="config/flashloader/Atmel/saml22j18a/saml22j18a-*.board"/>
+        <includes pattern="config/flashloader/Atmel/saml22j18a/saml22j18a-*.flash"/>
+        <includes pattern="config/flashloader/Atmel/saml22j18a/saml22j18a-*.out"/>
+      </resource>
+    </resources>
+    <resources target="ATSAML22G16A">
+      <resource type="atdf" subdir="atdf">
+        <includes pattern="ATSAML22G16A.atdf"/>
+      </resource>
+      <resource type="svd" subdir="svd">
+        <includes pattern="ATSAML22G16A.svd"/>
+      </resource>
+      <resource type="c.header" subdir="include">
+        <includes pattern="sam.h"/>
+        <includes pattern="saml22.h"/>
+        <includes pattern="saml22g16a.h"/>
+        <includes pattern="system_saml22.h"/>
+        <includes pattern="pio/*saml22g16a.h"/>
+        <includes pattern="component-version.h"/>
+        <includes fileset="moduleheaders"/>
+        <meta key="define" value="__SAML22G16A__"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="armcc.source.startup" subdir="armcc">
+        <includes pattern="Device/SAML22/Source/system_saml22.c"/>
+        <includes pattern="Device/SAML22/Source/ARM/startup_SAML22.s"/>
+      </resource>
+      <resource type="keil.flashloader" subdir="keil">
+        <includes pattern="flashloader/Flash/ATSAML22_64.FLM"/>
+        <includes pattern="flashloader/Flash/ATSAML22_64_EEPROM.FLM"/>
+        <includes pattern="flashloader/Flash/FlashOS.h"/>
+        <includes pattern="flashloader/Flash/ATSAML22/ATSAML22.uvgui"/>
+        <includes pattern="flashloader/Flash/ATSAML22/ATSAML22.uvopt"/>
+        <includes pattern="flashloader/Flash/ATSAML22/ATSAML22.uvproj"/>
+        <includes pattern="flashloader/Flash/ATSAML22/FlashDev.c"/>
+        <includes pattern="flashloader/Flash/ATSAML22/FlashPrg.c"/>
+        <includes pattern="flashloader/Flash/ATSAML22/Target.lin"/>
+        <meta key="flashloader/Flash/ATSAML22_64.FLM" value="start=0x00000000|size=0x10000|default=1"/>
+        <meta key="flashloader/Flash/ATSAML22_64_EEPROM.FLM" value="start=0x00400000|size=0x00800|default=1"/>
+      </resource>
+      <resource type="gcc.source.startup" subdir="gcc">
+        <includes pattern="system_saml22.c"/>
+        <includes pattern="gcc/startup_saml22.c"/>
+      </resource>
+      <resource type="gcc.linker" subdir="gcc">
+        <includes pattern="gcc/saml22g16a_flash.ld"/>
+        <includes pattern="gcc/saml22g16a_sram.ld"/>
+      </resource>
+      <resource type="iar.source.startup" subdir="iar">
+        <includes pattern="system_saml22.c"/>
+        <includes pattern="iar/startup_saml22.c"/>
+      </resource>
+      <resource type="iar.linker" subdir="iar">
+        <includes pattern="iar/saml22g16a_flash.icf"/>
+        <includes pattern="iar/saml22g16a_sram.icf"/>
+      </resource>
+      <resource type="iar.config" subdir="iar">
+        <includes pattern="config/devices/Atmel/**/ATSAML22G16A.i79"/>
+        <includes pattern="config/devices/Atmel/**/ATSAML22G16A.menu"/>
+        <includes optional="true" pattern="config/debugger/Atmel/ATSAML22G16A.ddf"/>
+      </resource>
+      <resource type="iar.flashloader" subdir="iar">
+        <includes pattern="config/flashloader/Atmel/saml22g16a/saml22g16a-*.board"/>
+        <includes pattern="config/flashloader/Atmel/saml22g16a/saml22g16a-*.flash"/>
+        <includes pattern="config/flashloader/Atmel/saml22g16a/saml22g16a-*.out"/>
+      </resource>
+    </resources>
+  </content>
+  <pdsc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+		<releases>
+			<release version="1.2.BUILDNUMBER">Updated DAC DACCTRL bit names. Represented DSU ENTRY as explicit registers. New representation of alternate registers in ATDF.</release>
+			<release version="1.1.62">Removed warnings for some component headers.</release>
+			<release version="1.1.57">Files now under Apache license. Fixed GNU/IAR assembler issues.</release>
+			<release version="1.0.14">Initial release.</release>
+		</releases>
+	</pdsc>
+</package>

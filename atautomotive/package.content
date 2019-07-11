@@ -1,0 +1,1139 @@
+<?xml version='1.0' encoding='ASCII'?>
+<package schemaVersion="1.0">
+  <content>
+    <fileset id="simulator.win32.vtoc">
+      <includes pattern="msvcr70.dll"/>
+      <includes pattern="vtoc.dll"/>
+    </fileset>
+    <resources target="ATA6613C">
+      <resource type="atdf" subdir="atdf">
+        <includes pattern="ATA6613C.atdf"/>
+      </resource>
+      <resource type="pic" subdir="edc">
+        <includes pattern="ATA6613C.PIC"/>
+      </resource>
+      <resource type="c.header" subdir="include">
+        <includes pattern="avr/ioa6613c.h"/>
+        <includes pattern="component-version.h"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="gcc.startup.obj" subdir="gcc">
+        <includes pattern="dev/ata6613c/avr5/crtata6613c.o"/>
+      </resource>
+      <resource type="gcc.spec" subdir="gcc">
+        <includes pattern="dev/ata6613c/device-specs/specs-ata6613c"/>
+        <meta key="mmcu-option" value="ata6613c"/>
+      </resource>
+      <resource type="gcc.lib" subdir="gcc">
+        <includes pattern="dev/ata6613c/avr5/libata6613c.a"/>
+      </resource>
+      <resource type="avrasm.header" subdir="avrasm/inc">
+        <includes pattern="A6613Cdef.inc"/>
+      </resource>
+      <resource type="avrasm.source.template" subdir="avrasm/templates">
+        <includes pattern="main.asm"/>
+      </resource>
+      <resource type="simulator.win32" subdir="simulator/win32">
+        <includes pattern="libatmega168p.dll"/>
+        <meta key="device" value="ATA6613C"/>
+      </resource>
+      <resource type="simulator.linux64" subdir="simulator/linux64">
+        <includes pattern="libatmega168p.so"/>
+        <meta key="device" value="ATA6613C"/>
+      </resource>
+    </resources>
+    <resources target="ATA8515">
+      <resource type="atdf" subdir="atdf">
+        <includes pattern="ATA8515.atdf"/>
+      </resource>
+      <resource type="pic" subdir="edc">
+        <includes pattern="ATA8515.PIC"/>
+      </resource>
+      <resource type="c.header" subdir="include">
+        <includes pattern="avr/ioa8515.h"/>
+        <includes pattern="component-version.h"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="avrasm.header" subdir="avrasm/inc">
+        <includes pattern="A8515def.inc"/>
+      </resource>
+      <resource type="avrasm.source.template" subdir="avrasm/templates">
+        <includes pattern="main.asm"/>
+      </resource>
+    </resources>
+    <resources target="ATA6617C">
+      <resource type="atdf" subdir="atdf">
+        <includes pattern="ATA6617C.atdf"/>
+      </resource>
+      <resource type="pic" subdir="edc">
+        <includes pattern="ATA6617C.PIC"/>
+      </resource>
+      <resource type="c.header" subdir="include">
+        <includes pattern="avr/ioa6617c.h"/>
+        <includes pattern="component-version.h"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="gcc.startup.obj" subdir="gcc">
+        <includes pattern="dev/ata6617c/avr35/crtata6617c.o"/>
+      </resource>
+      <resource type="gcc.spec" subdir="gcc">
+        <includes pattern="dev/ata6617c/device-specs/specs-ata6617c"/>
+        <meta key="mmcu-option" value="ata6617c"/>
+      </resource>
+      <resource type="gcc.lib" subdir="gcc">
+        <includes pattern="dev/ata6617c/avr35/libata6617c.a"/>
+      </resource>
+      <resource type="avrasm.header" subdir="avrasm/inc">
+        <includes pattern="A6617Cdef.inc"/>
+      </resource>
+      <resource type="avrasm.source.template" subdir="avrasm/templates">
+        <includes pattern="main.asm"/>
+      </resource>
+    </resources>
+    <resources target="ATA5831">
+      <resource type="atdf" subdir="atdf">
+        <includes pattern="ATA5831.atdf"/>
+      </resource>
+      <resource type="pic" subdir="edc">
+        <includes pattern="ATA5831.PIC"/>
+      </resource>
+      <resource type="c.header" subdir="include">
+        <includes pattern="avr/ioa5831.h"/>
+        <includes pattern="component-version.h"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="gcc.startup.obj" subdir="gcc">
+        <includes pattern="dev/ata5831/avr5/crtata5831.o"/>
+      </resource>
+      <resource type="gcc.spec" subdir="gcc">
+        <includes pattern="dev/ata5831/device-specs/specs-ata5831"/>
+        <meta key="mmcu-option" value="ata5831"/>
+      </resource>
+      <resource type="gcc.lib" subdir="gcc">
+        <includes pattern="dev/ata5831/avr5/libata5831.a"/>
+      </resource>
+      <resource type="avrasm.header" subdir="avrasm/inc">
+        <includes pattern="A5831def.inc"/>
+      </resource>
+      <resource type="avrasm.source.template" subdir="avrasm/templates">
+        <includes pattern="main.asm"/>
+      </resource>
+    </resources>
+    <resources target="ATA8510">
+      <resource type="atdf" subdir="atdf">
+        <includes pattern="ATA8510.atdf"/>
+      </resource>
+      <resource type="pic" subdir="edc">
+        <includes pattern="ATA8510.PIC"/>
+      </resource>
+      <resource type="c.header" subdir="include">
+        <includes pattern="avr/ioa8510.h"/>
+        <includes pattern="component-version.h"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="gcc.startup.obj" subdir="gcc">
+        <includes pattern="dev/ata8510/avr5/crtata8510.o"/>
+      </resource>
+      <resource type="gcc.spec" subdir="gcc">
+        <includes pattern="dev/ata8510/device-specs/specs-ata8510"/>
+        <meta key="mmcu-option" value="ata8510"/>
+      </resource>
+      <resource type="gcc.lib" subdir="gcc">
+        <includes pattern="dev/ata8510/avr5/libata8510.a"/>
+      </resource>
+      <resource type="avrasm.header" subdir="avrasm/inc">
+        <includes pattern="A8510def.inc"/>
+      </resource>
+      <resource type="avrasm.source.template" subdir="avrasm/templates">
+        <includes pattern="main.asm"/>
+      </resource>
+    </resources>
+    <resources target="ATA5833">
+      <resource type="atdf" subdir="atdf">
+        <includes pattern="ATA5833.atdf"/>
+      </resource>
+      <resource type="pic" subdir="edc">
+        <includes pattern="ATA5833.PIC"/>
+      </resource>
+      <resource type="c.header" subdir="include">
+        <includes pattern="avr/ioa5833.h"/>
+        <includes pattern="component-version.h"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="avrasm.header" subdir="avrasm/inc">
+        <includes pattern="A5833def.inc"/>
+      </resource>
+      <resource type="avrasm.source.template" subdir="avrasm/templates">
+        <includes pattern="main.asm"/>
+      </resource>
+    </resources>
+    <resources target="ATA5832">
+      <resource type="atdf" subdir="atdf">
+        <includes pattern="ATA5832.atdf"/>
+      </resource>
+      <resource type="pic" subdir="edc">
+        <includes pattern="ATA5832.PIC"/>
+      </resource>
+      <resource type="c.header" subdir="include">
+        <includes pattern="avr/ioa5832.h"/>
+        <includes pattern="component-version.h"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="avrasm.header" subdir="avrasm/inc">
+        <includes pattern="A5832def.inc"/>
+      </resource>
+      <resource type="avrasm.source.template" subdir="avrasm/templates">
+        <includes pattern="main.asm"/>
+      </resource>
+    </resources>
+    <resources target="ATA5835">
+      <resource type="atdf" subdir="atdf">
+        <includes pattern="ATA5835.atdf"/>
+      </resource>
+      <resource type="pic" subdir="edc">
+        <includes pattern="ATA5835.PIC"/>
+      </resource>
+      <resource type="c.header" subdir="include">
+        <includes pattern="avr/ioa5835.h"/>
+        <includes pattern="component-version.h"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="gcc.startup.obj" subdir="gcc">
+        <includes pattern="dev/ata5835/avr5/crtata5835.o"/>
+      </resource>
+      <resource type="gcc.spec" subdir="gcc">
+        <includes pattern="dev/ata5835/device-specs/specs-ata5835"/>
+        <meta key="mmcu-option" value="ata5835"/>
+      </resource>
+      <resource type="gcc.lib" subdir="gcc">
+        <includes pattern="dev/ata5835/avr5/libata5835.a"/>
+      </resource>
+      <resource type="avrasm.header" subdir="avrasm/inc">
+        <includes pattern="A5835def.inc"/>
+      </resource>
+      <resource type="avrasm.source.template" subdir="avrasm/templates">
+        <includes pattern="main.asm"/>
+      </resource>
+    </resources>
+    <resources target="ATtiny416auto">
+      <resource type="atdf" subdir="atdf">
+        <includes pattern="ATtiny416auto.atdf"/>
+      </resource>
+      <resource type="c.header" subdir="include">
+        <includes pattern="avr/iotn416auto.h"/>
+        <includes pattern="component-version.h"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="gcc.startup.obj" subdir="gcc">
+        <includes pattern="dev/attiny416auto/avrxmega3/short-calls/crtattiny416auto.o"/>
+      </resource>
+      <resource type="gcc.spec" subdir="gcc">
+        <includes pattern="dev/attiny416auto/device-specs/specs-attiny416auto"/>
+        <meta key="mmcu-option" value="attiny416auto"/>
+      </resource>
+      <resource type="gcc.lib" subdir="gcc">
+        <includes pattern="dev/attiny416auto/avrxmega3/short-calls/libattiny416auto.a"/>
+      </resource>
+      <resource type="avrasm.header" subdir="avrasm/inc">
+        <includes pattern="tn416autodef.inc"/>
+      </resource>
+      <resource type="avrasm.source.template" subdir="avrasm/templates">
+        <includes pattern="main.asm"/>
+      </resource>
+    </resources>
+    <resources target="ATA5783">
+      <resource type="atdf" subdir="atdf">
+        <includes pattern="ATA5783.atdf"/>
+      </resource>
+      <resource type="pic" subdir="edc">
+        <includes pattern="ATA5783.PIC"/>
+      </resource>
+      <resource type="c.header" subdir="include">
+        <includes pattern="avr/ioa5783.h"/>
+        <includes pattern="component-version.h"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="avrasm.header" subdir="avrasm/inc">
+        <includes pattern="A5783def.inc"/>
+      </resource>
+      <resource type="avrasm.source.template" subdir="avrasm/templates">
+        <includes pattern="main.asm"/>
+      </resource>
+    </resources>
+    <resources target="ATA5782">
+      <resource type="atdf" subdir="atdf">
+        <includes pattern="ATA5782.atdf"/>
+      </resource>
+      <resource type="pic" subdir="edc">
+        <includes pattern="ATA5782.PIC"/>
+      </resource>
+      <resource type="c.header" subdir="include">
+        <includes pattern="avr/ioa5782.h"/>
+        <includes pattern="component-version.h"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="gcc.startup.obj" subdir="gcc">
+        <includes pattern="dev/ata5782/avr5/crtata5782.o"/>
+      </resource>
+      <resource type="gcc.spec" subdir="gcc">
+        <includes pattern="dev/ata5782/device-specs/specs-ata5782"/>
+        <meta key="mmcu-option" value="ata5782"/>
+      </resource>
+      <resource type="gcc.lib" subdir="gcc">
+        <includes pattern="dev/ata5782/avr5/libata5782.a"/>
+      </resource>
+      <resource type="avrasm.header" subdir="avrasm/inc">
+        <includes pattern="A5782def.inc"/>
+      </resource>
+      <resource type="avrasm.source.template" subdir="avrasm/templates">
+        <includes pattern="main.asm"/>
+      </resource>
+    </resources>
+    <resources target="ATA5781">
+      <resource type="atdf" subdir="atdf">
+        <includes pattern="ATA5781.atdf"/>
+      </resource>
+      <resource type="pic" subdir="edc">
+        <includes pattern="ATA5781.PIC"/>
+      </resource>
+      <resource type="c.header" subdir="include">
+        <includes pattern="avr/ioa5781.h"/>
+        <includes pattern="component-version.h"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="avrasm.header" subdir="avrasm/inc">
+        <includes pattern="A5781def.inc"/>
+      </resource>
+      <resource type="avrasm.source.template" subdir="avrasm/templates">
+        <includes pattern="main.asm"/>
+      </resource>
+    </resources>
+    <resources target="ATA5787">
+      <resource type="atdf" subdir="atdf">
+        <includes pattern="ATA5787.atdf"/>
+      </resource>
+      <resource type="pic" subdir="edc">
+        <includes pattern="ATA5787.PIC"/>
+      </resource>
+      <resource type="c.header" subdir="include">
+        <includes pattern="avr/ioa5787.h"/>
+        <includes pattern="component-version.h"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="gcc.startup.obj" subdir="gcc">
+        <includes pattern="dev/ata5787/avr5/crtata5787.o"/>
+      </resource>
+      <resource type="gcc.spec" subdir="gcc">
+        <includes pattern="dev/ata5787/device-specs/specs-ata5787"/>
+        <meta key="mmcu-option" value="ata5787"/>
+      </resource>
+      <resource type="gcc.lib" subdir="gcc">
+        <includes pattern="dev/ata5787/avr5/libata5787.a"/>
+      </resource>
+      <resource type="avrasm.header" subdir="avrasm/inc">
+        <includes pattern="A5787def.inc"/>
+      </resource>
+      <resource type="avrasm.source.template" subdir="avrasm/templates">
+        <includes pattern="main.asm"/>
+      </resource>
+    </resources>
+    <resources target="ATA5700M322">
+      <resource type="atdf" subdir="atdf">
+        <includes pattern="ATA5700M322.atdf"/>
+      </resource>
+      <resource type="pic" subdir="edc">
+        <includes pattern="ATA5700M322.PIC"/>
+      </resource>
+      <resource type="c.header" subdir="include">
+        <includes pattern="avr/ioa5700m322.h"/>
+        <includes pattern="component-version.h"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="gcc.startup.obj" subdir="gcc">
+        <includes pattern="dev/ata5700m322/avr5/crtata5700m322.o"/>
+      </resource>
+      <resource type="gcc.spec" subdir="gcc">
+        <includes pattern="dev/ata5700m322/device-specs/specs-ata5700m322"/>
+        <meta key="mmcu-option" value="ata5700m322"/>
+      </resource>
+      <resource type="gcc.lib" subdir="gcc">
+        <includes pattern="dev/ata5700m322/avr5/libata5700m322.a"/>
+      </resource>
+      <resource type="avrasm.header" subdir="avrasm/inc">
+        <includes pattern="A5700M322def.inc"/>
+      </resource>
+      <resource type="avrasm.source.template" subdir="avrasm/templates">
+        <includes pattern="main.asm"/>
+      </resource>
+    </resources>
+    <resources target="ATA6286">
+      <resource type="atdf" subdir="atdf">
+        <includes pattern="ATA6286.atdf"/>
+      </resource>
+      <resource type="pic" subdir="edc">
+        <includes pattern="ATA6286.PIC"/>
+      </resource>
+      <resource type="c.header" subdir="include">
+        <includes pattern="avr/ioa6286.h"/>
+        <includes pattern="component-version.h"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="gcc.startup.obj" subdir="gcc">
+        <includes pattern="dev/ata6286/avr4/crtata6286.o"/>
+      </resource>
+      <resource type="gcc.spec" subdir="gcc">
+        <includes pattern="dev/ata6286/device-specs/specs-ata6286"/>
+        <meta key="mmcu-option" value="ata6286"/>
+      </resource>
+      <resource type="gcc.lib" subdir="gcc">
+        <includes pattern="dev/ata6286/avr4/libata6286.a"/>
+      </resource>
+      <resource type="avrasm.header" subdir="avrasm/inc">
+        <includes pattern="A6286def.inc"/>
+      </resource>
+      <resource type="avrasm.source.template" subdir="avrasm/templates">
+        <includes pattern="main.asm"/>
+      </resource>
+    </resources>
+    <resources target="ATA6612C">
+      <resource type="atdf" subdir="atdf">
+        <includes pattern="ATA6612C.atdf"/>
+      </resource>
+      <resource type="pic" subdir="edc">
+        <includes pattern="ATA6612C.PIC"/>
+      </resource>
+      <resource type="c.header" subdir="include">
+        <includes pattern="avr/ioa6612c.h"/>
+        <includes pattern="component-version.h"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="gcc.startup.obj" subdir="gcc">
+        <includes pattern="dev/ata6612c/avr4/crtata6612c.o"/>
+      </resource>
+      <resource type="gcc.spec" subdir="gcc">
+        <includes pattern="dev/ata6612c/device-specs/specs-ata6612c"/>
+        <meta key="mmcu-option" value="ata6612c"/>
+      </resource>
+      <resource type="gcc.lib" subdir="gcc">
+        <includes pattern="dev/ata6612c/avr4/libata6612c.a"/>
+      </resource>
+      <resource type="avrasm.header" subdir="avrasm/inc">
+        <includes pattern="A6612Cdef.inc"/>
+      </resource>
+      <resource type="avrasm.source.template" subdir="avrasm/templates">
+        <includes pattern="main.asm"/>
+      </resource>
+      <resource type="simulator.win32" subdir="simulator/win32">
+        <includes pattern="libatmega168p.dll"/>
+        <meta key="device" value="ATA6612C"/>
+      </resource>
+      <resource type="simulator.linux64" subdir="simulator/linux64">
+        <includes pattern="libatmega168p.so"/>
+        <meta key="device" value="ATA6612C"/>
+      </resource>
+    </resources>
+    <resources target="ATA5272">
+      <resource type="atdf" subdir="atdf">
+        <includes pattern="ATA5272.atdf"/>
+      </resource>
+      <resource type="pic" subdir="edc">
+        <includes pattern="ATA5272.PIC"/>
+      </resource>
+      <resource type="c.header" subdir="include">
+        <includes pattern="avr/ioa5272.h"/>
+        <includes pattern="component-version.h"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="gcc.startup.obj" subdir="gcc">
+        <includes pattern="dev/ata5272/avr25/crtata5272.o"/>
+      </resource>
+      <resource type="gcc.spec" subdir="gcc">
+        <includes pattern="dev/ata5272/device-specs/specs-ata5272"/>
+        <meta key="mmcu-option" value="ata5272"/>
+      </resource>
+      <resource type="gcc.lib" subdir="gcc">
+        <includes pattern="dev/ata5272/avr25/libata5272.a"/>
+      </resource>
+      <resource type="avrasm.header" subdir="avrasm/inc">
+        <includes pattern="A5272def.inc"/>
+      </resource>
+      <resource type="avrasm.source.template" subdir="avrasm/templates">
+        <includes pattern="main.asm"/>
+      </resource>
+    </resources>
+    <resources target="ATA8215">
+      <resource type="atdf" subdir="atdf">
+        <includes pattern="ATA8215.atdf"/>
+      </resource>
+      <resource type="pic" subdir="edc">
+        <includes pattern="ATA8215.PIC"/>
+      </resource>
+      <resource type="c.header" subdir="include">
+        <includes pattern="avr/ioa8215.h"/>
+        <includes pattern="component-version.h"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="avrasm.header" subdir="avrasm/inc">
+        <includes pattern="A8215def.inc"/>
+      </resource>
+      <resource type="avrasm.source.template" subdir="avrasm/templates">
+        <includes pattern="main.asm"/>
+      </resource>
+    </resources>
+    <resources target="ATA6614Q">
+      <resource type="atdf" subdir="atdf">
+        <includes pattern="ATA6614Q.atdf"/>
+      </resource>
+      <resource type="pic" subdir="edc">
+        <includes pattern="ATA6614Q.PIC"/>
+      </resource>
+      <resource type="c.header" subdir="include">
+        <includes pattern="avr/ioa6614q.h"/>
+        <includes pattern="component-version.h"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="gcc.startup.obj" subdir="gcc">
+        <includes pattern="dev/ata6614q/avr5/crtata6614q.o"/>
+      </resource>
+      <resource type="gcc.spec" subdir="gcc">
+        <includes pattern="dev/ata6614q/device-specs/specs-ata6614q"/>
+        <meta key="mmcu-option" value="ata6614q"/>
+      </resource>
+      <resource type="gcc.lib" subdir="gcc">
+        <includes pattern="dev/ata6614q/avr5/libata6614q.a"/>
+      </resource>
+      <resource type="avrasm.header" subdir="avrasm/inc">
+        <includes pattern="A6614Qdef.inc"/>
+      </resource>
+      <resource type="avrasm.source.template" subdir="avrasm/templates">
+        <includes pattern="main.asm"/>
+      </resource>
+      <resource type="simulator.win32" subdir="simulator/win32">
+        <includes pattern="libatmega328p.dll"/>
+        <includes fileset="simulator.win32.vtoc"/>
+        <meta key="device" value="ATA6614Q"/>
+      </resource>
+    </resources>
+    <resources target="ATA8210">
+      <resource type="atdf" subdir="atdf">
+        <includes pattern="ATA8210.atdf"/>
+      </resource>
+      <resource type="pic" subdir="edc">
+        <includes pattern="ATA8210.PIC"/>
+      </resource>
+      <resource type="c.header" subdir="include">
+        <includes pattern="avr/ioa8210.h"/>
+        <includes pattern="component-version.h"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="gcc.startup.obj" subdir="gcc">
+        <includes pattern="dev/ata8210/avr5/crtata8210.o"/>
+      </resource>
+      <resource type="gcc.spec" subdir="gcc">
+        <includes pattern="dev/ata8210/device-specs/specs-ata8210"/>
+        <meta key="mmcu-option" value="ata8210"/>
+      </resource>
+      <resource type="gcc.lib" subdir="gcc">
+        <includes pattern="dev/ata8210/avr5/libata8210.a"/>
+      </resource>
+      <resource type="avrasm.header" subdir="avrasm/inc">
+        <includes pattern="A8210def.inc"/>
+      </resource>
+      <resource type="avrasm.source.template" subdir="avrasm/templates">
+        <includes pattern="main.asm"/>
+      </resource>
+    </resources>
+    <resources target="ATA5702M322">
+      <resource type="atdf" subdir="atdf">
+        <includes pattern="ATA5702M322.atdf"/>
+      </resource>
+      <resource type="pic" subdir="edc">
+        <includes pattern="ATA5702M322.PIC"/>
+      </resource>
+      <resource type="c.header" subdir="include">
+        <includes pattern="avr/ioa5702m322.h"/>
+        <includes pattern="component-version.h"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="gcc.startup.obj" subdir="gcc">
+        <includes pattern="dev/ata5702m322/avr5/crtata5702m322.o"/>
+      </resource>
+      <resource type="gcc.spec" subdir="gcc">
+        <includes pattern="dev/ata5702m322/device-specs/specs-ata5702m322"/>
+        <meta key="mmcu-option" value="ata5702m322"/>
+      </resource>
+      <resource type="gcc.lib" subdir="gcc">
+        <includes pattern="dev/ata5702m322/avr5/libata5702m322.a"/>
+      </resource>
+      <resource type="avrasm.header" subdir="avrasm/inc">
+        <includes pattern="A5702M322def.inc"/>
+      </resource>
+      <resource type="avrasm.source.template" subdir="avrasm/templates">
+        <includes pattern="main.asm"/>
+      </resource>
+    </resources>
+    <resources target="ATA5505">
+      <resource type="atdf" subdir="atdf">
+        <includes pattern="ATA5505.atdf"/>
+      </resource>
+      <resource type="pic" subdir="edc">
+        <includes pattern="ATA5505.PIC"/>
+      </resource>
+      <resource type="c.header" subdir="include">
+        <includes pattern="avr/ioa5505.h"/>
+        <includes pattern="component-version.h"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="gcc.startup.obj" subdir="gcc">
+        <includes pattern="dev/ata5505/avr35/crtata5505.o"/>
+      </resource>
+      <resource type="gcc.spec" subdir="gcc">
+        <includes pattern="dev/ata5505/device-specs/specs-ata5505"/>
+        <meta key="mmcu-option" value="ata5505"/>
+      </resource>
+      <resource type="gcc.lib" subdir="gcc">
+        <includes pattern="dev/ata5505/avr35/libata5505.a"/>
+      </resource>
+      <resource type="avrasm.header" subdir="avrasm/inc">
+        <includes pattern="A5505def.inc"/>
+      </resource>
+      <resource type="avrasm.source.template" subdir="avrasm/templates">
+        <includes pattern="main.asm"/>
+      </resource>
+    </resources>
+    <resources target="ATA664251">
+      <resource type="atdf" subdir="atdf">
+        <includes pattern="ATA664251.atdf"/>
+      </resource>
+      <resource type="pic" subdir="edc">
+        <includes pattern="ATA664251.PIC"/>
+      </resource>
+      <resource type="c.header" subdir="include">
+        <includes pattern="avr/ioa664251.h"/>
+        <includes pattern="component-version.h"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="gcc.startup.obj" subdir="gcc">
+        <includes pattern="dev/ata664251/avr35/crtata664251.o"/>
+      </resource>
+      <resource type="gcc.spec" subdir="gcc">
+        <includes pattern="dev/ata664251/device-specs/specs-ata664251"/>
+        <meta key="mmcu-option" value="ata664251"/>
+      </resource>
+      <resource type="gcc.lib" subdir="gcc">
+        <includes pattern="dev/ata664251/avr35/libata664251.a"/>
+      </resource>
+      <resource type="avrasm.header" subdir="avrasm/inc">
+        <includes pattern="A664251def.inc"/>
+      </resource>
+      <resource type="avrasm.source.template" subdir="avrasm/templates">
+        <includes pattern="main.asm"/>
+      </resource>
+    </resources>
+    <resources target="ATA6616C">
+      <resource type="atdf" subdir="atdf">
+        <includes pattern="ATA6616C.atdf"/>
+      </resource>
+      <resource type="pic" subdir="edc">
+        <includes pattern="ATA6616C.PIC"/>
+      </resource>
+      <resource type="c.header" subdir="include">
+        <includes pattern="avr/ioa6616c.h"/>
+        <includes pattern="component-version.h"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="gcc.startup.obj" subdir="gcc">
+        <includes pattern="dev/ata6616c/avr25/crtata6616c.o"/>
+      </resource>
+      <resource type="gcc.spec" subdir="gcc">
+        <includes pattern="dev/ata6616c/device-specs/specs-ata6616c"/>
+        <meta key="mmcu-option" value="ata6616c"/>
+      </resource>
+      <resource type="gcc.lib" subdir="gcc">
+        <includes pattern="dev/ata6616c/avr25/libata6616c.a"/>
+      </resource>
+      <resource type="avrasm.header" subdir="avrasm/inc">
+        <includes pattern="A6616Cdef.inc"/>
+      </resource>
+      <resource type="avrasm.source.template" subdir="avrasm/templates">
+        <includes pattern="main.asm"/>
+      </resource>
+    </resources>
+    <resources target="ATA5790N">
+      <resource type="atdf" subdir="atdf">
+        <includes pattern="ATA5790N.atdf"/>
+      </resource>
+      <resource type="pic" subdir="edc">
+        <includes pattern="ATA5790N.PIC"/>
+      </resource>
+      <resource type="c.header" subdir="include">
+        <includes pattern="avr/ioa5790n.h"/>
+        <includes pattern="component-version.h"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="gcc.startup.obj" subdir="gcc">
+        <includes pattern="dev/ata5790n/avr5/crtata5790n.o"/>
+      </resource>
+      <resource type="gcc.spec" subdir="gcc">
+        <includes pattern="dev/ata5790n/device-specs/specs-ata5790n"/>
+        <meta key="mmcu-option" value="ata5790n"/>
+      </resource>
+      <resource type="gcc.lib" subdir="gcc">
+        <includes pattern="dev/ata5790n/avr5/libata5790n.a"/>
+      </resource>
+      <resource type="avrasm.header" subdir="avrasm/inc">
+        <includes pattern="A5790Ndef.inc"/>
+      </resource>
+      <resource type="avrasm.source.template" subdir="avrasm/templates">
+        <includes pattern="main.asm"/>
+      </resource>
+    </resources>
+    <resources target="ATA5790">
+      <resource type="atdf" subdir="atdf">
+        <includes pattern="ATA5790.atdf"/>
+      </resource>
+      <resource type="pic" subdir="edc">
+        <includes pattern="ATA5790.PIC"/>
+      </resource>
+      <resource type="c.header" subdir="include">
+        <includes pattern="avr/ioa5790.h"/>
+        <includes pattern="component-version.h"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="gcc.startup.obj" subdir="gcc">
+        <includes pattern="dev/ata5790/avr5/crtata5790.o"/>
+      </resource>
+      <resource type="gcc.spec" subdir="gcc">
+        <includes pattern="dev/ata5790/device-specs/specs-ata5790"/>
+        <meta key="mmcu-option" value="ata5790"/>
+      </resource>
+      <resource type="gcc.lib" subdir="gcc">
+        <includes pattern="dev/ata5790/avr5/libata5790.a"/>
+      </resource>
+      <resource type="avrasm.header" subdir="avrasm/inc">
+        <includes pattern="A5790def.inc"/>
+      </resource>
+      <resource type="avrasm.source.template" subdir="avrasm/templates">
+        <includes pattern="main.asm"/>
+      </resource>
+    </resources>
+    <resources target="ATA5791">
+      <resource type="atdf" subdir="atdf">
+        <includes pattern="ATA5791.atdf"/>
+      </resource>
+      <resource type="pic" subdir="edc">
+        <includes pattern="ATA5791.PIC"/>
+      </resource>
+      <resource type="c.header" subdir="include">
+        <includes pattern="avr/ioa5791.h"/>
+        <includes pattern="component-version.h"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="gcc.startup.obj" subdir="gcc">
+        <includes pattern="dev/ata5791/avr5/crtata5791.o"/>
+      </resource>
+      <resource type="gcc.spec" subdir="gcc">
+        <includes pattern="dev/ata5791/device-specs/specs-ata5791"/>
+        <meta key="mmcu-option" value="ata5791"/>
+      </resource>
+      <resource type="gcc.lib" subdir="gcc">
+        <includes pattern="dev/ata5791/avr5/libata5791.a"/>
+      </resource>
+      <resource type="avrasm.header" subdir="avrasm/inc">
+        <includes pattern="A5791def.inc"/>
+      </resource>
+      <resource type="avrasm.source.template" subdir="avrasm/templates">
+        <includes pattern="main.asm"/>
+      </resource>
+    </resources>
+    <resources target="ATA5795">
+      <resource type="atdf" subdir="atdf">
+        <includes pattern="ATA5795.atdf"/>
+      </resource>
+      <resource type="pic" subdir="edc">
+        <includes pattern="ATA5795.PIC"/>
+      </resource>
+      <resource type="c.header" subdir="include">
+        <includes pattern="avr/ioa5795.h"/>
+        <includes pattern="component-version.h"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="gcc.startup.obj" subdir="gcc">
+        <includes pattern="dev/ata5795/avr5/crtata5795.o"/>
+      </resource>
+      <resource type="gcc.spec" subdir="gcc">
+        <includes pattern="dev/ata5795/device-specs/specs-ata5795"/>
+        <meta key="mmcu-option" value="ata5795"/>
+      </resource>
+      <resource type="gcc.lib" subdir="gcc">
+        <includes pattern="dev/ata5795/avr5/libata5795.a"/>
+      </resource>
+      <resource type="avrasm.header" subdir="avrasm/inc">
+        <includes pattern="A5795def.inc"/>
+      </resource>
+      <resource type="avrasm.source.template" subdir="avrasm/templates">
+        <includes pattern="main.asm"/>
+      </resource>
+    </resources>
+    <resources target="ATA6285">
+      <resource type="atdf" subdir="atdf">
+        <includes pattern="ATA6285.atdf"/>
+      </resource>
+      <resource type="pic" subdir="edc">
+        <includes pattern="ATA6285.PIC"/>
+      </resource>
+      <resource type="c.header" subdir="include">
+        <includes pattern="avr/ioa6285.h"/>
+        <includes pattern="component-version.h"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="gcc.startup.obj" subdir="gcc">
+        <includes pattern="dev/ata6285/avr4/crtata6285.o"/>
+      </resource>
+      <resource type="gcc.spec" subdir="gcc">
+        <includes pattern="dev/ata6285/device-specs/specs-ata6285"/>
+        <meta key="mmcu-option" value="ata6285"/>
+      </resource>
+      <resource type="gcc.lib" subdir="gcc">
+        <includes pattern="dev/ata6285/avr4/libata6285.a"/>
+      </resource>
+      <resource type="avrasm.header" subdir="avrasm/inc">
+        <includes pattern="A6285def.inc"/>
+      </resource>
+      <resource type="avrasm.source.template" subdir="avrasm/templates">
+        <includes pattern="main.asm"/>
+      </resource>
+    </resources>
+  </content>
+  <pdsc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" compliant="false">
+        <releases>
+            <release version="1.2.BUILDNUMBER">Added ATtiny416auto.</release>
+            <release version="1.2.102" date="2017-03-14">Added ATA5787, ATA5835.</release>
+            <release version="1.2.100">Added ATA5700M322.</release>
+            <release version="1.1.96">Updated documentation links.</release>
+            <release version="1.1.84">Modified ISP programming algorithm for and EEPROM address size for ATA5702M322.</release>
+			<release version="1.1.79">Change avrasm include files to use the prog addres space when resolving the size of programmable flash. Fixes issues with the ROM in ATA8210.</release>
+			<release version="1.1.78">Split EEPROM address space in EEPROM and CALDATA segment.</release>
+			<release version="1.0.77">Initial release.</release>
+        </releases>
+    </pdsc>
+</package>

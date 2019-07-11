@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<flash_board>
+  <pass>
+    <loader>$TOOLKIT_DIR$\config\flashloader\Atmel\sam3x4e\sam3x4e-flash.flash</loader>
+    <range>CODE 0x00080000 0x000C0000</range>
+    <rel_offset>0</rel_offset>
+    <args>--flash
+--boot
+</args>
+  </pass>
+</flash_board>

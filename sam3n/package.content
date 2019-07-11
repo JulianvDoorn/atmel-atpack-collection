@@ -1,0 +1,955 @@
+<?xml version='1.0' encoding='ASCII'?>
+<package schemaVersion="1.0">
+  <content>
+    <fileset id="moduleheaders">
+      <includes pattern="component/*"/>
+      <includes pattern="instance/*"/>
+    </fileset>
+    <resources target="ATSAM3N1A">
+      <resource type="atdf" subdir="atdf">
+        <includes pattern="ATSAM3N1A.atdf"/>
+      </resource>
+      <resource type="svd" subdir="svd">
+        <includes pattern="ATSAM3N1A.svd"/>
+      </resource>
+      <resource type="c.header" subdir="include">
+        <includes pattern="sam.h"/>
+        <includes pattern="sam3n.h"/>
+        <includes pattern="sam3n1a.h"/>
+        <includes pattern="system_sam3n.h"/>
+        <includes pattern="pio/*sam3n1a.h"/>
+        <includes pattern="component-version.h"/>
+        <includes fileset="moduleheaders"/>
+        <meta key="define" value="__SAM3N1A__"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="armcc.source.startup" subdir="armcc">
+        <includes pattern="Device/SAM3N/Source/ARM/startup_SAM3N.s"/>
+        <includes pattern="Device/SAM3N/Source/system_SAM3N.c"/>
+      </resource>
+      <resource type="keil.flashloader" subdir="keil">
+        <includes pattern="Flash/ATSAM3N_64.FLM"/>
+        <includes pattern="Flash/ATSAM3N_GPNVM.FLM"/>
+        <meta key="Flash/ATSAM3N_64.FLM" value="start=0x00400000|size=0x00010000|default=1"/>
+        <meta key="Flash/ATSAM3N_GPNVM.FLM" value="start=0x1FFFFFF0|size=0x00000010|default=0"/>
+      </resource>
+      <resource type="gcc.source.startup" subdir="gcc">
+        <includes pattern="system_sam3n.c"/>
+        <includes pattern="gcc/startup_sam3n.c"/>
+      </resource>
+      <resource type="gcc.linker" subdir="gcc">
+        <includes pattern="gcc/sam3n1a_flash.ld"/>
+        <includes pattern="gcc/sam3n1a_sram.ld"/>
+        <includes optional="true" pattern="gcc/sam3n_flash.ld"/>
+        <includes optional="true" pattern="gcc/sam3n_sram.ld"/>
+      </resource>
+      <resource type="iar.source.startup" subdir="iar">
+        <includes pattern="system_sam3n.c"/>
+        <includes pattern="iar/startup_sam3n.c"/>
+      </resource>
+      <resource type="iar.linker" subdir="iar">
+        <includes pattern="iar/sam3n1a_flash.icf"/>
+        <includes pattern="iar/sam3n1a_sram.icf"/>
+      </resource>
+      <resource type="iar.config" subdir="iar">
+        <includes pattern="config/devices/Atmel/**/ATSAM3N1A.i79"/>
+        <includes pattern="config/devices/Atmel/**/ATSAM3N1A.menu"/>
+        <includes pattern="config/flashloader/Atmel/sam3n1a/sam3n1a-flash.board"/>
+        <includes pattern="config/flashloader/Atmel/sam3n1a/sam3n1a-flash.flash"/>
+        <includes pattern="config/flashloader/Atmel/sam3n1a/sam3n1a-flash.out"/>
+        <includes optional="true" pattern="config/debugger/Atmel/Trace_SAM3N.dmac"/>
+        <includes optional="true" pattern="config/debugger/Atmel/ATSAM3N1A.ddf"/>
+      </resource>
+    </resources>
+    <resources target="ATSAM3N00B">
+      <resource type="atdf" subdir="atdf">
+        <includes pattern="ATSAM3N00B.atdf"/>
+      </resource>
+      <resource type="svd" subdir="svd">
+        <includes pattern="ATSAM3N00B.svd"/>
+      </resource>
+      <resource type="c.header" subdir="include">
+        <includes pattern="sam.h"/>
+        <includes pattern="sam3n.h"/>
+        <includes pattern="sam3n00b.h"/>
+        <includes pattern="system_sam3n.h"/>
+        <includes pattern="pio/*sam3n00b.h"/>
+        <includes pattern="component-version.h"/>
+        <includes fileset="moduleheaders"/>
+        <meta key="define" value="__SAM3N00B__"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="armcc.source.startup" subdir="armcc">
+        <includes pattern="Device/SAM3N/Source/ARM/startup_SAM3N.s"/>
+        <includes pattern="Device/SAM3N/Source/system_SAM3N.c"/>
+      </resource>
+      <resource type="keil.flashloader" subdir="keil">
+        <includes pattern="Flash/ATSAM3N_16.FLM"/>
+        <includes pattern="Flash/ATSAM3N_GPNVM.FLM"/>
+        <meta key="Flash/ATSAM3N_16.FLM" value="start=0x00400000|size=0x00004000|default=1"/>
+        <meta key="Flash/ATSAM3N_GPNVM.FLM" value="start=0x1FFFFFF0|size=0x00000010|default=0"/>
+      </resource>
+      <resource type="gcc.source.startup" subdir="gcc">
+        <includes pattern="system_sam3n.c"/>
+        <includes pattern="gcc/startup_sam3n.c"/>
+      </resource>
+      <resource type="gcc.linker" subdir="gcc">
+        <includes pattern="gcc/sam3n00b_flash.ld"/>
+        <includes pattern="gcc/sam3n00b_sram.ld"/>
+        <includes optional="true" pattern="gcc/sam3n_flash.ld"/>
+        <includes optional="true" pattern="gcc/sam3n_sram.ld"/>
+      </resource>
+      <resource type="iar.source.startup" subdir="iar">
+        <includes pattern="system_sam3n.c"/>
+        <includes pattern="iar/startup_sam3n.c"/>
+      </resource>
+      <resource type="iar.linker" subdir="iar">
+        <includes pattern="iar/sam3n00b_flash.icf"/>
+        <includes pattern="iar/sam3n00b_sram.icf"/>
+      </resource>
+      <resource type="iar.config" subdir="iar">
+        <includes pattern="config/devices/Atmel/**/ATSAM3N00B.i79"/>
+        <includes pattern="config/devices/Atmel/**/ATSAM3N00B.menu"/>
+        <includes pattern="config/flashloader/Atmel/sam3n00b/sam3n00b-flash.board"/>
+        <includes pattern="config/flashloader/Atmel/sam3n00b/sam3n00b-flash.flash"/>
+        <includes pattern="config/flashloader/Atmel/sam3n00b/sam3n00b-flash.out"/>
+        <includes optional="true" pattern="config/debugger/Atmel/Trace_SAM3N.dmac"/>
+        <includes optional="true" pattern="config/debugger/Atmel/ATSAM3N00B.ddf"/>
+      </resource>
+    </resources>
+    <resources target="ATSAM3N00A">
+      <resource type="atdf" subdir="atdf">
+        <includes pattern="ATSAM3N00A.atdf"/>
+      </resource>
+      <resource type="svd" subdir="svd">
+        <includes pattern="ATSAM3N00A.svd"/>
+      </resource>
+      <resource type="c.header" subdir="include">
+        <includes pattern="sam.h"/>
+        <includes pattern="sam3n.h"/>
+        <includes pattern="sam3n00a.h"/>
+        <includes pattern="system_sam3n.h"/>
+        <includes pattern="pio/*sam3n00a.h"/>
+        <includes pattern="component-version.h"/>
+        <includes fileset="moduleheaders"/>
+        <meta key="define" value="__SAM3N00A__"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="armcc.source.startup" subdir="armcc">
+        <includes pattern="Device/SAM3N/Source/ARM/startup_SAM3N.s"/>
+        <includes pattern="Device/SAM3N/Source/system_SAM3N.c"/>
+      </resource>
+      <resource type="keil.flashloader" subdir="keil">
+        <includes pattern="Flash/ATSAM3N_16.FLM"/>
+        <includes pattern="Flash/ATSAM3N_GPNVM.FLM"/>
+        <meta key="Flash/ATSAM3N_16.FLM" value="start=0x00400000|size=0x00004000|default=1"/>
+        <meta key="Flash/ATSAM3N_GPNVM.FLM" value="start=0x1FFFFFF0|size=0x00000010|default=0"/>
+      </resource>
+      <resource type="gcc.source.startup" subdir="gcc">
+        <includes pattern="system_sam3n.c"/>
+        <includes pattern="gcc/startup_sam3n.c"/>
+      </resource>
+      <resource type="gcc.linker" subdir="gcc">
+        <includes pattern="gcc/sam3n00a_flash.ld"/>
+        <includes pattern="gcc/sam3n00a_sram.ld"/>
+        <includes optional="true" pattern="gcc/sam3n_flash.ld"/>
+        <includes optional="true" pattern="gcc/sam3n_sram.ld"/>
+      </resource>
+      <resource type="iar.source.startup" subdir="iar">
+        <includes pattern="system_sam3n.c"/>
+        <includes pattern="iar/startup_sam3n.c"/>
+      </resource>
+      <resource type="iar.linker" subdir="iar">
+        <includes pattern="iar/sam3n00a_flash.icf"/>
+        <includes pattern="iar/sam3n00a_sram.icf"/>
+      </resource>
+      <resource type="iar.config" subdir="iar">
+        <includes pattern="config/devices/Atmel/**/ATSAM3N00A.i79"/>
+        <includes pattern="config/devices/Atmel/**/ATSAM3N00A.menu"/>
+        <includes pattern="config/flashloader/Atmel/sam3n00a/sam3n00a-flash.board"/>
+        <includes pattern="config/flashloader/Atmel/sam3n00a/sam3n00a-flash.flash"/>
+        <includes pattern="config/flashloader/Atmel/sam3n00a/sam3n00a-flash.out"/>
+        <includes optional="true" pattern="config/debugger/Atmel/Trace_SAM3N.dmac"/>
+        <includes optional="true" pattern="config/debugger/Atmel/ATSAM3N00A.ddf"/>
+      </resource>
+    </resources>
+    <resources target="ATSAM3N2C">
+      <resource type="atdf" subdir="atdf">
+        <includes pattern="ATSAM3N2C.atdf"/>
+      </resource>
+      <resource type="svd" subdir="svd">
+        <includes pattern="ATSAM3N2C.svd"/>
+      </resource>
+      <resource type="c.header" subdir="include">
+        <includes pattern="sam.h"/>
+        <includes pattern="sam3n.h"/>
+        <includes pattern="sam3n2c.h"/>
+        <includes pattern="system_sam3n.h"/>
+        <includes pattern="pio/*sam3n2c.h"/>
+        <includes pattern="component-version.h"/>
+        <includes fileset="moduleheaders"/>
+        <meta key="define" value="__SAM3N2C__"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="armcc.source.startup" subdir="armcc">
+        <includes pattern="Device/SAM3N/Source/ARM/startup_SAM3N.s"/>
+        <includes pattern="Device/SAM3N/Source/system_SAM3N.c"/>
+      </resource>
+      <resource type="keil.flashloader" subdir="keil">
+        <includes pattern="Flash/ATSAM3N_128.FLM"/>
+        <includes pattern="Flash/ATSAM3N_GPNVM.FLM"/>
+        <meta key="Flash/ATSAM3N_128.FLM" value="start=0x00400000|size=0x00020000|default=1"/>
+        <meta key="Flash/ATSAM3N_GPNVM.FLM" value="start=0x1FFFFFF0|size=0x00000010|default=0"/>
+      </resource>
+      <resource type="gcc.source.startup" subdir="gcc">
+        <includes pattern="system_sam3n.c"/>
+        <includes pattern="gcc/startup_sam3n.c"/>
+      </resource>
+      <resource type="gcc.linker" subdir="gcc">
+        <includes pattern="gcc/sam3n2c_flash.ld"/>
+        <includes pattern="gcc/sam3n2c_sram.ld"/>
+        <includes optional="true" pattern="gcc/sam3n_flash.ld"/>
+        <includes optional="true" pattern="gcc/sam3n_sram.ld"/>
+      </resource>
+      <resource type="iar.source.startup" subdir="iar">
+        <includes pattern="system_sam3n.c"/>
+        <includes pattern="iar/startup_sam3n.c"/>
+      </resource>
+      <resource type="iar.linker" subdir="iar">
+        <includes pattern="iar/sam3n2c_flash.icf"/>
+        <includes pattern="iar/sam3n2c_sram.icf"/>
+      </resource>
+      <resource type="iar.config" subdir="iar">
+        <includes pattern="config/devices/Atmel/**/ATSAM3N2C.i79"/>
+        <includes pattern="config/devices/Atmel/**/ATSAM3N2C.menu"/>
+        <includes pattern="config/flashloader/Atmel/sam3n2c/sam3n2c-flash.board"/>
+        <includes pattern="config/flashloader/Atmel/sam3n2c/sam3n2c-flash.flash"/>
+        <includes pattern="config/flashloader/Atmel/sam3n2c/sam3n2c-flash.out"/>
+        <includes optional="true" pattern="config/debugger/Atmel/Trace_SAM3N.dmac"/>
+        <includes optional="true" pattern="config/debugger/Atmel/ATSAM3N2C.ddf"/>
+      </resource>
+    </resources>
+    <resources target="ATSAM3N4B">
+      <resource type="atdf" subdir="atdf">
+        <includes pattern="ATSAM3N4B.atdf"/>
+      </resource>
+      <resource type="svd" subdir="svd">
+        <includes pattern="ATSAM3N4B.svd"/>
+      </resource>
+      <resource type="c.header" subdir="include">
+        <includes pattern="sam.h"/>
+        <includes pattern="sam3n.h"/>
+        <includes pattern="sam3n4b.h"/>
+        <includes pattern="system_sam3n.h"/>
+        <includes pattern="pio/*sam3n4b.h"/>
+        <includes pattern="component-version.h"/>
+        <includes fileset="moduleheaders"/>
+        <meta key="define" value="__SAM3N4B__"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="armcc.source.startup" subdir="armcc">
+        <includes pattern="Device/SAM3N/Source/ARM/startup_SAM3N.s"/>
+        <includes pattern="Device/SAM3N/Source/system_SAM3N.c"/>
+      </resource>
+      <resource type="keil.flashloader" subdir="keil">
+        <includes pattern="Flash/ATSAM3N_256.FLM"/>
+        <includes pattern="Flash/ATSAM3N_GPNVM.FLM"/>
+        <meta key="Flash/ATSAM3N_GPNVM.FLM" value="start=0x1FFFFFF0|size=0x00000010|default=0"/>
+        <meta key="Flash/ATSAM3N_256.FLM" value="start=0x00400000|size=0x00040000|default=1"/>
+      </resource>
+      <resource type="gcc.source.startup" subdir="gcc">
+        <includes pattern="system_sam3n.c"/>
+        <includes pattern="gcc/startup_sam3n.c"/>
+      </resource>
+      <resource type="gcc.linker" subdir="gcc">
+        <includes pattern="gcc/sam3n4b_flash.ld"/>
+        <includes pattern="gcc/sam3n4b_sram.ld"/>
+        <includes optional="true" pattern="gcc/sam3n_flash.ld"/>
+        <includes optional="true" pattern="gcc/sam3n_sram.ld"/>
+      </resource>
+      <resource type="iar.source.startup" subdir="iar">
+        <includes pattern="system_sam3n.c"/>
+        <includes pattern="iar/startup_sam3n.c"/>
+      </resource>
+      <resource type="iar.linker" subdir="iar">
+        <includes pattern="iar/sam3n4b_flash.icf"/>
+        <includes pattern="iar/sam3n4b_sram.icf"/>
+      </resource>
+      <resource type="iar.config" subdir="iar">
+        <includes pattern="config/devices/Atmel/**/ATSAM3N4B.i79"/>
+        <includes pattern="config/devices/Atmel/**/ATSAM3N4B.menu"/>
+        <includes pattern="config/flashloader/Atmel/sam3n4b/sam3n4b-flash.board"/>
+        <includes pattern="config/flashloader/Atmel/sam3n4b/sam3n4b-flash.flash"/>
+        <includes pattern="config/flashloader/Atmel/sam3n4b/sam3n4b-flash.out"/>
+        <includes optional="true" pattern="config/debugger/Atmel/Trace_SAM3N.dmac"/>
+        <includes optional="true" pattern="config/debugger/Atmel/ATSAM3N4B.ddf"/>
+      </resource>
+    </resources>
+    <resources target="ATSAM3N4C">
+      <resource type="atdf" subdir="atdf">
+        <includes pattern="ATSAM3N4C.atdf"/>
+      </resource>
+      <resource type="svd" subdir="svd">
+        <includes pattern="ATSAM3N4C.svd"/>
+      </resource>
+      <resource type="c.header" subdir="include">
+        <includes pattern="sam.h"/>
+        <includes pattern="sam3n.h"/>
+        <includes pattern="sam3n4c.h"/>
+        <includes pattern="system_sam3n.h"/>
+        <includes pattern="pio/*sam3n4c.h"/>
+        <includes pattern="component-version.h"/>
+        <includes fileset="moduleheaders"/>
+        <meta key="define" value="__SAM3N4C__"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="armcc.source.startup" subdir="armcc">
+        <includes pattern="Device/SAM3N/Source/ARM/startup_SAM3N.s"/>
+        <includes pattern="Device/SAM3N/Source/system_SAM3N.c"/>
+      </resource>
+      <resource type="keil.flashloader" subdir="keil">
+        <includes pattern="Flash/ATSAM3N_256.FLM"/>
+        <includes pattern="Flash/ATSAM3N_GPNVM.FLM"/>
+        <meta key="Flash/ATSAM3N_GPNVM.FLM" value="start=0x1FFFFFF0|size=0x00000010|default=0"/>
+        <meta key="Flash/ATSAM3N_256.FLM" value="start=0x00400000|size=0x40000|default=1"/>
+      </resource>
+      <resource type="gcc.source.startup" subdir="gcc">
+        <includes pattern="system_sam3n.c"/>
+        <includes pattern="gcc/startup_sam3n.c"/>
+      </resource>
+      <resource type="gcc.linker" subdir="gcc">
+        <includes pattern="gcc/sam3n4c_flash.ld"/>
+        <includes pattern="gcc/sam3n4c_sram.ld"/>
+        <includes optional="true" pattern="gcc/sam3n_flash.ld"/>
+        <includes optional="true" pattern="gcc/sam3n_sram.ld"/>
+      </resource>
+      <resource type="iar.source.startup" subdir="iar">
+        <includes pattern="system_sam3n.c"/>
+        <includes pattern="iar/startup_sam3n.c"/>
+      </resource>
+      <resource type="iar.linker" subdir="iar">
+        <includes pattern="iar/sam3n4c_flash.icf"/>
+        <includes pattern="iar/sam3n4c_sram.icf"/>
+      </resource>
+      <resource type="iar.config" subdir="iar">
+        <includes pattern="config/devices/Atmel/**/ATSAM3N4C.i79"/>
+        <includes pattern="config/devices/Atmel/**/ATSAM3N4C.menu"/>
+        <includes pattern="config/flashloader/Atmel/sam3n4c/sam3n4c-flash.board"/>
+        <includes pattern="config/flashloader/Atmel/sam3n4c/sam3n4c-flash.flash"/>
+        <includes pattern="config/flashloader/Atmel/sam3n4c/sam3n4c-flash.out"/>
+        <includes optional="true" pattern="config/debugger/Atmel/Trace_SAM3N.dmac"/>
+        <includes optional="true" pattern="config/debugger/Atmel/ATSAM3N4C.ddf"/>
+      </resource>
+    </resources>
+    <resources target="ATSAM3N4A">
+      <resource type="atdf" subdir="atdf">
+        <includes pattern="ATSAM3N4A.atdf"/>
+      </resource>
+      <resource type="svd" subdir="svd">
+        <includes pattern="ATSAM3N4A.svd"/>
+      </resource>
+      <resource type="c.header" subdir="include">
+        <includes pattern="sam.h"/>
+        <includes pattern="sam3n.h"/>
+        <includes pattern="sam3n4a.h"/>
+        <includes pattern="system_sam3n.h"/>
+        <includes pattern="pio/*sam3n4a.h"/>
+        <includes pattern="component-version.h"/>
+        <includes fileset="moduleheaders"/>
+        <meta key="define" value="__SAM3N4A__"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="armcc.source.startup" subdir="armcc">
+        <includes pattern="Device/SAM3N/Source/ARM/startup_SAM3N.s"/>
+        <includes pattern="Device/SAM3N/Source/system_SAM3N.c"/>
+      </resource>
+      <resource type="keil.flashloader" subdir="keil">
+        <includes pattern="Flash/ATSAM3N_256.FLM"/>
+        <includes pattern="Flash/ATSAM3N_GPNVM.FLM"/>
+        <meta key="Flash/ATSAM3N_GPNVM.FLM" value="start=0x1FFFFFF0|size=0x00000010|default=0"/>
+        <meta key="Flash/ATSAM3N_256.FLM" value="start=0x00400000|size=0x00040000|default=1"/>
+      </resource>
+      <resource type="gcc.source.startup" subdir="gcc">
+        <includes pattern="system_sam3n.c"/>
+        <includes pattern="gcc/startup_sam3n.c"/>
+      </resource>
+      <resource type="gcc.linker" subdir="gcc">
+        <includes pattern="gcc/sam3n4a_flash.ld"/>
+        <includes pattern="gcc/sam3n4a_sram.ld"/>
+        <includes optional="true" pattern="gcc/sam3n_flash.ld"/>
+        <includes optional="true" pattern="gcc/sam3n_sram.ld"/>
+      </resource>
+      <resource type="iar.source.startup" subdir="iar">
+        <includes pattern="system_sam3n.c"/>
+        <includes pattern="iar/startup_sam3n.c"/>
+      </resource>
+      <resource type="iar.linker" subdir="iar">
+        <includes pattern="iar/sam3n4a_flash.icf"/>
+        <includes pattern="iar/sam3n4a_sram.icf"/>
+      </resource>
+      <resource type="iar.config" subdir="iar">
+        <includes pattern="config/devices/Atmel/**/ATSAM3N4A.i79"/>
+        <includes pattern="config/devices/Atmel/**/ATSAM3N4A.menu"/>
+        <includes pattern="config/flashloader/Atmel/sam3n4a/sam3n4a-flash.board"/>
+        <includes pattern="config/flashloader/Atmel/sam3n4a/sam3n4a-flash.flash"/>
+        <includes pattern="config/flashloader/Atmel/sam3n4a/sam3n4a-flash.out"/>
+        <includes optional="true" pattern="config/debugger/Atmel/Trace_SAM3N.dmac"/>
+        <includes optional="true" pattern="config/debugger/Atmel/ATSAM3N4A.ddf"/>
+      </resource>
+    </resources>
+    <resources target="ATSAM3N0B">
+      <resource type="atdf" subdir="atdf">
+        <includes pattern="ATSAM3N0B.atdf"/>
+      </resource>
+      <resource type="svd" subdir="svd">
+        <includes pattern="ATSAM3N0B.svd"/>
+      </resource>
+      <resource type="c.header" subdir="include">
+        <includes pattern="sam.h"/>
+        <includes pattern="sam3n.h"/>
+        <includes pattern="sam3n0b.h"/>
+        <includes pattern="system_sam3n.h"/>
+        <includes pattern="pio/*sam3n0b.h"/>
+        <includes pattern="component-version.h"/>
+        <includes fileset="moduleheaders"/>
+        <meta key="define" value="__SAM3N0B__"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="armcc.source.startup" subdir="armcc">
+        <includes pattern="Device/SAM3N/Source/ARM/startup_SAM3N.s"/>
+        <includes pattern="Device/SAM3N/Source/system_SAM3N.c"/>
+      </resource>
+      <resource type="keil.flashloader" subdir="keil">
+        <includes pattern="Flash/ATSAM3N_32.FLM"/>
+        <includes pattern="Flash/ATSAM3N_GPNVM.FLM"/>
+        <meta key="Flash/ATSAM3N_32.FLM" value="start=0x00400000|size=0x00008000|default=1"/>
+        <meta key="Flash/ATSAM3N_GPNVM.FLM" value="start=0x1FFFFFF0|size=0x00000010|default=0"/>
+      </resource>
+      <resource type="gcc.source.startup" subdir="gcc">
+        <includes pattern="system_sam3n.c"/>
+        <includes pattern="gcc/startup_sam3n.c"/>
+      </resource>
+      <resource type="gcc.linker" subdir="gcc">
+        <includes pattern="gcc/sam3n0b_flash.ld"/>
+        <includes pattern="gcc/sam3n0b_sram.ld"/>
+        <includes optional="true" pattern="gcc/sam3n_flash.ld"/>
+        <includes optional="true" pattern="gcc/sam3n_sram.ld"/>
+      </resource>
+      <resource type="iar.source.startup" subdir="iar">
+        <includes pattern="system_sam3n.c"/>
+        <includes pattern="iar/startup_sam3n.c"/>
+      </resource>
+      <resource type="iar.linker" subdir="iar">
+        <includes pattern="iar/sam3n0b_flash.icf"/>
+        <includes pattern="iar/sam3n0b_sram.icf"/>
+      </resource>
+      <resource type="iar.config" subdir="iar">
+        <includes pattern="config/devices/Atmel/**/ATSAM3N0B.i79"/>
+        <includes pattern="config/devices/Atmel/**/ATSAM3N0B.menu"/>
+        <includes pattern="config/flashloader/Atmel/sam3n0b/sam3n0b-flash.board"/>
+        <includes pattern="config/flashloader/Atmel/sam3n0b/sam3n0b-flash.flash"/>
+        <includes pattern="config/flashloader/Atmel/sam3n0b/sam3n0b-flash.out"/>
+        <includes optional="true" pattern="config/debugger/Atmel/Trace_SAM3N.dmac"/>
+        <includes optional="true" pattern="config/debugger/Atmel/ATSAM3N0B.ddf"/>
+      </resource>
+    </resources>
+    <resources target="ATSAM3N0C">
+      <resource type="atdf" subdir="atdf">
+        <includes pattern="ATSAM3N0C.atdf"/>
+      </resource>
+      <resource type="svd" subdir="svd">
+        <includes pattern="ATSAM3N0C.svd"/>
+      </resource>
+      <resource type="c.header" subdir="include">
+        <includes pattern="sam.h"/>
+        <includes pattern="sam3n.h"/>
+        <includes pattern="sam3n0c.h"/>
+        <includes pattern="system_sam3n.h"/>
+        <includes pattern="pio/*sam3n0c.h"/>
+        <includes pattern="component-version.h"/>
+        <includes fileset="moduleheaders"/>
+        <meta key="define" value="__SAM3N0C__"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="armcc.source.startup" subdir="armcc">
+        <includes pattern="Device/SAM3N/Source/ARM/startup_SAM3N.s"/>
+        <includes pattern="Device/SAM3N/Source/system_SAM3N.c"/>
+      </resource>
+      <resource type="keil.flashloader" subdir="keil">
+        <includes pattern="Flash/ATSAM3N_32.FLM"/>
+        <includes pattern="Flash/ATSAM3N_GPNVM.FLM"/>
+        <meta key="Flash/ATSAM3N_32.FLM" value="start=0x00400000|size=0x00008000|default=1"/>
+        <meta key="Flash/ATSAM3N_GPNVM.FLM" value="start=0x1FFFFFF0|size=0x00000010|default=0"/>
+      </resource>
+      <resource type="gcc.source.startup" subdir="gcc">
+        <includes pattern="system_sam3n.c"/>
+        <includes pattern="gcc/startup_sam3n.c"/>
+      </resource>
+      <resource type="gcc.linker" subdir="gcc">
+        <includes pattern="gcc/sam3n0c_flash.ld"/>
+        <includes pattern="gcc/sam3n0c_sram.ld"/>
+        <includes optional="true" pattern="gcc/sam3n_flash.ld"/>
+        <includes optional="true" pattern="gcc/sam3n_sram.ld"/>
+      </resource>
+      <resource type="iar.source.startup" subdir="iar">
+        <includes pattern="system_sam3n.c"/>
+        <includes pattern="iar/startup_sam3n.c"/>
+      </resource>
+      <resource type="iar.linker" subdir="iar">
+        <includes pattern="iar/sam3n0c_flash.icf"/>
+        <includes pattern="iar/sam3n0c_sram.icf"/>
+      </resource>
+      <resource type="iar.config" subdir="iar">
+        <includes pattern="config/devices/Atmel/**/ATSAM3N0C.i79"/>
+        <includes pattern="config/devices/Atmel/**/ATSAM3N0C.menu"/>
+        <includes pattern="config/flashloader/Atmel/sam3n0c/sam3n0c-flash.board"/>
+        <includes pattern="config/flashloader/Atmel/sam3n0c/sam3n0c-flash.flash"/>
+        <includes pattern="config/flashloader/Atmel/sam3n0c/sam3n0c-flash.out"/>
+        <includes optional="true" pattern="config/debugger/Atmel/Trace_SAM3N.dmac"/>
+        <includes optional="true" pattern="config/debugger/Atmel/ATSAM3N0C.ddf"/>
+      </resource>
+    </resources>
+    <resources target="ATSAM3N1C">
+      <resource type="atdf" subdir="atdf">
+        <includes pattern="ATSAM3N1C.atdf"/>
+      </resource>
+      <resource type="svd" subdir="svd">
+        <includes pattern="ATSAM3N1C.svd"/>
+      </resource>
+      <resource type="c.header" subdir="include">
+        <includes pattern="sam.h"/>
+        <includes pattern="sam3n.h"/>
+        <includes pattern="sam3n1c.h"/>
+        <includes pattern="system_sam3n.h"/>
+        <includes pattern="pio/*sam3n1c.h"/>
+        <includes pattern="component-version.h"/>
+        <includes fileset="moduleheaders"/>
+        <meta key="define" value="__SAM3N1C__"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="armcc.source.startup" subdir="armcc">
+        <includes pattern="Device/SAM3N/Source/ARM/startup_SAM3N.s"/>
+        <includes pattern="Device/SAM3N/Source/system_SAM3N.c"/>
+      </resource>
+      <resource type="keil.flashloader" subdir="keil">
+        <includes pattern="Flash/ATSAM3N_64.FLM"/>
+        <includes pattern="Flash/ATSAM3N_GPNVM.FLM"/>
+        <meta key="Flash/ATSAM3N_64.FLM" value="start=0x00400000|size=0x00010000|default=1"/>
+        <meta key="Flash/ATSAM3N_GPNVM.FLM" value="start=0x1FFFFFF0|size=0x00000010|default=0"/>
+      </resource>
+      <resource type="gcc.source.startup" subdir="gcc">
+        <includes pattern="system_sam3n.c"/>
+        <includes pattern="gcc/startup_sam3n.c"/>
+      </resource>
+      <resource type="gcc.linker" subdir="gcc">
+        <includes pattern="gcc/sam3n1c_flash.ld"/>
+        <includes pattern="gcc/sam3n1c_sram.ld"/>
+        <includes optional="true" pattern="gcc/sam3n_flash.ld"/>
+        <includes optional="true" pattern="gcc/sam3n_sram.ld"/>
+      </resource>
+      <resource type="iar.source.startup" subdir="iar">
+        <includes pattern="system_sam3n.c"/>
+        <includes pattern="iar/startup_sam3n.c"/>
+      </resource>
+      <resource type="iar.linker" subdir="iar">
+        <includes pattern="iar/sam3n1c_flash.icf"/>
+        <includes pattern="iar/sam3n1c_sram.icf"/>
+      </resource>
+      <resource type="iar.config" subdir="iar">
+        <includes pattern="config/devices/Atmel/**/ATSAM3N1C.i79"/>
+        <includes pattern="config/devices/Atmel/**/ATSAM3N1C.menu"/>
+        <includes pattern="config/flashloader/Atmel/sam3n1c/sam3n1c-flash.board"/>
+        <includes pattern="config/flashloader/Atmel/sam3n1c/sam3n1c-flash.flash"/>
+        <includes pattern="config/flashloader/Atmel/sam3n1c/sam3n1c-flash.out"/>
+        <includes optional="true" pattern="config/debugger/Atmel/Trace_SAM3N.dmac"/>
+        <includes optional="true" pattern="config/debugger/Atmel/ATSAM3N1C.ddf"/>
+      </resource>
+    </resources>
+    <resources target="ATSAM3N0A">
+      <resource type="atdf" subdir="atdf">
+        <includes pattern="ATSAM3N0A.atdf"/>
+      </resource>
+      <resource type="svd" subdir="svd">
+        <includes pattern="ATSAM3N0A.svd"/>
+      </resource>
+      <resource type="c.header" subdir="include">
+        <includes pattern="sam.h"/>
+        <includes pattern="sam3n.h"/>
+        <includes pattern="sam3n0a.h"/>
+        <includes pattern="system_sam3n.h"/>
+        <includes pattern="pio/*sam3n0a.h"/>
+        <includes pattern="component-version.h"/>
+        <includes fileset="moduleheaders"/>
+        <meta key="define" value="__SAM3N0A__"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="armcc.source.startup" subdir="armcc">
+        <includes pattern="Device/SAM3N/Source/ARM/startup_SAM3N.s"/>
+        <includes pattern="Device/SAM3N/Source/system_SAM3N.c"/>
+      </resource>
+      <resource type="keil.flashloader" subdir="keil">
+        <includes pattern="Flash/ATSAM3N_32.FLM"/>
+        <includes pattern="Flash/ATSAM3N_GPNVM.FLM"/>
+        <meta key="Flash/ATSAM3N_32.FLM" value="start=0x00400000|size=0x00008000|default=1"/>
+        <meta key="Flash/ATSAM3N_GPNVM.FLM" value="start=0x1FFFFFF0|size=0x00000010|default=0"/>
+      </resource>
+      <resource type="gcc.source.startup" subdir="gcc">
+        <includes pattern="system_sam3n.c"/>
+        <includes pattern="gcc/startup_sam3n.c"/>
+      </resource>
+      <resource type="gcc.linker" subdir="gcc">
+        <includes pattern="gcc/sam3n0a_flash.ld"/>
+        <includes pattern="gcc/sam3n0a_sram.ld"/>
+        <includes optional="true" pattern="gcc/sam3n_flash.ld"/>
+        <includes optional="true" pattern="gcc/sam3n_sram.ld"/>
+      </resource>
+      <resource type="iar.source.startup" subdir="iar">
+        <includes pattern="system_sam3n.c"/>
+        <includes pattern="iar/startup_sam3n.c"/>
+      </resource>
+      <resource type="iar.linker" subdir="iar">
+        <includes pattern="iar/sam3n0a_flash.icf"/>
+        <includes pattern="iar/sam3n0a_sram.icf"/>
+      </resource>
+      <resource type="iar.config" subdir="iar">
+        <includes pattern="config/devices/Atmel/**/ATSAM3N0A.i79"/>
+        <includes pattern="config/devices/Atmel/**/ATSAM3N0A.menu"/>
+        <includes pattern="config/flashloader/Atmel/sam3n0a/sam3n0a-flash.board"/>
+        <includes pattern="config/flashloader/Atmel/sam3n0a/sam3n0a-flash.flash"/>
+        <includes pattern="config/flashloader/Atmel/sam3n0a/sam3n0a-flash.out"/>
+        <includes optional="true" pattern="config/debugger/Atmel/Trace_SAM3N.dmac"/>
+        <includes optional="true" pattern="config/debugger/Atmel/ATSAM3N0A.ddf"/>
+      </resource>
+    </resources>
+    <resources target="ATSAM3N2A">
+      <resource type="atdf" subdir="atdf">
+        <includes pattern="ATSAM3N2A.atdf"/>
+      </resource>
+      <resource type="svd" subdir="svd">
+        <includes pattern="ATSAM3N2A.svd"/>
+      </resource>
+      <resource type="c.header" subdir="include">
+        <includes pattern="sam.h"/>
+        <includes pattern="sam3n.h"/>
+        <includes pattern="sam3n2a.h"/>
+        <includes pattern="system_sam3n.h"/>
+        <includes pattern="pio/*sam3n2a.h"/>
+        <includes pattern="component-version.h"/>
+        <includes fileset="moduleheaders"/>
+        <meta key="define" value="__SAM3N2A__"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="armcc.source.startup" subdir="armcc">
+        <includes pattern="Device/SAM3N/Source/ARM/startup_SAM3N.s"/>
+        <includes pattern="Device/SAM3N/Source/system_SAM3N.c"/>
+      </resource>
+      <resource type="keil.flashloader" subdir="keil">
+        <includes pattern="Flash/ATSAM3N_128.FLM"/>
+        <includes pattern="Flash/ATSAM3N_GPNVM.FLM"/>
+        <meta key="Flash/ATSAM3N_128.FLM" value="start=0x00400000|size=0x00020000|default=1"/>
+        <meta key="Flash/ATSAM3N_GPNVM.FLM" value="start=0x1FFFFFF0|size=0x00000010|default=0"/>
+      </resource>
+      <resource type="gcc.source.startup" subdir="gcc">
+        <includes pattern="system_sam3n.c"/>
+        <includes pattern="gcc/startup_sam3n.c"/>
+      </resource>
+      <resource type="gcc.linker" subdir="gcc">
+        <includes pattern="gcc/sam3n2a_flash.ld"/>
+        <includes pattern="gcc/sam3n2a_sram.ld"/>
+        <includes optional="true" pattern="gcc/sam3n_flash.ld"/>
+        <includes optional="true" pattern="gcc/sam3n_sram.ld"/>
+      </resource>
+      <resource type="iar.source.startup" subdir="iar">
+        <includes pattern="system_sam3n.c"/>
+        <includes pattern="iar/startup_sam3n.c"/>
+      </resource>
+      <resource type="iar.linker" subdir="iar">
+        <includes pattern="iar/sam3n2a_flash.icf"/>
+        <includes pattern="iar/sam3n2a_sram.icf"/>
+      </resource>
+      <resource type="iar.config" subdir="iar">
+        <includes pattern="config/devices/Atmel/**/ATSAM3N2A.i79"/>
+        <includes pattern="config/devices/Atmel/**/ATSAM3N2A.menu"/>
+        <includes pattern="config/flashloader/Atmel/sam3n2a/sam3n2a-flash.board"/>
+        <includes pattern="config/flashloader/Atmel/sam3n2a/sam3n2a-flash.flash"/>
+        <includes pattern="config/flashloader/Atmel/sam3n2a/sam3n2a-flash.out"/>
+        <includes optional="true" pattern="config/debugger/Atmel/Trace_SAM3N.dmac"/>
+        <includes optional="true" pattern="config/debugger/Atmel/ATSAM3N2A.ddf"/>
+      </resource>
+    </resources>
+    <resources target="ATSAM3N1B">
+      <resource type="atdf" subdir="atdf">
+        <includes pattern="ATSAM3N1B.atdf"/>
+      </resource>
+      <resource type="svd" subdir="svd">
+        <includes pattern="ATSAM3N1B.svd"/>
+      </resource>
+      <resource type="c.header" subdir="include">
+        <includes pattern="sam.h"/>
+        <includes pattern="sam3n.h"/>
+        <includes pattern="sam3n1b.h"/>
+        <includes pattern="system_sam3n.h"/>
+        <includes pattern="pio/*sam3n1b.h"/>
+        <includes pattern="component-version.h"/>
+        <includes fileset="moduleheaders"/>
+        <meta key="define" value="__SAM3N1B__"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="armcc.source.startup" subdir="armcc">
+        <includes pattern="Device/SAM3N/Source/ARM/startup_SAM3N.s"/>
+        <includes pattern="Device/SAM3N/Source/system_SAM3N.c"/>
+      </resource>
+      <resource type="keil.flashloader" subdir="keil">
+        <includes pattern="Flash/ATSAM3N_64.FLM"/>
+        <includes pattern="Flash/ATSAM3N_GPNVM.FLM"/>
+        <meta key="Flash/ATSAM3N_64.FLM" value="start=0x00400000|size=0x00010000|default=1"/>
+        <meta key="Flash/ATSAM3N_GPNVM.FLM" value="start=0x1FFFFFF0|size=0x00000010|default=0"/>
+      </resource>
+      <resource type="gcc.source.startup" subdir="gcc">
+        <includes pattern="system_sam3n.c"/>
+        <includes pattern="gcc/startup_sam3n.c"/>
+      </resource>
+      <resource type="gcc.linker" subdir="gcc">
+        <includes pattern="gcc/sam3n1b_flash.ld"/>
+        <includes pattern="gcc/sam3n1b_sram.ld"/>
+        <includes optional="true" pattern="gcc/sam3n_flash.ld"/>
+        <includes optional="true" pattern="gcc/sam3n_sram.ld"/>
+      </resource>
+      <resource type="iar.source.startup" subdir="iar">
+        <includes pattern="system_sam3n.c"/>
+        <includes pattern="iar/startup_sam3n.c"/>
+      </resource>
+      <resource type="iar.linker" subdir="iar">
+        <includes pattern="iar/sam3n1b_flash.icf"/>
+        <includes pattern="iar/sam3n1b_sram.icf"/>
+      </resource>
+      <resource type="iar.config" subdir="iar">
+        <includes pattern="config/devices/Atmel/**/ATSAM3N1B.i79"/>
+        <includes pattern="config/devices/Atmel/**/ATSAM3N1B.menu"/>
+        <includes pattern="config/flashloader/Atmel/sam3n1b/sam3n1b-flash.board"/>
+        <includes pattern="config/flashloader/Atmel/sam3n1b/sam3n1b-flash.flash"/>
+        <includes pattern="config/flashloader/Atmel/sam3n1b/sam3n1b-flash.out"/>
+        <includes optional="true" pattern="config/debugger/Atmel/Trace_SAM3N.dmac"/>
+        <includes optional="true" pattern="config/debugger/Atmel/ATSAM3N1B.ddf"/>
+      </resource>
+    </resources>
+    <resources target="ATSAM3N2B">
+      <resource type="atdf" subdir="atdf">
+        <includes pattern="ATSAM3N2B.atdf"/>
+      </resource>
+      <resource type="svd" subdir="svd">
+        <includes pattern="ATSAM3N2B.svd"/>
+      </resource>
+      <resource type="c.header" subdir="include">
+        <includes pattern="sam.h"/>
+        <includes pattern="sam3n.h"/>
+        <includes pattern="sam3n2b.h"/>
+        <includes pattern="system_sam3n.h"/>
+        <includes pattern="pio/*sam3n2b.h"/>
+        <includes pattern="component-version.h"/>
+        <includes fileset="moduleheaders"/>
+        <meta key="define" value="__SAM3N2B__"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="armcc.source.startup" subdir="armcc">
+        <includes pattern="Device/SAM3N/Source/ARM/startup_SAM3N.s"/>
+        <includes pattern="Device/SAM3N/Source/system_SAM3N.c"/>
+      </resource>
+      <resource type="keil.flashloader" subdir="keil">
+        <includes pattern="Flash/ATSAM3N_128.FLM"/>
+        <includes pattern="Flash/ATSAM3N_GPNVM.FLM"/>
+        <meta key="Flash/ATSAM3N_128.FLM" value="start=0x00400000|size=0x00020000|default=1"/>
+        <meta key="Flash/ATSAM3N_GPNVM.FLM" value="start=0x1FFFFFF0|size=0x00000010|default=0"/>
+      </resource>
+      <resource type="gcc.source.startup" subdir="gcc">
+        <includes pattern="system_sam3n.c"/>
+        <includes pattern="gcc/startup_sam3n.c"/>
+      </resource>
+      <resource type="gcc.linker" subdir="gcc">
+        <includes pattern="gcc/sam3n2b_flash.ld"/>
+        <includes pattern="gcc/sam3n2b_sram.ld"/>
+        <includes optional="true" pattern="gcc/sam3n_flash.ld"/>
+        <includes optional="true" pattern="gcc/sam3n_sram.ld"/>
+      </resource>
+      <resource type="iar.source.startup" subdir="iar">
+        <includes pattern="system_sam3n.c"/>
+        <includes pattern="iar/startup_sam3n.c"/>
+      </resource>
+      <resource type="iar.linker" subdir="iar">
+        <includes pattern="iar/sam3n2b_flash.icf"/>
+        <includes pattern="iar/sam3n2b_sram.icf"/>
+      </resource>
+      <resource type="iar.config" subdir="iar">
+        <includes pattern="config/devices/Atmel/**/ATSAM3N2B.i79"/>
+        <includes pattern="config/devices/Atmel/**/ATSAM3N2B.menu"/>
+        <includes pattern="config/flashloader/Atmel/sam3n2b/sam3n2b-flash.board"/>
+        <includes pattern="config/flashloader/Atmel/sam3n2b/sam3n2b-flash.flash"/>
+        <includes pattern="config/flashloader/Atmel/sam3n2b/sam3n2b-flash.out"/>
+        <includes optional="true" pattern="config/debugger/Atmel/Trace_SAM3N.dmac"/>
+        <includes optional="true" pattern="config/debugger/Atmel/ATSAM3N2B.ddf"/>
+      </resource>
+    </resources>
+  </content>
+  <pdsc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+		<releases>
+			<release version="1.0.BUILDNUMBER">Fixed speed, temperature and voltage info in device files.</release>
+			<release version="1.0.49">Updated documentation links.</release>
+			<release version="1.0.43">Updated documentation links.</release>
+			<release version="1.0.41">Initial release.</release>
+		</releases>
+	</pdsc>
+</package>

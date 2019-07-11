@@ -1,0 +1,605 @@
+<?xml version='1.0' encoding='ASCII'?>
+<package schemaVersion="1.0">
+  <content>
+    <fileset id="moduleheaders">
+      <includes pattern="component/*"/>
+      <includes pattern="instance/*"/>
+    </fileset>
+    <resources target="ATSAMHA1G15A">
+      <resource type="atdf" subdir="samha1a/atdf">
+        <includes pattern="ATSAMHA1G15A.atdf"/>
+      </resource>
+      <resource type="pic" subdir="samha1a/edc">
+        <includes pattern="ATSAMHA1G15A.PIC"/>
+      </resource>
+      <resource type="svd" subdir="samha1a/svd">
+        <includes pattern="ATSAMHA1G15A.svd"/>
+      </resource>
+      <resource type="c.header" subdir="samha1a/include">
+        <includes pattern="sam.h"/>
+        <includes pattern="samha1.h"/>
+        <includes pattern="samha1g15a.h"/>
+        <includes pattern="system_samha1.h"/>
+        <includes pattern="pio/*samha1g15a.h"/>
+        <includes pattern="component-version.h"/>
+        <includes fileset="moduleheaders"/>
+        <meta key="define" value="__SAMHA1G15A__"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="samha1a/templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="samha1a/templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="samha1a/templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="samha1a/templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="armcc.source.startup" subdir="samha1a/armcc">
+        <includes pattern="Device/SAMHA1/Source/ARM/startup_SAMHA1.s"/>
+        <includes pattern="Device/SAMHA1/Source/system_samha1.c"/>
+      </resource>
+      <resource type="keil.flashloader" subdir="samha1a/keil/flashloader">
+        <includes pattern="Flash/ATSAMH_32.FLM"/>
+        <includes pattern="Flash/ATSAMH_32_EEPROM.FLM"/>
+        <meta key="Flash/ATSAMH_32.FLM" value="start=0x00000000|size=0x00008000|default=1"/>
+        <meta key="Flash/ATSAMH_32_EEPROM.FLM" value="start=0x00010000|size=0x00000400|default=1"/>
+      </resource>
+      <resource type="keil.flashloader.source" subdir="samha1a/keil/flashloader/source"/>
+      <resource type="keil.dbgconf" subdir="samha1a/keil/debug"/>
+      <resource type="gcc.source.startup" subdir="samha1a/gcc">
+        <includes pattern="system_samha1.c"/>
+        <includes pattern="gcc/startup_samha1.c"/>
+      </resource>
+      <resource type="gcc.linker" subdir="samha1a/gcc">
+        <includes pattern="gcc/samha1g15a_flash.ld"/>
+        <includes pattern="gcc/samha1g15a_sram.ld"/>
+      </resource>
+      <resource type="iar.source.startup" subdir="samha1a/iar">
+        <includes pattern="system_samha1.c"/>
+        <includes pattern="iar/startup_samha1.c"/>
+      </resource>
+      <resource type="iar.linker" subdir="samha1a/iar">
+        <includes pattern="iar/samha1g15a_flash.icf"/>
+        <includes pattern="iar/samha1g15a_sram.icf"/>
+      </resource>
+      <resource type="iar.config" subdir="samha1a/iar">
+        <includes pattern="config/devices/Atmel/**/ATSAMHA1G15A.i79"/>
+        <includes pattern="config/devices/Atmel/**/ATSAMHA1G15A.menu"/>
+        <includes optional="true" pattern="config/debugger/Atmel/Trace_SAMHA1.dmac"/>
+        <includes optional="true" pattern="config/debugger/Atmel/ATSAMHA1G15A.ddf"/>
+      </resource>
+      <resource type="iar.flashloader" subdir="samha1a/iar">
+        <includes pattern="config/flashloader/Atmel/samha1g15a/samha1g15a-*.board"/>
+        <includes pattern="config/flashloader/Atmel/samha1g15a/samha1g15a-*.flash"/>
+        <includes pattern="config/flashloader/Atmel/samha1g15a/samha1g15a-*.out"/>
+      </resource>
+    </resources>
+    <resources target="ATSAMHA1G16AB">
+      <resource type="atdf" subdir="samha1ab/atdf">
+        <includes pattern="ATSAMHA1G16AB.atdf"/>
+      </resource>
+      <resource type="pic" subdir="samha1ab/edc">
+        <includes pattern="ATSAMHA1G16AB.PIC"/>
+      </resource>
+      <resource type="svd" subdir="samha1ab/svd">
+        <includes pattern="ATSAMHA1G16AB.svd"/>
+      </resource>
+      <resource type="c.header" subdir="samha1ab/include">
+        <includes pattern="sam.h"/>
+        <includes pattern="samha1.h"/>
+        <includes pattern="samha1g16ab.h"/>
+        <includes pattern="system_samha1.h"/>
+        <includes pattern="pio/*samha1g16ab.h"/>
+        <includes pattern="component-version.h"/>
+        <includes fileset="moduleheaders"/>
+        <meta key="define" value="__SAMHA1G16AB__"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="samha1ab/templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="samha1ab/templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="samha1ab/templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="samha1ab/templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="keil.flashloader" subdir="samha1ab/keil/flashloader"/>
+      <resource type="keil.flashloader.source" subdir="samha1ab/keil/flashloader/source"/>
+      <resource type="keil.dbgconf" subdir="samha1ab/keil/debug"/>
+      <resource type="gcc.source.startup" subdir="samha1ab/gcc">
+        <includes pattern="system_samha1.c"/>
+        <includes pattern="gcc/startup_samha1.c"/>
+      </resource>
+      <resource type="gcc.linker" subdir="samha1ab/gcc">
+        <includes pattern="gcc/samha1g16ab_flash.ld"/>
+        <includes pattern="gcc/samha1g16ab_sram.ld"/>
+      </resource>
+      <resource type="iar.source.startup" subdir="samha1ab/iar">
+        <includes pattern="system_samha1.c"/>
+        <includes pattern="iar/startup_samha1.c"/>
+      </resource>
+      <resource type="iar.linker" subdir="samha1ab/iar">
+        <includes pattern="iar/samha1g16ab_flash.icf"/>
+        <includes pattern="iar/samha1g16ab_sram.icf"/>
+      </resource>
+      <resource type="iar.config" subdir="samha1ab/iar">
+        <includes pattern="config/devices/Atmel/**/ATSAMHA1G16AB.i79"/>
+        <includes pattern="config/devices/Atmel/**/ATSAMHA1G16AB.menu"/>
+        <includes optional="true" pattern="config/debugger/Atmel/ATSAMHA1G16AB.ddf"/>
+      </resource>
+      <resource type="iar.flashloader" subdir="samha1ab/iar">
+        <includes pattern="config/flashloader/Atmel/samha1g16ab/samha1g16ab-*.board"/>
+        <includes pattern="config/flashloader/Atmel/samha1g16ab/samha1g16ab-*.flash"/>
+        <includes pattern="config/flashloader/Atmel/samha1g16ab/samha1g16ab-*.out"/>
+      </resource>
+    </resources>
+    <resources target="ATSAMHA1E16AB">
+      <resource type="atdf" subdir="samha1ab/atdf">
+        <includes pattern="ATSAMHA1E16AB.atdf"/>
+      </resource>
+      <resource type="pic" subdir="samha1ab/edc">
+        <includes pattern="ATSAMHA1E16AB.PIC"/>
+      </resource>
+      <resource type="svd" subdir="samha1ab/svd">
+        <includes pattern="ATSAMHA1E16AB.svd"/>
+      </resource>
+      <resource type="c.header" subdir="samha1ab/include">
+        <includes pattern="sam.h"/>
+        <includes pattern="samha1.h"/>
+        <includes pattern="samha1e16ab.h"/>
+        <includes pattern="system_samha1.h"/>
+        <includes pattern="pio/*samha1e16ab.h"/>
+        <includes pattern="component-version.h"/>
+        <includes fileset="moduleheaders"/>
+        <meta key="define" value="__SAMHA1E16AB__"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="samha1ab/templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="samha1ab/templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="samha1ab/templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="samha1ab/templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="keil.flashloader" subdir="samha1ab/keil/flashloader"/>
+      <resource type="keil.flashloader.source" subdir="samha1ab/keil/flashloader/source"/>
+      <resource type="keil.dbgconf" subdir="samha1ab/keil/debug"/>
+      <resource type="gcc.source.startup" subdir="samha1ab/gcc">
+        <includes pattern="system_samha1.c"/>
+        <includes pattern="gcc/startup_samha1.c"/>
+      </resource>
+      <resource type="gcc.linker" subdir="samha1ab/gcc">
+        <includes pattern="gcc/samha1e16ab_flash.ld"/>
+        <includes pattern="gcc/samha1e16ab_sram.ld"/>
+      </resource>
+      <resource type="iar.source.startup" subdir="samha1ab/iar">
+        <includes pattern="system_samha1.c"/>
+        <includes pattern="iar/startup_samha1.c"/>
+      </resource>
+      <resource type="iar.linker" subdir="samha1ab/iar">
+        <includes pattern="iar/samha1e16ab_flash.icf"/>
+        <includes pattern="iar/samha1e16ab_sram.icf"/>
+      </resource>
+      <resource type="iar.config" subdir="samha1ab/iar">
+        <includes pattern="config/devices/Atmel/**/ATSAMHA1E16AB.i79"/>
+        <includes pattern="config/devices/Atmel/**/ATSAMHA1E16AB.menu"/>
+        <includes optional="true" pattern="config/debugger/Atmel/ATSAMHA1E16AB.ddf"/>
+      </resource>
+      <resource type="iar.flashloader" subdir="samha1ab/iar">
+        <includes pattern="config/flashloader/Atmel/samha1e16ab/samha1e16ab-*.board"/>
+        <includes pattern="config/flashloader/Atmel/samha1e16ab/samha1e16ab-*.flash"/>
+        <includes pattern="config/flashloader/Atmel/samha1e16ab/samha1e16ab-*.out"/>
+      </resource>
+    </resources>
+    <resources target="ATSAMHA1G14A">
+      <resource type="atdf" subdir="samha1a/atdf">
+        <includes pattern="ATSAMHA1G14A.atdf"/>
+      </resource>
+      <resource type="pic" subdir="samha1a/edc">
+        <includes pattern="ATSAMHA1G14A.PIC"/>
+      </resource>
+      <resource type="svd" subdir="samha1a/svd">
+        <includes pattern="ATSAMHA1G14A.svd"/>
+      </resource>
+      <resource type="c.header" subdir="samha1a/include">
+        <includes pattern="sam.h"/>
+        <includes pattern="samha1.h"/>
+        <includes pattern="samha1g14a.h"/>
+        <includes pattern="system_samha1.h"/>
+        <includes pattern="pio/*samha1g14a.h"/>
+        <includes pattern="component-version.h"/>
+        <includes fileset="moduleheaders"/>
+        <meta key="define" value="__SAMHA1G14A__"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="samha1a/templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="samha1a/templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="samha1a/templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="samha1a/templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="armcc.source.startup" subdir="samha1a/armcc">
+        <includes pattern="Device/SAMHA1/Source/ARM/startup_SAMHA1.s"/>
+        <includes pattern="Device/SAMHA1/Source/system_samha1.c"/>
+      </resource>
+      <resource type="keil.flashloader" subdir="samha1a/keil/flashloader">
+        <includes pattern="Flash/ATSAMH_16.FLM"/>
+        <includes pattern="Flash/ATSAMH_16_EEPROM.FLM"/>
+        <meta key="Flash/ATSAMH_16.FLM" value="start=0x00000000|size=0x00004000|default=1"/>
+        <meta key="Flash/ATSAMH_16_EEPROM.FLM" value="start=0x00010000|size=0x00000200|default=1"/>
+      </resource>
+      <resource type="keil.flashloader.source" subdir="samha1a/keil/flashloader/source"/>
+      <resource type="keil.dbgconf" subdir="samha1a/keil/debug"/>
+      <resource type="gcc.source.startup" subdir="samha1a/gcc">
+        <includes pattern="system_samha1.c"/>
+        <includes pattern="gcc/startup_samha1.c"/>
+      </resource>
+      <resource type="gcc.linker" subdir="samha1a/gcc">
+        <includes pattern="gcc/samha1g14a_flash.ld"/>
+        <includes pattern="gcc/samha1g14a_sram.ld"/>
+      </resource>
+      <resource type="iar.source.startup" subdir="samha1a/iar">
+        <includes pattern="system_samha1.c"/>
+        <includes pattern="iar/startup_samha1.c"/>
+      </resource>
+      <resource type="iar.linker" subdir="samha1a/iar">
+        <includes pattern="iar/samha1g14a_flash.icf"/>
+        <includes pattern="iar/samha1g14a_sram.icf"/>
+      </resource>
+      <resource type="iar.config" subdir="samha1a/iar">
+        <includes pattern="config/devices/Atmel/**/ATSAMHA1G14A.i79"/>
+        <includes pattern="config/devices/Atmel/**/ATSAMHA1G14A.menu"/>
+        <includes optional="true" pattern="config/debugger/Atmel/Trace_SAMHA1.dmac"/>
+        <includes optional="true" pattern="config/debugger/Atmel/ATSAMHA1G14A.ddf"/>
+      </resource>
+      <resource type="iar.flashloader" subdir="samha1a/iar">
+        <includes pattern="config/flashloader/Atmel/samha1g14a/samha1g14a-*.board"/>
+        <includes pattern="config/flashloader/Atmel/samha1g14a/samha1g14a-*.flash"/>
+        <includes pattern="config/flashloader/Atmel/samha1g14a/samha1g14a-*.out"/>
+      </resource>
+    </resources>
+    <resources target="ATSAMHA1G16A">
+      <resource type="atdf" subdir="samha1a/atdf">
+        <includes pattern="ATSAMHA1G16A.atdf"/>
+      </resource>
+      <resource type="pic" subdir="samha1a/edc">
+        <includes pattern="ATSAMHA1G16A.PIC"/>
+      </resource>
+      <resource type="svd" subdir="samha1a/svd">
+        <includes pattern="ATSAMHA1G16A.svd"/>
+      </resource>
+      <resource type="c.header" subdir="samha1a/include">
+        <includes pattern="sam.h"/>
+        <includes pattern="samha1.h"/>
+        <includes pattern="samha1g16a.h"/>
+        <includes pattern="system_samha1.h"/>
+        <includes pattern="pio/*samha1g16a.h"/>
+        <includes pattern="component-version.h"/>
+        <includes fileset="moduleheaders"/>
+        <meta key="define" value="__SAMHA1G16A__"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="samha1a/templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="samha1a/templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="samha1a/templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="samha1a/templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="armcc.source.startup" subdir="samha1a/armcc">
+        <includes pattern="Device/SAMHA1/Source/ARM/startup_SAMHA1.s"/>
+        <includes pattern="Device/SAMHA1/Source/system_samha1.c"/>
+      </resource>
+      <resource type="keil.flashloader" subdir="samha1a/keil/flashloader">
+        <includes pattern="Flash/ATSAMH_64.FLM"/>
+        <includes pattern="Flash/ATSAMH_64_EEPROM.FLM"/>
+        <meta key="Flash/ATSAMH_64.FLM" value="start=0x00000000|size=0x00010000|default=1"/>
+        <meta key="Flash/ATSAMH_64_EEPROM.FLM" value="start=0x00010000|size=0x00000800|default=1"/>
+      </resource>
+      <resource type="keil.flashloader.source" subdir="samha1a/keil/flashloader/source"/>
+      <resource type="keil.dbgconf" subdir="samha1a/keil/debug"/>
+      <resource type="gcc.source.startup" subdir="samha1a/gcc">
+        <includes pattern="system_samha1.c"/>
+        <includes pattern="gcc/startup_samha1.c"/>
+      </resource>
+      <resource type="gcc.linker" subdir="samha1a/gcc">
+        <includes pattern="gcc/samha1g16a_flash.ld"/>
+        <includes pattern="gcc/samha1g16a_sram.ld"/>
+      </resource>
+      <resource type="iar.source.startup" subdir="samha1a/iar">
+        <includes pattern="system_samha1.c"/>
+        <includes pattern="iar/startup_samha1.c"/>
+      </resource>
+      <resource type="iar.linker" subdir="samha1a/iar">
+        <includes pattern="iar/samha1g16a_flash.icf"/>
+        <includes pattern="iar/samha1g16a_sram.icf"/>
+      </resource>
+      <resource type="iar.config" subdir="samha1a/iar">
+        <includes pattern="config/devices/Atmel/**/ATSAMHA1G16A.i79"/>
+        <includes pattern="config/devices/Atmel/**/ATSAMHA1G16A.menu"/>
+        <includes optional="true" pattern="config/debugger/Atmel/Trace_SAMHA1.dmac"/>
+        <includes optional="true" pattern="config/debugger/Atmel/ATSAMHA1G16A.ddf"/>
+      </resource>
+      <resource type="iar.flashloader" subdir="samha1a/iar">
+        <includes pattern="config/flashloader/Atmel/samha1g16a/samha1g16a-*.board"/>
+        <includes pattern="config/flashloader/Atmel/samha1g16a/samha1g16a-*.flash"/>
+        <includes pattern="config/flashloader/Atmel/samha1g16a/samha1g16a-*.out"/>
+      </resource>
+    </resources>
+    <resources target="ATSAMHA1G15AB">
+      <resource type="atdf" subdir="samha1ab/atdf">
+        <includes pattern="ATSAMHA1G15AB.atdf"/>
+      </resource>
+      <resource type="pic" subdir="samha1ab/edc">
+        <includes pattern="ATSAMHA1G15AB.PIC"/>
+      </resource>
+      <resource type="svd" subdir="samha1ab/svd">
+        <includes pattern="ATSAMHA1G15AB.svd"/>
+      </resource>
+      <resource type="c.header" subdir="samha1ab/include">
+        <includes pattern="sam.h"/>
+        <includes pattern="samha1.h"/>
+        <includes pattern="samha1g15ab.h"/>
+        <includes pattern="system_samha1.h"/>
+        <includes pattern="pio/*samha1g15ab.h"/>
+        <includes pattern="component-version.h"/>
+        <includes fileset="moduleheaders"/>
+        <meta key="define" value="__SAMHA1G15AB__"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="samha1ab/templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="samha1ab/templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="samha1ab/templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="samha1ab/templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="keil.flashloader" subdir="samha1ab/keil/flashloader"/>
+      <resource type="keil.flashloader.source" subdir="samha1ab/keil/flashloader/source"/>
+      <resource type="keil.dbgconf" subdir="samha1ab/keil/debug"/>
+      <resource type="gcc.source.startup" subdir="samha1ab/gcc">
+        <includes pattern="system_samha1.c"/>
+        <includes pattern="gcc/startup_samha1.c"/>
+      </resource>
+      <resource type="gcc.linker" subdir="samha1ab/gcc">
+        <includes pattern="gcc/samha1g15ab_flash.ld"/>
+        <includes pattern="gcc/samha1g15ab_sram.ld"/>
+      </resource>
+      <resource type="iar.source.startup" subdir="samha1ab/iar">
+        <includes pattern="system_samha1.c"/>
+        <includes pattern="iar/startup_samha1.c"/>
+      </resource>
+      <resource type="iar.linker" subdir="samha1ab/iar">
+        <includes pattern="iar/samha1g15ab_flash.icf"/>
+        <includes pattern="iar/samha1g15ab_sram.icf"/>
+      </resource>
+      <resource type="iar.config" subdir="samha1ab/iar">
+        <includes pattern="config/devices/Atmel/**/ATSAMHA1G15AB.i79"/>
+        <includes pattern="config/devices/Atmel/**/ATSAMHA1G15AB.menu"/>
+        <includes optional="true" pattern="config/debugger/Atmel/ATSAMHA1G15AB.ddf"/>
+      </resource>
+      <resource type="iar.flashloader" subdir="samha1ab/iar">
+        <includes pattern="config/flashloader/Atmel/samha1g15ab/samha1g15ab-*.board"/>
+        <includes pattern="config/flashloader/Atmel/samha1g15ab/samha1g15ab-*.flash"/>
+        <includes pattern="config/flashloader/Atmel/samha1g15ab/samha1g15ab-*.out"/>
+      </resource>
+    </resources>
+    <resources target="ATSAMHA1G14AB">
+      <resource type="atdf" subdir="samha1ab/atdf">
+        <includes pattern="ATSAMHA1G14AB.atdf"/>
+      </resource>
+      <resource type="pic" subdir="samha1ab/edc">
+        <includes pattern="ATSAMHA1G14AB.PIC"/>
+      </resource>
+      <resource type="svd" subdir="samha1ab/svd">
+        <includes pattern="ATSAMHA1G14AB.svd"/>
+      </resource>
+      <resource type="c.header" subdir="samha1ab/include">
+        <includes pattern="sam.h"/>
+        <includes pattern="samha1.h"/>
+        <includes pattern="samha1g14ab.h"/>
+        <includes pattern="system_samha1.h"/>
+        <includes pattern="pio/*samha1g14ab.h"/>
+        <includes pattern="component-version.h"/>
+        <includes fileset="moduleheaders"/>
+        <meta key="define" value="__SAMHA1G14AB__"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="samha1ab/templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="samha1ab/templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="samha1ab/templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="samha1ab/templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="keil.flashloader" subdir="samha1ab/keil/flashloader"/>
+      <resource type="keil.flashloader.source" subdir="samha1ab/keil/flashloader/source"/>
+      <resource type="keil.dbgconf" subdir="samha1ab/keil/debug"/>
+      <resource type="gcc.source.startup" subdir="samha1ab/gcc">
+        <includes pattern="system_samha1.c"/>
+        <includes pattern="gcc/startup_samha1.c"/>
+      </resource>
+      <resource type="gcc.linker" subdir="samha1ab/gcc">
+        <includes pattern="gcc/samha1g14ab_flash.ld"/>
+        <includes pattern="gcc/samha1g14ab_sram.ld"/>
+      </resource>
+      <resource type="iar.source.startup" subdir="samha1ab/iar">
+        <includes pattern="system_samha1.c"/>
+        <includes pattern="iar/startup_samha1.c"/>
+      </resource>
+      <resource type="iar.linker" subdir="samha1ab/iar">
+        <includes pattern="iar/samha1g14ab_flash.icf"/>
+        <includes pattern="iar/samha1g14ab_sram.icf"/>
+      </resource>
+      <resource type="iar.config" subdir="samha1ab/iar">
+        <includes pattern="config/devices/Atmel/**/ATSAMHA1G14AB.i79"/>
+        <includes pattern="config/devices/Atmel/**/ATSAMHA1G14AB.menu"/>
+        <includes optional="true" pattern="config/debugger/Atmel/ATSAMHA1G14AB.ddf"/>
+      </resource>
+      <resource type="iar.flashloader" subdir="samha1ab/iar">
+        <includes pattern="config/flashloader/Atmel/samha1g14ab/samha1g14ab-*.board"/>
+        <includes pattern="config/flashloader/Atmel/samha1g14ab/samha1g14ab-*.flash"/>
+        <includes pattern="config/flashloader/Atmel/samha1g14ab/samha1g14ab-*.out"/>
+      </resource>
+    </resources>
+    <resources target="ATSAMHA1E15AB">
+      <resource type="atdf" subdir="samha1ab/atdf">
+        <includes pattern="ATSAMHA1E15AB.atdf"/>
+      </resource>
+      <resource type="pic" subdir="samha1ab/edc">
+        <includes pattern="ATSAMHA1E15AB.PIC"/>
+      </resource>
+      <resource type="svd" subdir="samha1ab/svd">
+        <includes pattern="ATSAMHA1E15AB.svd"/>
+      </resource>
+      <resource type="c.header" subdir="samha1ab/include">
+        <includes pattern="sam.h"/>
+        <includes pattern="samha1.h"/>
+        <includes pattern="samha1e15ab.h"/>
+        <includes pattern="system_samha1.h"/>
+        <includes pattern="pio/*samha1e15ab.h"/>
+        <includes pattern="component-version.h"/>
+        <includes fileset="moduleheaders"/>
+        <meta key="define" value="__SAMHA1E15AB__"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="samha1ab/templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="samha1ab/templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="samha1ab/templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="samha1ab/templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="keil.flashloader" subdir="samha1ab/keil/flashloader"/>
+      <resource type="keil.flashloader.source" subdir="samha1ab/keil/flashloader/source"/>
+      <resource type="keil.dbgconf" subdir="samha1ab/keil/debug"/>
+      <resource type="gcc.source.startup" subdir="samha1ab/gcc">
+        <includes pattern="system_samha1.c"/>
+        <includes pattern="gcc/startup_samha1.c"/>
+      </resource>
+      <resource type="gcc.linker" subdir="samha1ab/gcc">
+        <includes pattern="gcc/samha1e15ab_flash.ld"/>
+        <includes pattern="gcc/samha1e15ab_sram.ld"/>
+      </resource>
+      <resource type="iar.source.startup" subdir="samha1ab/iar">
+        <includes pattern="system_samha1.c"/>
+        <includes pattern="iar/startup_samha1.c"/>
+      </resource>
+      <resource type="iar.linker" subdir="samha1ab/iar">
+        <includes pattern="iar/samha1e15ab_flash.icf"/>
+        <includes pattern="iar/samha1e15ab_sram.icf"/>
+      </resource>
+      <resource type="iar.config" subdir="samha1ab/iar">
+        <includes pattern="config/devices/Atmel/**/ATSAMHA1E15AB.i79"/>
+        <includes pattern="config/devices/Atmel/**/ATSAMHA1E15AB.menu"/>
+        <includes optional="true" pattern="config/debugger/Atmel/ATSAMHA1E15AB.ddf"/>
+      </resource>
+      <resource type="iar.flashloader" subdir="samha1ab/iar">
+        <includes pattern="config/flashloader/Atmel/samha1e15ab/samha1e15ab-*.board"/>
+        <includes pattern="config/flashloader/Atmel/samha1e15ab/samha1e15ab-*.flash"/>
+        <includes pattern="config/flashloader/Atmel/samha1e15ab/samha1e15ab-*.out"/>
+      </resource>
+    </resources>
+    <resources target="ATSAMHA1E14AB">
+      <resource type="atdf" subdir="samha1ab/atdf">
+        <includes pattern="ATSAMHA1E14AB.atdf"/>
+      </resource>
+      <resource type="pic" subdir="samha1ab/edc">
+        <includes pattern="ATSAMHA1E14AB.PIC"/>
+      </resource>
+      <resource type="svd" subdir="samha1ab/svd">
+        <includes pattern="ATSAMHA1E14AB.svd"/>
+      </resource>
+      <resource type="c.header" subdir="samha1ab/include">
+        <includes pattern="sam.h"/>
+        <includes pattern="samha1.h"/>
+        <includes pattern="samha1e14ab.h"/>
+        <includes pattern="system_samha1.h"/>
+        <includes pattern="pio/*samha1e14ab.h"/>
+        <includes pattern="component-version.h"/>
+        <includes fileset="moduleheaders"/>
+        <meta key="define" value="__SAMHA1E14AB__"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="samha1ab/templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="samha1ab/templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="samha1ab/templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="samha1ab/templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="keil.flashloader" subdir="samha1ab/keil/flashloader"/>
+      <resource type="keil.flashloader.source" subdir="samha1ab/keil/flashloader/source"/>
+      <resource type="keil.dbgconf" subdir="samha1ab/keil/debug"/>
+      <resource type="gcc.source.startup" subdir="samha1ab/gcc">
+        <includes pattern="system_samha1.c"/>
+        <includes pattern="gcc/startup_samha1.c"/>
+      </resource>
+      <resource type="gcc.linker" subdir="samha1ab/gcc">
+        <includes pattern="gcc/samha1e14ab_flash.ld"/>
+        <includes pattern="gcc/samha1e14ab_sram.ld"/>
+      </resource>
+      <resource type="iar.source.startup" subdir="samha1ab/iar">
+        <includes pattern="system_samha1.c"/>
+        <includes pattern="iar/startup_samha1.c"/>
+      </resource>
+      <resource type="iar.linker" subdir="samha1ab/iar">
+        <includes pattern="iar/samha1e14ab_flash.icf"/>
+        <includes pattern="iar/samha1e14ab_sram.icf"/>
+      </resource>
+      <resource type="iar.config" subdir="samha1ab/iar">
+        <includes pattern="config/devices/Atmel/**/ATSAMHA1E14AB.i79"/>
+        <includes pattern="config/devices/Atmel/**/ATSAMHA1E14AB.menu"/>
+        <includes optional="true" pattern="config/debugger/Atmel/ATSAMHA1E14AB.ddf"/>
+      </resource>
+      <resource type="iar.flashloader" subdir="samha1ab/iar">
+        <includes pattern="config/flashloader/Atmel/samha1e14ab/samha1e14ab-*.board"/>
+        <includes pattern="config/flashloader/Atmel/samha1e14ab/samha1e14ab-*.flash"/>
+        <includes pattern="config/flashloader/Atmel/samha1e14ab/samha1e14ab-*.out"/>
+      </resource>
+    </resources>
+  </content>
+  <pdsc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+		<releases>			
+			<release version="1.1.BUILDNUMBER">Added ATSAMHA1E14AB, ATSAMHA1E15AB and ATSAMHA1E16AB.Renamed FDPLL clock source in GCLK module to DPLL96M.</release>
+			<release version="1.0.39">Added ATSAMHA1G14AB, ATSAMHA1G15AB and ATSAMHA1G16AB.</release>
+			<release version="1.0.37">Ready for public.</release>
+			<release version="1.0.26">Initial release.</release>
+		</releases>
+	</pdsc>
+</package>

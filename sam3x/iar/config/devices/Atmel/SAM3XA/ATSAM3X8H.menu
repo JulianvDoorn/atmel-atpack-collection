@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<optionMenuItem>
+  <tag>ATSAM3X8H</tag>
+  <display>Atmel SAM3X8H</display>
+  <data>$CUR_DIR$\ATSAM3X8H.i79</data>
+</optionMenuItem>

@@ -1,0 +1,2538 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns:saxon="http://saxon.sf.net//"
+         schemaVersion="1.3"
+         xs:schemaLocation="http://www.atmel.com/schemas/pack-device-atmel-extension PACK.DEVICE.ATMEL.EXTENSION.xsd"
+         xs:noNamespaceSchemaLocation="PACK.ATMEL.xsd">
+   <vendor>Atmel</vendor>
+   <url>http://packs.download.atmel.com/</url>
+   <name>UC3A_DFP</name>
+   <description>Atmel UC3A Series Device Support</description>
+   <releases>
+      <release version="1.0.53" date="2016-03-21">Revert broken headers for UC3A4 devices introduced in 1.0.51.</release>
+      <release version="1.0.51">Updated documentation links.</release>
+      <release version="1.0.46">Initial release.</release>
+   </releases>
+   <keywords>
+      <keyword>Atmel</keyword>
+      <keyword>Device Support</keyword>
+      <keyword>Device Family Package Atmel</keyword>
+      <keyword>UC3A</keyword>
+   </keywords>
+   <devices>
+      <family Dfamily="UC3A" Dvendor="Atmel:3">
+         <device Dname="AT32UC3A364S">
+            <processor Dcore="AVR32_UC3" Dendian="Big-endian"/>
+            <compile header="include/AT32UC3A364S/avr32/io.h"/>
+            <environment name="atmel">
+               <at:extension xmlns:at="http://www.atmel.com/schemas/pack-device-atmel-extension"
+                             schemaVersion="1.0">
+                  <at:atdf name="atdf/AT32UC3A364S.atdf"/>
+                  <at:variant ordercode="standard"
+                              vccmin="3.0"
+                              vccmax="3.6"
+                              tempmin="0"
+                              tempmax="0"/>
+                  <at:memory name="EBI_CS0"
+                             start="0xC0000000"
+                             size="0x01000000"
+                             type="other"
+                             address-space="base"/>
+                  <at:memory name="EBI_CS1"
+                             start="0xD0000000"
+                             size="0x08000000"
+                             type="other"
+                             address-space="base"/>
+                  <at:memory name="EBI_CS2"
+                             start="0xC8000000"
+                             size="0x01000000"
+                             type="other"
+                             address-space="base"/>
+                  <at:memory name="EBI_CS3"
+                             start="0xCC000000"
+                             size="0x01000000"
+                             type="other"
+                             address-space="base"/>
+                  <at:memory name="EBI_CS4"
+                             start="0xD8000000"
+                             size="0x01000000"
+                             type="other"
+                             address-space="base"/>
+                  <at:memory name="EBI_CS5"
+                             start="0xDC000000"
+                             size="0x01000000"
+                             type="other"
+                             address-space="base"/>
+                  <at:memory name="FLASH"
+                             start="0x80000000"
+                             size="0x00010000"
+                             type="flash"
+                             address-space="base"/>
+                  <at:memory name="USER_PAGE"
+                             start="0x80800000"
+                             size="0x00000200"
+                             type="user_page"
+                             address-space="base"/>
+                  <at:memory name="INTRAM0"
+                             start="0xFF000000"
+                             size="0x00008000"
+                             type="other"
+                             address-space="base"/>
+                  <at:memory name="INTRAM1"
+                             start="0xFF008000"
+                             size="0x00008000"
+                             type="other"
+                             address-space="base"/>
+                  <at:memory name="SRAM"
+                             start="0x00000000"
+                             size="0x00010000"
+                             type="ram"
+                             address-space="base"/>
+                  <at:memory name="USBB_SLAVE"
+                             start="0xE0000000"
+                             size="0x00800000"
+                             type="other"
+                             address-space="base"/>
+                  <at:memory rw="RW"
+                             type="io"
+                             size="0x20000"
+                             start="0xfffe0000"
+                             name="IO"
+                             address-space="base"/>
+                  <at:interface type="avr32jtag" name="JTAG"/>
+                  <at:tool id="com.atmel.avrdbg.tool.atmelice"/>
+                  <at:tool id="com.atmel.avrdbg.tool.avrdragon"/>
+                  <at:tool id="com.atmel.avrdbg.tool.avrone"/>
+                  <at:tool id="com.atmel.avrdbg.tool.edbg"/>
+                  <at:tool id="com.atmel.avrdbg.tool.edbgc"/>
+                  <at:tool id="com.atmel.avrdbg.tool.edbg"/>
+                  <at:tool id="com.atmel.avrdbg.tool.jtagicemk3"/>
+                  <at:tool id="com.atmel.avrdbg.tool.jtagice3plus"/>
+                  <at:tool id="com.atmel.avrdbg.tool.jtagicemkii"/>
+                  <at:tool id="com.atmel.avrdbg.tool.powerdebugger"/>
+                  <at:tool id="com.atmel.avrdbg.tool.stk600"/>
+                  <at:tool id="com.atmel.avrdbg.tool.flip"/>
+                  <at:property name="com.atmel.gcc.options.mpart" value="uc3a364s"/>
+                  <at:project name="Barebone C Project">
+                     <at:component Cvendor="Atmel" Cclass="Device" Cgroup="Startup">
+                        <at:template select="Main file (.c)"/>
+                     </at:component>
+                  </at:project>
+                  <at:project name="Barebone Cpp Project">
+                     <at:component Cvendor="Atmel" Cclass="Device" Cgroup="Startup">
+                        <at:template select="Main file (.cpp)"/>
+                     </at:component>
+                  </at:project>
+                  <at:prerequisite context="compiling" Tcompiler="GCC" component="AVR32-GCC"/>
+               </at:extension>
+            </environment>
+            <description>32-bit AVR Microcontroller, 64KB Flash, 144-pin, SD/SDIO Card, AES Crypto Module</description>
+            <book name="http://www.atmel.com/Images/32072s.pdf"
+                  title="Datasheet (Summary)"/>
+            <book name="http://www.atmel.com/devices/AT32UC3A364S.aspx"
+                  title="Device Page"/>
+         </device>
+         <device Dname="AT32UC3A0128">
+            <processor Dcore="AVR32_UC3" Dendian="Big-endian"/>
+            <compile header="include/AT32UC3A0128/avr32/io.h"/>
+            <environment name="atmel">
+               <at:extension xmlns:at="http://www.atmel.com/schemas/pack-device-atmel-extension"
+                             schemaVersion="1.0">
+                  <at:atdf name="atdf/AT32UC3A0128.atdf"/>
+                  <at:variant ordercode="standard"
+                              vccmin="3.0"
+                              vccmax="3.6"
+                              tempmin="0"
+                              tempmax="0"/>
+                  <at:memory name="EBI_CS0"
+                             start="0xC0000000"
+                             size="0x01000000"
+                             type="other"
+                             address-space="base"/>
+                  <at:memory name="EBI_CS1"
+                             start="0xD0000000"
+                             size="0x08000000"
+                             type="other"
+                             address-space="base"/>
+                  <at:memory name="EBI_CS2"
+                             start="0xC8000000"
+                             size="0x01000000"
+                             type="other"
+                             address-space="base"/>
+                  <at:memory name="EBI_CS3"
+                             start="0xCC000000"
+                             size="0x01000000"
+                             type="other"
+                             address-space="base"/>
+                  <at:memory name="FLASH"
+                             start="0x80000000"
+                             size="0x00020000"
+                             type="flash"
+                             address-space="base"/>
+                  <at:memory name="USER_PAGE"
+                             start="0x80800000"
+                             size="0x00000200"
+                             type="user_page"
+                             address-space="base"/>
+                  <at:memory name="SRAM"
+                             start="0x00000000"
+                             size="0x00008000"
+                             type="ram"
+                             address-space="base"/>
+                  <at:memory name="USBB_SLAVE"
+                             start="0xE0000000"
+                             size="0x00800000"
+                             type="other"
+                             address-space="base"/>
+                  <at:memory rw="RW"
+                             type="io"
+                             size="0x20000"
+                             start="0xfffe0000"
+                             name="IO"
+                             address-space="base"/>
+                  <at:interface type="avr32jtag" name="JTAG"/>
+                  <at:tool id="com.atmel.avrdbg.tool.atmelice"/>
+                  <at:tool id="com.atmel.avrdbg.tool.avrdragon"/>
+                  <at:tool id="com.atmel.avrdbg.tool.avrone"/>
+                  <at:tool id="com.atmel.avrdbg.tool.edbg"/>
+                  <at:tool id="com.atmel.avrdbg.tool.edbgc"/>
+                  <at:tool id="com.atmel.avrdbg.tool.edbg"/>
+                  <at:tool id="com.atmel.avrdbg.tool.jtagicemk3"/>
+                  <at:tool id="com.atmel.avrdbg.tool.jtagice3plus"/>
+                  <at:tool id="com.atmel.avrdbg.tool.jtagicemkii"/>
+                  <at:tool id="com.atmel.avrdbg.tool.powerdebugger"/>
+                  <at:tool id="com.atmel.avrdbg.tool.stk600"/>
+                  <at:tool id="com.atmel.avrdbg.tool.flip"/>
+                  <at:tool id="com.atmel.avrdbg.tool.simulator"/>
+                  <at:property name="com.atmel.avrdbg.tool.simulator.key" value="AT32UC3A0128"/>
+                  <at:property name="com.atmel.avrdbg.tool.simulator.model.win32"
+                               value="simulator/win32/libat32uc3a0512.dll"/>
+                  <at:property name="com.atmel.gcc.options.mpart" value="uc3a0128"/>
+                  <at:project name="Barebone C Project">
+                     <at:component Cvendor="Atmel" Cclass="Device" Cgroup="Startup">
+                        <at:template select="Main file (.c)"/>
+                     </at:component>
+                  </at:project>
+                  <at:project name="Barebone Cpp Project">
+                     <at:component Cvendor="Atmel" Cclass="Device" Cgroup="Startup">
+                        <at:template select="Main file (.cpp)"/>
+                     </at:component>
+                  </at:project>
+                  <at:prerequisite context="compiling" Tcompiler="GCC" component="AVR32-GCC"/>
+               </at:extension>
+            </environment>
+            <description>32-bit AVR Microcontroller, 128KB Flash, 144-pin</description>
+            <book name="http://www.atmel.com/Images/32058S.pdf" title="Datasheet"/>
+            <book name="http://www.atmel.com/devices/AT32UC3A0128.aspx"
+                  title="Device Page"/>
+         </device>
+         <device Dname="AT32UC3A3256S">
+            <processor Dcore="AVR32_UC3" Dendian="Big-endian"/>
+            <compile header="include/AT32UC3A3256S/avr32/io.h"/>
+            <environment name="atmel">
+               <at:extension xmlns:at="http://www.atmel.com/schemas/pack-device-atmel-extension"
+                             schemaVersion="1.0">
+                  <at:atdf name="atdf/AT32UC3A3256S.atdf"/>
+                  <at:variant ordercode="standard"
+                              vccmin="3.0"
+                              vccmax="3.6"
+                              tempmin="0"
+                              tempmax="0"/>
+                  <at:memory name="EBI_CS0"
+                             start="0xC0000000"
+                             size="0x01000000"
+                             type="other"
+                             address-space="base"/>
+                  <at:memory name="EBI_CS1"
+                             start="0xD0000000"
+                             size="0x08000000"
+                             type="other"
+                             address-space="base"/>
+                  <at:memory name="EBI_CS2"
+                             start="0xC8000000"
+                             size="0x01000000"
+                             type="other"
+                             address-space="base"/>
+                  <at:memory name="EBI_CS3"
+                             start="0xCC000000"
+                             size="0x01000000"
+                             type="other"
+                             address-space="base"/>
+                  <at:memory name="EBI_CS4"
+                             start="0xD8000000"
+                             size="0x01000000"
+                             type="other"
+                             address-space="base"/>
+                  <at:memory name="EBI_CS5"
+                             start="0xDC000000"
+                             size="0x01000000"
+                             type="other"
+                             address-space="base"/>
+                  <at:memory name="FLASH"
+                             start="0x80000000"
+                             size="0x00040000"
+                             type="flash"
+                             address-space="base"/>
+                  <at:memory name="USER_PAGE"
+                             start="0x80800000"
+                             size="0x00000200"
+                             type="user_page"
+                             address-space="base"/>
+                  <at:memory name="INTRAM0"
+                             start="0xFF000000"
+                             size="0x00008000"
+                             type="other"
+                             address-space="base"/>
+                  <at:memory name="INTRAM1"
+                             start="0xFF008000"
+                             size="0x00008000"
+                             type="other"
+                             address-space="base"/>
+                  <at:memory name="SRAM"
+                             start="0x00000000"
+                             size="0x00010000"
+                             type="ram"
+                             address-space="base"/>
+                  <at:memory name="USBB_SLAVE"
+                             start="0xE0000000"
+                             size="0x00800000"
+                             type="other"
+                             address-space="base"/>
+                  <at:memory rw="RW"
+                             type="io"
+                             size="0x20000"
+                             start="0xfffe0000"
+                             name="IO"
+                             address-space="base"/>
+                  <at:interface type="avr32jtag" name="JTAG"/>
+                  <at:tool id="com.atmel.avrdbg.tool.atmelice"/>
+                  <at:tool id="com.atmel.avrdbg.tool.avrdragon"/>
+                  <at:tool id="com.atmel.avrdbg.tool.avrone"/>
+                  <at:tool id="com.atmel.avrdbg.tool.edbg"/>
+                  <at:tool id="com.atmel.avrdbg.tool.edbgc"/>
+                  <at:tool id="com.atmel.avrdbg.tool.edbg"/>
+                  <at:tool id="com.atmel.avrdbg.tool.jtagicemk3"/>
+                  <at:tool id="com.atmel.avrdbg.tool.jtagice3plus"/>
+                  <at:tool id="com.atmel.avrdbg.tool.jtagicemkii"/>
+                  <at:tool id="com.atmel.avrdbg.tool.powerdebugger"/>
+                  <at:tool id="com.atmel.avrdbg.tool.stk600"/>
+                  <at:tool id="com.atmel.avrdbg.tool.flip"/>
+                  <at:property name="com.atmel.gcc.options.mpart" value="uc3a3256s"/>
+                  <at:project name="Barebone C Project">
+                     <at:component Cvendor="Atmel" Cclass="Device" Cgroup="Startup">
+                        <at:template select="Main file (.c)"/>
+                     </at:component>
+                  </at:project>
+                  <at:project name="Barebone Cpp Project">
+                     <at:component Cvendor="Atmel" Cclass="Device" Cgroup="Startup">
+                        <at:template select="Main file (.cpp)"/>
+                     </at:component>
+                  </at:project>
+                  <at:prerequisite context="compiling" Tcompiler="GCC" component="AVR32-GCC"/>
+               </at:extension>
+            </environment>
+            <description>32-bit AVR Microcontroller, 256KB Flash, 144-pin, SD/SDIO Card, AES Crypto Module</description>
+            <book name="http://www.atmel.com/Images/32072s.pdf"
+                  title="Datasheet (Summary)"/>
+            <book name="http://www.atmel.com/devices/AT32UC3A3256S.aspx"
+                  title="Device Page"/>
+         </device>
+         <device Dname="AT32UC3A464">
+            <processor Dcore="AVR32_UC3" Dendian="Big-endian"/>
+            <compile header="include/AT32UC3A464/avr32/io.h"/>
+            <environment name="atmel">
+               <at:extension xmlns:at="http://www.atmel.com/schemas/pack-device-atmel-extension"
+                             schemaVersion="1.0">
+                  <at:atdf name="atdf/AT32UC3A464.atdf"/>
+                  <at:variant ordercode="standard"
+                              vccmin="3.0"
+                              vccmax="3.6"
+                              tempmin="0"
+                              tempmax="0"/>
+                  <at:memory name="EBI_CS0"
+                             start="0xC0000000"
+                             size="0x01000000"
+                             type="other"
+                             address-space="base"/>
+                  <at:memory name="EBI_CS1"
+                             start="0xD0000000"
+                             size="0x08000000"
+                             type="other"
+                             address-space="base"/>
+                  <at:memory name="EBI_CS2"
+                             start="0xC8000000"
+                             size="0x01000000"
+                             type="other"
+                             address-space="base"/>
+                  <at:memory name="EBI_CS3"
+                             start="0xCC000000"
+                             size="0x01000000"
+                             type="other"
+                             address-space="base"/>
+                  <at:memory name="EBI_CS4"
+                             start="0xD8000000"
+                             size="0x01000000"
+                             type="other"
+                             address-space="base"/>
+                  <at:memory name="EBI_CS5"
+                             start="0xDC000000"
+                             size="0x01000000"
+                             type="other"
+                             address-space="base"/>
+                  <at:memory name="FLASH"
+                             start="0x80000000"
+                             size="0x00010000"
+                             type="flash"
+                             address-space="base"/>
+                  <at:memory name="USER_PAGE"
+                             start="0x80800000"
+                             size="0x00000200"
+                             type="user_page"
+                             address-space="base"/>
+                  <at:memory name="INTRAM0"
+                             start="0xFF000000"
+                             size="0x00008000"
+                             type="other"
+                             address-space="base"/>
+                  <at:memory name="INTRAM1"
+                             start="0xFF008000"
+                             size="0x00008000"
+                             type="other"
+                             address-space="base"/>
+                  <at:memory name="SRAM"
+                             start="0x00000000"
+                             size="0x00010000"
+                             type="ram"
+                             address-space="base"/>
+                  <at:memory name="USBB_SLAVE"
+                             start="0xE0000000"
+                             size="0x00800000"
+                             type="other"
+                             address-space="base"/>
+                  <at:memory rw="RW"
+                             type="io"
+                             size="0x20000"
+                             start="0xfffe0000"
+                             name="IO"
+                             address-space="base"/>
+                  <at:interface type="avr32jtag" name="JTAG"/>
+                  <at:tool id="com.atmel.avrdbg.tool.atmelice"/>
+                  <at:tool id="com.atmel.avrdbg.tool.avrdragon"/>
+                  <at:tool id="com.atmel.avrdbg.tool.avrone"/>
+                  <at:tool id="com.atmel.avrdbg.tool.edbg"/>
+                  <at:tool id="com.atmel.avrdbg.tool.edbgc"/>
+                  <at:tool id="com.atmel.avrdbg.tool.edbg"/>
+                  <at:tool id="com.atmel.avrdbg.tool.jtagicemk3"/>
+                  <at:tool id="com.atmel.avrdbg.tool.jtagice3plus"/>
+                  <at:tool id="com.atmel.avrdbg.tool.jtagicemkii"/>
+                  <at:tool id="com.atmel.avrdbg.tool.powerdebugger"/>
+                  <at:tool id="com.atmel.avrdbg.tool.stk600"/>
+                  <at:property name="com.atmel.gcc.options.mpart" value="uc3a464"/>
+                  <at:project name="Barebone C Project">
+                     <at:component Cvendor="Atmel" Cclass="Device" Cgroup="Startup">
+                        <at:template select="Main file (.c)"/>
+                     </at:component>
+                  </at:project>
+                  <at:project name="Barebone Cpp Project">
+                     <at:component Cvendor="Atmel" Cclass="Device" Cgroup="Startup">
+                        <at:template select="Main file (.cpp)"/>
+                     </at:component>
+                  </at:project>
+                  <at:prerequisite context="compiling" Tcompiler="GCC" component="AVR32-GCC"/>
+               </at:extension>
+            </environment>
+            <description>32-bit AVR Microcontroller, 64KB Flash, 100-pin, SD/SDIO Card</description>
+            <book name="http://www.atmel.com/Images/32072s.pdf"
+                  title="Datasheet (Summary)"/>
+            <book name="http://www.atmel.com/devices/AT32UC3A464.aspx"
+                  title="Device Page"/>
+         </device>
+         <device Dname="AT32UC3A4256S">
+            <processor Dcore="AVR32_UC3" Dendian="Big-endian"/>
+            <compile header="include/AT32UC3A4256S/avr32/io.h"/>
+            <environment name="atmel">
+               <at:extension xmlns:at="http://www.atmel.com/schemas/pack-device-atmel-extension"
+                             schemaVersion="1.0">
+                  <at:atdf name="atdf/AT32UC3A4256S.atdf"/>
+                  <at:variant ordercode="standard"
+                              vccmin="3.0"
+                              vccmax="3.6"
+                              tempmin="0"
+                              tempmax="0"/>
+                  <at:memory name="EBI_CS0"
+                             start="0xC0000000"
+                             size="0x01000000"
+                             type="other"
+                             address-space="base"/>
+                  <at:memory name="EBI_CS1"
+                             start="0xD0000000"
+                             size="0x08000000"
+                             type="other"
+                             address-space="base"/>
+                  <at:memory name="EBI_CS2"
+                             start="0xC8000000"
+                             size="0x01000000"
+                             type="other"
+                             address-space="base"/>
+                  <at:memory name="EBI_CS3"
+                             start="0xCC000000"
+                             size="0x01000000"
+                             type="other"
+                             address-space="base"/>
+                  <at:memory name="EBI_CS4"
+                             start="0xD8000000"
+                             size="0x01000000"
+                             type="other"
+                             address-space="base"/>
+                  <at:memory name="EBI_CS5"
+                             start="0xDC000000"
+                             size="0x01000000"
+                             type="other"
+                             address-space="base"/>
+                  <at:memory name="FLASH"
+                             start="0x80000000"
+                             size="0x00040000"
+                             type="flash"
+                             address-space="base"/>
+                  <at:memory name="USER_PAGE"
+                             start="0x80800000"
+                             size="0x00000200"
+                             type="user_page"
+                             address-space="base"/>
+                  <at:memory name="INTRAM0"
+                             start="0xFF000000"
+                             size="0x00008000"
+                             type="other"
+                             address-space="base"/>
+                  <at:memory name="INTRAM1"
+                             start="0xFF008000"
+                             size="0x00008000"
+                             type="other"
+                             address-space="base"/>
+                  <at:memory name="SRAM"
+                             start="0x00000000"
+                             size="0x00010000"
+                             type="ram"
+                             address-space="base"/>
+                  <at:memory name="USBB_SLAVE"
+                             start="0xE0000000"
+                             size="0x00800000"
+                             type="other"
+                             address-space="base"/>
+                  <at:memory rw="RW"
+                             type="io"
+                             size="0x20000"
+                             start="0xfffe0000"
+                             name="IO"
+                             address-space="base"/>
+                  <at:interface type="avr32jtag" name="JTAG"/>
+                  <at:tool id="com.atmel.avrdbg.tool.atmelice"/>
+                  <at:tool id="com.atmel.avrdbg.tool.avrdragon"/>
+                  <at:tool id="com.atmel.avrdbg.tool.avrone"/>
+                  <at:tool id="com.atmel.avrdbg.tool.edbg"/>
+                  <at:tool id="com.atmel.avrdbg.tool.edbgc"/>
+                  <at:tool id="com.atmel.avrdbg.tool.edbg"/>
+                  <at:tool id="com.atmel.avrdbg.tool.jtagicemk3"/>
+                  <at:tool id="com.atmel.avrdbg.tool.jtagice3plus"/>
+                  <at:tool id="com.atmel.avrdbg.tool.jtagicemkii"/>
+                  <at:tool id="com.atmel.avrdbg.tool.powerdebugger"/>
+                  <at:tool id="com.atmel.avrdbg.tool.stk600"/>
+                  <at:tool id="com.atmel.avrdbg.tool.flip"/>
+                  <at:property name="com.atmel.gcc.options.mpart" value="uc3a4256s"/>
+                  <at:project name="Barebone C Project">
+                     <at:component Cvendor="Atmel" Cclass="Device" Cgroup="Startup">
+                        <at:template select="Main file (.c)"/>
+                     </at:component>
+                  </at:project>
+                  <at:project name="Barebone Cpp Project">
+                     <at:component Cvendor="Atmel" Cclass="Device" Cgroup="Startup">
+                        <at:template select="Main file (.cpp)"/>
+                     </at:component>
+                  </at:project>
+                  <at:prerequisite context="compiling" Tcompiler="GCC" component="AVR32-GCC"/>
+               </at:extension>
+            </environment>
+            <description>32-bit AVR Microcontroller, 256KB Flash, 100-pin, SD/SDIO Card, AES  Crypto Module</description>
+            <book name="http://www.atmel.com/Images/32072s.pdf"
+                  title="Datasheet (Summary)"/>
+            <book name="http://www.atmel.com/devices/AT32UC3A4256S.aspx"
+                  title="Device Page"/>
+         </device>
+         <device Dname="AT32UC3A4128S">
+            <processor Dcore="AVR32_UC3" Dendian="Big-endian"/>
+            <compile header="include/AT32UC3A4128S/avr32/io.h"/>
+            <environment name="atmel">
+               <at:extension xmlns:at="http://www.atmel.com/schemas/pack-device-atmel-extension"
+                             schemaVersion="1.0">
+                  <at:atdf name="atdf/AT32UC3A4128S.atdf"/>
+                  <at:variant ordercode="standard"
+                              vccmin="3.0"
+                              vccmax="3.6"
+                              tempmin="0"
+                              tempmax="0"/>
+                  <at:memory name="EBI_CS0"
+                             start="0xC0000000"
+                             size="0x01000000"
+                             type="other"
+                             address-space="base"/>
+                  <at:memory name="EBI_CS1"
+                             start="0xD0000000"
+                             size="0x08000000"
+                             type="other"
+                             address-space="base"/>
+                  <at:memory name="EBI_CS2"
+                             start="0xC8000000"
+                             size="0x01000000"
+                             type="other"
+                             address-space="base"/>
+                  <at:memory name="EBI_CS3"
+                             start="0xCC000000"
+                             size="0x01000000"
+                             type="other"
+                             address-space="base"/>
+                  <at:memory name="EBI_CS4"
+                             start="0xD8000000"
+                             size="0x01000000"
+                             type="other"
+                             address-space="base"/>
+                  <at:memory name="EBI_CS5"
+                             start="0xDC000000"
+                             size="0x01000000"
+                             type="other"
+                             address-space="base"/>
+                  <at:memory name="FLASH"
+                             start="0x80000000"
+                             size="0x00020000"
+                             type="flash"
+                             address-space="base"/>
+                  <at:memory name="USER_PAGE"
+                             start="0x80800000"
+                             size="0x00000200"
+                             type="user_page"
+                             address-space="base"/>
+                  <at:memory name="INTRAM0"
+                             start="0xFF000000"
+                             size="0x00008000"
+                             type="other"
+                             address-space="base"/>
+                  <at:memory name="INTRAM1"
+                             start="0xFF008000"
+                             size="0x00008000"
+                             type="other"
+                             address-space="base"/>
+                  <at:memory name="SRAM"
+                             start="0x00000000"
+                             size="0x00010000"
+                             type="ram"
+                             address-space="base"/>
+                  <at:memory name="USBB_SLAVE"
+                             start="0xE0000000"
+                             size="0x00800000"
+                             type="other"
+                             address-space="base"/>
+                  <at:memory rw="RW"
+                             type="io"
+                             size="0x20000"
+                             start="0xfffe0000"
+                             name="IO"
+                             address-space="base"/>
+                  <at:interface type="avr32jtag" name="JTAG"/>
+                  <at:tool id="com.atmel.avrdbg.tool.atmelice"/>
+                  <at:tool id="com.atmel.avrdbg.tool.avrdragon"/>
+                  <at:tool id="com.atmel.avrdbg.tool.avrone"/>
+                  <at:tool id="com.atmel.avrdbg.tool.edbg"/>
+                  <at:tool id="com.atmel.avrdbg.tool.edbgc"/>
+                  <at:tool id="com.atmel.avrdbg.tool.edbg"/>
+                  <at:tool id="com.atmel.avrdbg.tool.jtagicemk3"/>
+                  <at:tool id="com.atmel.avrdbg.tool.jtagice3plus"/>
+                  <at:tool id="com.atmel.avrdbg.tool.jtagicemkii"/>
+                  <at:tool id="com.atmel.avrdbg.tool.powerdebugger"/>
+                  <at:tool id="com.atmel.avrdbg.tool.stk600"/>
+                  <at:property name="com.atmel.gcc.options.mpart" value="uc3a4128s"/>
+                  <at:project name="Barebone C Project">
+                     <at:component Cvendor="Atmel" Cclass="Device" Cgroup="Startup">
+                        <at:template select="Main file (.c)"/>
+                     </at:component>
+                  </at:project>
+                  <at:project name="Barebone Cpp Project">
+                     <at:component Cvendor="Atmel" Cclass="Device" Cgroup="Startup">
+                        <at:template select="Main file (.cpp)"/>
+                     </at:component>
+                  </at:project>
+                  <at:prerequisite context="compiling" Tcompiler="GCC" component="AVR32-GCC"/>
+               </at:extension>
+            </environment>
+            <description>32-bit AVR Microcontroller, 128KB Flash, 100-pin, SD/SDIO Card, AES Crypto Module</description>
+            <book name="http://www.atmel.com/Images/32072s.pdf"
+                  title="Datasheet (Summary)"/>
+            <book name="http://www.atmel.com/devices/AT32UC3A4128S.aspx"
+                  title="Device Page"/>
+         </device>
+         <device Dname="AT32UC3A0512">
+            <processor Dcore="AVR32_UC3" Dendian="Big-endian"/>
+            <compile header="include/AT32UC3A0512/avr32/io.h"/>
+            <environment name="atmel">
+               <at:extension xmlns:at="http://www.atmel.com/schemas/pack-device-atmel-extension"
+                             schemaVersion="1.0">
+                  <at:atdf name="atdf/AT32UC3A0512.atdf"/>
+                  <at:variant ordercode="standard"
+                              vccmin="3.0"
+                              vccmax="3.6"
+                              tempmin="0"
+                              tempmax="0"/>
+                  <at:memory name="EBI_CS0"
+                             start="0xC0000000"
+                             size="0x01000000"
+                             type="other"
+                             address-space="base"/>
+                  <at:memory name="EBI_CS1"
+                             start="0xD0000000"
+                             size="0x08000000"
+                             type="other"
+                             address-space="base"/>
+                  <at:memory name="EBI_CS2"
+                             start="0xC8000000"
+                             size="0x01000000"
+                             type="other"
+                             address-space="base"/>
+                  <at:memory name="EBI_CS3"
+                             start="0xCC000000"
+                             size="0x01000000"
+                             type="other"
+                             address-space="base"/>
+                  <at:memory name="FLASH"
+                             start="0x80000000"
+                             size="0x00080000"
+                             type="flash"
+                             address-space="base"/>
+                  <at:memory name="USER_PAGE"
+                             start="0x80800000"
+                             size="0x00000200"
+                             type="user_page"
+                             address-space="base"/>
+                  <at:memory name="SRAM"
+                             start="0x00000000"
+                             size="0x00010000"
+                             type="ram"
+                             address-space="base"/>
+                  <at:memory name="USBB_SLAVE"
+                             start="0xE0000000"
+                             size="0x00800000"
+                             type="other"
+                             address-space="base"/>
+                  <at:memory rw="RW"
+                             type="io"
+                             size="0x20000"
+                             start="0xfffe0000"
+                             name="IO"
+                             address-space="base"/>
+                  <at:interface type="avr32jtag" name="JTAG"/>
+                  <at:tool id="com.atmel.avrdbg.tool.atmelice"/>
+                  <at:tool id="com.atmel.avrdbg.tool.avrdragon"/>
+                  <at:tool id="com.atmel.avrdbg.tool.avrone"/>
+                  <at:tool id="com.atmel.avrdbg.tool.edbg"/>
+                  <at:tool id="com.atmel.avrdbg.tool.edbgc"/>
+                  <at:tool id="com.atmel.avrdbg.tool.edbg"/>
+                  <at:tool id="com.atmel.avrdbg.tool.jtagicemk3"/>
+                  <at:tool id="com.atmel.avrdbg.tool.jtagice3plus"/>
+                  <at:tool id="com.atmel.avrdbg.tool.jtagicemkii"/>
+                  <at:tool id="com.atmel.avrdbg.tool.powerdebugger"/>
+                  <at:tool id="com.atmel.avrdbg.tool.stk600"/>
+                  <at:tool id="com.atmel.avrdbg.tool.flip"/>
+                  <at:tool id="com.atmel.avrdbg.tool.simulator"/>
+                  <at:property name="com.atmel.avrdbg.tool.simulator.key" value="AT32UC3A0512"/>
+                  <at:property name="com.atmel.avrdbg.tool.simulator.model.win32"
+                               value="simulator/win32/libat32uc3a0512.dll"/>
+                  <at:property name="com.atmel.gcc.options.mpart" value="uc3a0512"/>
+                  <at:project name="Barebone C Project">
+                     <at:component Cvendor="Atmel" Cclass="Device" Cgroup="Startup">
+                        <at:template select="Main file (.c)"/>
+                     </at:component>
+                  </at:project>
+                  <at:project name="Barebone Cpp Project">
+                     <at:component Cvendor="Atmel" Cclass="Device" Cgroup="Startup">
+                        <at:template select="Main file (.cpp)"/>
+                     </at:component>
+                  </at:project>
+                  <at:prerequisite context="compiling" Tcompiler="GCC" component="AVR32-GCC"/>
+               </at:extension>
+            </environment>
+            <description>32-bit AVR Microcontroller, 512KB Flash, 144-Pin</description>
+            <book name="http://www.atmel.com/Images/32058S.pdf" title="Datasheet"/>
+            <book name="http://www.atmel.com/devices/AT32UC3A0512.aspx"
+                  title="Device Page"/>
+         </device>
+         <device Dname="AT32UC3A4256">
+            <processor Dcore="AVR32_UC3" Dendian="Big-endian"/>
+            <compile header="include/AT32UC3A4256/avr32/io.h"/>
+            <environment name="atmel">
+               <at:extension xmlns:at="http://www.atmel.com/schemas/pack-device-atmel-extension"
+                             schemaVersion="1.0">
+                  <at:atdf name="atdf/AT32UC3A4256.atdf"/>
+                  <at:variant ordercode="standard"
+                              vccmin="3.0"
+                              vccmax="3.6"
+                              tempmin="0"
+                              tempmax="0"/>
+                  <at:memory name="EBI_CS0"
+                             start="0xC0000000"
+                             size="0x01000000"
+                             type="other"
+                             address-space="base"/>
+                  <at:memory name="EBI_CS1"
+                             start="0xD0000000"
+                             size="0x08000000"
+                             type="other"
+                             address-space="base"/>
+                  <at:memory name="EBI_CS2"
+                             start="0xC8000000"
+                             size="0x01000000"
+                             type="other"
+                             address-space="base"/>
+                  <at:memory name="EBI_CS3"
+                             start="0xCC000000"
+                             size="0x01000000"
+                             type="other"
+                             address-space="base"/>
+                  <at:memory name="EBI_CS4"
+                             start="0xD8000000"
+                             size="0x01000000"
+                             type="other"
+                             address-space="base"/>
+                  <at:memory name="EBI_CS5"
+                             start="0xDC000000"
+                             size="0x01000000"
+                             type="other"
+                             address-space="base"/>
+                  <at:memory name="FLASH"
+                             start="0x80000000"
+                             size="0x00040000"
+                             type="flash"
+                             address-space="base"/>
+                  <at:memory name="USER_PAGE"
+                             start="0x80800000"
+                             size="0x00000200"
+                             type="user_page"
+                             address-space="base"/>
+                  <at:memory name="INTRAM0"
+                             start="0xFF000000"
+                             size="0x00008000"
+                             type="other"
+                             address-space="base"/>
+                  <at:memory name="INTRAM1"
+                             start="0xFF008000"
+                             size="0x00008000"
+                             type="other"
+                             address-space="base"/>
+                  <at:memory name="SRAM"
+                             start="0x00000000"
+                             size="0x00010000"
+                             type="ram"
+                             address-space="base"/>
+                  <at:memory name="USBB_SLAVE"
+                             start="0xE0000000"
+                             size="0x00800000"
+                             type="other"
+                             address-space="base"/>
+                  <at:memory rw="RW"
+                             type="io"
+                             size="0x20000"
+                             start="0xfffe0000"
+                             name="IO"
+                             address-space="base"/>
+                  <at:interface type="avr32jtag" name="JTAG"/>
+                  <at:tool id="com.atmel.avrdbg.tool.atmelice"/>
+                  <at:tool id="com.atmel.avrdbg.tool.avrdragon"/>
+                  <at:tool id="com.atmel.avrdbg.tool.avrone"/>
+                  <at:tool id="com.atmel.avrdbg.tool.edbg"/>
+                  <at:tool id="com.atmel.avrdbg.tool.edbgc"/>
+                  <at:tool id="com.atmel.avrdbg.tool.edbg"/>
+                  <at:tool id="com.atmel.avrdbg.tool.jtagicemk3"/>
+                  <at:tool id="com.atmel.avrdbg.tool.jtagice3plus"/>
+                  <at:tool id="com.atmel.avrdbg.tool.jtagicemkii"/>
+                  <at:tool id="com.atmel.avrdbg.tool.powerdebugger"/>
+                  <at:tool id="com.atmel.avrdbg.tool.stk600"/>
+                  <at:property name="com.atmel.gcc.options.mpart" value="uc3a4256"/>
+                  <at:project name="Barebone C Project">
+                     <at:component Cvendor="Atmel" Cclass="Device" Cgroup="Startup">
+                        <at:template select="Main file (.c)"/>
+                     </at:component>
+                  </at:project>
+                  <at:project name="Barebone Cpp Project">
+                     <at:component Cvendor="Atmel" Cclass="Device" Cgroup="Startup">
+                        <at:template select="Main file (.cpp)"/>
+                     </at:component>
+                  </at:project>
+                  <at:prerequisite context="compiling" Tcompiler="GCC" component="AVR32-GCC"/>
+               </at:extension>
+            </environment>
+            <description>32-bit AVR Microcontroller, 256KB Flash, 100-pin, SD/SDIO Card</description>
+            <book name="http://www.atmel.com/Images/32072s.pdf"
+                  title="Datasheet (Summary)"/>
+            <book name="http://www.atmel.com/devices/AT32UC3A4256.aspx"
+                  title="Device Page"/>
+         </device>
+         <device Dname="AT32UC3A0256">
+            <processor Dcore="AVR32_UC3" Dendian="Big-endian"/>
+            <compile header="include/AT32UC3A0256/avr32/io.h"/>
+            <environment name="atmel">
+               <at:extension xmlns:at="http://www.atmel.com/schemas/pack-device-atmel-extension"
+                             schemaVersion="1.0">
+                  <at:atdf name="atdf/AT32UC3A0256.atdf"/>
+                  <at:variant ordercode="standard"
+                              vccmin="3.0"
+                              vccmax="3.6"
+                              tempmin="0"
+                              tempmax="0"/>
+                  <at:memory name="EBI_CS0"
+                             start="0xC0000000"
+                             size="0x01000000"
+                             type="other"
+                             address-space="base"/>
+                  <at:memory name="EBI_CS1"
+                             start="0xD0000000"
+                             size="0x08000000"
+                             type="other"
+                             address-space="base"/>
+                  <at:memory name="EBI_CS2"
+                             start="0xC8000000"
+                             size="0x01000000"
+                             type="other"
+                             address-space="base"/>
+                  <at:memory name="EBI_CS3"
+                             start="0xCC000000"
+                             size="0x01000000"
+                             type="other"
+                             address-space="base"/>
+                  <at:memory name="FLASH"
+                             start="0x80000000"
+                             size="0x00040000"
+                             type="flash"
+                             address-space="base"/>
+                  <at:memory name="USER_PAGE"
+                             start="0x80800000"
+                             size="0x00000200"
+                             type="user_page"
+                             address-space="base"/>
+                  <at:memory name="SRAM"
+                             start="0x00000000"
+                             size="0x00010000"
+                             type="ram"
+                             address-space="base"/>
+                  <at:memory name="USBB_SLAVE"
+                             start="0xE0000000"
+                             size="0x00800000"
+                             type="other"
+                             address-space="base"/>
+                  <at:memory rw="RW"
+                             type="io"
+                             size="0x20000"
+                             start="0xfffe0000"
+                             name="IO"
+                             address-space="base"/>
+                  <at:interface type="avr32jtag" name="JTAG"/>
+                  <at:tool id="com.atmel.avrdbg.tool.atmelice"/>
+                  <at:tool id="com.atmel.avrdbg.tool.avrdragon"/>
+                  <at:tool id="com.atmel.avrdbg.tool.avrone"/>
+                  <at:tool id="com.atmel.avrdbg.tool.edbg"/>
+                  <at:tool id="com.atmel.avrdbg.tool.edbgc"/>
+                  <at:tool id="com.atmel.avrdbg.tool.edbg"/>
+                  <at:tool id="com.atmel.avrdbg.tool.jtagicemk3"/>
+                  <at:tool id="com.atmel.avrdbg.tool.jtagice3plus"/>
+                  <at:tool id="com.atmel.avrdbg.tool.jtagicemkii"/>
+                  <at:tool id="com.atmel.avrdbg.tool.powerdebugger"/>
+                  <at:tool id="com.atmel.avrdbg.tool.stk600"/>
+                  <at:tool id="com.atmel.avrdbg.tool.flip"/>
+                  <at:tool id="com.atmel.avrdbg.tool.simulator"/>
+                  <at:property name="com.atmel.avrdbg.tool.simulator.key" value="AT32UC3A0256"/>
+                  <at:property name="com.atmel.avrdbg.tool.simulator.model.win32"
+                               value="simulator/win32/libat32uc3a0512.dll"/>
+                  <at:property name="com.atmel.gcc.options.mpart" value="uc3a0256"/>
+                  <at:project name="Barebone C Project">
+                     <at:component Cvendor="Atmel" Cclass="Device" Cgroup="Startup">
+                        <at:template select="Main file (.c)"/>
+                     </at:component>
+                  </at:project>
+                  <at:project name="Barebone Cpp Project">
+                     <at:component Cvendor="Atmel" Cclass="Device" Cgroup="Startup">
+                        <at:template select="Main file (.cpp)"/>
+                     </at:component>
+                  </at:project>
+                  <at:prerequisite context="compiling" Tcompiler="GCC" component="AVR32-GCC"/>
+               </at:extension>
+            </environment>
+            <description>32-bit AVR Microcontroller, 256KB Flash, 144-pin</description>
+            <book name="http://www.atmel.com/Images/32058S.pdf" title="Datasheet"/>
+            <book name="http://www.atmel.com/devices/AT32UC3A0256.aspx"
+                  title="Device Page"/>
+         </device>
+         <device Dname="AT32UC3A3128S">
+            <processor Dcore="AVR32_UC3" Dendian="Big-endian"/>
+            <compile header="include/AT32UC3A3128S/avr32/io.h"/>
+            <environment name="atmel">
+               <at:extension xmlns:at="http://www.atmel.com/schemas/pack-device-atmel-extension"
+                             schemaVersion="1.0">
+                  <at:atdf name="atdf/AT32UC3A3128S.atdf"/>
+                  <at:variant ordercode="standard"
+                              vccmin="3.0"
+                              vccmax="3.6"
+                              tempmin="0"
+                              tempmax="0"/>
+                  <at:memory name="EBI_CS0"
+                             start="0xC0000000"
+                             size="0x01000000"
+                             type="other"
+                             address-space="base"/>
+                  <at:memory name="EBI_CS1"
+                             start="0xD0000000"
+                             size="0x08000000"
+                             type="other"
+                             address-space="base"/>
+                  <at:memory name="EBI_CS2"
+                             start="0xC8000000"
+                             size="0x01000000"
+                             type="other"
+                             address-space="base"/>
+                  <at:memory name="EBI_CS3"
+                             start="0xCC000000"
+                             size="0x01000000"
+                             type="other"
+                             address-space="base"/>
+                  <at:memory name="EBI_CS4"
+                             start="0xD8000000"
+                             size="0x01000000"
+                             type="other"
+                             address-space="base"/>
+                  <at:memory name="EBI_CS5"
+                             start="0xDC000000"
+                             size="0x01000000"
+                             type="other"
+                             address-space="base"/>
+                  <at:memory name="FLASH"
+                             start="0x80000000"
+                             size="0x00020000"
+                             type="flash"
+                             address-space="base"/>
+                  <at:memory name="USER_PAGE"
+                             start="0x80800000"
+                             size="0x00000200"
+                             type="user_page"
+                             address-space="base"/>
+                  <at:memory name="INTRAM0"
+                             start="0xFF000000"
+                             size="0x00008000"
+                             type="other"
+                             address-space="base"/>
+                  <at:memory name="INTRAM1"
+                             start="0xFF008000"
+                             size="0x00008000"
+                             type="other"
+                             address-space="base"/>
+                  <at:memory name="SRAM"
+                             start="0x00000000"
+                             size="0x00010000"
+                             type="ram"
+                             address-space="base"/>
+                  <at:memory name="USBB_SLAVE"
+                             start="0xE0000000"
+                             size="0x00800000"
+                             type="other"
+                             address-space="base"/>
+                  <at:memory rw="RW"
+                             type="io"
+                             size="0x20000"
+                             start="0xfffe0000"
+                             name="IO"
+                             address-space="base"/>
+                  <at:interface type="avr32jtag" name="JTAG"/>
+                  <at:tool id="com.atmel.avrdbg.tool.atmelice"/>
+                  <at:tool id="com.atmel.avrdbg.tool.avrdragon"/>
+                  <at:tool id="com.atmel.avrdbg.tool.avrone"/>
+                  <at:tool id="com.atmel.avrdbg.tool.edbg"/>
+                  <at:tool id="com.atmel.avrdbg.tool.edbgc"/>
+                  <at:tool id="com.atmel.avrdbg.tool.edbg"/>
+                  <at:tool id="com.atmel.avrdbg.tool.jtagicemk3"/>
+                  <at:tool id="com.atmel.avrdbg.tool.jtagice3plus"/>
+                  <at:tool id="com.atmel.avrdbg.tool.jtagicemkii"/>
+                  <at:tool id="com.atmel.avrdbg.tool.powerdebugger"/>
+                  <at:tool id="com.atmel.avrdbg.tool.stk600"/>
+                  <at:tool id="com.atmel.avrdbg.tool.flip"/>
+                  <at:property name="com.atmel.gcc.options.mpart" value="uc3a3128s"/>
+                  <at:project name="Barebone C Project">
+                     <at:component Cvendor="Atmel" Cclass="Device" Cgroup="Startup">
+                        <at:template select="Main file (.c)"/>
+                     </at:component>
+                  </at:project>
+                  <at:project name="Barebone Cpp Project">
+                     <at:component Cvendor="Atmel" Cclass="Device" Cgroup="Startup">
+                        <at:template select="Main file (.cpp)"/>
+                     </at:component>
+                  </at:project>
+                  <at:prerequisite context="compiling" Tcompiler="GCC" component="AVR32-GCC"/>
+               </at:extension>
+            </environment>
+            <description>32-bit AVR Microcontroller, 128KB Flash, 144-pin, SD/SDIO Card, AES Crypto Module</description>
+            <book name="http://www.atmel.com/Images/32072s.pdf"
+                  title="Datasheet (Summary)"/>
+            <book name="http://www.atmel.com/devices/AT32UC3A3128S.aspx"
+                  title="Device Page"/>
+         </device>
+         <device Dname="AT32UC3A3256">
+            <processor Dcore="AVR32_UC3" Dendian="Big-endian"/>
+            <compile header="include/AT32UC3A3256/avr32/io.h"/>
+            <environment name="atmel">
+               <at:extension xmlns:at="http://www.atmel.com/schemas/pack-device-atmel-extension"
+                             schemaVersion="1.0">
+                  <at:atdf name="atdf/AT32UC3A3256.atdf"/>
+                  <at:variant ordercode="standard"
+                              vccmin="3.0"
+                              vccmax="3.6"
+                              tempmin="0"
+                              tempmax="0"/>
+                  <at:memory name="EBI_CS0"
+                             start="0xC0000000"
+                             size="0x01000000"
+                             type="other"
+                             address-space="base"/>
+                  <at:memory name="EBI_CS1"
+                             start="0xD0000000"
+                             size="0x08000000"
+                             type="other"
+                             address-space="base"/>
+                  <at:memory name="EBI_CS2"
+                             start="0xC8000000"
+                             size="0x01000000"
+                             type="other"
+                             address-space="base"/>
+                  <at:memory name="EBI_CS3"
+                             start="0xCC000000"
+                             size="0x01000000"
+                             type="other"
+                             address-space="base"/>
+                  <at:memory name="EBI_CS4"
+                             start="0xD8000000"
+                             size="0x01000000"
+                             type="other"
+                             address-space="base"/>
+                  <at:memory name="EBI_CS5"
+                             start="0xDC000000"
+                             size="0x01000000"
+                             type="other"
+                             address-space="base"/>
+                  <at:memory name="FLASH"
+                             start="0x80000000"
+                             size="0x00040000"
+                             type="flash"
+                             address-space="base"/>
+                  <at:memory name="USER_PAGE"
+                             start="0x80800000"
+                             size="0x00000200"
+                             type="user_page"
+                             address-space="base"/>
+                  <at:memory name="INTRAM0"
+                             start="0xFF000000"
+                             size="0x00008000"
+                             type="other"
+                             address-space="base"/>
+                  <at:memory name="INTRAM1"
+                             start="0xFF008000"
+                             size="0x00008000"
+                             type="other"
+                             address-space="base"/>
+                  <at:memory name="SRAM"
+                             start="0x00000000"
+                             size="0x00010000"
+                             type="ram"
+                             address-space="base"/>
+                  <at:memory name="USBB_SLAVE"
+                             start="0xE0000000"
+                             size="0x00800000"
+                             type="other"
+                             address-space="base"/>
+                  <at:memory rw="RW"
+                             type="io"
+                             size="0x20000"
+                             start="0xfffe0000"
+                             name="IO"
+                             address-space="base"/>
+                  <at:interface type="avr32jtag" name="JTAG"/>
+                  <at:tool id="com.atmel.avrdbg.tool.atmelice"/>
+                  <at:tool id="com.atmel.avrdbg.tool.avrdragon"/>
+                  <at:tool id="com.atmel.avrdbg.tool.avrone"/>
+                  <at:tool id="com.atmel.avrdbg.tool.edbg"/>
+                  <at:tool id="com.atmel.avrdbg.tool.edbgc"/>
+                  <at:tool id="com.atmel.avrdbg.tool.edbg"/>
+                  <at:tool id="com.atmel.avrdbg.tool.jtagicemk3"/>
+                  <at:tool id="com.atmel.avrdbg.tool.jtagice3plus"/>
+                  <at:tool id="com.atmel.avrdbg.tool.jtagicemkii"/>
+                  <at:tool id="com.atmel.avrdbg.tool.powerdebugger"/>
+                  <at:tool id="com.atmel.avrdbg.tool.stk600"/>
+                  <at:tool id="com.atmel.avrdbg.tool.flip"/>
+                  <at:property name="com.atmel.gcc.options.mpart" value="uc3a3256"/>
+                  <at:project name="Barebone C Project">
+                     <at:component Cvendor="Atmel" Cclass="Device" Cgroup="Startup">
+                        <at:template select="Main file (.c)"/>
+                     </at:component>
+                  </at:project>
+                  <at:project name="Barebone Cpp Project">
+                     <at:component Cvendor="Atmel" Cclass="Device" Cgroup="Startup">
+                        <at:template select="Main file (.cpp)"/>
+                     </at:component>
+                  </at:project>
+                  <at:prerequisite context="compiling" Tcompiler="GCC" component="AVR32-GCC"/>
+               </at:extension>
+            </environment>
+            <description>32-bit AVR Microcontroller, 256KB Flash, 144-pin, SD/SDIO Card</description>
+            <book name="http://www.atmel.com/Images/32072s.pdf"
+                  title="Datasheet (Summary)"/>
+            <book name="http://www.atmel.com/devices/AT32UC3A3256.aspx"
+                  title="Device Page"/>
+         </device>
+         <device Dname="AT32UC3A1256">
+            <processor Dcore="AVR32_UC3" Dendian="Big-endian"/>
+            <compile header="include/AT32UC3A1256/avr32/io.h"/>
+            <environment name="atmel">
+               <at:extension xmlns:at="http://www.atmel.com/schemas/pack-device-atmel-extension"
+                             schemaVersion="1.0">
+                  <at:atdf name="atdf/AT32UC3A1256.atdf"/>
+                  <at:variant ordercode="standard"
+                              vccmin="3.0"
+                              vccmax="3.6"
+                              tempmin="0"
+                              tempmax="0"/>
+                  <at:memory name="FLASH"
+                             start="0x80000000"
+                             size="0x00040000"
+                             type="flash"
+                             address-space="base"/>
+                  <at:memory name="USER_PAGE"
+                             start="0x80800000"
+                             size="0x00000200"
+                             type="user_page"
+                             address-space="base"/>
+                  <at:memory name="SRAM"
+                             start="0x00000000"
+                             size="0x00010000"
+                             type="ram"
+                             address-space="base"/>
+                  <at:memory name="USBB_SLAVE"
+                             start="0xE0000000"
+                             size="0x00800000"
+                             type="other"
+                             address-space="base"/>
+                  <at:memory rw="RW"
+                             type="io"
+                             size="0x20000"
+                             start="0xfffe0000"
+                             name="IO"
+                             address-space="base"/>
+                  <at:interface type="avr32jtag" name="JTAG"/>
+                  <at:tool id="com.atmel.avrdbg.tool.atmelice"/>
+                  <at:tool id="com.atmel.avrdbg.tool.avrdragon"/>
+                  <at:tool id="com.atmel.avrdbg.tool.avrone"/>
+                  <at:tool id="com.atmel.avrdbg.tool.edbg"/>
+                  <at:tool id="com.atmel.avrdbg.tool.edbgc"/>
+                  <at:tool id="com.atmel.avrdbg.tool.edbg"/>
+                  <at:tool id="com.atmel.avrdbg.tool.jtagicemk3"/>
+                  <at:tool id="com.atmel.avrdbg.tool.jtagice3plus"/>
+                  <at:tool id="com.atmel.avrdbg.tool.jtagicemkii"/>
+                  <at:tool id="com.atmel.avrdbg.tool.powerdebugger"/>
+                  <at:tool id="com.atmel.avrdbg.tool.stk600"/>
+                  <at:tool id="com.atmel.avrdbg.tool.flip"/>
+                  <at:tool id="com.atmel.avrdbg.tool.simulator"/>
+                  <at:property name="com.atmel.avrdbg.tool.simulator.key" value="AT32UC3A1256"/>
+                  <at:property name="com.atmel.avrdbg.tool.simulator.model.win32"
+                               value="simulator/win32/libat32uc3a0512.dll"/>
+                  <at:property name="com.atmel.gcc.options.mpart" value="uc3a1256"/>
+                  <at:project name="Barebone C Project">
+                     <at:component Cvendor="Atmel" Cclass="Device" Cgroup="Startup">
+                        <at:template select="Main file (.c)"/>
+                     </at:component>
+                  </at:project>
+                  <at:project name="Barebone Cpp Project">
+                     <at:component Cvendor="Atmel" Cclass="Device" Cgroup="Startup">
+                        <at:template select="Main file (.cpp)"/>
+                     </at:component>
+                  </at:project>
+                  <at:prerequisite context="compiling" Tcompiler="GCC" component="AVR32-GCC"/>
+               </at:extension>
+            </environment>
+         </device>
+         <device Dname="AT32UC3A464S">
+            <processor Dcore="AVR32_UC3" Dendian="Big-endian"/>
+            <compile header="include/AT32UC3A464S/avr32/io.h"/>
+            <environment name="atmel">
+               <at:extension xmlns:at="http://www.atmel.com/schemas/pack-device-atmel-extension"
+                             schemaVersion="1.0">
+                  <at:atdf name="atdf/AT32UC3A464S.atdf"/>
+                  <at:variant ordercode="standard"
+                              vccmin="3.0"
+                              vccmax="3.6"
+                              tempmin="0"
+                              tempmax="0"/>
+                  <at:memory name="EBI_CS0"
+                             start="0xC0000000"
+                             size="0x01000000"
+                             type="other"
+                             address-space="base"/>
+                  <at:memory name="EBI_CS1"
+                             start="0xD0000000"
+                             size="0x08000000"
+                             type="other"
+                             address-space="base"/>
+                  <at:memory name="EBI_CS2"
+                             start="0xC8000000"
+                             size="0x01000000"
+                             type="other"
+                             address-space="base"/>
+                  <at:memory name="EBI_CS3"
+                             start="0xCC000000"
+                             size="0x01000000"
+                             type="other"
+                             address-space="base"/>
+                  <at:memory name="EBI_CS4"
+                             start="0xD8000000"
+                             size="0x01000000"
+                             type="other"
+                             address-space="base"/>
+                  <at:memory name="EBI_CS5"
+                             start="0xDC000000"
+                             size="0x01000000"
+                             type="other"
+                             address-space="base"/>
+                  <at:memory name="FLASH"
+                             start="0x80000000"
+                             size="0x00010000"
+                             type="flash"
+                             address-space="base"/>
+                  <at:memory name="USER_PAGE"
+                             start="0x80800000"
+                             size="0x00000200"
+                             type="user_page"
+                             address-space="base"/>
+                  <at:memory name="INTRAM0"
+                             start="0xFF000000"
+                             size="0x00008000"
+                             type="other"
+                             address-space="base"/>
+                  <at:memory name="INTRAM1"
+                             start="0xFF008000"
+                             size="0x00008000"
+                             type="other"
+                             address-space="base"/>
+                  <at:memory name="SRAM"
+                             start="0x00000000"
+                             size="0x00010000"
+                             type="ram"
+                             address-space="base"/>
+                  <at:memory name="USBB_SLAVE"
+                             start="0xE0000000"
+                             size="0x00800000"
+                             type="other"
+                             address-space="base"/>
+                  <at:memory rw="RW"
+                             type="io"
+                             size="0x20000"
+                             start="0xfffe0000"
+                             name="IO"
+                             address-space="base"/>
+                  <at:interface type="avr32jtag" name="JTAG"/>
+                  <at:tool id="com.atmel.avrdbg.tool.atmelice"/>
+                  <at:tool id="com.atmel.avrdbg.tool.avrdragon"/>
+                  <at:tool id="com.atmel.avrdbg.tool.avrone"/>
+                  <at:tool id="com.atmel.avrdbg.tool.edbg"/>
+                  <at:tool id="com.atmel.avrdbg.tool.edbgc"/>
+                  <at:tool id="com.atmel.avrdbg.tool.edbg"/>
+                  <at:tool id="com.atmel.avrdbg.tool.jtagicemk3"/>
+                  <at:tool id="com.atmel.avrdbg.tool.jtagice3plus"/>
+                  <at:tool id="com.atmel.avrdbg.tool.jtagicemkii"/>
+                  <at:tool id="com.atmel.avrdbg.tool.powerdebugger"/>
+                  <at:tool id="com.atmel.avrdbg.tool.stk600"/>
+                  <at:property name="com.atmel.gcc.options.mpart" value="uc3a464s"/>
+                  <at:project name="Barebone C Project">
+                     <at:component Cvendor="Atmel" Cclass="Device" Cgroup="Startup">
+                        <at:template select="Main file (.c)"/>
+                     </at:component>
+                  </at:project>
+                  <at:project name="Barebone Cpp Project">
+                     <at:component Cvendor="Atmel" Cclass="Device" Cgroup="Startup">
+                        <at:template select="Main file (.cpp)"/>
+                     </at:component>
+                  </at:project>
+                  <at:prerequisite context="compiling" Tcompiler="GCC" component="AVR32-GCC"/>
+               </at:extension>
+            </environment>
+            <description>32-bit AVR Microcontroller, 64KB Flash, 100-pin, SD/SDIO Card, AES Crypto Module</description>
+            <book name="http://www.atmel.com/Images/32072s.pdf"
+                  title="Datasheet (Summary)"/>
+            <book name="http://www.atmel.com/devices/AT32UC3A464S.aspx"
+                  title="Device Page"/>
+         </device>
+         <device Dname="AT32UC3A3128">
+            <processor Dcore="AVR32_UC3" Dendian="Big-endian"/>
+            <compile header="include/AT32UC3A3128/avr32/io.h"/>
+            <environment name="atmel">
+               <at:extension xmlns:at="http://www.atmel.com/schemas/pack-device-atmel-extension"
+                             schemaVersion="1.0">
+                  <at:atdf name="atdf/AT32UC3A3128.atdf"/>
+                  <at:variant ordercode="standard"
+                              vccmin="3.0"
+                              vccmax="3.6"
+                              tempmin="0"
+                              tempmax="0"/>
+                  <at:memory name="EBI_CS0"
+                             start="0xC0000000"
+                             size="0x01000000"
+                             type="other"
+                             address-space="base"/>
+                  <at:memory name="EBI_CS1"
+                             start="0xD0000000"
+                             size="0x08000000"
+                             type="other"
+                             address-space="base"/>
+                  <at:memory name="EBI_CS2"
+                             start="0xC8000000"
+                             size="0x01000000"
+                             type="other"
+                             address-space="base"/>
+                  <at:memory name="EBI_CS3"
+                             start="0xCC000000"
+                             size="0x01000000"
+                             type="other"
+                             address-space="base"/>
+                  <at:memory name="EBI_CS4"
+                             start="0xD8000000"
+                             size="0x01000000"
+                             type="other"
+                             address-space="base"/>
+                  <at:memory name="EBI_CS5"
+                             start="0xDC000000"
+                             size="0x01000000"
+                             type="other"
+                             address-space="base"/>
+                  <at:memory name="FLASH"
+                             start="0x80000000"
+                             size="0x00020000"
+                             type="flash"
+                             address-space="base"/>
+                  <at:memory name="USER_PAGE"
+                             start="0x80800000"
+                             size="0x00000200"
+                             type="user_page"
+                             address-space="base"/>
+                  <at:memory name="INTRAM0"
+                             start="0xFF000000"
+                             size="0x00008000"
+                             type="other"
+                             address-space="base"/>
+                  <at:memory name="INTRAM1"
+                             start="0xFF008000"
+                             size="0x00008000"
+                             type="other"
+                             address-space="base"/>
+                  <at:memory name="SRAM"
+                             start="0x00000000"
+                             size="0x00010000"
+                             type="ram"
+                             address-space="base"/>
+                  <at:memory name="USBB_SLAVE"
+                             start="0xE0000000"
+                             size="0x00800000"
+                             type="other"
+                             address-space="base"/>
+                  <at:memory rw="RW"
+                             type="io"
+                             size="0x20000"
+                             start="0xfffe0000"
+                             name="IO"
+                             address-space="base"/>
+                  <at:interface type="avr32jtag" name="JTAG"/>
+                  <at:tool id="com.atmel.avrdbg.tool.atmelice"/>
+                  <at:tool id="com.atmel.avrdbg.tool.avrdragon"/>
+                  <at:tool id="com.atmel.avrdbg.tool.avrone"/>
+                  <at:tool id="com.atmel.avrdbg.tool.edbg"/>
+                  <at:tool id="com.atmel.avrdbg.tool.edbgc"/>
+                  <at:tool id="com.atmel.avrdbg.tool.edbg"/>
+                  <at:tool id="com.atmel.avrdbg.tool.jtagicemk3"/>
+                  <at:tool id="com.atmel.avrdbg.tool.jtagice3plus"/>
+                  <at:tool id="com.atmel.avrdbg.tool.jtagicemkii"/>
+                  <at:tool id="com.atmel.avrdbg.tool.powerdebugger"/>
+                  <at:tool id="com.atmel.avrdbg.tool.stk600"/>
+                  <at:tool id="com.atmel.avrdbg.tool.flip"/>
+                  <at:property name="com.atmel.gcc.options.mpart" value="uc3a3128"/>
+                  <at:project name="Barebone C Project">
+                     <at:component Cvendor="Atmel" Cclass="Device" Cgroup="Startup">
+                        <at:template select="Main file (.c)"/>
+                     </at:component>
+                  </at:project>
+                  <at:project name="Barebone Cpp Project">
+                     <at:component Cvendor="Atmel" Cclass="Device" Cgroup="Startup">
+                        <at:template select="Main file (.cpp)"/>
+                     </at:component>
+                  </at:project>
+                  <at:prerequisite context="compiling" Tcompiler="GCC" component="AVR32-GCC"/>
+               </at:extension>
+            </environment>
+            <description>32-bit AVR Microcontroller, 128KB Flash, 144-pin, SD/SDIO Card</description>
+            <book name="http://www.atmel.com/Images/32072s.pdf"
+                  title="Datasheet (Summary)"/>
+            <book name="http://www.atmel.com/devices/AT32UC3A3128.aspx"
+                  title="Device Page"/>
+         </device>
+         <device Dname="AT32UC3A1128">
+            <processor Dcore="AVR32_UC3" Dendian="Big-endian"/>
+            <compile header="include/AT32UC3A1128/avr32/io.h"/>
+            <environment name="atmel">
+               <at:extension xmlns:at="http://www.atmel.com/schemas/pack-device-atmel-extension"
+                             schemaVersion="1.0">
+                  <at:atdf name="atdf/AT32UC3A1128.atdf"/>
+                  <at:variant ordercode="standard"
+                              vccmin="3.0"
+                              vccmax="3.6"
+                              tempmin="0"
+                              tempmax="0"/>
+                  <at:memory name="FLASH"
+                             start="0x80000000"
+                             size="0x00020000"
+                             type="flash"
+                             address-space="base"/>
+                  <at:memory name="USER_PAGE"
+                             start="0x80800000"
+                             size="0x00000200"
+                             type="user_page"
+                             address-space="base"/>
+                  <at:memory name="SRAM"
+                             start="0x00000000"
+                             size="0x00010000"
+                             type="ram"
+                             address-space="base"/>
+                  <at:memory name="USBB_SLAVE"
+                             start="0xE0000000"
+                             size="0x00800000"
+                             type="other"
+                             address-space="base"/>
+                  <at:memory rw="RW"
+                             type="io"
+                             size="0x20000"
+                             start="0xfffe0000"
+                             name="IO"
+                             address-space="base"/>
+                  <at:interface type="avr32jtag" name="JTAG"/>
+                  <at:tool id="com.atmel.avrdbg.tool.atmelice"/>
+                  <at:tool id="com.atmel.avrdbg.tool.avrdragon"/>
+                  <at:tool id="com.atmel.avrdbg.tool.avrone"/>
+                  <at:tool id="com.atmel.avrdbg.tool.edbg"/>
+                  <at:tool id="com.atmel.avrdbg.tool.edbgc"/>
+                  <at:tool id="com.atmel.avrdbg.tool.edbg"/>
+                  <at:tool id="com.atmel.avrdbg.tool.jtagicemk3"/>
+                  <at:tool id="com.atmel.avrdbg.tool.jtagice3plus"/>
+                  <at:tool id="com.atmel.avrdbg.tool.jtagicemkii"/>
+                  <at:tool id="com.atmel.avrdbg.tool.powerdebugger"/>
+                  <at:tool id="com.atmel.avrdbg.tool.stk600"/>
+                  <at:tool id="com.atmel.avrdbg.tool.flip"/>
+                  <at:tool id="com.atmel.avrdbg.tool.simulator"/>
+                  <at:property name="com.atmel.avrdbg.tool.simulator.key" value="AT32UC3A1128"/>
+                  <at:property name="com.atmel.avrdbg.tool.simulator.model.win32"
+                               value="simulator/win32/libat32uc3a0512.dll"/>
+                  <at:property name="com.atmel.gcc.options.mpart" value="uc3a1128"/>
+                  <at:project name="Barebone C Project">
+                     <at:component Cvendor="Atmel" Cclass="Device" Cgroup="Startup">
+                        <at:template select="Main file (.c)"/>
+                     </at:component>
+                  </at:project>
+                  <at:project name="Barebone Cpp Project">
+                     <at:component Cvendor="Atmel" Cclass="Device" Cgroup="Startup">
+                        <at:template select="Main file (.cpp)"/>
+                     </at:component>
+                  </at:project>
+                  <at:prerequisite context="compiling" Tcompiler="GCC" component="AVR32-GCC"/>
+               </at:extension>
+            </environment>
+            <description>32-bit AVR Microcontroller, 128KB Flash, 100-pin</description>
+            <book name="http://www.atmel.com/Images/32058S.pdf" title="Datasheet"/>
+            <book name="http://www.atmel.com/devices/AT32UC3A1128.aspx"
+                  title="Device Page"/>
+         </device>
+         <device Dname="AT32UC3A1512">
+            <processor Dcore="AVR32_UC3" Dendian="Big-endian"/>
+            <compile header="include/AT32UC3A1512/avr32/io.h"/>
+            <environment name="atmel">
+               <at:extension xmlns:at="http://www.atmel.com/schemas/pack-device-atmel-extension"
+                             schemaVersion="1.0">
+                  <at:atdf name="atdf/AT32UC3A1512.atdf"/>
+                  <at:variant ordercode="standard"
+                              vccmin="3.0"
+                              vccmax="3.6"
+                              tempmin="0"
+                              tempmax="0"/>
+                  <at:memory name="FLASH"
+                             start="0x80000000"
+                             size="0x00080000"
+                             type="flash"
+                             address-space="base"/>
+                  <at:memory name="USER_PAGE"
+                             start="0x80800000"
+                             size="0x00000200"
+                             type="user_page"
+                             address-space="base"/>
+                  <at:memory name="SRAM"
+                             start="0x00000000"
+                             size="0x00010000"
+                             type="ram"
+                             address-space="base"/>
+                  <at:memory name="USBB_SLAVE"
+                             start="0xE0000000"
+                             size="0x00800000"
+                             type="other"
+                             address-space="base"/>
+                  <at:memory rw="RW"
+                             type="io"
+                             size="0x20000"
+                             start="0xfffe0000"
+                             name="IO"
+                             address-space="base"/>
+                  <at:interface type="avr32jtag" name="JTAG"/>
+                  <at:tool id="com.atmel.avrdbg.tool.atmelice"/>
+                  <at:tool id="com.atmel.avrdbg.tool.avrdragon"/>
+                  <at:tool id="com.atmel.avrdbg.tool.avrone"/>
+                  <at:tool id="com.atmel.avrdbg.tool.edbg"/>
+                  <at:tool id="com.atmel.avrdbg.tool.edbgc"/>
+                  <at:tool id="com.atmel.avrdbg.tool.edbg"/>
+                  <at:tool id="com.atmel.avrdbg.tool.jtagicemk3"/>
+                  <at:tool id="com.atmel.avrdbg.tool.jtagice3plus"/>
+                  <at:tool id="com.atmel.avrdbg.tool.jtagicemkii"/>
+                  <at:tool id="com.atmel.avrdbg.tool.powerdebugger"/>
+                  <at:tool id="com.atmel.avrdbg.tool.stk600"/>
+                  <at:tool id="com.atmel.avrdbg.tool.flip"/>
+                  <at:tool id="com.atmel.avrdbg.tool.simulator"/>
+                  <at:property name="com.atmel.avrdbg.tool.simulator.key" value="AT32UC3A1512"/>
+                  <at:property name="com.atmel.avrdbg.tool.simulator.model.win32"
+                               value="simulator/win32/libat32uc3a0512.dll"/>
+                  <at:property name="com.atmel.gcc.options.mpart" value="uc3a1512"/>
+                  <at:project name="Barebone C Project">
+                     <at:component Cvendor="Atmel" Cclass="Device" Cgroup="Startup">
+                        <at:template select="Main file (.c)"/>
+                     </at:component>
+                  </at:project>
+                  <at:project name="Barebone Cpp Project">
+                     <at:component Cvendor="Atmel" Cclass="Device" Cgroup="Startup">
+                        <at:template select="Main file (.cpp)"/>
+                     </at:component>
+                  </at:project>
+                  <at:prerequisite context="compiling" Tcompiler="GCC" component="AVR32-GCC"/>
+               </at:extension>
+            </environment>
+            <description>32-bit AVR Microcontroller, 512KB Flash, 100-pin</description>
+            <book name="http://www.atmel.com/Images/32058S.pdf" title="Datasheet"/>
+            <book name="http://www.atmel.com/devices/AT32UC3A1512.aspx"
+                  title="Device Page"/>
+         </device>
+         <device Dname="AT32UC3A364">
+            <processor Dcore="AVR32_UC3" Dendian="Big-endian"/>
+            <compile header="include/AT32UC3A364/avr32/io.h"/>
+            <environment name="atmel">
+               <at:extension xmlns:at="http://www.atmel.com/schemas/pack-device-atmel-extension"
+                             schemaVersion="1.0">
+                  <at:atdf name="atdf/AT32UC3A364.atdf"/>
+                  <at:variant ordercode="standard"
+                              vccmin="3.0"
+                              vccmax="3.6"
+                              tempmin="0"
+                              tempmax="0"/>
+                  <at:memory name="EBI_CS0"
+                             start="0xC0000000"
+                             size="0x01000000"
+                             type="other"
+                             address-space="base"/>
+                  <at:memory name="EBI_CS1"
+                             start="0xD0000000"
+                             size="0x08000000"
+                             type="other"
+                             address-space="base"/>
+                  <at:memory name="EBI_CS2"
+                             start="0xC8000000"
+                             size="0x01000000"
+                             type="other"
+                             address-space="base"/>
+                  <at:memory name="EBI_CS3"
+                             start="0xCC000000"
+                             size="0x01000000"
+                             type="other"
+                             address-space="base"/>
+                  <at:memory name="EBI_CS4"
+                             start="0xD8000000"
+                             size="0x01000000"
+                             type="other"
+                             address-space="base"/>
+                  <at:memory name="EBI_CS5"
+                             start="0xDC000000"
+                             size="0x01000000"
+                             type="other"
+                             address-space="base"/>
+                  <at:memory name="FLASH"
+                             start="0x80000000"
+                             size="0x00010000"
+                             type="flash"
+                             address-space="base"/>
+                  <at:memory name="USER_PAGE"
+                             start="0x80800000"
+                             size="0x00000200"
+                             type="user_page"
+                             address-space="base"/>
+                  <at:memory name="INTRAM0"
+                             start="0xFF000000"
+                             size="0x00008000"
+                             type="other"
+                             address-space="base"/>
+                  <at:memory name="INTRAM1"
+                             start="0xFF008000"
+                             size="0x00008000"
+                             type="other"
+                             address-space="base"/>
+                  <at:memory name="SRAM"
+                             start="0x00000000"
+                             size="0x00010000"
+                             type="ram"
+                             address-space="base"/>
+                  <at:memory name="USBB_SLAVE"
+                             start="0xE0000000"
+                             size="0x00800000"
+                             type="other"
+                             address-space="base"/>
+                  <at:memory rw="RW"
+                             type="io"
+                             size="0x20000"
+                             start="0xfffe0000"
+                             name="IO"
+                             address-space="base"/>
+                  <at:interface type="avr32jtag" name="JTAG"/>
+                  <at:tool id="com.atmel.avrdbg.tool.atmelice"/>
+                  <at:tool id="com.atmel.avrdbg.tool.avrdragon"/>
+                  <at:tool id="com.atmel.avrdbg.tool.avrone"/>
+                  <at:tool id="com.atmel.avrdbg.tool.edbg"/>
+                  <at:tool id="com.atmel.avrdbg.tool.edbgc"/>
+                  <at:tool id="com.atmel.avrdbg.tool.edbg"/>
+                  <at:tool id="com.atmel.avrdbg.tool.jtagicemk3"/>
+                  <at:tool id="com.atmel.avrdbg.tool.jtagice3plus"/>
+                  <at:tool id="com.atmel.avrdbg.tool.jtagicemkii"/>
+                  <at:tool id="com.atmel.avrdbg.tool.powerdebugger"/>
+                  <at:tool id="com.atmel.avrdbg.tool.stk600"/>
+                  <at:tool id="com.atmel.avrdbg.tool.flip"/>
+                  <at:property name="com.atmel.gcc.options.mpart" value="uc3a364"/>
+                  <at:project name="Barebone C Project">
+                     <at:component Cvendor="Atmel" Cclass="Device" Cgroup="Startup">
+                        <at:template select="Main file (.c)"/>
+                     </at:component>
+                  </at:project>
+                  <at:project name="Barebone Cpp Project">
+                     <at:component Cvendor="Atmel" Cclass="Device" Cgroup="Startup">
+                        <at:template select="Main file (.cpp)"/>
+                     </at:component>
+                  </at:project>
+                  <at:prerequisite context="compiling" Tcompiler="GCC" component="AVR32-GCC"/>
+               </at:extension>
+            </environment>
+            <description>32-bit AVR Microcontroller, 64KB Flash, 144-pin, SD/SDIO Card</description>
+            <book name="http://www.atmel.com/Images/32072s.pdf"
+                  title="Datasheet (Summary)"/>
+            <book name="http://www.atmel.com/devices/AT32UC3A364.aspx"
+                  title="Device Page"/>
+         </device>
+         <device Dname="AT32UC3A4128">
+            <processor Dcore="AVR32_UC3" Dendian="Big-endian"/>
+            <compile header="include/AT32UC3A4128/avr32/io.h"/>
+            <environment name="atmel">
+               <at:extension xmlns:at="http://www.atmel.com/schemas/pack-device-atmel-extension"
+                             schemaVersion="1.0">
+                  <at:atdf name="atdf/AT32UC3A4128.atdf"/>
+                  <at:variant ordercode="standard"
+                              vccmin="3.0"
+                              vccmax="3.6"
+                              tempmin="0"
+                              tempmax="0"/>
+                  <at:memory name="EBI_CS0"
+                             start="0xC0000000"
+                             size="0x01000000"
+                             type="other"
+                             address-space="base"/>
+                  <at:memory name="EBI_CS1"
+                             start="0xD0000000"
+                             size="0x08000000"
+                             type="other"
+                             address-space="base"/>
+                  <at:memory name="EBI_CS2"
+                             start="0xC8000000"
+                             size="0x01000000"
+                             type="other"
+                             address-space="base"/>
+                  <at:memory name="EBI_CS3"
+                             start="0xCC000000"
+                             size="0x01000000"
+                             type="other"
+                             address-space="base"/>
+                  <at:memory name="EBI_CS4"
+                             start="0xD8000000"
+                             size="0x01000000"
+                             type="other"
+                             address-space="base"/>
+                  <at:memory name="EBI_CS5"
+                             start="0xDC000000"
+                             size="0x01000000"
+                             type="other"
+                             address-space="base"/>
+                  <at:memory name="FLASH"
+                             start="0x80000000"
+                             size="0x00020000"
+                             type="flash"
+                             address-space="base"/>
+                  <at:memory name="USER_PAGE"
+                             start="0x80800000"
+                             size="0x00000200"
+                             type="user_page"
+                             address-space="base"/>
+                  <at:memory name="INTRAM0"
+                             start="0xFF000000"
+                             size="0x00008000"
+                             type="other"
+                             address-space="base"/>
+                  <at:memory name="INTRAM1"
+                             start="0xFF008000"
+                             size="0x00008000"
+                             type="other"
+                             address-space="base"/>
+                  <at:memory name="SRAM"
+                             start="0x00000000"
+                             size="0x00010000"
+                             type="ram"
+                             address-space="base"/>
+                  <at:memory name="USBB_SLAVE"
+                             start="0xE0000000"
+                             size="0x00800000"
+                             type="other"
+                             address-space="base"/>
+                  <at:memory rw="RW"
+                             type="io"
+                             size="0x20000"
+                             start="0xfffe0000"
+                             name="IO"
+                             address-space="base"/>
+                  <at:interface type="avr32jtag" name="JTAG"/>
+                  <at:tool id="com.atmel.avrdbg.tool.atmelice"/>
+                  <at:tool id="com.atmel.avrdbg.tool.avrdragon"/>
+                  <at:tool id="com.atmel.avrdbg.tool.avrone"/>
+                  <at:tool id="com.atmel.avrdbg.tool.edbg"/>
+                  <at:tool id="com.atmel.avrdbg.tool.edbgc"/>
+                  <at:tool id="com.atmel.avrdbg.tool.edbg"/>
+                  <at:tool id="com.atmel.avrdbg.tool.jtagicemk3"/>
+                  <at:tool id="com.atmel.avrdbg.tool.jtagice3plus"/>
+                  <at:tool id="com.atmel.avrdbg.tool.jtagicemkii"/>
+                  <at:tool id="com.atmel.avrdbg.tool.powerdebugger"/>
+                  <at:tool id="com.atmel.avrdbg.tool.stk600"/>
+                  <at:property name="com.atmel.gcc.options.mpart" value="uc3a4128"/>
+                  <at:project name="Barebone C Project">
+                     <at:component Cvendor="Atmel" Cclass="Device" Cgroup="Startup">
+                        <at:template select="Main file (.c)"/>
+                     </at:component>
+                  </at:project>
+                  <at:project name="Barebone Cpp Project">
+                     <at:component Cvendor="Atmel" Cclass="Device" Cgroup="Startup">
+                        <at:template select="Main file (.cpp)"/>
+                     </at:component>
+                  </at:project>
+                  <at:prerequisite context="compiling" Tcompiler="GCC" component="AVR32-GCC"/>
+               </at:extension>
+            </environment>
+            <description>32-bit AVR Microcontroller, 128KB Flash, 100-pin, SD/SDIO Card</description>
+            <book name="http://www.atmel.com/Images/32072s.pdf"
+                  title="Datasheet (Summary)"/>
+            <book name="http://www.atmel.com/devices/AT32UC3A4128.aspx"
+                  title="Device Page"/>
+         </device>
+      </family>
+   </devices>
+   <conditions>
+      <condition id="ARMCC">
+         <accept Tcompiler="ARMCC"/>
+      </condition>
+      <condition id="ARMCC Exe">
+         <accept Tcompiler="ARMCC" Toutput="exe"/>
+      </condition>
+      <condition id="GCC">
+         <accept Tcompiler="GCC"/>
+      </condition>
+      <condition id="GCC Exe">
+         <accept Tcompiler="GCC" Toutput="exe"/>
+      </condition>
+      <condition id="IAR">
+         <accept Tcompiler="IAR"/>
+      </condition>
+      <condition id="IAR Exe">
+         <accept Tcompiler="IAR" Toutput="exe"/>
+      </condition>
+      <condition id="C">
+         <accept Tcompiler="ARMCC"/>
+         <accept Tcompiler="GCC"/>
+         <accept Tcompiler="IAR"/>
+      </condition>
+      <condition id="C Exe">
+         <accept Tcompiler="ARMCC" Toutput="exe"/>
+         <accept Tcompiler="GCC" Toutput="exe"/>
+         <accept Tcompiler="IAR" Toutput="exe"/>
+      </condition>
+      <condition id="C Lib">
+         <accept Tcompiler="ARMCC" Toutput="lib"/>
+         <accept Tcompiler="GCC" Toutput="lib"/>
+         <accept Tcompiler="IAR" Toutput="lib"/>
+      </condition>
+      <condition id="AT32UC3A364S">
+         <require Dvendor="Atmel:3" Dname="AT32UC3A364S"/>
+      </condition>
+      <condition id="AT32UC3A0128">
+         <require Dvendor="Atmel:3" Dname="AT32UC3A0128"/>
+      </condition>
+      <condition id="AT32UC3A3256S">
+         <require Dvendor="Atmel:3" Dname="AT32UC3A3256S"/>
+      </condition>
+      <condition id="AT32UC3A464">
+         <require Dvendor="Atmel:3" Dname="AT32UC3A464"/>
+      </condition>
+      <condition id="AT32UC3A4256S">
+         <require Dvendor="Atmel:3" Dname="AT32UC3A4256S"/>
+      </condition>
+      <condition id="AT32UC3A4128S">
+         <require Dvendor="Atmel:3" Dname="AT32UC3A4128S"/>
+      </condition>
+      <condition id="AT32UC3A0512">
+         <require Dvendor="Atmel:3" Dname="AT32UC3A0512"/>
+      </condition>
+      <condition id="AT32UC3A4256">
+         <require Dvendor="Atmel:3" Dname="AT32UC3A4256"/>
+      </condition>
+      <condition id="AT32UC3A0256">
+         <require Dvendor="Atmel:3" Dname="AT32UC3A0256"/>
+      </condition>
+      <condition id="AT32UC3A3128S">
+         <require Dvendor="Atmel:3" Dname="AT32UC3A3128S"/>
+      </condition>
+      <condition id="AT32UC3A3256">
+         <require Dvendor="Atmel:3" Dname="AT32UC3A3256"/>
+      </condition>
+      <condition id="AT32UC3A1256">
+         <require Dvendor="Atmel:3" Dname="AT32UC3A1256"/>
+      </condition>
+      <condition id="AT32UC3A464S">
+         <require Dvendor="Atmel:3" Dname="AT32UC3A464S"/>
+      </condition>
+      <condition id="AT32UC3A3128">
+         <require Dvendor="Atmel:3" Dname="AT32UC3A3128"/>
+      </condition>
+      <condition id="AT32UC3A1128">
+         <require Dvendor="Atmel:3" Dname="AT32UC3A1128"/>
+      </condition>
+      <condition id="AT32UC3A1512">
+         <require Dvendor="Atmel:3" Dname="AT32UC3A1512"/>
+      </condition>
+      <condition id="AT32UC3A364">
+         <require Dvendor="Atmel:3" Dname="AT32UC3A364"/>
+      </condition>
+      <condition id="AT32UC3A4128">
+         <require Dvendor="Atmel:3" Dname="AT32UC3A4128"/>
+      </condition>
+   </conditions>
+   <components>
+      <component Cvendor="Atmel"
+                 Cclass="Device"
+                 Cgroup="Startup"
+                 Cversion="1.0.0"
+                 condition="AT32UC3A364S">
+         <description>Headers and startup code for Atmel AT32UC3A364S</description>
+         <files>
+            <file condition="C" category="include" name="include/AT32UC3A364S"/>
+            <file condition="C"
+                  category="header"
+                  name="include/AT32UC3A364S/avr32/io.h"/>
+            <file condition="C Exe"
+                  category="source"
+                  name="templates/main.c"
+                  attr="template"
+                  select="Main file (.c)"/>
+            <file condition="C Exe"
+                  category="source"
+                  name="templates/main.cpp"
+                  attr="template"
+                  select="Main file (.cpp)"/>
+            <file condition="C Lib"
+                  category="source"
+                  name="templates/library.c"
+                  attr="template"
+                  select="Main file (.c)"/>
+            <file condition="C Lib"
+                  category="source"
+                  name="templates/library.cpp"
+                  attr="template"
+                  select="Main file (.cpp)"/>
+         </files>
+      </component>
+      <component Cvendor="Atmel"
+                 Cclass="Device"
+                 Cgroup="Startup"
+                 Cversion="1.0.0"
+                 condition="AT32UC3A0128">
+         <description>Headers and startup code for Atmel AT32UC3A0128</description>
+         <files>
+            <file condition="C" category="include" name="include/AT32UC3A0128"/>
+            <file condition="C"
+                  category="header"
+                  name="include/AT32UC3A0128/avr32/io.h"/>
+            <file condition="C Exe"
+                  category="source"
+                  name="templates/main.c"
+                  attr="template"
+                  select="Main file (.c)"/>
+            <file condition="C Exe"
+                  category="source"
+                  name="templates/main.cpp"
+                  attr="template"
+                  select="Main file (.cpp)"/>
+            <file condition="C Lib"
+                  category="source"
+                  name="templates/library.c"
+                  attr="template"
+                  select="Main file (.c)"/>
+            <file condition="C Lib"
+                  category="source"
+                  name="templates/library.cpp"
+                  attr="template"
+                  select="Main file (.cpp)"/>
+         </files>
+      </component>
+      <component Cvendor="Atmel"
+                 Cclass="Device"
+                 Cgroup="Startup"
+                 Cversion="1.0.0"
+                 condition="AT32UC3A3256S">
+         <description>Headers and startup code for Atmel AT32UC3A3256S</description>
+         <files>
+            <file condition="C" category="include" name="include/AT32UC3A3256S"/>
+            <file condition="C"
+                  category="header"
+                  name="include/AT32UC3A3256S/avr32/io.h"/>
+            <file condition="C Exe"
+                  category="source"
+                  name="templates/main.c"
+                  attr="template"
+                  select="Main file (.c)"/>
+            <file condition="C Exe"
+                  category="source"
+                  name="templates/main.cpp"
+                  attr="template"
+                  select="Main file (.cpp)"/>
+            <file condition="C Lib"
+                  category="source"
+                  name="templates/library.c"
+                  attr="template"
+                  select="Main file (.c)"/>
+            <file condition="C Lib"
+                  category="source"
+                  name="templates/library.cpp"
+                  attr="template"
+                  select="Main file (.cpp)"/>
+         </files>
+      </component>
+      <component Cvendor="Atmel"
+                 Cclass="Device"
+                 Cgroup="Startup"
+                 Cversion="1.0.0"
+                 condition="AT32UC3A464">
+         <description>Headers and startup code for Atmel AT32UC3A464</description>
+         <files>
+            <file condition="C" category="include" name="include/AT32UC3A464"/>
+            <file condition="C"
+                  category="header"
+                  name="include/AT32UC3A464/avr32/io.h"/>
+            <file condition="C Exe"
+                  category="source"
+                  name="templates/main.c"
+                  attr="template"
+                  select="Main file (.c)"/>
+            <file condition="C Exe"
+                  category="source"
+                  name="templates/main.cpp"
+                  attr="template"
+                  select="Main file (.cpp)"/>
+            <file condition="C Lib"
+                  category="source"
+                  name="templates/library.c"
+                  attr="template"
+                  select="Main file (.c)"/>
+            <file condition="C Lib"
+                  category="source"
+                  name="templates/library.cpp"
+                  attr="template"
+                  select="Main file (.cpp)"/>
+         </files>
+      </component>
+      <component Cvendor="Atmel"
+                 Cclass="Device"
+                 Cgroup="Startup"
+                 Cversion="1.0.0"
+                 condition="AT32UC3A4256S">
+         <description>Headers and startup code for Atmel AT32UC3A4256S</description>
+         <files>
+            <file condition="C" category="include" name="include/AT32UC3A4256S"/>
+            <file condition="C"
+                  category="header"
+                  name="include/AT32UC3A4256S/avr32/io.h"/>
+            <file condition="C Exe"
+                  category="source"
+                  name="templates/main.c"
+                  attr="template"
+                  select="Main file (.c)"/>
+            <file condition="C Exe"
+                  category="source"
+                  name="templates/main.cpp"
+                  attr="template"
+                  select="Main file (.cpp)"/>
+            <file condition="C Lib"
+                  category="source"
+                  name="templates/library.c"
+                  attr="template"
+                  select="Main file (.c)"/>
+            <file condition="C Lib"
+                  category="source"
+                  name="templates/library.cpp"
+                  attr="template"
+                  select="Main file (.cpp)"/>
+         </files>
+      </component>
+      <component Cvendor="Atmel"
+                 Cclass="Device"
+                 Cgroup="Startup"
+                 Cversion="1.0.0"
+                 condition="AT32UC3A4128S">
+         <description>Headers and startup code for Atmel AT32UC3A4128S</description>
+         <files>
+            <file condition="C" category="include" name="include/AT32UC3A4128S"/>
+            <file condition="C"
+                  category="header"
+                  name="include/AT32UC3A4128S/avr32/io.h"/>
+            <file condition="C Exe"
+                  category="source"
+                  name="templates/main.c"
+                  attr="template"
+                  select="Main file (.c)"/>
+            <file condition="C Exe"
+                  category="source"
+                  name="templates/main.cpp"
+                  attr="template"
+                  select="Main file (.cpp)"/>
+            <file condition="C Lib"
+                  category="source"
+                  name="templates/library.c"
+                  attr="template"
+                  select="Main file (.c)"/>
+            <file condition="C Lib"
+                  category="source"
+                  name="templates/library.cpp"
+                  attr="template"
+                  select="Main file (.cpp)"/>
+         </files>
+      </component>
+      <component Cvendor="Atmel"
+                 Cclass="Device"
+                 Cgroup="Startup"
+                 Cversion="1.0.0"
+                 condition="AT32UC3A0512">
+         <description>Headers and startup code for Atmel AT32UC3A0512</description>
+         <files>
+            <file condition="C" category="include" name="include/AT32UC3A0512"/>
+            <file condition="C"
+                  category="header"
+                  name="include/AT32UC3A0512/avr32/io.h"/>
+            <file condition="C Exe"
+                  category="source"
+                  name="templates/main.c"
+                  attr="template"
+                  select="Main file (.c)"/>
+            <file condition="C Exe"
+                  category="source"
+                  name="templates/main.cpp"
+                  attr="template"
+                  select="Main file (.cpp)"/>
+            <file condition="C Lib"
+                  category="source"
+                  name="templates/library.c"
+                  attr="template"
+                  select="Main file (.c)"/>
+            <file condition="C Lib"
+                  category="source"
+                  name="templates/library.cpp"
+                  attr="template"
+                  select="Main file (.cpp)"/>
+         </files>
+      </component>
+      <component Cvendor="Atmel"
+                 Cclass="Device"
+                 Cgroup="Startup"
+                 Cversion="1.0.0"
+                 condition="AT32UC3A4256">
+         <description>Headers and startup code for Atmel AT32UC3A4256</description>
+         <files>
+            <file condition="C" category="include" name="include/AT32UC3A4256"/>
+            <file condition="C"
+                  category="header"
+                  name="include/AT32UC3A4256/avr32/io.h"/>
+            <file condition="C Exe"
+                  category="source"
+                  name="templates/main.c"
+                  attr="template"
+                  select="Main file (.c)"/>
+            <file condition="C Exe"
+                  category="source"
+                  name="templates/main.cpp"
+                  attr="template"
+                  select="Main file (.cpp)"/>
+            <file condition="C Lib"
+                  category="source"
+                  name="templates/library.c"
+                  attr="template"
+                  select="Main file (.c)"/>
+            <file condition="C Lib"
+                  category="source"
+                  name="templates/library.cpp"
+                  attr="template"
+                  select="Main file (.cpp)"/>
+         </files>
+      </component>
+      <component Cvendor="Atmel"
+                 Cclass="Device"
+                 Cgroup="Startup"
+                 Cversion="1.0.0"
+                 condition="AT32UC3A0256">
+         <description>Headers and startup code for Atmel AT32UC3A0256</description>
+         <files>
+            <file condition="C" category="include" name="include/AT32UC3A0256"/>
+            <file condition="C"
+                  category="header"
+                  name="include/AT32UC3A0256/avr32/io.h"/>
+            <file condition="C Exe"
+                  category="source"
+                  name="templates/main.c"
+                  attr="template"
+                  select="Main file (.c)"/>
+            <file condition="C Exe"
+                  category="source"
+                  name="templates/main.cpp"
+                  attr="template"
+                  select="Main file (.cpp)"/>
+            <file condition="C Lib"
+                  category="source"
+                  name="templates/library.c"
+                  attr="template"
+                  select="Main file (.c)"/>
+            <file condition="C Lib"
+                  category="source"
+                  name="templates/library.cpp"
+                  attr="template"
+                  select="Main file (.cpp)"/>
+         </files>
+      </component>
+      <component Cvendor="Atmel"
+                 Cclass="Device"
+                 Cgroup="Startup"
+                 Cversion="1.0.0"
+                 condition="AT32UC3A3128S">
+         <description>Headers and startup code for Atmel AT32UC3A3128S</description>
+         <files>
+            <file condition="C" category="include" name="include/AT32UC3A3128S"/>
+            <file condition="C"
+                  category="header"
+                  name="include/AT32UC3A3128S/avr32/io.h"/>
+            <file condition="C Exe"
+                  category="source"
+                  name="templates/main.c"
+                  attr="template"
+                  select="Main file (.c)"/>
+            <file condition="C Exe"
+                  category="source"
+                  name="templates/main.cpp"
+                  attr="template"
+                  select="Main file (.cpp)"/>
+            <file condition="C Lib"
+                  category="source"
+                  name="templates/library.c"
+                  attr="template"
+                  select="Main file (.c)"/>
+            <file condition="C Lib"
+                  category="source"
+                  name="templates/library.cpp"
+                  attr="template"
+                  select="Main file (.cpp)"/>
+         </files>
+      </component>
+      <component Cvendor="Atmel"
+                 Cclass="Device"
+                 Cgroup="Startup"
+                 Cversion="1.0.0"
+                 condition="AT32UC3A3256">
+         <description>Headers and startup code for Atmel AT32UC3A3256</description>
+         <files>
+            <file condition="C" category="include" name="include/AT32UC3A3256"/>
+            <file condition="C"
+                  category="header"
+                  name="include/AT32UC3A3256/avr32/io.h"/>
+            <file condition="C Exe"
+                  category="source"
+                  name="templates/main.c"
+                  attr="template"
+                  select="Main file (.c)"/>
+            <file condition="C Exe"
+                  category="source"
+                  name="templates/main.cpp"
+                  attr="template"
+                  select="Main file (.cpp)"/>
+            <file condition="C Lib"
+                  category="source"
+                  name="templates/library.c"
+                  attr="template"
+                  select="Main file (.c)"/>
+            <file condition="C Lib"
+                  category="source"
+                  name="templates/library.cpp"
+                  attr="template"
+                  select="Main file (.cpp)"/>
+         </files>
+      </component>
+      <component Cvendor="Atmel"
+                 Cclass="Device"
+                 Cgroup="Startup"
+                 Cversion="1.0.0"
+                 condition="AT32UC3A1256">
+         <description>Headers and startup code for Atmel AT32UC3A1256</description>
+         <files>
+            <file condition="C" category="include" name="include/AT32UC3A1256"/>
+            <file condition="C"
+                  category="header"
+                  name="include/AT32UC3A1256/avr32/io.h"/>
+            <file condition="C Exe"
+                  category="source"
+                  name="templates/main.c"
+                  attr="template"
+                  select="Main file (.c)"/>
+            <file condition="C Exe"
+                  category="source"
+                  name="templates/main.cpp"
+                  attr="template"
+                  select="Main file (.cpp)"/>
+            <file condition="C Lib"
+                  category="source"
+                  name="templates/library.c"
+                  attr="template"
+                  select="Main file (.c)"/>
+            <file condition="C Lib"
+                  category="source"
+                  name="templates/library.cpp"
+                  attr="template"
+                  select="Main file (.cpp)"/>
+         </files>
+      </component>
+      <component Cvendor="Atmel"
+                 Cclass="Device"
+                 Cgroup="Startup"
+                 Cversion="1.0.0"
+                 condition="AT32UC3A464S">
+         <description>Headers and startup code for Atmel AT32UC3A464S</description>
+         <files>
+            <file condition="C" category="include" name="include/AT32UC3A464S"/>
+            <file condition="C"
+                  category="header"
+                  name="include/AT32UC3A464S/avr32/io.h"/>
+            <file condition="C Exe"
+                  category="source"
+                  name="templates/main.c"
+                  attr="template"
+                  select="Main file (.c)"/>
+            <file condition="C Exe"
+                  category="source"
+                  name="templates/main.cpp"
+                  attr="template"
+                  select="Main file (.cpp)"/>
+            <file condition="C Lib"
+                  category="source"
+                  name="templates/library.c"
+                  attr="template"
+                  select="Main file (.c)"/>
+            <file condition="C Lib"
+                  category="source"
+                  name="templates/library.cpp"
+                  attr="template"
+                  select="Main file (.cpp)"/>
+         </files>
+      </component>
+      <component Cvendor="Atmel"
+                 Cclass="Device"
+                 Cgroup="Startup"
+                 Cversion="1.0.0"
+                 condition="AT32UC3A3128">
+         <description>Headers and startup code for Atmel AT32UC3A3128</description>
+         <files>
+            <file condition="C" category="include" name="include/AT32UC3A3128"/>
+            <file condition="C"
+                  category="header"
+                  name="include/AT32UC3A3128/avr32/io.h"/>
+            <file condition="C Exe"
+                  category="source"
+                  name="templates/main.c"
+                  attr="template"
+                  select="Main file (.c)"/>
+            <file condition="C Exe"
+                  category="source"
+                  name="templates/main.cpp"
+                  attr="template"
+                  select="Main file (.cpp)"/>
+            <file condition="C Lib"
+                  category="source"
+                  name="templates/library.c"
+                  attr="template"
+                  select="Main file (.c)"/>
+            <file condition="C Lib"
+                  category="source"
+                  name="templates/library.cpp"
+                  attr="template"
+                  select="Main file (.cpp)"/>
+         </files>
+      </component>
+      <component Cvendor="Atmel"
+                 Cclass="Device"
+                 Cgroup="Startup"
+                 Cversion="1.0.0"
+                 condition="AT32UC3A1128">
+         <description>Headers and startup code for Atmel AT32UC3A1128</description>
+         <files>
+            <file condition="C" category="include" name="include/AT32UC3A1128"/>
+            <file condition="C"
+                  category="header"
+                  name="include/AT32UC3A1128/avr32/io.h"/>
+            <file condition="C Exe"
+                  category="source"
+                  name="templates/main.c"
+                  attr="template"
+                  select="Main file (.c)"/>
+            <file condition="C Exe"
+                  category="source"
+                  name="templates/main.cpp"
+                  attr="template"
+                  select="Main file (.cpp)"/>
+            <file condition="C Lib"
+                  category="source"
+                  name="templates/library.c"
+                  attr="template"
+                  select="Main file (.c)"/>
+            <file condition="C Lib"
+                  category="source"
+                  name="templates/library.cpp"
+                  attr="template"
+                  select="Main file (.cpp)"/>
+         </files>
+      </component>
+      <component Cvendor="Atmel"
+                 Cclass="Device"
+                 Cgroup="Startup"
+                 Cversion="1.0.0"
+                 condition="AT32UC3A1512">
+         <description>Headers and startup code for Atmel AT32UC3A1512</description>
+         <files>
+            <file condition="C" category="include" name="include/AT32UC3A1512"/>
+            <file condition="C"
+                  category="header"
+                  name="include/AT32UC3A1512/avr32/io.h"/>
+            <file condition="C Exe"
+                  category="source"
+                  name="templates/main.c"
+                  attr="template"
+                  select="Main file (.c)"/>
+            <file condition="C Exe"
+                  category="source"
+                  name="templates/main.cpp"
+                  attr="template"
+                  select="Main file (.cpp)"/>
+            <file condition="C Lib"
+                  category="source"
+                  name="templates/library.c"
+                  attr="template"
+                  select="Main file (.c)"/>
+            <file condition="C Lib"
+                  category="source"
+                  name="templates/library.cpp"
+                  attr="template"
+                  select="Main file (.cpp)"/>
+         </files>
+      </component>
+      <component Cvendor="Atmel"
+                 Cclass="Device"
+                 Cgroup="Startup"
+                 Cversion="1.0.0"
+                 condition="AT32UC3A364">
+         <description>Headers and startup code for Atmel AT32UC3A364</description>
+         <files>
+            <file condition="C" category="include" name="include/AT32UC3A364"/>
+            <file condition="C"
+                  category="header"
+                  name="include/AT32UC3A364/avr32/io.h"/>
+            <file condition="C Exe"
+                  category="source"
+                  name="templates/main.c"
+                  attr="template"
+                  select="Main file (.c)"/>
+            <file condition="C Exe"
+                  category="source"
+                  name="templates/main.cpp"
+                  attr="template"
+                  select="Main file (.cpp)"/>
+            <file condition="C Lib"
+                  category="source"
+                  name="templates/library.c"
+                  attr="template"
+                  select="Main file (.c)"/>
+            <file condition="C Lib"
+                  category="source"
+                  name="templates/library.cpp"
+                  attr="template"
+                  select="Main file (.cpp)"/>
+         </files>
+      </component>
+      <component Cvendor="Atmel"
+                 Cclass="Device"
+                 Cgroup="Startup"
+                 Cversion="1.0.0"
+                 condition="AT32UC3A4128">
+         <description>Headers and startup code for Atmel AT32UC3A4128</description>
+         <files>
+            <file condition="C" category="include" name="include/AT32UC3A4128"/>
+            <file condition="C"
+                  category="header"
+                  name="include/AT32UC3A4128/avr32/io.h"/>
+            <file condition="C Exe"
+                  category="source"
+                  name="templates/main.c"
+                  attr="template"
+                  select="Main file (.c)"/>
+            <file condition="C Exe"
+                  category="source"
+                  name="templates/main.cpp"
+                  attr="template"
+                  select="Main file (.cpp)"/>
+            <file condition="C Lib"
+                  category="source"
+                  name="templates/library.c"
+                  attr="template"
+                  select="Main file (.c)"/>
+            <file condition="C Lib"
+                  category="source"
+                  name="templates/library.cpp"
+                  attr="template"
+                  select="Main file (.cpp)"/>
+         </files>
+      </component>
+   </components>
+</package>

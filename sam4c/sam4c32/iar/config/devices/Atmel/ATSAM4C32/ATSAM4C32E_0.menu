@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<optionMenuItem>
+  <tag>ATSAM4C32E_0</tag>
+  <display>Atmel ATSAM4C32E Core 0</display>
+  <data>$CUR_DIR$\ATSAM4C32E_0.i79</data>
+</optionMenuItem>

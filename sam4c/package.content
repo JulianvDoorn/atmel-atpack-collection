@@ -1,0 +1,1928 @@
+<?xml version='1.0' encoding='ASCII'?>
+<package schemaVersion="1.0">
+  <content>
+    <fileset id="moduleheaders">
+      <includes pattern="component/*"/>
+      <includes pattern="instance/*"/>
+    </fileset>
+    <resources target="ATSAM4CP16B_0">
+      <resource type="atdf" subdir="sam4cp/atdf">
+        <includes pattern="ATSAM4CP16B_0.atdf"/>
+      </resource>
+      <resource type="svd" subdir="sam4cp/svd">
+        <includes pattern="ATSAM4CP16B_0.svd"/>
+      </resource>
+      <resource type="c.header" subdir="sam4cp/include">
+        <includes pattern="sam.h"/>
+        <includes pattern="sam4cp.h"/>
+        <includes pattern="sam4cp_0.h"/>
+        <includes pattern="sam4cp16b_0.h"/>
+        <includes pattern="system_sam4cp.h"/>
+        <includes pattern="pio/sam4cp16b.h"/>
+        <includes pattern="component-version.h"/>
+        <includes fileset="moduleheaders"/>
+        <meta key="define" value="__SAM4CP16B_0__"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="sam4cp/templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="sam4cp/templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="sam4cp/templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="sam4cp/templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="armcc.source.startup" subdir="sam4cp/armcc">
+        <includes pattern="Device/Source/ARM/startup_SAM4CP.s"/>
+        <includes pattern="Device/Source/system_sam4cp.c"/>
+      </resource>
+      <resource type="keil.flashloader" subdir="sam4cp/keil">
+        <includes pattern="Flash/ATSAM4C_1024.FLM"/>
+        <meta key="Flash/ATSAM4C_1024.FLM" value="start=0x01000000|size=0x100000|default=1"/>
+      </resource>
+      <resource type="gcc.source.startup" subdir="sam4cp/gcc">
+        <includes pattern="system_sam4cp.c"/>
+        <includes pattern="gcc/startup_sam4cp.c"/>
+      </resource>
+      <resource type="gcc.linker" subdir="sam4cp/gcc">
+        <includes pattern="gcc/sam4cp16b_0_flash.ld"/>
+        <includes pattern="gcc/sam4cp16b_0_sram.ld"/>
+        <includes pattern="gcc/sam4cp_flash.ld"/>
+        <includes pattern="gcc/sam4cp_sram.ld"/>
+      </resource>
+      <resource type="iar.source.startup" subdir="sam4cp/iar">
+        <includes pattern="system_sam4cp.c"/>
+        <includes pattern="iar/startup_sam4cp.c"/>
+      </resource>
+      <resource type="iar.linker" subdir="sam4cp/iar">
+        <includes pattern="iar/sam4cp16b_0_flash.icf"/>
+        <includes pattern="iar/sam4cp16b_0_sram.icf"/>
+      </resource>
+      <resource type="iar.config" subdir="sam4cp/iar">
+        <includes pattern="config/debugger/Atmel/Trace_SAM4CP.dmac"/>
+        <includes pattern="config/debugger/Atmel/ATSAM4CP16B_0.ddf"/>
+        <includes pattern="config/devices/Atmel/*SAM4CP/ATSAM4CP16B_0.i79"/>
+        <includes pattern="config/devices/Atmel/*SAM4CP/ATSAM4CP16B_0.menu"/>
+        <includes pattern="config/flashloader/Atmel/sam4cp16b/sam4cp16b-flash.board"/>
+        <includes pattern="config/flashloader/Atmel/sam4cp16b/sam4cp16b-flash.flash"/>
+        <includes pattern="config/flashloader/Atmel/sam4cp16b/sam4cp16b-flash.out"/>
+        <includes pattern="config/linker/Atmel/sam4cp16b_0/flash.icf"/>
+        <includes pattern="config/linker/Atmel/sam4cp16b_0/sram.icf"/>
+      </resource>
+    </resources>
+    <resources target="ATSAM4CP16B_1">
+      <resource type="atdf" subdir="sam4cp/atdf">
+        <includes pattern="ATSAM4CP16B_1.atdf"/>
+      </resource>
+      <resource type="svd" subdir="sam4cp/svd">
+        <includes pattern="ATSAM4CP16B_1.svd"/>
+      </resource>
+      <resource type="c.header" subdir="sam4cp/include">
+        <includes pattern="sam.h"/>
+        <includes pattern="sam4cp.h"/>
+        <includes pattern="sam4cp_1.h"/>
+        <includes pattern="sam4cp16b_1.h"/>
+        <includes pattern="system_sam4cp.h"/>
+        <includes pattern="pio/sam4cp16b.h"/>
+        <includes pattern="component-version.h"/>
+        <includes fileset="moduleheaders"/>
+        <meta key="define" value="__SAM4CP16B_1__"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="sam4cp/templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="sam4cp/templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="sam4cp/templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="sam4cp/templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="armcc.source.startup" subdir="sam4cp/armcc">
+        <includes pattern="Device/Source/ARM/startup_SAM4CP.s"/>
+        <includes pattern="Device/Source/system_sam4cp.c"/>
+      </resource>
+      <resource type="gcc.source.startup" subdir="sam4cp/gcc">
+        <includes pattern="system_sam4cp.c"/>
+        <includes pattern="gcc/startup_sam4cp.c"/>
+      </resource>
+      <resource type="gcc.linker" subdir="sam4cp/gcc">
+        <includes pattern="gcc/sam4cp16b_1_flash.ld"/>
+        <includes pattern="gcc/sam4cp16b_1_sram.ld"/>
+        <includes pattern="gcc/sam4cp_flash.ld"/>
+        <includes pattern="gcc/sam4cp_sram.ld"/>
+      </resource>
+      <resource type="iar.source.startup" subdir="sam4cp/iar">
+        <includes pattern="system_sam4cp.c"/>
+        <includes pattern="iar/startup_sam4cp.c"/>
+      </resource>
+      <resource type="iar.linker" subdir="sam4cp/iar">
+        <includes pattern="iar/sam4cp16b_1_flash.icf"/>
+        <includes pattern="iar/sam4cp16b_1_sram.icf"/>
+      </resource>
+      <resource type="iar.config" subdir="sam4cp/iar">
+        <includes pattern="config/debugger/Atmel/Trace_SAM4CP.dmac"/>
+        <includes pattern="config/debugger/Atmel/ATSAM4CP16B_1.ddf"/>
+        <includes pattern="config/devices/Atmel/*SAM4CP/ATSAM4CP16B_1.i79"/>
+        <includes pattern="config/devices/Atmel/*SAM4CP/ATSAM4CP16B_1.menu"/>
+        <includes pattern="config/flashloader/Atmel/sam4cp16b/sam4cp16b-flash.board"/>
+        <includes pattern="config/flashloader/Atmel/sam4cp16b/sam4cp16b-flash.flash"/>
+        <includes pattern="config/flashloader/Atmel/sam4cp16b/sam4cp16b-flash.out"/>
+        <includes pattern="config/linker/Atmel/sam4cp16b_1/flash.icf"/>
+        <includes pattern="config/linker/Atmel/sam4cp16b_1/sram.icf"/>
+      </resource>
+    </resources>
+    <resources target="ATSAM4C32C_0">
+      <resource type="atdf" subdir="sam4c32/atdf">
+        <includes pattern="ATSAM4C32C_0.atdf"/>
+      </resource>
+      <resource type="svd" subdir="sam4c32/svd">
+        <includes pattern="ATSAM4C32C_0.svd"/>
+      </resource>
+      <resource type="c.header" subdir="sam4c32/include">
+        <includes pattern="sam.h"/>
+        <includes pattern="sam4c32.h"/>
+        <includes pattern="sam4c32_0.h"/>
+        <includes pattern="sam4c32c_0.h"/>
+        <includes pattern="system_sam4c32.h"/>
+        <includes pattern="pio/sam4c32c.h"/>
+        <includes pattern="component-version.h"/>
+        <includes fileset="moduleheaders"/>
+        <meta key="define" value="__SAM4C32C_0__"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="sam4c32/templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="sam4c32/templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="sam4c32/templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="sam4c32/templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="armcc.source.startup" subdir="sam4c32/armcc">
+        <includes pattern="Device/Source/ARM/startup_SAM4C32.s"/>
+        <includes pattern="Device/Source/system_sam4c32.c"/>
+      </resource>
+      <resource type="keil.flashloader" subdir="sam4c32/keil">
+        <includes pattern="Flash/ATSAM4C32_2048.FLM"/>
+        <meta key="Flash/ATSAM4C32_2048.FLM" value="start=0x01000000|size=0x200000|default=1"/>
+      </resource>
+      <resource type="gcc.source.startup" subdir="sam4c32/gcc">
+        <includes pattern="system_sam4c32.c"/>
+        <includes pattern="gcc/startup_sam4c32.c"/>
+      </resource>
+      <resource type="gcc.linker" subdir="sam4c32/gcc">
+        <includes pattern="gcc/sam4c32c_0_flash.ld"/>
+        <includes pattern="gcc/sam4c32c_0_sram.ld"/>
+        <includes pattern="gcc/sam4c32_flash.ld"/>
+        <includes pattern="gcc/sam4c32_sram.ld"/>
+      </resource>
+      <resource type="iar.source.startup" subdir="sam4c32/iar">
+        <includes pattern="system_sam4c32.c"/>
+        <includes pattern="iar/startup_sam4c32.c"/>
+      </resource>
+      <resource type="iar.linker" subdir="sam4c32/iar">
+        <includes pattern="iar/sam4c32c_0_flash.icf"/>
+        <includes pattern="iar/sam4c32c_0_sram.icf"/>
+      </resource>
+      <resource type="iar.config" subdir="sam4c32/iar">
+        <includes pattern="config/debugger/Atmel/Trace_SAM4C32.dmac"/>
+        <includes pattern="config/debugger/Atmel/ATSAM4C32C_0.ddf"/>
+        <includes pattern="config/devices/Atmel/*SAM4C32/ATSAM4C32C_0.i79"/>
+        <includes pattern="config/devices/Atmel/*SAM4C32/ATSAM4C32C_0.menu"/>
+        <includes pattern="config/flashloader/Atmel/sam4c32c/sam4c32c-flash.board"/>
+        <includes pattern="config/flashloader/Atmel/sam4c32c/sam4c32c-flash.flash"/>
+        <includes pattern="config/flashloader/Atmel/sam4c32c/sam4c32c-flash.out"/>
+        <includes pattern="config/linker/Atmel/sam4c32c_0/flash.icf"/>
+        <includes pattern="config/linker/Atmel/sam4c32c_0/sram.icf"/>
+      </resource>
+    </resources>
+    <resources target="ATSAM4CMP8C_0">
+      <resource type="atdf" subdir="sam4cm/atdf">
+        <includes pattern="ATSAM4CMP8C_0.atdf"/>
+      </resource>
+      <resource type="svd" subdir="sam4cm/svd">
+        <includes pattern="ATSAM4CMP8C_0.svd"/>
+      </resource>
+      <resource type="c.header" subdir="sam4cm/include">
+        <includes pattern="sam.h"/>
+        <includes pattern="sam4cm.h"/>
+        <includes pattern="sam4cm_0.h"/>
+        <includes pattern="sam4cmp8c_0.h"/>
+        <includes pattern="system_sam4cm.h"/>
+        <includes pattern="pio/sam4cmp8c.h"/>
+        <includes pattern="component-version.h"/>
+        <includes fileset="moduleheaders"/>
+        <meta key="define" value="__SAM4CMP8C_0__"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="sam4cm/templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="sam4cm/templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="sam4cm/templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="sam4cm/templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="armcc.source.startup" subdir="sam4cm/armcc">
+        <includes pattern="Device/SAM4CM/Source/ARM/startup_SAM4CM.s"/>
+        <includes pattern="Device/SAM4CM/Source/system_sam4cm.c"/>
+      </resource>
+      <resource type="keil.flashloader" subdir="sam4cm/keil">
+        <includes pattern="Flash/ATSAM4C_512.FLM"/>
+        <meta key="Flash/ATSAM4C_512.FLM" value="start=0x01000000|size=0x80000|default=1"/>
+      </resource>
+      <resource type="gcc.source.startup" subdir="sam4cm/gcc">
+        <includes pattern="system_sam4cm.c"/>
+        <includes pattern="gcc/startup_sam4cm.c"/>
+      </resource>
+      <resource type="gcc.linker" subdir="sam4cm/gcc">
+        <includes pattern="gcc/sam4cmp8c_0_flash.ld"/>
+        <includes pattern="gcc/sam4cmp8c_0_sram.ld"/>
+        <includes pattern="gcc/sam4cm_flash.ld"/>
+        <includes pattern="gcc/sam4cm_sram.ld"/>
+      </resource>
+      <resource type="iar.source.startup" subdir="sam4cm/iar">
+        <includes pattern="system_sam4cm.c"/>
+        <includes pattern="iar/startup_sam4cm.c"/>
+      </resource>
+      <resource type="iar.linker" subdir="sam4cm/iar">
+        <includes pattern="iar/sam4cmp8c_0_flash.icf"/>
+        <includes pattern="iar/sam4cmp8c_0_sram.icf"/>
+      </resource>
+      <resource type="iar.config" subdir="sam4cm/iar">
+        <includes pattern="config/debugger/Atmel/Trace_SAM4CM.dmac"/>
+        <includes pattern="config/debugger/Atmel/ATSAM4CMP8C_0.ddf"/>
+        <includes pattern="config/devices/Atmel/*SAM4CM/ATSAM4CMP8C_0.i79"/>
+        <includes pattern="config/devices/Atmel/*SAM4CM/ATSAM4CMP8C_0.menu"/>
+        <includes pattern="config/flashloader/Atmel/sam4cmp8c/sam4cmp8c-flash.board"/>
+        <includes pattern="config/flashloader/Atmel/sam4cmp8c/sam4cmp8c-flash.flash"/>
+        <includes pattern="config/flashloader/Atmel/sam4cmp8c/sam4cmp8c-flash.out"/>
+        <includes pattern="config/linker/Atmel/sam4cmp8c_0/flash.icf"/>
+        <includes pattern="config/linker/Atmel/sam4cmp8c_0/sram.icf"/>
+      </resource>
+    </resources>
+    <resources target="ATSAM4CMS32C_0">
+      <resource type="atdf" subdir="sam4cm32/atdf">
+        <includes pattern="ATSAM4CMS32C_0.atdf"/>
+      </resource>
+      <resource type="svd" subdir="sam4cm32/svd">
+        <includes pattern="ATSAM4CMS32C_0.svd"/>
+      </resource>
+      <resource type="c.header" subdir="sam4cm32/include">
+        <includes pattern="sam.h"/>
+        <includes pattern="sam4cm.h"/>
+        <includes pattern="sam4cm_0.h"/>
+        <includes pattern="sam4cms32c_0.h"/>
+        <includes pattern="system_sam4cm.h"/>
+        <includes pattern="pio/sam4cms32c.h"/>
+        <includes pattern="component-version.h"/>
+        <includes fileset="moduleheaders"/>
+        <meta key="define" value="__SAM4CMS32C_0__"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="sam4cm32/templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="sam4cm32/templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="sam4cm32/templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="sam4cm32/templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="armcc.source.startup" subdir="sam4cm32/armcc">
+        <includes pattern="Device/SAM4CM32/Source/ARM/startup_SAM4CM32.s"/>
+        <includes pattern="Device/SAM4CM32/Source/system_sam4cm32.c"/>
+      </resource>
+      <resource type="keil.flashloader" subdir="sam4cm32/keil">
+        <includes pattern="Flash/ATSAM4C32_2048.FLM"/>
+        <meta key="Flash/ATSAM4C32_2048.FLM" value="start=0x01000000|size=0x200000|default=1"/>
+      </resource>
+      <resource type="gcc.source.startup" subdir="sam4cm32/gcc">
+        <includes pattern="system_sam4cm.c"/>
+        <includes pattern="gcc/startup_sam4cm.c"/>
+      </resource>
+      <resource type="gcc.linker" subdir="sam4cm32/gcc">
+        <includes pattern="gcc/sam4cms32c_0_flash.ld"/>
+        <includes pattern="gcc/sam4cms32c_0_sram.ld"/>
+        <includes pattern="gcc/sam4cm_flash.ld"/>
+        <includes pattern="gcc/sam4cm_sram.ld"/>
+      </resource>
+      <resource type="iar.source.startup" subdir="sam4cm32/iar">
+        <includes pattern="system_sam4cm.c"/>
+        <includes pattern="iar/startup_sam4cm.c"/>
+      </resource>
+      <resource type="iar.linker" subdir="sam4cm32/iar">
+        <includes pattern="iar/sam4cms32c_0_flash.icf"/>
+        <includes pattern="iar/sam4cms32c_0_sram.icf"/>
+      </resource>
+      <resource type="iar.config" subdir="sam4cm32/iar">
+        <includes pattern="config/debugger/Atmel/Trace_SAM4CM.dmac"/>
+        <includes pattern="config/debugger/Atmel/ATSAM4CMS32C_0.ddf"/>
+        <includes pattern="config/devices/Atmel/*SAM4CM/ATSAM4CMS32C_0.i79"/>
+        <includes pattern="config/devices/Atmel/*SAM4CM/ATSAM4CMS32C_0.menu"/>
+        <includes pattern="config/flashloader/Atmel/sam4cms32c/sam4cms32c-flash.board"/>
+        <includes pattern="config/flashloader/Atmel/sam4cms32c/sam4cms32c-flash.flash"/>
+        <includes pattern="config/flashloader/Atmel/sam4cms32c/sam4cms32c-flash.out"/>
+        <includes pattern="config/linker/Atmel/sam4cms32c_0/flash.icf"/>
+        <includes pattern="config/linker/Atmel/sam4cms32c_0/sram.icf"/>
+      </resource>
+    </resources>
+    <resources target="ATSAM4CMS32C_1">
+      <resource type="atdf" subdir="sam4cm32/atdf">
+        <includes pattern="ATSAM4CMS32C_1.atdf"/>
+      </resource>
+      <resource type="svd" subdir="sam4cm32/svd">
+        <includes pattern="ATSAM4CMS32C_1.svd"/>
+      </resource>
+      <resource type="c.header" subdir="sam4cm32/include">
+        <includes pattern="sam.h"/>
+        <includes pattern="sam4cm.h"/>
+        <includes pattern="sam4cm_1.h"/>
+        <includes pattern="sam4cms32c_1.h"/>
+        <includes pattern="system_sam4cm.h"/>
+        <includes pattern="pio/sam4cms32c.h"/>
+        <includes pattern="component-version.h"/>
+        <includes fileset="moduleheaders"/>
+        <meta key="define" value="__SAM4CMS32C_1__"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="sam4cm32/templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="sam4cm32/templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="sam4cm32/templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="sam4cm32/templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="armcc.source.startup" subdir="sam4cm32/armcc">
+        <includes pattern="Device/SAM4CM32/Source/ARM/startup_SAM4CM32.s"/>
+        <includes pattern="Device/SAM4CM32/Source/system_sam4cm32.c"/>
+      </resource>
+      <resource type="gcc.source.startup" subdir="sam4cm32/gcc">
+        <includes pattern="system_sam4cm.c"/>
+        <includes pattern="gcc/startup_sam4cm.c"/>
+      </resource>
+      <resource type="gcc.linker" subdir="sam4cm32/gcc">
+        <includes pattern="gcc/sam4cms32c_1_flash.ld"/>
+        <includes pattern="gcc/sam4cms32c_1_sram.ld"/>
+        <includes pattern="gcc/sam4cm_flash.ld"/>
+        <includes pattern="gcc/sam4cm_sram.ld"/>
+      </resource>
+      <resource type="iar.source.startup" subdir="sam4cm32/iar">
+        <includes pattern="system_sam4cm.c"/>
+        <includes pattern="iar/startup_sam4cm.c"/>
+      </resource>
+      <resource type="iar.linker" subdir="sam4cm32/iar">
+        <includes pattern="iar/sam4cms32c_1_flash.icf"/>
+        <includes pattern="iar/sam4cms32c_1_sram.icf"/>
+      </resource>
+      <resource type="iar.config" subdir="sam4cm32/iar">
+        <includes pattern="config/debugger/Atmel/Trace_SAM4CM.dmac"/>
+        <includes pattern="config/debugger/Atmel/ATSAM4CMS32C_1.ddf"/>
+        <includes pattern="config/devices/Atmel/*SAM4CM/ATSAM4CMS32C_1.i79"/>
+        <includes pattern="config/devices/Atmel/*SAM4CM/ATSAM4CMS32C_1.menu"/>
+        <includes pattern="config/flashloader/Atmel/sam4cms32c/sam4cms32c-flash.board"/>
+        <includes pattern="config/flashloader/Atmel/sam4cms32c/sam4cms32c-flash.flash"/>
+        <includes pattern="config/flashloader/Atmel/sam4cms32c/sam4cms32c-flash.out"/>
+        <includes pattern="config/linker/Atmel/sam4cms32c_1/flash.icf"/>
+        <includes pattern="config/linker/Atmel/sam4cms32c_1/sram.icf"/>
+      </resource>
+    </resources>
+    <resources target="ATSAM4C8C_0">
+      <resource type="atdf" subdir="sam4c/atdf">
+        <includes pattern="ATSAM4C8C_0.atdf"/>
+      </resource>
+      <resource type="svd" subdir="sam4c/svd">
+        <includes pattern="ATSAM4C8C_0.svd"/>
+      </resource>
+      <resource type="c.header" subdir="sam4c/include">
+        <includes pattern="sam.h"/>
+        <includes pattern="sam4c.h"/>
+        <includes pattern="sam4c_0.h"/>
+        <includes pattern="sam4c8c_0.h"/>
+        <includes pattern="system_sam4c.h"/>
+        <includes pattern="pio/sam4c8c.h"/>
+        <includes pattern="component-version.h"/>
+        <includes fileset="moduleheaders"/>
+        <meta key="define" value="__SAM4C8C_0__"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="sam4c/templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="sam4c/templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="sam4c/templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="sam4c/templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="armcc.source.startup" subdir="sam4c/armcc">
+        <includes pattern="Device/Source/ARM/startup_SAM4C.s"/>
+        <includes pattern="Device/Source/system_SAM4C.c"/>
+      </resource>
+      <resource type="keil.flashloader" subdir="sam4c/keil">
+        <includes pattern="Flash/ATSAM4C_512.FLM"/>
+        <meta key="Flash/ATSAM4C_512.FLM" value="start=0x01000000|size=0x80000|default=1"/>
+      </resource>
+      <resource type="gcc.source.startup" subdir="sam4c/gcc">
+        <includes pattern="system_sam4c.c"/>
+        <includes pattern="gcc/startup_sam4c.c"/>
+      </resource>
+      <resource type="gcc.linker" subdir="sam4c/gcc">
+        <includes pattern="gcc/sam4c8c_0_flash.ld"/>
+        <includes pattern="gcc/sam4c8c_0_sram.ld"/>
+        <includes pattern="gcc/sam4c_flash.ld"/>
+        <includes pattern="gcc/sam4c_sram.ld"/>
+      </resource>
+      <resource type="iar.source.startup" subdir="sam4c/iar">
+        <includes pattern="system_sam4c.c"/>
+        <includes pattern="iar/startup_sam4c.c"/>
+      </resource>
+      <resource type="iar.linker" subdir="sam4c/iar">
+        <includes pattern="iar/sam4c8c_0_flash.icf"/>
+        <includes pattern="iar/sam4c8c_0_sram.icf"/>
+      </resource>
+      <resource type="iar.config" subdir="sam4c/iar">
+        <includes pattern="config/debugger/Atmel/Trace_SAM4C.dmac"/>
+        <includes pattern="config/debugger/Atmel/ATSAM4C8C_0.ddf"/>
+        <includes pattern="config/devices/Atmel/*SAM4C/ATSAM4C8C_0.i79"/>
+        <includes pattern="config/devices/Atmel/*SAM4C/ATSAM4C8C_0.menu"/>
+        <includes pattern="config/flashloader/Atmel/sam4c8c/sam4c8c-flash.board"/>
+        <includes pattern="config/flashloader/Atmel/sam4c8c/sam4c8c-flash.flash"/>
+        <includes pattern="config/flashloader/Atmel/sam4c8c/sam4c8c-flash.out"/>
+        <includes pattern="config/linker/Atmel/sam4c8c_0/flash.icf"/>
+        <includes pattern="config/linker/Atmel/sam4c8c_0/sram.icf"/>
+      </resource>
+    </resources>
+    <resources target="ATSAM4C8C_1">
+      <resource type="atdf" subdir="sam4c/atdf">
+        <includes pattern="ATSAM4C8C_1.atdf"/>
+      </resource>
+      <resource type="svd" subdir="sam4c/svd">
+        <includes pattern="ATSAM4C8C_1.svd"/>
+      </resource>
+      <resource type="c.header" subdir="sam4c/include">
+        <includes pattern="sam.h"/>
+        <includes pattern="sam4c.h"/>
+        <includes pattern="sam4c_1.h"/>
+        <includes pattern="sam4c8c_1.h"/>
+        <includes pattern="system_sam4c.h"/>
+        <includes pattern="pio/sam4c8c.h"/>
+        <includes pattern="component-version.h"/>
+        <includes fileset="moduleheaders"/>
+        <meta key="define" value="__SAM4C8C_1__"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="sam4c/templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="sam4c/templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="sam4c/templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="sam4c/templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="armcc.source.startup" subdir="sam4c/armcc">
+        <includes pattern="Device/Source/ARM/startup_SAM4C.s"/>
+        <includes pattern="Device/Source/system_SAM4C.c"/>
+      </resource>
+      <resource type="gcc.source.startup" subdir="sam4c/gcc">
+        <includes pattern="system_sam4c.c"/>
+        <includes pattern="gcc/startup_sam4c.c"/>
+      </resource>
+      <resource type="gcc.linker" subdir="sam4c/gcc">
+        <includes pattern="gcc/sam4c8c_1_flash.ld"/>
+        <includes pattern="gcc/sam4c8c_1_sram.ld"/>
+        <includes pattern="gcc/sam4c_flash.ld"/>
+        <includes pattern="gcc/sam4c_sram.ld"/>
+      </resource>
+      <resource type="iar.source.startup" subdir="sam4c/iar">
+        <includes pattern="system_sam4c.c"/>
+        <includes pattern="iar/startup_sam4c.c"/>
+      </resource>
+      <resource type="iar.linker" subdir="sam4c/iar">
+        <includes pattern="iar/sam4c8c_1_flash.icf"/>
+        <includes pattern="iar/sam4c8c_1_sram.icf"/>
+      </resource>
+      <resource type="iar.config" subdir="sam4c/iar">
+        <includes pattern="config/debugger/Atmel/Trace_SAM4C.dmac"/>
+        <includes pattern="config/debugger/Atmel/ATSAM4C8C_1.ddf"/>
+        <includes pattern="config/devices/Atmel/*SAM4C/ATSAM4C8C_1.i79"/>
+        <includes pattern="config/devices/Atmel/*SAM4C/ATSAM4C8C_1.menu"/>
+        <includes pattern="config/flashloader/Atmel/sam4c8c/sam4c8c-flash.board"/>
+        <includes pattern="config/flashloader/Atmel/sam4c8c/sam4c8c-flash.flash"/>
+        <includes pattern="config/flashloader/Atmel/sam4c8c/sam4c8c-flash.out"/>
+        <includes pattern="config/linker/Atmel/sam4c8c_1/flash.icf"/>
+        <includes pattern="config/linker/Atmel/sam4c8c_1/sram.icf"/>
+      </resource>
+    </resources>
+    <resources target="ATSAM4CMP32C_1">
+      <resource type="atdf" subdir="sam4cm32/atdf">
+        <includes pattern="ATSAM4CMP32C_1.atdf"/>
+      </resource>
+      <resource type="svd" subdir="sam4cm32/svd">
+        <includes pattern="ATSAM4CMP32C_1.svd"/>
+      </resource>
+      <resource type="c.header" subdir="sam4cm32/include">
+        <includes pattern="sam.h"/>
+        <includes pattern="sam4cm.h"/>
+        <includes pattern="sam4cm_1.h"/>
+        <includes pattern="sam4cmp32c_1.h"/>
+        <includes pattern="system_sam4cm.h"/>
+        <includes pattern="pio/sam4cmp32c.h"/>
+        <includes pattern="component-version.h"/>
+        <includes fileset="moduleheaders"/>
+        <meta key="define" value="__SAM4CMP32C_1__"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="sam4cm32/templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="sam4cm32/templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="sam4cm32/templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="sam4cm32/templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="armcc.source.startup" subdir="sam4cm32/armcc">
+        <includes pattern="Device/SAM4CM32/Source/ARM/startup_SAM4CM32.s"/>
+        <includes pattern="Device/SAM4CM32/Source/system_sam4cm32.c"/>
+      </resource>
+      <resource type="gcc.source.startup" subdir="sam4cm32/gcc">
+        <includes pattern="system_sam4cm.c"/>
+        <includes pattern="gcc/startup_sam4cm.c"/>
+      </resource>
+      <resource type="gcc.linker" subdir="sam4cm32/gcc">
+        <includes pattern="gcc/sam4cmp32c_1_flash.ld"/>
+        <includes pattern="gcc/sam4cmp32c_1_sram.ld"/>
+        <includes pattern="gcc/sam4cm_flash.ld"/>
+        <includes pattern="gcc/sam4cm_sram.ld"/>
+      </resource>
+      <resource type="iar.source.startup" subdir="sam4cm32/iar">
+        <includes pattern="system_sam4cm.c"/>
+        <includes pattern="iar/startup_sam4cm.c"/>
+      </resource>
+      <resource type="iar.linker" subdir="sam4cm32/iar">
+        <includes pattern="iar/sam4cmp32c_1_flash.icf"/>
+        <includes pattern="iar/sam4cmp32c_1_sram.icf"/>
+      </resource>
+      <resource type="iar.config" subdir="sam4cm32/iar">
+        <includes pattern="config/debugger/Atmel/Trace_SAM4CM.dmac"/>
+        <includes pattern="config/debugger/Atmel/ATSAM4CMP32C_1.ddf"/>
+        <includes pattern="config/devices/Atmel/*SAM4CM/ATSAM4CMP32C_1.i79"/>
+        <includes pattern="config/devices/Atmel/*SAM4CM/ATSAM4CMP32C_1.menu"/>
+        <includes pattern="config/flashloader/Atmel/sam4cmp32c/sam4cmp32c-flash.board"/>
+        <includes pattern="config/flashloader/Atmel/sam4cmp32c/sam4cmp32c-flash.flash"/>
+        <includes pattern="config/flashloader/Atmel/sam4cmp32c/sam4cmp32c-flash.out"/>
+        <includes pattern="config/linker/Atmel/sam4cmp32c_1/flash.icf"/>
+        <includes pattern="config/linker/Atmel/sam4cmp32c_1/sram.icf"/>
+      </resource>
+    </resources>
+    <resources target="ATSAM4CMP32C_0">
+      <resource type="atdf" subdir="sam4cm32/atdf">
+        <includes pattern="ATSAM4CMP32C_0.atdf"/>
+      </resource>
+      <resource type="svd" subdir="sam4cm32/svd">
+        <includes pattern="ATSAM4CMP32C_0.svd"/>
+      </resource>
+      <resource type="c.header" subdir="sam4cm32/include">
+        <includes pattern="sam.h"/>
+        <includes pattern="sam4cm.h"/>
+        <includes pattern="sam4cm_0.h"/>
+        <includes pattern="sam4cmp32c_0.h"/>
+        <includes pattern="system_sam4cm.h"/>
+        <includes pattern="pio/sam4cmp32c.h"/>
+        <includes pattern="component-version.h"/>
+        <includes fileset="moduleheaders"/>
+        <meta key="define" value="__SAM4CMP32C_0__"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="sam4cm32/templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="sam4cm32/templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="sam4cm32/templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="sam4cm32/templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="armcc.source.startup" subdir="sam4cm32/armcc">
+        <includes pattern="Device/SAM4CM32/Source/ARM/startup_SAM4CM32.s"/>
+        <includes pattern="Device/SAM4CM32/Source/system_sam4cm32.c"/>
+      </resource>
+      <resource type="keil.flashloader" subdir="sam4cm32/keil">
+        <includes pattern="Flash/ATSAM4C32_2048.FLM"/>
+        <meta key="Flash/ATSAM4C32_2048.FLM" value="start=0x01000000|size=0x200000|default=1"/>
+      </resource>
+      <resource type="gcc.source.startup" subdir="sam4cm32/gcc">
+        <includes pattern="system_sam4cm.c"/>
+        <includes pattern="gcc/startup_sam4cm.c"/>
+      </resource>
+      <resource type="gcc.linker" subdir="sam4cm32/gcc">
+        <includes pattern="gcc/sam4cmp32c_0_flash.ld"/>
+        <includes pattern="gcc/sam4cmp32c_0_sram.ld"/>
+        <includes pattern="gcc/sam4cm_flash.ld"/>
+        <includes pattern="gcc/sam4cm_sram.ld"/>
+      </resource>
+      <resource type="iar.source.startup" subdir="sam4cm32/iar">
+        <includes pattern="system_sam4cm.c"/>
+        <includes pattern="iar/startup_sam4cm.c"/>
+      </resource>
+      <resource type="iar.linker" subdir="sam4cm32/iar">
+        <includes pattern="iar/sam4cmp32c_0_flash.icf"/>
+        <includes pattern="iar/sam4cmp32c_0_sram.icf"/>
+      </resource>
+      <resource type="iar.config" subdir="sam4cm32/iar">
+        <includes pattern="config/debugger/Atmel/Trace_SAM4CM.dmac"/>
+        <includes pattern="config/debugger/Atmel/ATSAM4CMP32C_0.ddf"/>
+        <includes pattern="config/devices/Atmel/*SAM4CM/ATSAM4CMP32C_0.i79"/>
+        <includes pattern="config/devices/Atmel/*SAM4CM/ATSAM4CMP32C_0.menu"/>
+        <includes pattern="config/flashloader/Atmel/sam4cmp32c/sam4cmp32c-flash.board"/>
+        <includes pattern="config/flashloader/Atmel/sam4cmp32c/sam4cmp32c-flash.flash"/>
+        <includes pattern="config/flashloader/Atmel/sam4cmp32c/sam4cmp32c-flash.out"/>
+        <includes pattern="config/linker/Atmel/sam4cmp32c_0/flash.icf"/>
+        <includes pattern="config/linker/Atmel/sam4cmp32c_0/sram.icf"/>
+      </resource>
+    </resources>
+    <resources target="ATSAM4C16C_0">
+      <resource type="atdf" subdir="sam4c/atdf">
+        <includes pattern="ATSAM4C16C_0.atdf"/>
+      </resource>
+      <resource type="svd" subdir="sam4c/svd">
+        <includes pattern="ATSAM4C16C_0.svd"/>
+      </resource>
+      <resource type="c.header" subdir="sam4c/include">
+        <includes pattern="sam.h"/>
+        <includes pattern="sam4c.h"/>
+        <includes pattern="sam4c_0.h"/>
+        <includes pattern="sam4c16c_0.h"/>
+        <includes pattern="system_sam4c.h"/>
+        <includes pattern="pio/sam4c16c.h"/>
+        <includes pattern="component-version.h"/>
+        <includes fileset="moduleheaders"/>
+        <meta key="define" value="__SAM4C16C_0__"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="sam4c/templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="sam4c/templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="sam4c/templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="sam4c/templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="armcc.source.startup" subdir="sam4c/armcc">
+        <includes pattern="Device/Source/ARM/startup_SAM4C.s"/>
+        <includes pattern="Device/Source/system_SAM4C.c"/>
+      </resource>
+      <resource type="keil.flashloader" subdir="sam4c/keil">
+        <includes pattern="Flash/ATSAM4C_1024.FLM"/>
+        <meta key="Flash/ATSAM4C_1024.FLM" value="start=0x01000000|size=0x100000|default=1"/>
+      </resource>
+      <resource type="gcc.source.startup" subdir="sam4c/gcc">
+        <includes pattern="system_sam4c.c"/>
+        <includes pattern="gcc/startup_sam4c.c"/>
+      </resource>
+      <resource type="gcc.linker" subdir="sam4c/gcc">
+        <includes pattern="gcc/sam4c16c_0_flash.ld"/>
+        <includes pattern="gcc/sam4c16c_0_sram.ld"/>
+        <includes pattern="gcc/sam4c_flash.ld"/>
+        <includes pattern="gcc/sam4c_sram.ld"/>
+      </resource>
+      <resource type="iar.source.startup" subdir="sam4c/iar">
+        <includes pattern="system_sam4c.c"/>
+        <includes pattern="iar/startup_sam4c.c"/>
+      </resource>
+      <resource type="iar.linker" subdir="sam4c/iar">
+        <includes pattern="iar/sam4c16c_0_flash.icf"/>
+        <includes pattern="iar/sam4c16c_0_sram.icf"/>
+      </resource>
+      <resource type="iar.config" subdir="sam4c/iar">
+        <includes pattern="config/debugger/Atmel/Trace_SAM4C.dmac"/>
+        <includes pattern="config/debugger/Atmel/ATSAM4C16C_0.ddf"/>
+        <includes pattern="config/devices/Atmel/*SAM4C/ATSAM4C16C_0.i79"/>
+        <includes pattern="config/devices/Atmel/*SAM4C/ATSAM4C16C_0.menu"/>
+        <includes pattern="config/flashloader/Atmel/sam4c16c/sam4c16c-flash.board"/>
+        <includes pattern="config/flashloader/Atmel/sam4c16c/sam4c16c-flash.flash"/>
+        <includes pattern="config/flashloader/Atmel/sam4c16c/sam4c16c-flash.out"/>
+        <includes pattern="config/linker/Atmel/sam4c16c_0/flash.icf"/>
+        <includes pattern="config/linker/Atmel/sam4c16c_0/sram.icf"/>
+      </resource>
+    </resources>
+    <resources target="ATSAM4C16C_1">
+      <resource type="atdf" subdir="sam4c/atdf">
+        <includes pattern="ATSAM4C16C_1.atdf"/>
+      </resource>
+      <resource type="svd" subdir="sam4c/svd">
+        <includes pattern="ATSAM4C16C_1.svd"/>
+      </resource>
+      <resource type="c.header" subdir="sam4c/include">
+        <includes pattern="sam.h"/>
+        <includes pattern="sam4c.h"/>
+        <includes pattern="sam4c_1.h"/>
+        <includes pattern="sam4c16c_1.h"/>
+        <includes pattern="system_sam4c.h"/>
+        <includes pattern="pio/sam4c16c.h"/>
+        <includes pattern="component-version.h"/>
+        <includes fileset="moduleheaders"/>
+        <meta key="define" value="__SAM4C16C_1__"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="sam4c/templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="sam4c/templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="sam4c/templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="sam4c/templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="armcc.source.startup" subdir="sam4c/armcc">
+        <includes pattern="Device/Source/ARM/startup_SAM4C.s"/>
+        <includes pattern="Device/Source/system_SAM4C.c"/>
+      </resource>
+      <resource type="gcc.source.startup" subdir="sam4c/gcc">
+        <includes pattern="system_sam4c.c"/>
+        <includes pattern="gcc/startup_sam4c.c"/>
+      </resource>
+      <resource type="gcc.linker" subdir="sam4c/gcc">
+        <includes pattern="gcc/sam4c16c_1_flash.ld"/>
+        <includes pattern="gcc/sam4c16c_1_sram.ld"/>
+        <includes pattern="gcc/sam4c_flash.ld"/>
+        <includes pattern="gcc/sam4c_sram.ld"/>
+      </resource>
+      <resource type="iar.source.startup" subdir="sam4c/iar">
+        <includes pattern="system_sam4c.c"/>
+        <includes pattern="iar/startup_sam4c.c"/>
+      </resource>
+      <resource type="iar.linker" subdir="sam4c/iar">
+        <includes pattern="iar/sam4c16c_1_flash.icf"/>
+        <includes pattern="iar/sam4c16c_1_sram.icf"/>
+      </resource>
+      <resource type="iar.config" subdir="sam4c/iar">
+        <includes pattern="config/debugger/Atmel/Trace_SAM4C.dmac"/>
+        <includes pattern="config/debugger/Atmel/ATSAM4C16C_1.ddf"/>
+        <includes pattern="config/devices/Atmel/*SAM4C/ATSAM4C16C_1.i79"/>
+        <includes pattern="config/devices/Atmel/*SAM4C/ATSAM4C16C_1.menu"/>
+        <includes pattern="config/flashloader/Atmel/sam4c16c/sam4c16c-flash.board"/>
+        <includes pattern="config/flashloader/Atmel/sam4c16c/sam4c16c-flash.flash"/>
+        <includes pattern="config/flashloader/Atmel/sam4c16c/sam4c16c-flash.out"/>
+        <includes pattern="config/linker/Atmel/sam4c16c_1/flash.icf"/>
+        <includes pattern="config/linker/Atmel/sam4c16c_1/sram.icf"/>
+      </resource>
+    </resources>
+    <resources target="ATSAM4CP16C_1">
+      <resource type="atdf" subdir="sam4cp/atdf">
+        <includes pattern="ATSAM4CP16C_1.atdf"/>
+      </resource>
+      <resource type="svd" subdir="sam4cp/svd">
+        <includes pattern="ATSAM4CP16C_1.svd"/>
+      </resource>
+      <resource type="c.header" subdir="sam4cp/include">
+        <includes pattern="sam.h"/>
+        <includes pattern="sam4cp.h"/>
+        <includes pattern="sam4cp_1.h"/>
+        <includes pattern="sam4cp16c_1.h"/>
+        <includes pattern="system_sam4cp.h"/>
+        <includes pattern="pio/sam4cp16c.h"/>
+        <includes pattern="component-version.h"/>
+        <includes fileset="moduleheaders"/>
+        <meta key="define" value="__SAM4CP16C_1__"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="sam4cp/templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="sam4cp/templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="sam4cp/templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="sam4cp/templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="armcc.source.startup" subdir="sam4cp/armcc">
+        <includes pattern="Device/Source/ARM/startup_SAM4CP.s"/>
+        <includes pattern="Device/Source/system_sam4cp.c"/>
+      </resource>
+      <resource type="gcc.source.startup" subdir="sam4cp/gcc">
+        <includes pattern="system_sam4cp.c"/>
+        <includes pattern="gcc/startup_sam4cp.c"/>
+      </resource>
+      <resource type="gcc.linker" subdir="sam4cp/gcc">
+        <includes pattern="gcc/sam4cp16c_1_flash.ld"/>
+        <includes pattern="gcc/sam4cp16c_1_sram.ld"/>
+        <includes pattern="gcc/sam4cp_flash.ld"/>
+        <includes pattern="gcc/sam4cp_sram.ld"/>
+      </resource>
+      <resource type="iar.source.startup" subdir="sam4cp/iar">
+        <includes pattern="system_sam4cp.c"/>
+        <includes pattern="iar/startup_sam4cp.c"/>
+      </resource>
+      <resource type="iar.linker" subdir="sam4cp/iar">
+        <includes pattern="iar/sam4cp16c_1_flash.icf"/>
+        <includes pattern="iar/sam4cp16c_1_sram.icf"/>
+      </resource>
+      <resource type="iar.config" subdir="sam4cp/iar">
+        <includes pattern="config/debugger/Atmel/Trace_SAM4CP.dmac"/>
+        <includes pattern="config/debugger/Atmel/ATSAM4CP16C_1.ddf"/>
+        <includes pattern="config/devices/Atmel/*SAM4CP/ATSAM4CP16C_1.i79"/>
+        <includes pattern="config/devices/Atmel/*SAM4CP/ATSAM4CP16C_1.menu"/>
+        <includes pattern="config/flashloader/Atmel/sam4cp16c/sam4cp16c-flash.board"/>
+        <includes pattern="config/flashloader/Atmel/sam4cp16c/sam4cp16c-flash.flash"/>
+        <includes pattern="config/flashloader/Atmel/sam4cp16c/sam4cp16c-flash.out"/>
+        <includes pattern="config/linker/Atmel/sam4cp16c_1/flash.icf"/>
+        <includes pattern="config/linker/Atmel/sam4cp16c_1/sram.icf"/>
+      </resource>
+    </resources>
+    <resources target="ATSAM4CP16C_0">
+      <resource type="atdf" subdir="sam4cp/atdf">
+        <includes pattern="ATSAM4CP16C_0.atdf"/>
+      </resource>
+      <resource type="svd" subdir="sam4cp/svd">
+        <includes pattern="ATSAM4CP16C_0.svd"/>
+      </resource>
+      <resource type="c.header" subdir="sam4cp/include">
+        <includes pattern="sam.h"/>
+        <includes pattern="sam4cp.h"/>
+        <includes pattern="sam4cp_0.h"/>
+        <includes pattern="sam4cp16c_0.h"/>
+        <includes pattern="system_sam4cp.h"/>
+        <includes pattern="pio/sam4cp16c.h"/>
+        <includes pattern="component-version.h"/>
+        <includes fileset="moduleheaders"/>
+        <meta key="define" value="__SAM4CP16C_0__"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="sam4cp/templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="sam4cp/templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="sam4cp/templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="sam4cp/templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="armcc.source.startup" subdir="sam4cp/armcc">
+        <includes pattern="Device/Source/ARM/startup_SAM4CP.s"/>
+        <includes pattern="Device/Source/system_sam4cp.c"/>
+      </resource>
+      <resource type="keil.flashloader" subdir="sam4cp/keil">
+        <includes pattern="Flash/ATSAM4C_1024.FLM"/>
+        <meta key="Flash/ATSAM4C_1024.FLM" value="start=0x01000000|size=0x100000|default=1"/>
+      </resource>
+      <resource type="gcc.source.startup" subdir="sam4cp/gcc">
+        <includes pattern="system_sam4cp.c"/>
+        <includes pattern="gcc/startup_sam4cp.c"/>
+      </resource>
+      <resource type="gcc.linker" subdir="sam4cp/gcc">
+        <includes pattern="gcc/sam4cp16c_0_flash.ld"/>
+        <includes pattern="gcc/sam4cp16c_0_sram.ld"/>
+        <includes pattern="gcc/sam4cp_flash.ld"/>
+        <includes pattern="gcc/sam4cp_sram.ld"/>
+      </resource>
+      <resource type="iar.source.startup" subdir="sam4cp/iar">
+        <includes pattern="system_sam4cp.c"/>
+        <includes pattern="iar/startup_sam4cp.c"/>
+      </resource>
+      <resource type="iar.linker" subdir="sam4cp/iar">
+        <includes pattern="iar/sam4cp16c_0_flash.icf"/>
+        <includes pattern="iar/sam4cp16c_0_sram.icf"/>
+      </resource>
+      <resource type="iar.config" subdir="sam4cp/iar">
+        <includes pattern="config/debugger/Atmel/Trace_SAM4CP.dmac"/>
+        <includes pattern="config/debugger/Atmel/ATSAM4CP16C_0.ddf"/>
+        <includes pattern="config/devices/Atmel/*SAM4CP/ATSAM4CP16C_0.i79"/>
+        <includes pattern="config/devices/Atmel/*SAM4CP/ATSAM4CP16C_0.menu"/>
+        <includes pattern="config/flashloader/Atmel/sam4cp16c/sam4cp16c-flash.board"/>
+        <includes pattern="config/flashloader/Atmel/sam4cp16c/sam4cp16c-flash.flash"/>
+        <includes pattern="config/flashloader/Atmel/sam4cp16c/sam4cp16c-flash.out"/>
+        <includes pattern="config/linker/Atmel/sam4cp16c_0/flash.icf"/>
+        <includes pattern="config/linker/Atmel/sam4cp16c_0/sram.icf"/>
+      </resource>
+    </resources>
+    <resources target="ATSAM4CMP8C_1">
+      <resource type="atdf" subdir="sam4cm/atdf">
+        <includes pattern="ATSAM4CMP8C_1.atdf"/>
+      </resource>
+      <resource type="svd" subdir="sam4cm/svd">
+        <includes pattern="ATSAM4CMP8C_1.svd"/>
+      </resource>
+      <resource type="c.header" subdir="sam4cm/include">
+        <includes pattern="sam.h"/>
+        <includes pattern="sam4cm.h"/>
+        <includes pattern="sam4cm_1.h"/>
+        <includes pattern="sam4cmp8c_1.h"/>
+        <includes pattern="system_sam4cm.h"/>
+        <includes pattern="pio/sam4cmp8c.h"/>
+        <includes pattern="component-version.h"/>
+        <includes fileset="moduleheaders"/>
+        <meta key="define" value="__SAM4CMP8C_1__"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="sam4cm/templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="sam4cm/templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="sam4cm/templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="sam4cm/templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="armcc.source.startup" subdir="sam4cm/armcc">
+        <includes pattern="Device/SAM4CM/Source/ARM/startup_SAM4CM.s"/>
+        <includes pattern="Device/SAM4CM/Source/system_sam4cm.c"/>
+      </resource>
+      <resource type="gcc.source.startup" subdir="sam4cm/gcc">
+        <includes pattern="system_sam4cm.c"/>
+        <includes pattern="gcc/startup_sam4cm.c"/>
+      </resource>
+      <resource type="gcc.linker" subdir="sam4cm/gcc">
+        <includes pattern="gcc/sam4cmp8c_1_flash.ld"/>
+        <includes pattern="gcc/sam4cmp8c_1_sram.ld"/>
+        <includes pattern="gcc/sam4cm_flash.ld"/>
+        <includes pattern="gcc/sam4cm_sram.ld"/>
+      </resource>
+      <resource type="iar.source.startup" subdir="sam4cm/iar">
+        <includes pattern="system_sam4cm.c"/>
+        <includes pattern="iar/startup_sam4cm.c"/>
+      </resource>
+      <resource type="iar.linker" subdir="sam4cm/iar">
+        <includes pattern="iar/sam4cmp8c_1_flash.icf"/>
+        <includes pattern="iar/sam4cmp8c_1_sram.icf"/>
+      </resource>
+      <resource type="iar.config" subdir="sam4cm/iar">
+        <includes pattern="config/debugger/Atmel/Trace_SAM4CM.dmac"/>
+        <includes pattern="config/debugger/Atmel/ATSAM4CMP8C_1.ddf"/>
+        <includes pattern="config/devices/Atmel/*SAM4CM/ATSAM4CMP8C_1.i79"/>
+        <includes pattern="config/devices/Atmel/*SAM4CM/ATSAM4CMP8C_1.menu"/>
+        <includes pattern="config/flashloader/Atmel/sam4cmp8c/sam4cmp8c-flash.board"/>
+        <includes pattern="config/flashloader/Atmel/sam4cmp8c/sam4cmp8c-flash.flash"/>
+        <includes pattern="config/flashloader/Atmel/sam4cmp8c/sam4cmp8c-flash.out"/>
+        <includes pattern="config/linker/Atmel/sam4cmp8c_1/flash.icf"/>
+        <includes pattern="config/linker/Atmel/sam4cmp8c_1/sram.icf"/>
+      </resource>
+    </resources>
+    <resources target="ATSAM4C32C_1">
+      <resource type="atdf" subdir="sam4c32/atdf">
+        <includes pattern="ATSAM4C32C_1.atdf"/>
+      </resource>
+      <resource type="svd" subdir="sam4c32/svd">
+        <includes pattern="ATSAM4C32C_1.svd"/>
+      </resource>
+      <resource type="c.header" subdir="sam4c32/include">
+        <includes pattern="sam.h"/>
+        <includes pattern="sam4c32.h"/>
+        <includes pattern="sam4c32_1.h"/>
+        <includes pattern="sam4c32c_1.h"/>
+        <includes pattern="system_sam4c32.h"/>
+        <includes pattern="pio/sam4c32c.h"/>
+        <includes pattern="component-version.h"/>
+        <includes fileset="moduleheaders"/>
+        <meta key="define" value="__SAM4C32C_1__"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="sam4c32/templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="sam4c32/templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="sam4c32/templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="sam4c32/templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="armcc.source.startup" subdir="sam4c32/armcc">
+        <includes pattern="Device/Source/ARM/startup_SAM4C32.s"/>
+        <includes pattern="Device/Source/system_sam4c32.c"/>
+      </resource>
+      <resource type="gcc.source.startup" subdir="sam4c32/gcc">
+        <includes pattern="system_sam4c32.c"/>
+        <includes pattern="gcc/startup_sam4c32.c"/>
+      </resource>
+      <resource type="gcc.linker" subdir="sam4c32/gcc">
+        <includes pattern="gcc/sam4c32c_1_flash.ld"/>
+        <includes pattern="gcc/sam4c32c_1_sram.ld"/>
+        <includes pattern="gcc/sam4c32_flash.ld"/>
+        <includes pattern="gcc/sam4c32_sram.ld"/>
+      </resource>
+      <resource type="iar.source.startup" subdir="sam4c32/iar">
+        <includes pattern="system_sam4c32.c"/>
+        <includes pattern="iar/startup_sam4c32.c"/>
+      </resource>
+      <resource type="iar.linker" subdir="sam4c32/iar">
+        <includes pattern="iar/sam4c32c_1_flash.icf"/>
+        <includes pattern="iar/sam4c32c_1_sram.icf"/>
+      </resource>
+      <resource type="iar.config" subdir="sam4c32/iar">
+        <includes pattern="config/debugger/Atmel/Trace_SAM4C32.dmac"/>
+        <includes pattern="config/debugger/Atmel/ATSAM4C32C_1.ddf"/>
+        <includes pattern="config/devices/Atmel/*SAM4C32/ATSAM4C32C_1.i79"/>
+        <includes pattern="config/devices/Atmel/*SAM4C32/ATSAM4C32C_1.menu"/>
+        <includes pattern="config/flashloader/Atmel/sam4c32c/sam4c32c-flash.board"/>
+        <includes pattern="config/flashloader/Atmel/sam4c32c/sam4c32c-flash.flash"/>
+        <includes pattern="config/flashloader/Atmel/sam4c32c/sam4c32c-flash.out"/>
+        <includes pattern="config/linker/Atmel/sam4c32c_1/flash.icf"/>
+        <includes pattern="config/linker/Atmel/sam4c32c_1/sram.icf"/>
+      </resource>
+    </resources>
+    <resources target="ATSAM4CMS4C_0">
+      <resource type="atdf" subdir="sam4cm/atdf">
+        <includes pattern="ATSAM4CMS4C_0.atdf"/>
+      </resource>
+      <resource type="svd" subdir="sam4cm/svd">
+        <includes pattern="ATSAM4CMS4C_0.svd"/>
+      </resource>
+      <resource type="c.header" subdir="sam4cm/include">
+        <includes pattern="sam.h"/>
+        <includes pattern="sam4cm.h"/>
+        <includes pattern="sam4cm_0.h"/>
+        <includes pattern="sam4cms4c_0.h"/>
+        <includes pattern="system_sam4cm.h"/>
+        <includes pattern="pio/sam4cms4c.h"/>
+        <includes pattern="component-version.h"/>
+        <includes fileset="moduleheaders"/>
+        <meta key="define" value="__SAM4CMS4C_0__"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="sam4cm/templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="sam4cm/templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="sam4cm/templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="sam4cm/templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="armcc.source.startup" subdir="sam4cm/armcc">
+        <includes pattern="Device/SAM4CM/Source/ARM/startup_SAM4CM.s"/>
+        <includes pattern="Device/SAM4CM/Source/system_sam4cm.c"/>
+      </resource>
+      <resource type="keil.flashloader" subdir="sam4cm/keil">
+        <includes pattern="Flash/ATSAM4C_256.FLM"/>
+        <meta key="Flash/ATSAM4C_256.FLM" value="start=0x01000000|size=0x40000|default=1"/>
+      </resource>
+      <resource type="gcc.source.startup" subdir="sam4cm/gcc">
+        <includes pattern="system_sam4cm.c"/>
+        <includes pattern="gcc/startup_sam4cm.c"/>
+      </resource>
+      <resource type="gcc.linker" subdir="sam4cm/gcc">
+        <includes pattern="gcc/sam4cms4c_0_flash.ld"/>
+        <includes pattern="gcc/sam4cms4c_0_sram.ld"/>
+        <includes pattern="gcc/sam4cm_flash.ld"/>
+        <includes pattern="gcc/sam4cm_sram.ld"/>
+      </resource>
+      <resource type="iar.source.startup" subdir="sam4cm/iar">
+        <includes pattern="system_sam4cm.c"/>
+        <includes pattern="iar/startup_sam4cm.c"/>
+      </resource>
+      <resource type="iar.linker" subdir="sam4cm/iar">
+        <includes pattern="iar/sam4cms4c_0_flash.icf"/>
+        <includes pattern="iar/sam4cms4c_0_sram.icf"/>
+      </resource>
+      <resource type="iar.config" subdir="sam4cm/iar">
+        <includes pattern="config/debugger/Atmel/Trace_SAM4CM.dmac"/>
+        <includes pattern="config/debugger/Atmel/ATSAM4CMS4C_0.ddf"/>
+        <includes pattern="config/devices/Atmel/*SAM4CM/ATSAM4CMS4C_0.i79"/>
+        <includes pattern="config/devices/Atmel/*SAM4CM/ATSAM4CMS4C_0.menu"/>
+        <includes pattern="config/flashloader/Atmel/sam4cms4c/sam4cms4c-flash.board"/>
+        <includes pattern="config/flashloader/Atmel/sam4cms4c/sam4cms4c-flash.flash"/>
+        <includes pattern="config/flashloader/Atmel/sam4cms4c/sam4cms4c-flash.out"/>
+        <includes pattern="config/linker/Atmel/sam4cms4c_0/flash.icf"/>
+        <includes pattern="config/linker/Atmel/sam4cms4c_0/sram.icf"/>
+      </resource>
+    </resources>
+    <resources target="ATSAM4CMS4C_1">
+      <resource type="atdf" subdir="sam4cm/atdf">
+        <includes pattern="ATSAM4CMS4C_1.atdf"/>
+      </resource>
+      <resource type="svd" subdir="sam4cm/svd">
+        <includes pattern="ATSAM4CMS4C_1.svd"/>
+      </resource>
+      <resource type="c.header" subdir="sam4cm/include">
+        <includes pattern="sam.h"/>
+        <includes pattern="sam4cm.h"/>
+        <includes pattern="sam4cm_1.h"/>
+        <includes pattern="sam4cms4c_1.h"/>
+        <includes pattern="system_sam4cm.h"/>
+        <includes pattern="pio/sam4cms4c.h"/>
+        <includes pattern="component-version.h"/>
+        <includes fileset="moduleheaders"/>
+        <meta key="define" value="__SAM4CMS4C_1__"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="sam4cm/templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="sam4cm/templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="sam4cm/templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="sam4cm/templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="armcc.source.startup" subdir="sam4cm/armcc">
+        <includes pattern="Device/SAM4CM/Source/ARM/startup_SAM4CM.s"/>
+        <includes pattern="Device/SAM4CM/Source/system_sam4cm.c"/>
+      </resource>
+      <resource type="gcc.source.startup" subdir="sam4cm/gcc">
+        <includes pattern="system_sam4cm.c"/>
+        <includes pattern="gcc/startup_sam4cm.c"/>
+      </resource>
+      <resource type="gcc.linker" subdir="sam4cm/gcc">
+        <includes pattern="gcc/sam4cms4c_1_flash.ld"/>
+        <includes pattern="gcc/sam4cms4c_1_sram.ld"/>
+        <includes pattern="gcc/sam4cm_flash.ld"/>
+        <includes pattern="gcc/sam4cm_sram.ld"/>
+      </resource>
+      <resource type="iar.source.startup" subdir="sam4cm/iar">
+        <includes pattern="system_sam4cm.c"/>
+        <includes pattern="iar/startup_sam4cm.c"/>
+      </resource>
+      <resource type="iar.linker" subdir="sam4cm/iar">
+        <includes pattern="iar/sam4cms4c_1_flash.icf"/>
+        <includes pattern="iar/sam4cms4c_1_sram.icf"/>
+      </resource>
+      <resource type="iar.config" subdir="sam4cm/iar">
+        <includes pattern="config/debugger/Atmel/Trace_SAM4CM.dmac"/>
+        <includes pattern="config/debugger/Atmel/ATSAM4CMS4C_1.ddf"/>
+        <includes pattern="config/devices/Atmel/*SAM4CM/ATSAM4CMS4C_1.i79"/>
+        <includes pattern="config/devices/Atmel/*SAM4CM/ATSAM4CMS4C_1.menu"/>
+        <includes pattern="config/flashloader/Atmel/sam4cms4c/sam4cms4c-flash.board"/>
+        <includes pattern="config/flashloader/Atmel/sam4cms4c/sam4cms4c-flash.flash"/>
+        <includes pattern="config/flashloader/Atmel/sam4cms4c/sam4cms4c-flash.out"/>
+        <includes pattern="config/linker/Atmel/sam4cms4c_1/flash.icf"/>
+        <includes pattern="config/linker/Atmel/sam4cms4c_1/sram.icf"/>
+      </resource>
+    </resources>
+    <resources target="ATSAM4CMS8C_0">
+      <resource type="atdf" subdir="sam4cm/atdf">
+        <includes pattern="ATSAM4CMS8C_0.atdf"/>
+      </resource>
+      <resource type="svd" subdir="sam4cm/svd">
+        <includes pattern="ATSAM4CMS8C_0.svd"/>
+      </resource>
+      <resource type="c.header" subdir="sam4cm/include">
+        <includes pattern="sam.h"/>
+        <includes pattern="sam4cm.h"/>
+        <includes pattern="sam4cm_0.h"/>
+        <includes pattern="sam4cms8c_0.h"/>
+        <includes pattern="system_sam4cm.h"/>
+        <includes pattern="pio/sam4cms8c.h"/>
+        <includes pattern="component-version.h"/>
+        <includes fileset="moduleheaders"/>
+        <meta key="define" value="__SAM4CMS8C_0__"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="sam4cm/templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="sam4cm/templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="sam4cm/templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="sam4cm/templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="armcc.source.startup" subdir="sam4cm/armcc">
+        <includes pattern="Device/SAM4CM/Source/ARM/startup_SAM4CM.s"/>
+        <includes pattern="Device/SAM4CM/Source/system_sam4cm.c"/>
+      </resource>
+      <resource type="keil.flashloader" subdir="sam4cm/keil">
+        <includes pattern="Flash/ATSAM4C_512.FLM"/>
+        <meta key="Flash/ATSAM4C_512.FLM" value="start=0x01000000|size=0x80000|default=1"/>
+      </resource>
+      <resource type="gcc.source.startup" subdir="sam4cm/gcc">
+        <includes pattern="system_sam4cm.c"/>
+        <includes pattern="gcc/startup_sam4cm.c"/>
+      </resource>
+      <resource type="gcc.linker" subdir="sam4cm/gcc">
+        <includes pattern="gcc/sam4cms8c_0_flash.ld"/>
+        <includes pattern="gcc/sam4cms8c_0_sram.ld"/>
+        <includes pattern="gcc/sam4cm_flash.ld"/>
+        <includes pattern="gcc/sam4cm_sram.ld"/>
+      </resource>
+      <resource type="iar.source.startup" subdir="sam4cm/iar">
+        <includes pattern="system_sam4cm.c"/>
+        <includes pattern="iar/startup_sam4cm.c"/>
+      </resource>
+      <resource type="iar.linker" subdir="sam4cm/iar">
+        <includes pattern="iar/sam4cms8c_0_flash.icf"/>
+        <includes pattern="iar/sam4cms8c_0_sram.icf"/>
+      </resource>
+      <resource type="iar.config" subdir="sam4cm/iar">
+        <includes pattern="config/debugger/Atmel/Trace_SAM4CM.dmac"/>
+        <includes pattern="config/debugger/Atmel/ATSAM4CMS8C_0.ddf"/>
+        <includes pattern="config/devices/Atmel/*SAM4CM/ATSAM4CMS8C_0.i79"/>
+        <includes pattern="config/devices/Atmel/*SAM4CM/ATSAM4CMS8C_0.menu"/>
+        <includes pattern="config/flashloader/Atmel/sam4cms8c/sam4cms8c-flash.board"/>
+        <includes pattern="config/flashloader/Atmel/sam4cms8c/sam4cms8c-flash.flash"/>
+        <includes pattern="config/flashloader/Atmel/sam4cms8c/sam4cms8c-flash.out"/>
+        <includes pattern="config/linker/Atmel/sam4cms8c_0/flash.icf"/>
+        <includes pattern="config/linker/Atmel/sam4cms8c_0/sram.icf"/>
+      </resource>
+    </resources>
+    <resources target="ATSAM4CMS8C_1">
+      <resource type="atdf" subdir="sam4cm/atdf">
+        <includes pattern="ATSAM4CMS8C_1.atdf"/>
+      </resource>
+      <resource type="svd" subdir="sam4cm/svd">
+        <includes pattern="ATSAM4CMS8C_1.svd"/>
+      </resource>
+      <resource type="c.header" subdir="sam4cm/include">
+        <includes pattern="sam.h"/>
+        <includes pattern="sam4cm.h"/>
+        <includes pattern="sam4cm_1.h"/>
+        <includes pattern="sam4cms8c_1.h"/>
+        <includes pattern="system_sam4cm.h"/>
+        <includes pattern="pio/sam4cms8c.h"/>
+        <includes pattern="component-version.h"/>
+        <includes fileset="moduleheaders"/>
+        <meta key="define" value="__SAM4CMS8C_1__"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="sam4cm/templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="sam4cm/templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="sam4cm/templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="sam4cm/templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="armcc.source.startup" subdir="sam4cm/armcc">
+        <includes pattern="Device/SAM4CM/Source/ARM/startup_SAM4CM.s"/>
+        <includes pattern="Device/SAM4CM/Source/system_sam4cm.c"/>
+      </resource>
+      <resource type="gcc.source.startup" subdir="sam4cm/gcc">
+        <includes pattern="system_sam4cm.c"/>
+        <includes pattern="gcc/startup_sam4cm.c"/>
+      </resource>
+      <resource type="gcc.linker" subdir="sam4cm/gcc">
+        <includes pattern="gcc/sam4cms8c_1_flash.ld"/>
+        <includes pattern="gcc/sam4cms8c_1_sram.ld"/>
+        <includes pattern="gcc/sam4cm_flash.ld"/>
+        <includes pattern="gcc/sam4cm_sram.ld"/>
+      </resource>
+      <resource type="iar.source.startup" subdir="sam4cm/iar">
+        <includes pattern="system_sam4cm.c"/>
+        <includes pattern="iar/startup_sam4cm.c"/>
+      </resource>
+      <resource type="iar.linker" subdir="sam4cm/iar">
+        <includes pattern="iar/sam4cms8c_1_flash.icf"/>
+        <includes pattern="iar/sam4cms8c_1_sram.icf"/>
+      </resource>
+      <resource type="iar.config" subdir="sam4cm/iar">
+        <includes pattern="config/debugger/Atmel/Trace_SAM4CM.dmac"/>
+        <includes pattern="config/debugger/Atmel/ATSAM4CMS8C_1.ddf"/>
+        <includes pattern="config/devices/Atmel/*SAM4CM/ATSAM4CMS8C_1.i79"/>
+        <includes pattern="config/devices/Atmel/*SAM4CM/ATSAM4CMS8C_1.menu"/>
+        <includes pattern="config/flashloader/Atmel/sam4cms8c/sam4cms8c-flash.board"/>
+        <includes pattern="config/flashloader/Atmel/sam4cms8c/sam4cms8c-flash.flash"/>
+        <includes pattern="config/flashloader/Atmel/sam4cms8c/sam4cms8c-flash.out"/>
+        <includes pattern="config/linker/Atmel/sam4cms8c_1/flash.icf"/>
+        <includes pattern="config/linker/Atmel/sam4cms8c_1/sram.icf"/>
+      </resource>
+    </resources>
+    <resources target="ATSAM4C4C_0">
+      <resource type="atdf" subdir="sam4c/atdf">
+        <includes pattern="ATSAM4C4C_0.atdf"/>
+      </resource>
+      <resource type="svd" subdir="sam4c/svd">
+        <includes pattern="ATSAM4C4C_0.svd"/>
+      </resource>
+      <resource type="c.header" subdir="sam4c/include">
+        <includes pattern="sam.h"/>
+        <includes pattern="sam4c.h"/>
+        <includes pattern="sam4c_0.h"/>
+        <includes pattern="sam4c4c_0.h"/>
+        <includes pattern="system_sam4c.h"/>
+        <includes pattern="pio/sam4c4c.h"/>
+        <includes pattern="component-version.h"/>
+        <includes fileset="moduleheaders"/>
+        <meta key="define" value="__SAM4C4C_0__"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="sam4c/templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="sam4c/templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="sam4c/templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="sam4c/templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="armcc.source.startup" subdir="sam4c/armcc">
+        <includes pattern="Device/Source/ARM/startup_SAM4C.s"/>
+        <includes pattern="Device/Source/system_SAM4C.c"/>
+      </resource>
+      <resource type="keil.flashloader" subdir="sam4c/keil">
+        <includes pattern="Flash/ATSAM4C_256.FLM"/>
+        <meta key="Flash/ATSAM4C_256.FLM" value="start=0x01000000|size=0x40000|default=1"/>
+      </resource>
+      <resource type="gcc.source.startup" subdir="sam4c/gcc">
+        <includes pattern="system_sam4c.c"/>
+        <includes pattern="gcc/startup_sam4c.c"/>
+      </resource>
+      <resource type="gcc.linker" subdir="sam4c/gcc">
+        <includes pattern="gcc/sam4c4c_0_flash.ld"/>
+        <includes pattern="gcc/sam4c4c_0_sram.ld"/>
+        <includes pattern="gcc/sam4c_flash.ld"/>
+        <includes pattern="gcc/sam4c_sram.ld"/>
+      </resource>
+      <resource type="iar.source.startup" subdir="sam4c/iar">
+        <includes pattern="system_sam4c.c"/>
+        <includes pattern="iar/startup_sam4c.c"/>
+      </resource>
+      <resource type="iar.linker" subdir="sam4c/iar">
+        <includes pattern="iar/sam4c4c_0_flash.icf"/>
+        <includes pattern="iar/sam4c4c_0_sram.icf"/>
+      </resource>
+      <resource type="iar.config" subdir="sam4c/iar">
+        <includes pattern="config/debugger/Atmel/Trace_SAM4C.dmac"/>
+        <includes pattern="config/debugger/Atmel/ATSAM4C4C_0.ddf"/>
+        <includes pattern="config/devices/Atmel/*SAM4C/ATSAM4C4C_0.i79"/>
+        <includes pattern="config/devices/Atmel/*SAM4C/ATSAM4C4C_0.menu"/>
+        <includes pattern="config/flashloader/Atmel/sam4c4c/sam4c4c-flash.board"/>
+        <includes pattern="config/flashloader/Atmel/sam4c4c/sam4c4c-flash.flash"/>
+        <includes pattern="config/flashloader/Atmel/sam4c4c/sam4c4c-flash.out"/>
+        <includes pattern="config/linker/Atmel/sam4c4c_0/flash.icf"/>
+        <includes pattern="config/linker/Atmel/sam4c4c_0/sram.icf"/>
+      </resource>
+    </resources>
+    <resources target="ATSAM4C4C_1">
+      <resource type="atdf" subdir="sam4c/atdf">
+        <includes pattern="ATSAM4C4C_1.atdf"/>
+      </resource>
+      <resource type="svd" subdir="sam4c/svd">
+        <includes pattern="ATSAM4C4C_1.svd"/>
+      </resource>
+      <resource type="c.header" subdir="sam4c/include">
+        <includes pattern="sam.h"/>
+        <includes pattern="sam4c.h"/>
+        <includes pattern="sam4c_1.h"/>
+        <includes pattern="sam4c4c_1.h"/>
+        <includes pattern="system_sam4c.h"/>
+        <includes pattern="pio/sam4c4c.h"/>
+        <includes pattern="component-version.h"/>
+        <includes fileset="moduleheaders"/>
+        <meta key="define" value="__SAM4C4C_1__"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="sam4c/templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="sam4c/templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="sam4c/templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="sam4c/templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="armcc.source.startup" subdir="sam4c/armcc">
+        <includes pattern="Device/Source/ARM/startup_SAM4C.s"/>
+        <includes pattern="Device/Source/system_SAM4C.c"/>
+      </resource>
+      <resource type="gcc.source.startup" subdir="sam4c/gcc">
+        <includes pattern="system_sam4c.c"/>
+        <includes pattern="gcc/startup_sam4c.c"/>
+      </resource>
+      <resource type="gcc.linker" subdir="sam4c/gcc">
+        <includes pattern="gcc/sam4c4c_1_flash.ld"/>
+        <includes pattern="gcc/sam4c4c_1_sram.ld"/>
+        <includes pattern="gcc/sam4c_flash.ld"/>
+        <includes pattern="gcc/sam4c_sram.ld"/>
+      </resource>
+      <resource type="iar.source.startup" subdir="sam4c/iar">
+        <includes pattern="system_sam4c.c"/>
+        <includes pattern="iar/startup_sam4c.c"/>
+      </resource>
+      <resource type="iar.linker" subdir="sam4c/iar">
+        <includes pattern="iar/sam4c4c_1_flash.icf"/>
+        <includes pattern="iar/sam4c4c_1_sram.icf"/>
+      </resource>
+      <resource type="iar.config" subdir="sam4c/iar">
+        <includes pattern="config/debugger/Atmel/Trace_SAM4C.dmac"/>
+        <includes pattern="config/debugger/Atmel/ATSAM4C4C_1.ddf"/>
+        <includes pattern="config/devices/Atmel/*SAM4C/ATSAM4C4C_1.i79"/>
+        <includes pattern="config/devices/Atmel/*SAM4C/ATSAM4C4C_1.menu"/>
+        <includes pattern="config/flashloader/Atmel/sam4c4c/sam4c4c-flash.board"/>
+        <includes pattern="config/flashloader/Atmel/sam4c4c/sam4c4c-flash.flash"/>
+        <includes pattern="config/flashloader/Atmel/sam4c4c/sam4c4c-flash.out"/>
+        <includes pattern="config/linker/Atmel/sam4c4c_1/flash.icf"/>
+        <includes pattern="config/linker/Atmel/sam4c4c_1/sram.icf"/>
+      </resource>
+    </resources>
+    <resources target="ATSAM4C32E_0">
+      <resource type="atdf" subdir="sam4c32/atdf">
+        <includes pattern="ATSAM4C32E_0.atdf"/>
+      </resource>
+      <resource type="svd" subdir="sam4c32/svd">
+        <includes pattern="ATSAM4C32E_0.svd"/>
+      </resource>
+      <resource type="c.header" subdir="sam4c32/include">
+        <includes pattern="sam.h"/>
+        <includes pattern="sam4c32.h"/>
+        <includes pattern="sam4c32_0.h"/>
+        <includes pattern="sam4c32e_0.h"/>
+        <includes pattern="system_sam4c32.h"/>
+        <includes pattern="pio/sam4c32e.h"/>
+        <includes pattern="component-version.h"/>
+        <includes fileset="moduleheaders"/>
+        <meta key="define" value="__SAM4C32E_0__"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="sam4c32/templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="sam4c32/templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="sam4c32/templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="sam4c32/templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="armcc.source.startup" subdir="sam4c32/armcc">
+        <includes pattern="Device/Source/ARM/startup_SAM4C32.s"/>
+        <includes pattern="Device/Source/system_sam4c32.c"/>
+      </resource>
+      <resource type="keil.flashloader" subdir="sam4c32/keil">
+        <includes pattern="Flash/ATSAM4C32_2048.FLM"/>
+        <meta key="Flash/ATSAM4C32_2048.FLM" value="start=0x01000000|size=0x200000|default=1"/>
+      </resource>
+      <resource type="gcc.source.startup" subdir="sam4c32/gcc">
+        <includes pattern="system_sam4c32.c"/>
+        <includes pattern="gcc/startup_sam4c32.c"/>
+      </resource>
+      <resource type="gcc.linker" subdir="sam4c32/gcc">
+        <includes pattern="gcc/sam4c32e_0_flash.ld"/>
+        <includes pattern="gcc/sam4c32e_0_sram.ld"/>
+        <includes pattern="gcc/sam4c32_flash.ld"/>
+        <includes pattern="gcc/sam4c32_sram.ld"/>
+      </resource>
+      <resource type="iar.source.startup" subdir="sam4c32/iar">
+        <includes pattern="system_sam4c32.c"/>
+        <includes pattern="iar/startup_sam4c32.c"/>
+      </resource>
+      <resource type="iar.linker" subdir="sam4c32/iar">
+        <includes pattern="iar/sam4c32e_0_flash.icf"/>
+        <includes pattern="iar/sam4c32e_0_sram.icf"/>
+      </resource>
+      <resource type="iar.config" subdir="sam4c32/iar">
+        <includes pattern="config/debugger/Atmel/Trace_SAM4C32.dmac"/>
+        <includes pattern="config/debugger/Atmel/ATSAM4C32E_0.ddf"/>
+        <includes pattern="config/devices/Atmel/*SAM4C32/ATSAM4C32E_0.i79"/>
+        <includes pattern="config/devices/Atmel/*SAM4C32/ATSAM4C32E_0.menu"/>
+        <includes pattern="config/flashloader/Atmel/sam4c32e/sam4c32e-flash.board"/>
+        <includes pattern="config/flashloader/Atmel/sam4c32e/sam4c32e-flash.flash"/>
+        <includes pattern="config/flashloader/Atmel/sam4c32e/sam4c32e-flash.out"/>
+        <includes pattern="config/linker/Atmel/sam4c32e_0/flash.icf"/>
+        <includes pattern="config/linker/Atmel/sam4c32e_0/sram.icf"/>
+      </resource>
+    </resources>
+    <resources target="ATSAM4C32E_1">
+      <resource type="atdf" subdir="sam4c32/atdf">
+        <includes pattern="ATSAM4C32E_1.atdf"/>
+      </resource>
+      <resource type="svd" subdir="sam4c32/svd">
+        <includes pattern="ATSAM4C32E_1.svd"/>
+      </resource>
+      <resource type="c.header" subdir="sam4c32/include">
+        <includes pattern="sam.h"/>
+        <includes pattern="sam4c32.h"/>
+        <includes pattern="sam4c32_1.h"/>
+        <includes pattern="sam4c32e_1.h"/>
+        <includes pattern="system_sam4c32.h"/>
+        <includes pattern="pio/sam4c32e.h"/>
+        <includes pattern="component-version.h"/>
+        <includes fileset="moduleheaders"/>
+        <meta key="define" value="__SAM4C32E_1__"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="sam4c32/templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="sam4c32/templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="sam4c32/templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="sam4c32/templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="armcc.source.startup" subdir="sam4c32/armcc">
+        <includes pattern="Device/Source/ARM/startup_SAM4C32.s"/>
+        <includes pattern="Device/Source/system_sam4c32.c"/>
+      </resource>
+      <resource type="gcc.source.startup" subdir="sam4c32/gcc">
+        <includes pattern="system_sam4c32.c"/>
+        <includes pattern="gcc/startup_sam4c32.c"/>
+      </resource>
+      <resource type="gcc.linker" subdir="sam4c32/gcc">
+        <includes pattern="gcc/sam4c32e_1_flash.ld"/>
+        <includes pattern="gcc/sam4c32e_1_sram.ld"/>
+        <includes pattern="gcc/sam4c32_flash.ld"/>
+        <includes pattern="gcc/sam4c32_sram.ld"/>
+      </resource>
+      <resource type="iar.source.startup" subdir="sam4c32/iar">
+        <includes pattern="system_sam4c32.c"/>
+        <includes pattern="iar/startup_sam4c32.c"/>
+      </resource>
+      <resource type="iar.linker" subdir="sam4c32/iar">
+        <includes pattern="iar/sam4c32e_1_flash.icf"/>
+        <includes pattern="iar/sam4c32e_1_sram.icf"/>
+      </resource>
+      <resource type="iar.config" subdir="sam4c32/iar">
+        <includes pattern="config/debugger/Atmel/Trace_SAM4C32.dmac"/>
+        <includes pattern="config/debugger/Atmel/ATSAM4C32E_1.ddf"/>
+        <includes pattern="config/devices/Atmel/*SAM4C32/ATSAM4C32E_1.i79"/>
+        <includes pattern="config/devices/Atmel/*SAM4C32/ATSAM4C32E_1.menu"/>
+        <includes pattern="config/flashloader/Atmel/sam4c32e/sam4c32e-flash.board"/>
+        <includes pattern="config/flashloader/Atmel/sam4c32e/sam4c32e-flash.flash"/>
+        <includes pattern="config/flashloader/Atmel/sam4c32e/sam4c32e-flash.out"/>
+        <includes pattern="config/linker/Atmel/sam4c32e_1/flash.icf"/>
+        <includes pattern="config/linker/Atmel/sam4c32e_1/sram.icf"/>
+      </resource>
+    </resources>
+    <resources target="ATSAM4CMS16C_0">
+      <resource type="atdf" subdir="sam4cm/atdf">
+        <includes pattern="ATSAM4CMS16C_0.atdf"/>
+      </resource>
+      <resource type="svd" subdir="sam4cm/svd">
+        <includes pattern="ATSAM4CMS16C_0.svd"/>
+      </resource>
+      <resource type="c.header" subdir="sam4cm/include">
+        <includes pattern="sam.h"/>
+        <includes pattern="sam4cm.h"/>
+        <includes pattern="sam4cm_0.h"/>
+        <includes pattern="sam4cms16c_0.h"/>
+        <includes pattern="system_sam4cm.h"/>
+        <includes pattern="pio/sam4cms16c.h"/>
+        <includes pattern="component-version.h"/>
+        <includes fileset="moduleheaders"/>
+        <meta key="define" value="__SAM4CMS16C_0__"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="sam4cm/templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="sam4cm/templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="sam4cm/templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="sam4cm/templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="armcc.source.startup" subdir="sam4cm/armcc">
+        <includes pattern="Device/SAM4CM/Source/ARM/startup_SAM4CM.s"/>
+        <includes pattern="Device/SAM4CM/Source/system_sam4cm.c"/>
+      </resource>
+      <resource type="keil.flashloader" subdir="sam4cm/keil">
+        <includes pattern="Flash/ATSAM4C_1024.FLM"/>
+        <meta key="Flash/ATSAM4C_1024.FLM" value="start=0x01000000|size=0x100000|default=1"/>
+      </resource>
+      <resource type="gcc.source.startup" subdir="sam4cm/gcc">
+        <includes pattern="system_sam4cm.c"/>
+        <includes pattern="gcc/startup_sam4cm.c"/>
+      </resource>
+      <resource type="gcc.linker" subdir="sam4cm/gcc">
+        <includes pattern="gcc/sam4cms16c_0_flash.ld"/>
+        <includes pattern="gcc/sam4cms16c_0_sram.ld"/>
+        <includes pattern="gcc/sam4cm_flash.ld"/>
+        <includes pattern="gcc/sam4cm_sram.ld"/>
+      </resource>
+      <resource type="iar.source.startup" subdir="sam4cm/iar">
+        <includes pattern="system_sam4cm.c"/>
+        <includes pattern="iar/startup_sam4cm.c"/>
+      </resource>
+      <resource type="iar.linker" subdir="sam4cm/iar">
+        <includes pattern="iar/sam4cms16c_0_flash.icf"/>
+        <includes pattern="iar/sam4cms16c_0_sram.icf"/>
+      </resource>
+      <resource type="iar.config" subdir="sam4cm/iar">
+        <includes pattern="config/debugger/Atmel/Trace_SAM4CM.dmac"/>
+        <includes pattern="config/debugger/Atmel/ATSAM4CMS16C_0.ddf"/>
+        <includes pattern="config/devices/Atmel/*SAM4CM/ATSAM4CMS16C_0.i79"/>
+        <includes pattern="config/devices/Atmel/*SAM4CM/ATSAM4CMS16C_0.menu"/>
+        <includes pattern="config/flashloader/Atmel/sam4cms16c/sam4cms16c-flash.board"/>
+        <includes pattern="config/flashloader/Atmel/sam4cms16c/sam4cms16c-flash.flash"/>
+        <includes pattern="config/flashloader/Atmel/sam4cms16c/sam4cms16c-flash.out"/>
+        <includes pattern="config/linker/Atmel/sam4cms16c_0/flash.icf"/>
+        <includes pattern="config/linker/Atmel/sam4cms16c_0/sram.icf"/>
+      </resource>
+    </resources>
+    <resources target="ATSAM4CMS16C_1">
+      <resource type="atdf" subdir="sam4cm/atdf">
+        <includes pattern="ATSAM4CMS16C_1.atdf"/>
+      </resource>
+      <resource type="svd" subdir="sam4cm/svd">
+        <includes pattern="ATSAM4CMS16C_1.svd"/>
+      </resource>
+      <resource type="c.header" subdir="sam4cm/include">
+        <includes pattern="sam.h"/>
+        <includes pattern="sam4cm.h"/>
+        <includes pattern="sam4cm_1.h"/>
+        <includes pattern="sam4cms16c_1.h"/>
+        <includes pattern="system_sam4cm.h"/>
+        <includes pattern="pio/sam4cms16c.h"/>
+        <includes pattern="component-version.h"/>
+        <includes fileset="moduleheaders"/>
+        <meta key="define" value="__SAM4CMS16C_1__"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="sam4cm/templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="sam4cm/templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="sam4cm/templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="sam4cm/templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="armcc.source.startup" subdir="sam4cm/armcc">
+        <includes pattern="Device/SAM4CM/Source/ARM/startup_SAM4CM.s"/>
+        <includes pattern="Device/SAM4CM/Source/system_sam4cm.c"/>
+      </resource>
+      <resource type="gcc.source.startup" subdir="sam4cm/gcc">
+        <includes pattern="system_sam4cm.c"/>
+        <includes pattern="gcc/startup_sam4cm.c"/>
+      </resource>
+      <resource type="gcc.linker" subdir="sam4cm/gcc">
+        <includes pattern="gcc/sam4cms16c_1_flash.ld"/>
+        <includes pattern="gcc/sam4cms16c_1_sram.ld"/>
+        <includes pattern="gcc/sam4cm_flash.ld"/>
+        <includes pattern="gcc/sam4cm_sram.ld"/>
+      </resource>
+      <resource type="iar.source.startup" subdir="sam4cm/iar">
+        <includes pattern="system_sam4cm.c"/>
+        <includes pattern="iar/startup_sam4cm.c"/>
+      </resource>
+      <resource type="iar.linker" subdir="sam4cm/iar">
+        <includes pattern="iar/sam4cms16c_1_flash.icf"/>
+        <includes pattern="iar/sam4cms16c_1_sram.icf"/>
+      </resource>
+      <resource type="iar.config" subdir="sam4cm/iar">
+        <includes pattern="config/debugger/Atmel/Trace_SAM4CM.dmac"/>
+        <includes pattern="config/debugger/Atmel/ATSAM4CMS16C_1.ddf"/>
+        <includes pattern="config/devices/Atmel/*SAM4CM/ATSAM4CMS16C_1.i79"/>
+        <includes pattern="config/devices/Atmel/*SAM4CM/ATSAM4CMS16C_1.menu"/>
+        <includes pattern="config/flashloader/Atmel/sam4cms16c/sam4cms16c-flash.board"/>
+        <includes pattern="config/flashloader/Atmel/sam4cms16c/sam4cms16c-flash.flash"/>
+        <includes pattern="config/flashloader/Atmel/sam4cms16c/sam4cms16c-flash.out"/>
+        <includes pattern="config/linker/Atmel/sam4cms16c_1/flash.icf"/>
+        <includes pattern="config/linker/Atmel/sam4cms16c_1/sram.icf"/>
+      </resource>
+    </resources>
+    <resources target="ATSAM4CMP16C_1">
+      <resource type="atdf" subdir="sam4cm/atdf">
+        <includes pattern="ATSAM4CMP16C_1.atdf"/>
+      </resource>
+      <resource type="svd" subdir="sam4cm/svd">
+        <includes pattern="ATSAM4CMP16C_1.svd"/>
+      </resource>
+      <resource type="c.header" subdir="sam4cm/include">
+        <includes pattern="sam.h"/>
+        <includes pattern="sam4cm.h"/>
+        <includes pattern="sam4cm_1.h"/>
+        <includes pattern="sam4cmp16c_1.h"/>
+        <includes pattern="system_sam4cm.h"/>
+        <includes pattern="pio/sam4cmp16c.h"/>
+        <includes pattern="component-version.h"/>
+        <includes fileset="moduleheaders"/>
+        <meta key="define" value="__SAM4CMP16C_1__"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="sam4cm/templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="sam4cm/templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="sam4cm/templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="sam4cm/templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="armcc.source.startup" subdir="sam4cm/armcc">
+        <includes pattern="Device/SAM4CM/Source/ARM/startup_SAM4CM.s"/>
+        <includes pattern="Device/SAM4CM/Source/system_sam4cm.c"/>
+      </resource>
+      <resource type="gcc.source.startup" subdir="sam4cm/gcc">
+        <includes pattern="system_sam4cm.c"/>
+        <includes pattern="gcc/startup_sam4cm.c"/>
+      </resource>
+      <resource type="gcc.linker" subdir="sam4cm/gcc">
+        <includes pattern="gcc/sam4cmp16c_1_flash.ld"/>
+        <includes pattern="gcc/sam4cmp16c_1_sram.ld"/>
+        <includes pattern="gcc/sam4cm_flash.ld"/>
+        <includes pattern="gcc/sam4cm_sram.ld"/>
+      </resource>
+      <resource type="iar.source.startup" subdir="sam4cm/iar">
+        <includes pattern="system_sam4cm.c"/>
+        <includes pattern="iar/startup_sam4cm.c"/>
+      </resource>
+      <resource type="iar.linker" subdir="sam4cm/iar">
+        <includes pattern="iar/sam4cmp16c_1_flash.icf"/>
+        <includes pattern="iar/sam4cmp16c_1_sram.icf"/>
+      </resource>
+      <resource type="iar.config" subdir="sam4cm/iar">
+        <includes pattern="config/debugger/Atmel/Trace_SAM4CM.dmac"/>
+        <includes pattern="config/debugger/Atmel/ATSAM4CMP16C_1.ddf"/>
+        <includes pattern="config/devices/Atmel/*SAM4CM/ATSAM4CMP16C_1.i79"/>
+        <includes pattern="config/devices/Atmel/*SAM4CM/ATSAM4CMP16C_1.menu"/>
+        <includes pattern="config/flashloader/Atmel/sam4cmp16c/sam4cmp16c-flash.board"/>
+        <includes pattern="config/flashloader/Atmel/sam4cmp16c/sam4cmp16c-flash.flash"/>
+        <includes pattern="config/flashloader/Atmel/sam4cmp16c/sam4cmp16c-flash.out"/>
+        <includes pattern="config/linker/Atmel/sam4cmp16c_1/flash.icf"/>
+        <includes pattern="config/linker/Atmel/sam4cmp16c_1/sram.icf"/>
+      </resource>
+    </resources>
+    <resources target="ATSAM4CMP16C_0">
+      <resource type="atdf" subdir="sam4cm/atdf">
+        <includes pattern="ATSAM4CMP16C_0.atdf"/>
+      </resource>
+      <resource type="svd" subdir="sam4cm/svd">
+        <includes pattern="ATSAM4CMP16C_0.svd"/>
+      </resource>
+      <resource type="c.header" subdir="sam4cm/include">
+        <includes pattern="sam.h"/>
+        <includes pattern="sam4cm.h"/>
+        <includes pattern="sam4cm_0.h"/>
+        <includes pattern="sam4cmp16c_0.h"/>
+        <includes pattern="system_sam4cm.h"/>
+        <includes pattern="pio/sam4cmp16c.h"/>
+        <includes pattern="component-version.h"/>
+        <includes fileset="moduleheaders"/>
+        <meta key="define" value="__SAM4CMP16C_0__"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="sam4cm/templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="sam4cm/templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="sam4cm/templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="sam4cm/templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="armcc.source.startup" subdir="sam4cm/armcc">
+        <includes pattern="Device/SAM4CM/Source/ARM/startup_SAM4CM.s"/>
+        <includes pattern="Device/SAM4CM/Source/system_sam4cm.c"/>
+      </resource>
+      <resource type="keil.flashloader" subdir="sam4cm/keil">
+        <includes pattern="Flash/ATSAM4C_1024.FLM"/>
+        <meta key="Flash/ATSAM4C_1024.FLM" value="start=0x01000000|size=0x100000|default=1"/>
+      </resource>
+      <resource type="gcc.source.startup" subdir="sam4cm/gcc">
+        <includes pattern="system_sam4cm.c"/>
+        <includes pattern="gcc/startup_sam4cm.c"/>
+      </resource>
+      <resource type="gcc.linker" subdir="sam4cm/gcc">
+        <includes pattern="gcc/sam4cmp16c_0_flash.ld"/>
+        <includes pattern="gcc/sam4cmp16c_0_sram.ld"/>
+        <includes pattern="gcc/sam4cm_flash.ld"/>
+        <includes pattern="gcc/sam4cm_sram.ld"/>
+      </resource>
+      <resource type="iar.source.startup" subdir="sam4cm/iar">
+        <includes pattern="system_sam4cm.c"/>
+        <includes pattern="iar/startup_sam4cm.c"/>
+      </resource>
+      <resource type="iar.linker" subdir="sam4cm/iar">
+        <includes pattern="iar/sam4cmp16c_0_flash.icf"/>
+        <includes pattern="iar/sam4cmp16c_0_sram.icf"/>
+      </resource>
+      <resource type="iar.config" subdir="sam4cm/iar">
+        <includes pattern="config/debugger/Atmel/Trace_SAM4CM.dmac"/>
+        <includes pattern="config/debugger/Atmel/ATSAM4CMP16C_0.ddf"/>
+        <includes pattern="config/devices/Atmel/*SAM4CM/ATSAM4CMP16C_0.i79"/>
+        <includes pattern="config/devices/Atmel/*SAM4CM/ATSAM4CMP16C_0.menu"/>
+        <includes pattern="config/flashloader/Atmel/sam4cmp16c/sam4cmp16c-flash.board"/>
+        <includes pattern="config/flashloader/Atmel/sam4cmp16c/sam4cmp16c-flash.flash"/>
+        <includes pattern="config/flashloader/Atmel/sam4cmp16c/sam4cmp16c-flash.out"/>
+        <includes pattern="config/linker/Atmel/sam4cmp16c_0/flash.icf"/>
+        <includes pattern="config/linker/Atmel/sam4cmp16c_0/sram.icf"/>
+      </resource>
+    </resources>
+  </content>
+  <pdsc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+ 		<releases>
+ 			<release version="1.0.BUILDNUMBER">Support for placing code in cached FLASH. Add MPU peripheral in device file.</release>
+ 			<release version="1.0.84">Add ATSAM4CP16B and ATSAM4CP16C. Updated documentation links.</release>
+			<release version="1.0.59">Initial release.</release>
+		</releases>
+		<devices>
+			<family>
+				<device name="ATSAM4C4C">
+					<processor name="0" target="ATSAM4C4C_0"/>
+					<processor name="1" target="ATSAM4C4C_1"/>
+				</device>
+				<device name="ATSAM4C8C">
+					<processor name="0" target="ATSAM4C8C_0"/>
+					<processor name="1" target="ATSAM4C8C_1"/>
+				</device>
+				<device name="ATSAM4C16C">
+					<processor name="0" target="ATSAM4C16C_0"/>
+					<processor name="1" target="ATSAM4C16C_1"/>
+				</device>
+				<device name="ATSAM4C32C">
+					<processor name="0" target="ATSAM4C32C_0"/>
+					<processor name="1" target="ATSAM4C32C_1"/>
+				</device>
+				<device name="ATSAM4C32E">
+					<processor name="0" target="ATSAM4C32E_0"/>
+					<processor name="1" target="ATSAM4C32E_1"/>
+				</device>
+				<device name="ATSAM4CMP8C">
+					<processor name="0" target="ATSAM4CMP8C_0"/>
+					<processor name="1" target="ATSAM4CMP8C_1"/>
+				</device>
+				<device name="ATSAM4CMP16C">
+					<processor name="0" target="ATSAM4CMP16C_0"/>
+					<processor name="1" target="ATSAM4CMP16C_1"/>
+				</device>
+				<device name="ATSAM4CMS4C">
+					<processor name="0" target="ATSAM4CMS4C_0"/>
+					<processor name="1" target="ATSAM4CMS4C_1"/>
+				</device>
+				<device name="ATSAM4CMS8C">
+					<processor name="0" target="ATSAM4CMS8C_0"/>
+					<processor name="1" target="ATSAM4CMS8C_1"/>
+				</device>
+				<device name="ATSAM4CMS16C">
+					<processor name="0" target="ATSAM4CMS16C_0"/>
+					<processor name="1" target="ATSAM4CMS16C_1"/>
+				</device>
+				<device name="ATSAM4CMP32C">
+					<processor name="0" target="ATSAM4CMP32C_0"/>
+					<processor name="1" target="ATSAM4CMP32C_1"/>
+				</device>
+				<device name="ATSAM4CMS32C">
+					<processor name="0" target="ATSAM4CMS32C_0"/>
+					<processor name="1" target="ATSAM4CMS32C_1"/>
+				</device>
+				<device name="ATSAM4CP16B">
+					<processor name="0" target="ATSAM4CP16B_0"/>
+					<processor name="1" target="ATSAM4CP16B_1"/>
+				</device>
+				<device name="ATSAM4CP16C">
+					<processor name="0" target="ATSAM4CP16C_0"/>
+					<processor name="1" target="ATSAM4CP16C_1"/>
+				</device>
+				<!--device name="ATSAM4CP32C">
+					<processor name="0" target="ATSAM4CP32C_0"/>
+					<processor name="1" target="ATSAM4CP32C_1"/>
+				</device-->
+			</family>
+		</devices>
+	</pdsc>
+</package>

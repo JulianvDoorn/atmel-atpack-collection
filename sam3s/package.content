@@ -1,0 +1,667 @@
+<?xml version='1.0' encoding='ASCII'?>
+<package schemaVersion="1.0">
+  <content>
+    <fileset id="moduleheaders">
+      <includes pattern="component/*"/>
+      <includes pattern="instance/*"/>
+    </fileset>
+    <resources target="ATSAM3S2A">
+      <resource type="atdf" subdir="sam3s/atdf">
+        <includes pattern="ATSAM3S2A.atdf"/>
+      </resource>
+      <resource type="svd" subdir="sam3s/svd">
+        <includes pattern="ATSAM3S2A.svd"/>
+      </resource>
+      <resource type="c.header" subdir="sam3s/include">
+        <includes pattern="sam.h"/>
+        <includes pattern="sam3s.h"/>
+        <includes pattern="sam3s2a.h"/>
+        <includes pattern="system_sam3s.h"/>
+        <includes pattern="pio/*sam3s2a.h"/>
+        <includes pattern="component-version.h"/>
+        <includes fileset="moduleheaders"/>
+        <meta key="define" value="__SAM3S2A__"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="sam3s/templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="sam3s/templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="sam3s/templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="sam3s/templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="armcc.source.startup" subdir="sam3s/armcc">
+        <includes pattern="Device/SAM3S/Source/ARM/startup_SAM3S.s"/>
+        <includes pattern="Device/SAM3S/Source/system_SAM3S.c"/>
+      </resource>
+      <resource type="keil.flashloader" subdir="sam3s/keil">
+        <includes pattern="Flash/ATSAM3S_128.FLM"/>
+        <includes pattern="Flash/ATSAM3S_GPNVM.FLM"/>
+        <meta key="Flash/ATSAM3S_GPNVM.FLM" value="start=0x1FFFFFF0|size=0x00000010|default=0"/>
+        <meta key="Flash/ATSAM3S_128.FLM" value="start=0x00400000|size=0x00020000|default=1"/>
+      </resource>
+      <resource type="gcc.source.startup" subdir="sam3s/gcc">
+        <includes pattern="system_sam3s.c"/>
+        <includes pattern="gcc/startup_sam3s.c"/>
+      </resource>
+      <resource type="gcc.linker" subdir="sam3s/gcc">
+        <includes pattern="gcc/sam3s2a_flash.ld"/>
+        <includes pattern="gcc/sam3s2a_sram.ld"/>
+        <includes optional="true" pattern="gcc/sam3s_flash.ld"/>
+        <includes optional="true" pattern="gcc/sam3s_sram.ld"/>
+      </resource>
+    </resources>
+    <resources target="ATSAM3S2C">
+      <resource type="atdf" subdir="sam3s/atdf">
+        <includes pattern="ATSAM3S2C.atdf"/>
+      </resource>
+      <resource type="svd" subdir="sam3s/svd">
+        <includes pattern="ATSAM3S2C.svd"/>
+      </resource>
+      <resource type="c.header" subdir="sam3s/include">
+        <includes pattern="sam.h"/>
+        <includes pattern="sam3s.h"/>
+        <includes pattern="sam3s2c.h"/>
+        <includes pattern="system_sam3s.h"/>
+        <includes pattern="pio/*sam3s2c.h"/>
+        <includes pattern="component-version.h"/>
+        <includes fileset="moduleheaders"/>
+        <meta key="define" value="__SAM3S2C__"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="sam3s/templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="sam3s/templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="sam3s/templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="sam3s/templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="armcc.source.startup" subdir="sam3s/armcc">
+        <includes pattern="Device/SAM3S/Source/ARM/startup_SAM3S.s"/>
+        <includes pattern="Device/SAM3S/Source/system_SAM3S.c"/>
+      </resource>
+      <resource type="keil.flashloader" subdir="sam3s/keil">
+        <includes pattern="Flash/ATSAM3S_128.FLM"/>
+        <includes pattern="Flash/ATSAM3S_GPNVM.FLM"/>
+        <meta key="Flash/ATSAM3S_GPNVM.FLM" value="start=0x1FFFFFF0|size=0x00000010|default=0"/>
+        <meta key="Flash/ATSAM3S_128.FLM" value="start=0x00400000|size=0x00020000|default=1"/>
+      </resource>
+      <resource type="gcc.source.startup" subdir="sam3s/gcc">
+        <includes pattern="system_sam3s.c"/>
+        <includes pattern="gcc/startup_sam3s.c"/>
+      </resource>
+      <resource type="gcc.linker" subdir="sam3s/gcc">
+        <includes pattern="gcc/sam3s2c_flash.ld"/>
+        <includes pattern="gcc/sam3s2c_sram.ld"/>
+        <includes optional="true" pattern="gcc/sam3s_flash.ld"/>
+        <includes optional="true" pattern="gcc/sam3s_sram.ld"/>
+      </resource>
+    </resources>
+    <resources target="ATSAM3S2B">
+      <resource type="atdf" subdir="sam3s/atdf">
+        <includes pattern="ATSAM3S2B.atdf"/>
+      </resource>
+      <resource type="svd" subdir="sam3s/svd">
+        <includes pattern="ATSAM3S2B.svd"/>
+      </resource>
+      <resource type="c.header" subdir="sam3s/include">
+        <includes pattern="sam.h"/>
+        <includes pattern="sam3s.h"/>
+        <includes pattern="sam3s2b.h"/>
+        <includes pattern="system_sam3s.h"/>
+        <includes pattern="pio/*sam3s2b.h"/>
+        <includes pattern="component-version.h"/>
+        <includes fileset="moduleheaders"/>
+        <meta key="define" value="__SAM3S2B__"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="sam3s/templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="sam3s/templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="sam3s/templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="sam3s/templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="armcc.source.startup" subdir="sam3s/armcc">
+        <includes pattern="Device/SAM3S/Source/ARM/startup_SAM3S.s"/>
+        <includes pattern="Device/SAM3S/Source/system_SAM3S.c"/>
+      </resource>
+      <resource type="keil.flashloader" subdir="sam3s/keil">
+        <includes pattern="Flash/ATSAM3S_128.FLM"/>
+        <includes pattern="Flash/ATSAM3S_GPNVM.FLM"/>
+        <meta key="Flash/ATSAM3S_GPNVM.FLM" value="start=0x1FFFFFF0|size=0x00000010|default=0"/>
+        <meta key="Flash/ATSAM3S_128.FLM" value="start=0x00400000|size=0x00020000|default=1"/>
+      </resource>
+      <resource type="gcc.source.startup" subdir="sam3s/gcc">
+        <includes pattern="system_sam3s.c"/>
+        <includes pattern="gcc/startup_sam3s.c"/>
+      </resource>
+      <resource type="gcc.linker" subdir="sam3s/gcc">
+        <includes pattern="gcc/sam3s2b_flash.ld"/>
+        <includes pattern="gcc/sam3s2b_sram.ld"/>
+        <includes optional="true" pattern="gcc/sam3s_flash.ld"/>
+        <includes optional="true" pattern="gcc/sam3s_sram.ld"/>
+      </resource>
+    </resources>
+    <resources target="ATSAM3S4C">
+      <resource type="atdf" subdir="sam3s/atdf">
+        <includes pattern="ATSAM3S4C.atdf"/>
+      </resource>
+      <resource type="svd" subdir="sam3s/svd">
+        <includes pattern="ATSAM3S4C.svd"/>
+      </resource>
+      <resource type="c.header" subdir="sam3s/include">
+        <includes pattern="sam.h"/>
+        <includes pattern="sam3s.h"/>
+        <includes pattern="sam3s4c.h"/>
+        <includes pattern="system_sam3s.h"/>
+        <includes pattern="pio/*sam3s4c.h"/>
+        <includes pattern="component-version.h"/>
+        <includes fileset="moduleheaders"/>
+        <meta key="define" value="__SAM3S4C__"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="sam3s/templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="sam3s/templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="sam3s/templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="sam3s/templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="armcc.source.startup" subdir="sam3s/armcc">
+        <includes pattern="Device/SAM3S/Source/ARM/startup_SAM3S.s"/>
+        <includes pattern="Device/SAM3S/Source/system_SAM3S.c"/>
+      </resource>
+      <resource type="keil.flashloader" subdir="sam3s/keil">
+        <includes pattern="Flash/ATSAM3S_256.FLM"/>
+        <includes pattern="Flash/ATSAM3S_GPNVM.FLM"/>
+        <meta key="Flash/ATSAM3S_GPNVM.FLM" value="start=0x1FFFFFF0|size=0x00000010|default=0"/>
+        <meta key="Flash/ATSAM3S_256.FLM" value="start=0x00400000|size=0x00040000|default=1"/>
+      </resource>
+      <resource type="gcc.source.startup" subdir="sam3s/gcc">
+        <includes pattern="system_sam3s.c"/>
+        <includes pattern="gcc/startup_sam3s.c"/>
+      </resource>
+      <resource type="gcc.linker" subdir="sam3s/gcc">
+        <includes pattern="gcc/sam3s4c_flash.ld"/>
+        <includes pattern="gcc/sam3s4c_sram.ld"/>
+        <includes optional="true" pattern="gcc/sam3s_flash.ld"/>
+        <includes optional="true" pattern="gcc/sam3s_sram.ld"/>
+      </resource>
+    </resources>
+    <resources target="ATSAM3S4B">
+      <resource type="atdf" subdir="sam3s/atdf">
+        <includes pattern="ATSAM3S4B.atdf"/>
+      </resource>
+      <resource type="svd" subdir="sam3s/svd">
+        <includes pattern="ATSAM3S4B.svd"/>
+      </resource>
+      <resource type="c.header" subdir="sam3s/include">
+        <includes pattern="sam.h"/>
+        <includes pattern="sam3s.h"/>
+        <includes pattern="sam3s4b.h"/>
+        <includes pattern="system_sam3s.h"/>
+        <includes pattern="pio/*sam3s4b.h"/>
+        <includes pattern="component-version.h"/>
+        <includes fileset="moduleheaders"/>
+        <meta key="define" value="__SAM3S4B__"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="sam3s/templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="sam3s/templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="sam3s/templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="sam3s/templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="armcc.source.startup" subdir="sam3s/armcc">
+        <includes pattern="Device/SAM3S/Source/ARM/startup_SAM3S.s"/>
+        <includes pattern="Device/SAM3S/Source/system_SAM3S.c"/>
+      </resource>
+      <resource type="keil.flashloader" subdir="sam3s/keil">
+        <includes pattern="Flash/ATSAM3S_256.FLM"/>
+        <includes pattern="Flash/ATSAM3S_GPNVM.FLM"/>
+        <meta key="Flash/ATSAM3S_GPNVM.FLM" value="start=0x1FFFFFF0|size=0x00000010|default=0"/>
+        <meta key="Flash/ATSAM3S_256.FLM" value="start=0x00400000|size=0x00040000|default=1"/>
+      </resource>
+      <resource type="gcc.source.startup" subdir="sam3s/gcc">
+        <includes pattern="system_sam3s.c"/>
+        <includes pattern="gcc/startup_sam3s.c"/>
+      </resource>
+      <resource type="gcc.linker" subdir="sam3s/gcc">
+        <includes pattern="gcc/sam3s4b_flash.ld"/>
+        <includes pattern="gcc/sam3s4b_sram.ld"/>
+        <includes optional="true" pattern="gcc/sam3s_flash.ld"/>
+        <includes optional="true" pattern="gcc/sam3s_sram.ld"/>
+      </resource>
+    </resources>
+    <resources target="ATSAM3S4A">
+      <resource type="atdf" subdir="sam3s/atdf">
+        <includes pattern="ATSAM3S4A.atdf"/>
+      </resource>
+      <resource type="svd" subdir="sam3s/svd">
+        <includes pattern="ATSAM3S4A.svd"/>
+      </resource>
+      <resource type="c.header" subdir="sam3s/include">
+        <includes pattern="sam.h"/>
+        <includes pattern="sam3s.h"/>
+        <includes pattern="sam3s4a.h"/>
+        <includes pattern="system_sam3s.h"/>
+        <includes pattern="pio/*sam3s4a.h"/>
+        <includes pattern="component-version.h"/>
+        <includes fileset="moduleheaders"/>
+        <meta key="define" value="__SAM3S4A__"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="sam3s/templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="sam3s/templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="sam3s/templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="sam3s/templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="armcc.source.startup" subdir="sam3s/armcc">
+        <includes pattern="Device/SAM3S/Source/ARM/startup_SAM3S.s"/>
+        <includes pattern="Device/SAM3S/Source/system_SAM3S.c"/>
+      </resource>
+      <resource type="keil.flashloader" subdir="sam3s/keil">
+        <includes pattern="Flash/ATSAM3S_256.FLM"/>
+        <includes pattern="Flash/ATSAM3S_GPNVM.FLM"/>
+        <meta key="Flash/ATSAM3S_GPNVM.FLM" value="start=0x1FFFFFF0|size=0x00000010|default=0"/>
+        <meta key="Flash/ATSAM3S_256.FLM" value="start=0x00400000|size=0x00040000|default=1"/>
+      </resource>
+      <resource type="gcc.source.startup" subdir="sam3s/gcc">
+        <includes pattern="system_sam3s.c"/>
+        <includes pattern="gcc/startup_sam3s.c"/>
+      </resource>
+      <resource type="gcc.linker" subdir="sam3s/gcc">
+        <includes pattern="gcc/sam3s4a_flash.ld"/>
+        <includes pattern="gcc/sam3s4a_sram.ld"/>
+        <includes optional="true" pattern="gcc/sam3s_flash.ld"/>
+        <includes optional="true" pattern="gcc/sam3s_sram.ld"/>
+      </resource>
+    </resources>
+    <resources target="ATSAM3S1A">
+      <resource type="atdf" subdir="sam3s/atdf">
+        <includes pattern="ATSAM3S1A.atdf"/>
+      </resource>
+      <resource type="svd" subdir="sam3s/svd">
+        <includes pattern="ATSAM3S1A.svd"/>
+      </resource>
+      <resource type="c.header" subdir="sam3s/include">
+        <includes pattern="sam.h"/>
+        <includes pattern="sam3s.h"/>
+        <includes pattern="sam3s1a.h"/>
+        <includes pattern="system_sam3s.h"/>
+        <includes pattern="pio/*sam3s1a.h"/>
+        <includes pattern="component-version.h"/>
+        <includes fileset="moduleheaders"/>
+        <meta key="define" value="__SAM3S1A__"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="sam3s/templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="sam3s/templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="sam3s/templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="sam3s/templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="armcc.source.startup" subdir="sam3s/armcc">
+        <includes pattern="Device/SAM3S/Source/ARM/startup_SAM3S.s"/>
+        <includes pattern="Device/SAM3S/Source/system_SAM3S.c"/>
+      </resource>
+      <resource type="keil.flashloader" subdir="sam3s/keil">
+        <includes pattern="Flash/ATSAM3S_64.FLM"/>
+        <includes pattern="Flash/ATSAM3S_GPNVM.FLM"/>
+        <meta key="Flash/ATSAM3S_GPNVM.FLM" value="start=0x1FFFFFF0|size=0x00000010|default=0"/>
+        <meta key="Flash/ATSAM3S_64.FLM" value="start=0x00400000|size=0x00010000|default=1"/>
+      </resource>
+      <resource type="gcc.source.startup" subdir="sam3s/gcc">
+        <includes pattern="system_sam3s.c"/>
+        <includes pattern="gcc/startup_sam3s.c"/>
+      </resource>
+      <resource type="gcc.linker" subdir="sam3s/gcc">
+        <includes pattern="gcc/sam3s1a_flash.ld"/>
+        <includes pattern="gcc/sam3s1a_sram.ld"/>
+        <includes optional="true" pattern="gcc/sam3s_flash.ld"/>
+        <includes optional="true" pattern="gcc/sam3s_sram.ld"/>
+      </resource>
+    </resources>
+    <resources target="ATSAM3S1B">
+      <resource type="atdf" subdir="sam3s/atdf">
+        <includes pattern="ATSAM3S1B.atdf"/>
+      </resource>
+      <resource type="svd" subdir="sam3s/svd">
+        <includes pattern="ATSAM3S1B.svd"/>
+      </resource>
+      <resource type="c.header" subdir="sam3s/include">
+        <includes pattern="sam.h"/>
+        <includes pattern="sam3s.h"/>
+        <includes pattern="sam3s1b.h"/>
+        <includes pattern="system_sam3s.h"/>
+        <includes pattern="pio/*sam3s1b.h"/>
+        <includes pattern="component-version.h"/>
+        <includes fileset="moduleheaders"/>
+        <meta key="define" value="__SAM3S1B__"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="sam3s/templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="sam3s/templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="sam3s/templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="sam3s/templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="armcc.source.startup" subdir="sam3s/armcc">
+        <includes pattern="Device/SAM3S/Source/ARM/startup_SAM3S.s"/>
+        <includes pattern="Device/SAM3S/Source/system_SAM3S.c"/>
+      </resource>
+      <resource type="keil.flashloader" subdir="sam3s/keil">
+        <includes pattern="Flash/ATSAM3S_64.FLM"/>
+        <includes pattern="Flash/ATSAM3S_GPNVM.FLM"/>
+        <meta key="Flash/ATSAM3S_GPNVM.FLM" value="start=0x1FFFFFF0|size=0x00000010|default=0"/>
+        <meta key="Flash/ATSAM3S_64.FLM" value="start=0x00400000|size=0x00010000|default=1"/>
+      </resource>
+      <resource type="gcc.source.startup" subdir="sam3s/gcc">
+        <includes pattern="system_sam3s.c"/>
+        <includes pattern="gcc/startup_sam3s.c"/>
+      </resource>
+      <resource type="gcc.linker" subdir="sam3s/gcc">
+        <includes pattern="gcc/sam3s1b_flash.ld"/>
+        <includes pattern="gcc/sam3s1b_sram.ld"/>
+        <includes optional="true" pattern="gcc/sam3s_flash.ld"/>
+        <includes optional="true" pattern="gcc/sam3s_sram.ld"/>
+      </resource>
+    </resources>
+    <resources target="ATSAM3S1C">
+      <resource type="atdf" subdir="sam3s/atdf">
+        <includes pattern="ATSAM3S1C.atdf"/>
+      </resource>
+      <resource type="svd" subdir="sam3s/svd">
+        <includes pattern="ATSAM3S1C.svd"/>
+      </resource>
+      <resource type="c.header" subdir="sam3s/include">
+        <includes pattern="sam.h"/>
+        <includes pattern="sam3s.h"/>
+        <includes pattern="sam3s1c.h"/>
+        <includes pattern="system_sam3s.h"/>
+        <includes pattern="pio/*sam3s1c.h"/>
+        <includes pattern="component-version.h"/>
+        <includes fileset="moduleheaders"/>
+        <meta key="define" value="__SAM3S1C__"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="sam3s/templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="sam3s/templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="sam3s/templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="sam3s/templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="armcc.source.startup" subdir="sam3s/armcc">
+        <includes pattern="Device/SAM3S/Source/ARM/startup_SAM3S.s"/>
+        <includes pattern="Device/SAM3S/Source/system_SAM3S.c"/>
+      </resource>
+      <resource type="keil.flashloader" subdir="sam3s/keil">
+        <includes pattern="Flash/ATSAM3S_64.FLM"/>
+        <includes pattern="Flash/ATSAM3S_GPNVM.FLM"/>
+        <meta key="Flash/ATSAM3S_GPNVM.FLM" value="start=0x1FFFFFF0|size=0x00000010|default=0"/>
+        <meta key="Flash/ATSAM3S_64.FLM" value="start=0x00400000|size=0x00010000|default=1"/>
+      </resource>
+      <resource type="gcc.source.startup" subdir="sam3s/gcc">
+        <includes pattern="system_sam3s.c"/>
+        <includes pattern="gcc/startup_sam3s.c"/>
+      </resource>
+      <resource type="gcc.linker" subdir="sam3s/gcc">
+        <includes pattern="gcc/sam3s1c_flash.ld"/>
+        <includes pattern="gcc/sam3s1c_sram.ld"/>
+        <includes optional="true" pattern="gcc/sam3s_flash.ld"/>
+        <includes optional="true" pattern="gcc/sam3s_sram.ld"/>
+      </resource>
+    </resources>
+    <resources target="ATSAM3S8C">
+      <resource type="atdf" subdir="sam3sd8/atdf">
+        <includes pattern="ATSAM3S8C.atdf"/>
+      </resource>
+      <resource type="svd" subdir="sam3sd8/svd">
+        <includes pattern="ATSAM3S8C.svd"/>
+      </resource>
+      <resource type="c.header" subdir="sam3sd8/include">
+        <includes pattern="sam.h"/>
+        <includes pattern="sam3sd8.h"/>
+        <includes pattern="sam3s8c.h"/>
+        <includes pattern="system_sam3sd8.h"/>
+        <includes pattern="pio/sam3s8c.h"/>
+        <includes pattern="component-version.h"/>
+        <includes fileset="moduleheaders"/>
+        <meta key="define" value="__SAM3S8C__"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="sam3sd8/templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="sam3sd8/templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="sam3sd8/templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="sam3sd8/templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="armcc.source.startup" subdir="sam3sd8/armcc">
+        <includes pattern="Device/SAM3SD8/Source/ARM/startup_SAM3SD8.s"/>
+        <includes pattern="Device/SAM3SD8/Source/system_SAM3SD8.c"/>
+      </resource>
+      <resource type="keil.flashloader" subdir="sam3sd8/keil">
+        <includes pattern="Flash/ATSAM3S_512.FLM"/>
+        <includes pattern="Flash/ATSAM3S_GPNVM.FLM"/>
+        <meta key="Flash/ATSAM3S_512.FLM" value="start=0x00400000|size=0x80000|default=1"/>
+        <meta key="Flash/ATSAM3S_GPNVM.FLM" value="start=0x1FFFFFF0|size=0x00000010|default=0"/>
+      </resource>
+      <resource type="gcc.source.startup" subdir="sam3sd8/gcc">
+        <includes pattern="system_sam3sd8.c"/>
+        <includes pattern="gcc/startup_sam3sd8.c"/>
+      </resource>
+      <resource type="gcc.linker" subdir="sam3sd8/gcc">
+        <includes pattern="gcc/sam3s8c_flash.ld"/>
+        <includes pattern="gcc/sam3s8c_sram.ld"/>
+        <includes optional="true" pattern="gcc/sam3sd8_flash.ld"/>
+        <includes optional="true" pattern="gcc/sam3sd8_sram.ld"/>
+      </resource>
+    </resources>
+    <resources target="ATSAM3S8B">
+      <resource type="atdf" subdir="sam3sd8/atdf">
+        <includes pattern="ATSAM3S8B.atdf"/>
+      </resource>
+      <resource type="svd" subdir="sam3sd8/svd">
+        <includes pattern="ATSAM3S8B.svd"/>
+      </resource>
+      <resource type="c.header" subdir="sam3sd8/include">
+        <includes pattern="sam.h"/>
+        <includes pattern="sam3sd8.h"/>
+        <includes pattern="sam3s8b.h"/>
+        <includes pattern="system_sam3sd8.h"/>
+        <includes pattern="pio/sam3s8b.h"/>
+        <includes pattern="component-version.h"/>
+        <includes fileset="moduleheaders"/>
+        <meta key="define" value="__SAM3S8B__"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="sam3sd8/templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="sam3sd8/templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="sam3sd8/templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="sam3sd8/templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="armcc.source.startup" subdir="sam3sd8/armcc">
+        <includes pattern="Device/SAM3SD8/Source/ARM/startup_SAM3SD8.s"/>
+        <includes pattern="Device/SAM3SD8/Source/system_SAM3SD8.c"/>
+      </resource>
+      <resource type="keil.flashloader" subdir="sam3sd8/keil">
+        <includes pattern="Flash/ATSAM3S_512.FLM"/>
+        <includes pattern="Flash/ATSAM3S_GPNVM.FLM"/>
+        <meta key="Flash/ATSAM3S_512.FLM" value="start=0x00400000|size=0x00080000|default=1"/>
+        <meta key="Flash/ATSAM3S_GPNVM.FLM" value="start=0x1FFFFFF0|size=0x00000010|default=0"/>
+      </resource>
+      <resource type="gcc.source.startup" subdir="sam3sd8/gcc">
+        <includes pattern="system_sam3sd8.c"/>
+        <includes pattern="gcc/startup_sam3sd8.c"/>
+      </resource>
+      <resource type="gcc.linker" subdir="sam3sd8/gcc">
+        <includes pattern="gcc/sam3s8b_flash.ld"/>
+        <includes pattern="gcc/sam3s8b_sram.ld"/>
+        <includes optional="true" pattern="gcc/sam3sd8_flash.ld"/>
+        <includes optional="true" pattern="gcc/sam3sd8_sram.ld"/>
+      </resource>
+    </resources>
+    <resources target="ATSAM3SD8B">
+      <resource type="atdf" subdir="sam3sd8/atdf">
+        <includes pattern="ATSAM3SD8B.atdf"/>
+      </resource>
+      <resource type="svd" subdir="sam3sd8/svd">
+        <includes pattern="ATSAM3SD8B.svd"/>
+      </resource>
+      <resource type="c.header" subdir="sam3sd8/include">
+        <includes pattern="sam.h"/>
+        <includes pattern="sam3sd8.h"/>
+        <includes pattern="sam3sd8b.h"/>
+        <includes pattern="system_sam3sd8.h"/>
+        <includes pattern="pio/sam3sd8b.h"/>
+        <includes pattern="component-version.h"/>
+        <includes fileset="moduleheaders"/>
+        <meta key="define" value="__SAM3SD8B__"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="sam3sd8/templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="sam3sd8/templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="sam3sd8/templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="sam3sd8/templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="armcc.source.startup" subdir="sam3sd8/armcc">
+        <includes pattern="Device/SAM3SD8/Source/ARM/startup_SAM3SD8.s"/>
+        <includes pattern="Device/SAM3SD8/Source/system_SAM3SD8.c"/>
+      </resource>
+      <resource type="keil.flashloader" subdir="sam3sd8/keil">
+        <includes pattern="Flash/ATSAM3S_512.FLM"/>
+        <includes pattern="Flash/ATSAM3S_GPNVM.FLM"/>
+        <meta key="Flash/ATSAM3S_512.FLM" value="start=0x00400000|size=0x80000|default=1"/>
+        <meta key="Flash/ATSAM3S_GPNVM.FLM" value="start=0x1FFFFFF0|size=0x00000010|default=0"/>
+      </resource>
+      <resource type="gcc.source.startup" subdir="sam3sd8/gcc">
+        <includes pattern="system_sam3sd8.c"/>
+        <includes pattern="gcc/startup_sam3sd8.c"/>
+      </resource>
+      <resource type="gcc.linker" subdir="sam3sd8/gcc">
+        <includes pattern="gcc/sam3sd8b_flash.ld"/>
+        <includes pattern="gcc/sam3sd8b_sram.ld"/>
+        <includes optional="true" pattern="gcc/sam3sd8_flash.ld"/>
+        <includes optional="true" pattern="gcc/sam3sd8_sram.ld"/>
+      </resource>
+    </resources>
+    <resources target="ATSAM3SD8C">
+      <resource type="atdf" subdir="sam3sd8/atdf">
+        <includes pattern="ATSAM3SD8C.atdf"/>
+      </resource>
+      <resource type="svd" subdir="sam3sd8/svd">
+        <includes pattern="ATSAM3SD8C.svd"/>
+      </resource>
+      <resource type="c.header" subdir="sam3sd8/include">
+        <includes pattern="sam.h"/>
+        <includes pattern="sam3sd8.h"/>
+        <includes pattern="sam3sd8c.h"/>
+        <includes pattern="system_sam3sd8.h"/>
+        <includes pattern="pio/sam3sd8c.h"/>
+        <includes pattern="component-version.h"/>
+        <includes fileset="moduleheaders"/>
+        <meta key="define" value="__SAM3SD8C__"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="sam3sd8/templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="sam3sd8/templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="sam3sd8/templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="sam3sd8/templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="armcc.source.startup" subdir="sam3sd8/armcc">
+        <includes pattern="Device/SAM3SD8/Source/ARM/startup_SAM3SD8.s"/>
+        <includes pattern="Device/SAM3SD8/Source/system_SAM3SD8.c"/>
+      </resource>
+      <resource type="keil.flashloader" subdir="sam3sd8/keil">
+        <includes pattern="Flash/ATSAM3S_512.FLM"/>
+        <includes pattern="Flash/ATSAM3S_GPNVM.FLM"/>
+        <meta key="Flash/ATSAM3S_512.FLM" value="start=0x00400000|size=0x80000|default=1"/>
+        <meta key="Flash/ATSAM3S_GPNVM.FLM" value="start=0x1FFFFFF0|size=0x00000010|default=0"/>
+      </resource>
+      <resource type="gcc.source.startup" subdir="sam3sd8/gcc">
+        <includes pattern="system_sam3sd8.c"/>
+        <includes pattern="gcc/startup_sam3sd8.c"/>
+      </resource>
+      <resource type="gcc.linker" subdir="sam3sd8/gcc">
+        <includes pattern="gcc/sam3sd8c_flash.ld"/>
+        <includes pattern="gcc/sam3sd8c_sram.ld"/>
+        <includes optional="true" pattern="gcc/sam3sd8_flash.ld"/>
+        <includes optional="true" pattern="gcc/sam3sd8_sram.ld"/>
+      </resource>
+    </resources>
+  </content>
+  <pdsc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+		<releases>
+			<release version="1.0.BUILDNUMBER">Fix max speed in ATDF files.</release>
+			<release version="1.0.62">Updated documentation links.</release>
+			<release version="1.0.54">Updated documentation links.</release>
+			<release version="1.0.47">Initial release.</release>
+		</releases>
+	</pdsc>
+</package>
